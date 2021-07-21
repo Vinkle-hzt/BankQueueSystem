@@ -16,12 +16,6 @@ typedef struct
     int minute;
 } date;
 
-typedef struct
-{
-    date trade_time;
-    Trade_type trade_type;
-} trade_info;
-
 date get_cur_date();
 
-void show_date(date d);
+void show_date(FILE* f, date d);

@@ -1,5 +1,8 @@
 #pragma once
-#define AL_DEFAULT_SIZE 100
+#define AL_DEFAULT_SIZE 10
+
+#include "safe_free.h"
+#include <string.h>
 
 /**
  * @brief  a list implement by array, the list 
@@ -8,9 +11,9 @@
  */
 typedef struct
 {
-    void **data;                                 ///< element data
-    int curSize;                                 ///< element array current size
-    int maxSize;                                 ///< element array max size
+    void **data; ///< element data
+    int curSize; ///< element array current size
+    int maxSize; ///< element array max size
 } array_list;
 
 /**

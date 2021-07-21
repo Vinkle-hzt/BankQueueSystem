@@ -1,4 +1,4 @@
-#include "trade_info.h"
+#include "date.h"
 
 date get_cur_date()
 {
@@ -18,7 +18,7 @@ date get_cur_date()
     return cur;
 }
 
-void show_date(date d)
+void show_date(FILE* f, date d)
 {
-    printf("UTC %d/%d/%d %d:%d", d.year, d.month, d.day, d.hour, d.minute);
+    fprintf(f, "[UTC %d/%d/%d %d:%d]", d.year, d.month, d.day, d.hour, d.minute);
 }

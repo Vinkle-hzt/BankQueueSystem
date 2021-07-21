@@ -2,27 +2,18 @@
 
 #include <stdlib.h>
 #include "array_list.h"
+#include "display.h"
 #include "queue.h"
+#include "member.h"
+#include "safe_free.h"
+#include "pick_number.h"
+#include "date.h"
+#include "common.h"
 
 typedef struct
 {
-    int customers_num;
-    int flowing_water;
-} trade_conclude;
-
-typedef struct
-{
-    int ID;
-    char *name;
-} member;
-
-typedef struct
-{
-    int number;
-    trade_conclude kpi;
-    member *customer;
-} counter;
+    date trade_time;
+    Trade_type trade_type;
+} trade_info;
 
 void start_system();
-
-array_list *create_counter(int num);
