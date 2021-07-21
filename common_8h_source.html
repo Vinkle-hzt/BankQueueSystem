@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: include/common.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">common.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="common_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="array__list_8h.html">array_list.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="queue_8h.html">queue.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="common_8h.html#a4dd2db3ec3349694aaa8c906d30b852f">cur_pick_num</a>; <span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="common_8h.html#ad4e5c99a741abb03d260d65428799a72">cur_call_num</a>; <span class="comment">//</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> FILE* <a class="code" href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a>; <span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> <a class="code" href="structqueue.html">queue</a> *<a class="code" href="common_8h.html#ab6dc46b9579fc7c39f8f03ce2466250b">waiting_line</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <a class="code" href="structarray__list.html">array_list</a> *<a class="code" href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a>;</div>
+<div class="ttc" id="aarray__list_8h_html"><div class="ttname"><a href="array__list_8h.html">array_list.h</a></div></div>
+<div class="ttc" id="acommon_8h_html_a4dd2db3ec3349694aaa8c906d30b852f"><div class="ttname"><a href="common_8h.html#a4dd2db3ec3349694aaa8c906d30b852f">cur_pick_num</a></div><div class="ttdeci">int cur_pick_num</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00003">common.c:3</a></div></div>
+<div class="ttc" id="acommon_8h_html_a6328f63a5c0a3b0b3f70db82b29e6c4b"><div class="ttname"><a href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a></div><div class="ttdeci">array_list * counters</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00011">common.c:11</a></div></div>
+<div class="ttc" id="acommon_8h_html_ab6dc46b9579fc7c39f8f03ce2466250b"><div class="ttname"><a href="common_8h.html#ab6dc46b9579fc7c39f8f03ce2466250b">waiting_line</a></div><div class="ttdeci">queue * waiting_line</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00009">common.c:9</a></div></div>
+<div class="ttc" id="acommon_8h_html_ab936051f5aaca44c6c3c41dee0d19c36"><div class="ttname"><a href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a></div><div class="ttdeci">FILE * log_file</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00007">common.c:7</a></div></div>
+<div class="ttc" id="acommon_8h_html_ad4e5c99a741abb03d260d65428799a72"><div class="ttname"><a href="common_8h.html#ad4e5c99a741abb03d260d65428799a72">cur_call_num</a></div><div class="ttdeci">int cur_call_num</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00005">common.c:5</a></div></div>
+<div class="ttc" id="aqueue_8h_html"><div class="ttname"><a href="queue_8h.html">queue.h</a></div></div>
+<div class="ttc" id="astructarray__list_html"><div class="ttname"><a href="structarray__list.html">array_list</a></div><div class="ttdoc">a list implement by array, the list will append its size automatically</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8h_source.html#l00012">array_list.h:13</a></div></div>
+<div class="ttc" id="astructqueue_html"><div class="ttname"><a href="structqueue.html">queue</a></div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00007">queue.h:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

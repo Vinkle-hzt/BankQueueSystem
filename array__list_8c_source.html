@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: src/array_list.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">array_list.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="array__list_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="array__list_8h.html">array_list.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="array__list_8c.html#aeaade3514c374b905e5e25058a7cf117">    3</a></span>&#160;<a class="code" href="structarray__list.html">array_list</a>* <a class="code" href="array__list_8c.html#aeaade3514c374b905e5e25058a7cf117">al_create</a>(<span class="keywordtype">int</span>(*CompFunc)(<span class="keyword">const</span> <span class="keywordtype">void</span>*,<span class="keyword">const</span> <span class="keywordtype">void</span>*))</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="structarray__list.html">array_list</a>* al = malloc(<span class="keyword">sizeof</span>(<a class="code" href="structarray__list.html">array_list</a>));</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a> = malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">void</span>*) * <a class="code" href="array__list_8h.html#a003c39184374518feb6eecc5a0694b94">AL_DEFAULT_SIZE</a>);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    al-&gt;<a class="code" href="structarray__list.html#a98651570e427af3e1198d4553188aa8b">curSize</a> = 0;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    al-&gt;<a class="code" href="structarray__list.html#a29ff2b09e8e184170f61316769b5404a">maxSize</a> = <a class="code" href="array__list_8h.html#a003c39184374518feb6eecc5a0694b94">AL_DEFAULT_SIZE</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">return</span> al;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247">   12</a></span>&#160;<span class="keywordtype">void</span>* <a class="code" href="array__list_8c.html#ab55c286c3b60fdbd269b9c1135885247">al_at</a>(<a class="code" href="structarray__list.html">array_list</a>* al, <span class="keywordtype">int</span> idx)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a>[idx];</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="array__list_8h.html#a6b792272494e473122e892e232500d8d">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="array__list_8c.html#a6b792272494e473122e892e232500d8d">al_push</a>(<a class="code" href="structarray__list.html">array_list</a>* al, <span class="keywordtype">void</span>* val)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (al-&gt;<a class="code" href="structarray__list.html#a98651570e427af3e1198d4553188aa8b">curSize</a> == al-&gt;<a class="code" href="structarray__list.html#a29ff2b09e8e184170f61316769b5404a">maxSize</a>)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="array__list_8c.html#ab35b3d2bdedfd3202ddab0f0dacd4592">al_resize</a>(al);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a>[al-&gt;<a class="code" href="structarray__list.html#a98651570e427af3e1198d4553188aa8b">curSize</a>] = val;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    al-&gt;<a class="code" href="structarray__list.html#a98651570e427af3e1198d4553188aa8b">curSize</a>++;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="array__list_8h.html#a7e85a97073f192ff04e94025cf233a69">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="array__list_8c.html#a7e85a97073f192ff04e94025cf233a69">al_free</a>(<a class="code" href="structarray__list.html">array_list</a>* al)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900">safe_free</a>(al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900">safe_free</a>(al);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="array__list_8h.html#ab35b3d2bdedfd3202ddab0f0dacd4592">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="array__list_8c.html#ab35b3d2bdedfd3202ddab0f0dacd4592">al_resize</a>(<a class="code" href="structarray__list.html">array_list</a>* al)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span>** tmp = al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a> = malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">void</span>*) * al-&gt;<a class="code" href="structarray__list.html#a29ff2b09e8e184170f61316769b5404a">maxSize</a> * 2);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    memcpy(al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a>, tmp, <span class="keyword">sizeof</span>(<span class="keywordtype">void</span>*) * al-&gt;<a class="code" href="structarray__list.html#a29ff2b09e8e184170f61316769b5404a">maxSize</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    al-&gt;<a class="code" href="structarray__list.html#a29ff2b09e8e184170f61316769b5404a">maxSize</a> *= 2;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900">safe_free</a>(tmp);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="array__list_8h.html#a5182415ef03402b025b5a1a686039f99">   40</a></span>&#160;<span class="keywordtype">void</span>* <a class="code" href="array__list_8c.html#a5182415ef03402b025b5a1a686039f99">al_pop</a>(<a class="code" href="structarray__list.html">array_list</a>* al, <span class="keywordtype">int</span> idx)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span>* ret = al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a>[idx];</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = idx + 1; i &lt; al-&gt;<a class="code" href="structarray__list.html#a98651570e427af3e1198d4553188aa8b">curSize</a>; i++)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a>[i-1] = al-&gt;<a class="code" href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">data</a>[i];</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    al-&gt;<a class="code" href="structarray__list.html#a98651570e427af3e1198d4553188aa8b">curSize</a>--;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="array__list_8h.html#ac7f247468ec6f149d77967af2281e386">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="array__list_8c.html#ac7f247468ec6f149d77967af2281e386">al_clean</a>(<a class="code" href="structarray__list.html">array_list</a>* al)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    al-&gt;<a class="code" href="structarray__list.html#a98651570e427af3e1198d4553188aa8b">curSize</a> = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="ttc" id="aarray__list_8c_html_a5182415ef03402b025b5a1a686039f99"><div class="ttname"><a href="array__list_8c.html#a5182415ef03402b025b5a1a686039f99">al_pop</a></div><div class="ttdeci">void * al_pop(array_list *al, int idx)</div><div class="ttdoc">delete the last value of array list</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00040">array_list.c:40</a></div></div>
+<div class="ttc" id="aarray__list_8c_html_a6b792272494e473122e892e232500d8d"><div class="ttname"><a href="array__list_8c.html#a6b792272494e473122e892e232500d8d">al_push</a></div><div class="ttdeci">void al_push(array_list *al, void *val)</div><div class="ttdoc">insert element value val to the end of array list</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00017">array_list.c:17</a></div></div>
+<div class="ttc" id="aarray__list_8c_html_a7e85a97073f192ff04e94025cf233a69"><div class="ttname"><a href="array__list_8c.html#a7e85a97073f192ff04e94025cf233a69">al_free</a></div><div class="ttdeci">void al_free(array_list *al)</div><div class="ttdoc">free the array list</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00025">array_list.c:25</a></div></div>
+<div class="ttc" id="aarray__list_8c_html_ab35b3d2bdedfd3202ddab0f0dacd4592"><div class="ttname"><a href="array__list_8c.html#ab35b3d2bdedfd3202ddab0f0dacd4592">al_resize</a></div><div class="ttdeci">void al_resize(array_list *al)</div><div class="ttdoc">resize the array list size</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00031">array_list.c:31</a></div></div>
+<div class="ttc" id="aarray__list_8c_html_ab55c286c3b60fdbd269b9c1135885247"><div class="ttname"><a href="array__list_8c.html#ab55c286c3b60fdbd269b9c1135885247">al_at</a></div><div class="ttdeci">void * al_at(array_list *al, int idx)</div><div class="ttdoc">get the idx_th element value (start from 0)</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00012">array_list.c:12</a></div></div>
+<div class="ttc" id="aarray__list_8c_html_ac7f247468ec6f149d77967af2281e386"><div class="ttname"><a href="array__list_8c.html#ac7f247468ec6f149d77967af2281e386">al_clean</a></div><div class="ttdeci">void al_clean(array_list *al)</div><div class="ttdoc">clean the array list</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00049">array_list.c:49</a></div></div>
+<div class="ttc" id="aarray__list_8c_html_aeaade3514c374b905e5e25058a7cf117"><div class="ttname"><a href="array__list_8c.html#aeaade3514c374b905e5e25058a7cf117">al_create</a></div><div class="ttdeci">array_list * al_create(int(*CompFunc)(const void *, const void *))</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00003">array_list.c:3</a></div></div>
+<div class="ttc" id="aarray__list_8h_html"><div class="ttname"><a href="array__list_8h.html">array_list.h</a></div></div>
+<div class="ttc" id="aarray__list_8h_html_a003c39184374518feb6eecc5a0694b94"><div class="ttname"><a href="array__list_8h.html#a003c39184374518feb6eecc5a0694b94">AL_DEFAULT_SIZE</a></div><div class="ttdeci">#define AL_DEFAULT_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8h_source.html#l00002">array_list.h:2</a></div></div>
+<div class="ttc" id="asafe__free_8h_html_a55c355f047f95aba92b4f8c1415de900"><div class="ttname"><a href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900">safe_free</a></div><div class="ttdeci">void safe_free(void *p)</div><div class="ttdoc">free pointer p and set p to NULL</div><div class="ttdef"><b>Definition:</b> <a href="safe__free_8c_source.html#l00003">safe_free.c:3</a></div></div>
+<div class="ttc" id="astructarray__list_html"><div class="ttname"><a href="structarray__list.html">array_list</a></div><div class="ttdoc">a list implement by array, the list will append its size automatically</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8h_source.html#l00012">array_list.h:13</a></div></div>
+<div class="ttc" id="astructarray__list_html_a29ff2b09e8e184170f61316769b5404a"><div class="ttname"><a href="structarray__list.html#a29ff2b09e8e184170f61316769b5404a">array_list::maxSize</a></div><div class="ttdeci">int maxSize</div><div class="ttdoc">element array max size</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8h_source.html#l00016">array_list.h:16</a></div></div>
+<div class="ttc" id="astructarray__list_html_a98651570e427af3e1198d4553188aa8b"><div class="ttname"><a href="structarray__list.html#a98651570e427af3e1198d4553188aa8b">array_list::curSize</a></div><div class="ttdeci">int curSize</div><div class="ttdoc">element array current size</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8h_source.html#l00015">array_list.h:15</a></div></div>
+<div class="ttc" id="astructarray__list_html_af00cdd742d205932a8309628d39efd5e"><div class="ttname"><a href="structarray__list.html#af00cdd742d205932a8309628d39efd5e">array_list::data</a></div><div class="ttdeci">void ** data</div><div class="ttdoc">element data</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8h_source.html#l00014">array_list.h:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

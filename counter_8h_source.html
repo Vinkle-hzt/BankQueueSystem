@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: include/counter.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">counter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="counter_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="member_8h.html">member.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="trade__conclude_8h.html">trade_conclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="structcounter.html">    6</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structcounter.html#a7106e2abc437ad981830d14176d15f09">    8</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcounter.html#a7106e2abc437ad981830d14176d15f09">number</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structcounter.html#a9bbea130b399fb049ef2bd9ca6bdb79e">    9</a></span>&#160;    <a class="code" href="structtrade__conclude.html">trade_conclude</a> <a class="code" href="structcounter.html#a9bbea130b399fb049ef2bd9ca6bdb79e">kpi</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structcounter.html#a38870ed5035d89bb75d9cfb8a826bd54">   10</a></span>&#160;    <a class="code" href="structmember.html">member</a> *<a class="code" href="structcounter.html#a38870ed5035d89bb75d9cfb8a826bd54">customer</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;} <a class="code" href="structcounter.html">counter</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<a class="code" href="structarray__list.html">array_list</a> *<a class="code" href="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1">create_counter</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="counter_8h.html#a94b658ba3e0514a86f8b268df86094b0">counter_come_customer</a>(<a class="code" href="structcounter.html">counter</a>* ct, <a class="code" href="structmember.html">member</a>* customer);</div>
+<div class="ttc" id="acounter_8h_html_a94b658ba3e0514a86f8b268df86094b0"><div class="ttname"><a href="counter_8h.html#a94b658ba3e0514a86f8b268df86094b0">counter_come_customer</a></div><div class="ttdeci">void counter_come_customer(counter *ct, member *customer)</div><div class="ttdef"><b>Definition:</b> <a href="counter_8c_source.html#l00020">counter.c:20</a></div></div>
+<div class="ttc" id="acounter_8h_html_abe5e067848d0e6d85ac6434adbdf27e1"><div class="ttname"><a href="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1">create_counter</a></div><div class="ttdeci">array_list * create_counter(int num)</div><div class="ttdef"><b>Definition:</b> <a href="counter_8c_source.html#l00003">counter.c:3</a></div></div>
+<div class="ttc" id="amember_8h_html"><div class="ttname"><a href="member_8h.html">member.h</a></div></div>
+<div class="ttc" id="astructarray__list_html"><div class="ttname"><a href="structarray__list.html">array_list</a></div><div class="ttdoc">a list implement by array, the list will append its size automatically</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8h_source.html#l00012">array_list.h:13</a></div></div>
+<div class="ttc" id="astructcounter_html"><div class="ttname"><a href="structcounter.html">counter</a></div><div class="ttdef"><b>Definition:</b> <a href="counter_8h_source.html#l00006">counter.h:7</a></div></div>
+<div class="ttc" id="astructcounter_html_a38870ed5035d89bb75d9cfb8a826bd54"><div class="ttname"><a href="structcounter.html#a38870ed5035d89bb75d9cfb8a826bd54">counter::customer</a></div><div class="ttdeci">member * customer</div><div class="ttdef"><b>Definition:</b> <a href="counter_8h_source.html#l00010">counter.h:10</a></div></div>
+<div class="ttc" id="astructcounter_html_a7106e2abc437ad981830d14176d15f09"><div class="ttname"><a href="structcounter.html#a7106e2abc437ad981830d14176d15f09">counter::number</a></div><div class="ttdeci">int number</div><div class="ttdef"><b>Definition:</b> <a href="counter_8h_source.html#l00008">counter.h:8</a></div></div>
+<div class="ttc" id="astructcounter_html_a9bbea130b399fb049ef2bd9ca6bdb79e"><div class="ttname"><a href="structcounter.html#a9bbea130b399fb049ef2bd9ca6bdb79e">counter::kpi</a></div><div class="ttdeci">trade_conclude kpi</div><div class="ttdef"><b>Definition:</b> <a href="counter_8h_source.html#l00009">counter.h:9</a></div></div>
+<div class="ttc" id="astructmember_html"><div class="ttname"><a href="structmember.html">member</a></div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00010">member.h:11</a></div></div>
+<div class="ttc" id="astructtrade__conclude_html"><div class="ttname"><a href="structtrade__conclude.html">trade_conclude</a></div><div class="ttdef"><b>Definition:</b> <a href="trade__conclude_8h_source.html#l00003">trade_conclude.h:4</a></div></div>
+<div class="ttc" id="atrade__conclude_8h_html"><div class="ttname"><a href="trade__conclude_8h.html">trade_conclude.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

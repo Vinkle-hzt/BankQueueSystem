@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: include/array_list.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">array_list.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="safe__free_8h_source.html">safe_free.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+array_list.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__list_8h__incl.png" border="0" usemap="#ainclude_2array__list_8h" alt=""/></div>
+<map name="ainclude_2array__list_8h" id="ainclude_2array__list_8h">
+<area shape="rect" title=" " alt="" coords="33,5,163,32"/>
+<area shape="rect" href="safe__free_8h.html" title=" " alt="" coords="5,80,92,107"/>
+<area shape="rect" title=" " alt="" coords="117,80,181,107"/>
+<area shape="rect" title=" " alt="" coords="17,155,80,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__list_8h__dep__incl.png" border="0" usemap="#ainclude_2array__list_8hdep" alt=""/></div>
+<map name="ainclude_2array__list_8hdep" id="ainclude_2array__list_8hdep">
+<area shape="rect" title=" " alt="" coords="550,5,679,32"/>
+<area shape="rect" href="bank__queue__system_8h.html" title=" " alt="" coords="99,379,237,420"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="462,80,589,107"/>
+<area shape="rect" href="pick__number_8h.html" title=" " alt="" coords="358,304,509,331"/>
+<area shape="rect" href="array__list_8c.html" title=" " alt="" coords="741,80,848,107"/>
+<area shape="rect" href="bank__queue__system_8c.html" title=" " alt="" coords="5,468,179,495"/>
+<area shape="rect" href="main_8c.html" title=" " alt="" coords="203,468,285,495"/>
+<area shape="rect" href="member_8h.html" title=" " alt="" coords="326,155,450,181"/>
+<area shape="rect" href="common_8c.html" title=" " alt="" coords="563,155,667,181"/>
+<area shape="rect" href="counter_8h.html" title=" " alt="" coords="231,229,351,256"/>
+<area shape="rect" href="member_8c.html" title=" " alt="" coords="425,229,527,256"/>
+<area shape="rect" href="counter_8c.html" title=" " alt="" coords="237,304,334,331"/>
+<area shape="rect" href="pick__number_8c.html" title=" " alt="" coords="369,386,497,413"/>
+</map>
+</div>
+</div>
+<p><a href="array__list_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarray__list.html">array_list</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a list implement by array, the list will append its size automatically  <a href="structarray__list.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a003c39184374518feb6eecc5a0694b94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#a003c39184374518feb6eecc5a0694b94">AL_DEFAULT_SIZE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a003c39184374518feb6eecc5a0694b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a3f34db16c1c96fbaf30a72919bfd176c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structarray__list.html">array_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#a3f34db16c1c96fbaf30a72919bfd176c">al_create</a> ()</td></tr>
+<tr class="memdesc:a3f34db16c1c96fbaf30a72919bfd176c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create array list  <a href="array__list_8h.html#a3f34db16c1c96fbaf30a72919bfd176c">更多...</a><br /></td></tr>
+<tr class="separator:a3f34db16c1c96fbaf30a72919bfd176c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55c286c3b60fdbd269b9c1135885247"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247">al_at</a> (<a class="el" href="structarray__list.html">array_list</a> *al, int idx)</td></tr>
+<tr class="memdesc:ab55c286c3b60fdbd269b9c1135885247"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the idx_th element value (start from 0)  <a href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247">更多...</a><br /></td></tr>
+<tr class="separator:ab55c286c3b60fdbd269b9c1135885247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b792272494e473122e892e232500d8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#a6b792272494e473122e892e232500d8d">al_push</a> (<a class="el" href="structarray__list.html">array_list</a> *al, void *val)</td></tr>
+<tr class="memdesc:a6b792272494e473122e892e232500d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert element value val to the end of array list  <a href="array__list_8h.html#a6b792272494e473122e892e232500d8d">更多...</a><br /></td></tr>
+<tr class="separator:a6b792272494e473122e892e232500d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e85a97073f192ff04e94025cf233a69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#a7e85a97073f192ff04e94025cf233a69">al_free</a> (<a class="el" href="structarray__list.html">array_list</a> *al)</td></tr>
+<tr class="memdesc:a7e85a97073f192ff04e94025cf233a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the array list  <a href="array__list_8h.html#a7e85a97073f192ff04e94025cf233a69">更多...</a><br /></td></tr>
+<tr class="separator:a7e85a97073f192ff04e94025cf233a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35b3d2bdedfd3202ddab0f0dacd4592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#ab35b3d2bdedfd3202ddab0f0dacd4592">al_resize</a> (<a class="el" href="structarray__list.html">array_list</a> *al)</td></tr>
+<tr class="memdesc:ab35b3d2bdedfd3202ddab0f0dacd4592"><td class="mdescLeft">&#160;</td><td class="mdescRight">resize the array list size  <a href="array__list_8h.html#ab35b3d2bdedfd3202ddab0f0dacd4592">更多...</a><br /></td></tr>
+<tr class="separator:ab35b3d2bdedfd3202ddab0f0dacd4592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5182415ef03402b025b5a1a686039f99"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#a5182415ef03402b025b5a1a686039f99">al_pop</a> (<a class="el" href="structarray__list.html">array_list</a> *al, int idx)</td></tr>
+<tr class="memdesc:a5182415ef03402b025b5a1a686039f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete the last value of array list  <a href="array__list_8h.html#a5182415ef03402b025b5a1a686039f99">更多...</a><br /></td></tr>
+<tr class="separator:a5182415ef03402b025b5a1a686039f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f247468ec6f149d77967af2281e386"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#ac7f247468ec6f149d77967af2281e386">al_clean</a> (<a class="el" href="structarray__list.html">array_list</a> *al)</td></tr>
+<tr class="memdesc:ac7f247468ec6f149d77967af2281e386"><td class="mdescLeft">&#160;</td><td class="mdescRight">clean the array list  <a href="array__list_8h.html#ac7f247468ec6f149d77967af2281e386">更多...</a><br /></td></tr>
+<tr class="separator:ac7f247468ec6f149d77967af2281e386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="a003c39184374518feb6eecc5a0694b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003c39184374518feb6eecc5a0694b94">&#9670;&nbsp;</a></span>AL_DEFAULT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AL_DEFAULT_SIZE&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="array__list_8h_source.html">array_list.h</a> 第 <a class="el" href="array__list_8h_source.html#l00002">2</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ab55c286c3b60fdbd269b9c1135885247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab55c286c3b60fdbd269b9c1135885247">&#9670;&nbsp;</a></span>al_at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* al_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structarray__list.html">array_list</a> *&#160;</td>
+          <td class="paramname"><em>al</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the idx_th element value (start from 0) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">al</td><td>array list </td></tr>
+    <tr><td class="paramname">idx</td><td>index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void* element pointer </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="array__list_8c_source.html">array_list.c</a> 第 <a class="el" href="array__list_8c_source.html#l00012">12</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__list_8h_ab55c286c3b60fdbd269b9c1135885247_icgraph.png" border="0" usemap="#aarray__list_8h_ab55c286c3b60fdbd269b9c1135885247_icgraph" alt=""/></div>
+<map name="aarray__list_8h_ab55c286c3b60fdbd269b9c1135885247_icgraph" id="aarray__list_8h_ab55c286c3b60fdbd269b9c1135885247_icgraph">
+<area shape="rect" title="get the idx_th element value (start from 0)" alt="" coords="415,5,465,32"/>
+<area shape="rect" href="pick__number_8h.html#a39c0c96389da80e6fad519bed74cd35b" title=" " alt="" coords="249,5,367,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title=" " alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac7f247468ec6f149d77967af2281e386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f247468ec6f149d77967af2281e386">&#9670;&nbsp;</a></span>al_clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void al_clean </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structarray__list.html">array_list</a> *&#160;</td>
+          <td class="paramname"><em>al</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clean the array list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">al</td><td>array list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="array__list_8c_source.html">array_list.c</a> 第 <a class="el" href="array__list_8c_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3f34db16c1c96fbaf30a72919bfd176c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f34db16c1c96fbaf30a72919bfd176c">&#9670;&nbsp;</a></span>al_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structarray__list.html">array_list</a>* al_create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create array list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CompFunc</td><td>compare function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>array_list* <a class="el" href="structarray__list.html" title="a list implement by array, the list will append its size automatically">array_list</a> pointer </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__list_8h_a3f34db16c1c96fbaf30a72919bfd176c_icgraph.png" border="0" usemap="#aarray__list_8h_a3f34db16c1c96fbaf30a72919bfd176c_icgraph" alt=""/></div>
+<map name="aarray__list_8h_a3f34db16c1c96fbaf30a72919bfd176c_icgraph" id="aarray__list_8h_a3f34db16c1c96fbaf30a72919bfd176c_icgraph">
+<area shape="rect" title="create array list" alt="" coords="405,5,480,32"/>
+<area shape="rect" href="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title=" " alt="" coords="249,5,357,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title=" " alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7e85a97073f192ff04e94025cf233a69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e85a97073f192ff04e94025cf233a69">&#9670;&nbsp;</a></span>al_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void al_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structarray__list.html">array_list</a> *&#160;</td>
+          <td class="paramname"><em>al</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free the array list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">al</td><td>array list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="array__list_8c_source.html">array_list.c</a> 第 <a class="el" href="array__list_8c_source.html#l00025">25</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__list_8h_a7e85a97073f192ff04e94025cf233a69_cgraph.png" border="0" usemap="#aarray__list_8h_a7e85a97073f192ff04e94025cf233a69_cgraph" alt=""/></div>
+<map name="aarray__list_8h_a7e85a97073f192ff04e94025cf233a69_cgraph" id="aarray__list_8h_a7e85a97073f192ff04e94025cf233a69_cgraph">
+<area shape="rect" title="free the array list" alt="" coords="5,5,67,32"/>
+<area shape="rect" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="115,5,191,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5182415ef03402b025b5a1a686039f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5182415ef03402b025b5a1a686039f99">&#9670;&nbsp;</a></span>al_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* al_pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structarray__list.html">array_list</a> *&#160;</td>
+          <td class="paramname"><em>al</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delete the last value of array list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">al</td><td>array list </td></tr>
+    <tr><td class="paramname">idx</td><td>index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="array__list_8c_source.html">array_list.c</a> 第 <a class="el" href="array__list_8c_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6b792272494e473122e892e232500d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b792272494e473122e892e232500d8d">&#9670;&nbsp;</a></span>al_push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void al_push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structarray__list.html">array_list</a> *&#160;</td>
+          <td class="paramname"><em>al</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>insert element value val to the end of array list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">al</td><td>array list </td></tr>
+    <tr><td class="paramname">val</td><td>element value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="array__list_8c_source.html">array_list.c</a> 第 <a class="el" href="array__list_8c_source.html#l00017">17</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__list_8h_a6b792272494e473122e892e232500d8d_cgraph.png" border="0" usemap="#aarray__list_8h_a6b792272494e473122e892e232500d8d_cgraph" alt=""/></div>
+<map name="aarray__list_8h_a6b792272494e473122e892e232500d8d_cgraph" id="aarray__list_8h_a6b792272494e473122e892e232500d8d_cgraph">
+<area shape="rect" title="insert element value val to the end of array list" alt="" coords="5,5,72,32"/>
+<area shape="rect" href="array__list_8c.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="resize the array list size" alt="" coords="120,5,193,32"/>
+<area shape="rect" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="241,5,317,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__list_8h_a6b792272494e473122e892e232500d8d_icgraph.png" border="0" usemap="#aarray__list_8h_a6b792272494e473122e892e232500d8d_icgraph" alt=""/></div>
+<map name="aarray__list_8h_a6b792272494e473122e892e232500d8d_icgraph" id="aarray__list_8h_a6b792272494e473122e892e232500d8d_icgraph">
+<area shape="rect" title="insert element value val to the end of array list" alt="" coords="405,5,472,32"/>
+<area shape="rect" href="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title=" " alt="" coords="249,5,357,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title=" " alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab35b3d2bdedfd3202ddab0f0dacd4592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35b3d2bdedfd3202ddab0f0dacd4592">&#9670;&nbsp;</a></span>al_resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void al_resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structarray__list.html">array_list</a> *&#160;</td>
+          <td class="paramname"><em>al</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>resize the array list size </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">al</td><td>array list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="array__list_8c_source.html">array_list.c</a> 第 <a class="el" href="array__list_8c_source.html#l00031">31</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__list_8h_ab35b3d2bdedfd3202ddab0f0dacd4592_cgraph.png" border="0" usemap="#aarray__list_8h_ab35b3d2bdedfd3202ddab0f0dacd4592_cgraph" alt=""/></div>
+<map name="aarray__list_8h_ab35b3d2bdedfd3202ddab0f0dacd4592_cgraph" id="aarray__list_8h_ab35b3d2bdedfd3202ddab0f0dacd4592_cgraph">
+<area shape="rect" title="resize the array list size" alt="" coords="5,5,79,32"/>
+<area shape="rect" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="127,5,203,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__list_8h_ab35b3d2bdedfd3202ddab0f0dacd4592_icgraph.png" border="0" usemap="#aarray__list_8h_ab35b3d2bdedfd3202ddab0f0dacd4592_icgraph" alt=""/></div>
+<map name="aarray__list_8h_ab35b3d2bdedfd3202ddab0f0dacd4592_icgraph" id="aarray__list_8h_ab35b3d2bdedfd3202ddab0f0dacd4592_icgraph">
+<area shape="rect" title="resize the array list size" alt="" coords="520,5,593,32"/>
+<area shape="rect" href="array__list_8h.html#a6b792272494e473122e892e232500d8d" title="insert element value val to the end of array list" alt="" coords="405,5,472,32"/>
+<area shape="rect" href="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title=" " alt="" coords="249,5,357,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title=" " alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: src/queue.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">queue.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="queue_8h_source.html">queue.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+queue.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8c__incl.png" border="0" usemap="#asrc_2queue_8c" alt=""/></div>
+<map name="asrc_2queue_8c" id="asrc_2queue_8c">
+<area shape="rect" title=" " alt="" coords="30,5,120,32"/>
+<area shape="rect" href="queue_8h.html" title=" " alt="" coords="42,80,108,107"/>
+<area shape="rect" title=" " alt="" coords="24,304,86,331"/>
+<area shape="rect" href="queue__node_8h.html" title=" " alt="" coords="24,155,126,181"/>
+<area shape="rect" href="safe__free_8h.html" title=" " alt="" coords="93,229,180,256"/>
+</map>
+</div>
+</div>
+<p><a href="queue_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a92701bd736280dc3fdb399deaca4b6d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqueue.html">queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0">queue_create</a> ()</td></tr>
+<tr class="separator:a92701bd736280dc3fdb399deaca4b6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3c337d5bbe22a7a33d4e46e250c8d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6">queue_push</a> (<a class="el" href="structqueue.html">queue</a> *q, void *val)</td></tr>
+<tr class="separator:a9c3c337d5bbe22a7a33d4e46e250c8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485893d2333e46eca6bdd15cc6d18ad7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7">queue_pop</a> (<a class="el" href="structqueue.html">queue</a> *q)</td></tr>
+<tr class="separator:a485893d2333e46eca6bdd15cc6d18ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf604398920042a8056f257d292fe8a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#abf604398920042a8056f257d292fe8a3">queue_free</a> (<a class="el" href="structqueue.html">queue</a> *q)</td></tr>
+<tr class="separator:abf604398920042a8056f257d292fe8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a92701bd736280dc3fdb399deaca4b6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92701bd736280dc3fdb399deaca4b6d0">&#9670;&nbsp;</a></span>queue_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structqueue.html">queue</a>* queue_create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>queue* </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00003">3</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8c_a92701bd736280dc3fdb399deaca4b6d0_icgraph.png" border="0" usemap="#aqueue_8c_a92701bd736280dc3fdb399deaca4b6d0_icgraph" alt=""/></div>
+<map name="aqueue_8c_a92701bd736280dc3fdb399deaca4b6d0_icgraph" id="aqueue_8c_a92701bd736280dc3fdb399deaca4b6d0_icgraph">
+<area shape="rect" title=" " alt="" coords="249,5,349,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title=" " alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abf604398920042a8056f257d292fe8a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf604398920042a8056f257d292fe8a3">&#9670;&nbsp;</a></span>queue_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void queue_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue.html">queue</a> *&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00034">34</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8c_abf604398920042a8056f257d292fe8a3_cgraph.png" border="0" usemap="#aqueue_8c_abf604398920042a8056f257d292fe8a3_cgraph" alt=""/></div>
+<map name="aqueue_8c_abf604398920042a8056f257d292fe8a3_cgraph" id="aqueue_8c_abf604398920042a8056f257d292fe8a3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,92,57"/>
+<area shape="rect" href="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7" title=" " alt="" coords="140,5,225,32"/>
+<area shape="rect" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="443,31,519,57"/>
+<area shape="rect" href="queue__node_8h.html#a5a5a41ee8e2e91eb3905dc7f939a3576" title=" " alt="" coords="273,5,395,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a485893d2333e46eca6bdd15cc6d18ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485893d2333e46eca6bdd15cc6d18ad7">&#9670;&nbsp;</a></span>queue_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* queue_pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue.html">queue</a> *&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00021">21</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8c_a485893d2333e46eca6bdd15cc6d18ad7_cgraph.png" border="0" usemap="#aqueue_8c_a485893d2333e46eca6bdd15cc6d18ad7_cgraph" alt=""/></div>
+<map name="aqueue_8c_a485893d2333e46eca6bdd15cc6d18ad7_cgraph" id="aqueue_8c_a485893d2333e46eca6bdd15cc6d18ad7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,91,32"/>
+<area shape="rect" href="queue__node_8h.html#a5a5a41ee8e2e91eb3905dc7f939a3576" title=" " alt="" coords="139,5,260,32"/>
+<area shape="rect" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="308,5,384,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8c_a485893d2333e46eca6bdd15cc6d18ad7_icgraph.png" border="0" usemap="#aqueue_8c_a485893d2333e46eca6bdd15cc6d18ad7_icgraph" alt=""/></div>
+<map name="aqueue_8c_a485893d2333e46eca6bdd15cc6d18ad7_icgraph" id="aqueue_8c_a485893d2333e46eca6bdd15cc6d18ad7_icgraph">
+<area shape="rect" title=" " alt="" coords="140,5,225,32"/>
+<area shape="rect" href="queue_8h.html#abf604398920042a8056f257d292fe8a3" title=" " alt="" coords="5,5,92,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9c3c337d5bbe22a7a33d4e46e250c8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3c337d5bbe22a7a33d4e46e250c8d6">&#9670;&nbsp;</a></span>queue_push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void queue_push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue.html">queue</a> *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td></td></tr>
+    <tr><td class="paramname">val</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00013">13</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph.png" border="0" usemap="#aqueue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph" alt=""/></div>
+<map name="aqueue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph" id="aqueue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,97,32"/>
+<area shape="rect" href="queue__node_8h.html#ae26345f83c8cb1efb4ce26e4e9102c72" title=" " alt="" coords="145,5,280,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_icgraph.png" border="0" usemap="#aqueue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_icgraph" alt=""/></div>
+<map name="aqueue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_icgraph" id="aqueue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_icgraph">
+<area shape="rect" title=" " alt="" coords="415,5,507,32"/>
+<area shape="rect" href="pick__number_8h.html#a39c0c96389da80e6fad519bed74cd35b" title=" " alt="" coords="249,5,367,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title=" " alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
