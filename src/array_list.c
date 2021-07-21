@@ -8,18 +8,12 @@ array_list* al_create(int(*CompFunc)(const void*,const void*))
     al->data = malloc(sizeof(void*) * AL_DEFAULT_SIZE);
     al->curSize = 0;
     al->maxSize = AL_DEFAULT_SIZE;
-    al->CompFunc = CompFunc;
     return al;
 }
 
 void* al_at(array_list* al, int idx)
 {
     return al->data[idx];
-}
-
-void al_sort(array_list* al)
-{
-    qsort(al->data, al->curSize, sizeof(void*), al->CompFunc);
 }
 
 void al_push(array_list* al, void* val)
