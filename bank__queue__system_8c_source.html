@@ -106,14 +106,14 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="bank__queue__system_8c.html#a39c0c96389da80e6fad519bed74cd35b">do_pick_number</a>()</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    printf(<span class="stringliteral">&quot;Enter you ID and name (separated by a blank space):\n&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    printf(<span class="stringliteral">&quot;请输入您的 ID 和姓名 (以空格分隔):\n&quot;</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> waiting_num = <a class="code" href="common_8h.html#ab6dc46b9579fc7c39f8f03ce2466250b">waiting_line</a>-&gt;<a class="code" href="structqueue.html#a439227feff9d7f55384e8780cfc2eb82">size</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> ID;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">char</span> name[20];</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    scanf(<span class="stringliteral">&quot;%d %s&quot;</span>, &amp;ID, name);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="structmember.html">member</a> *cur_customer = <a class="code" href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2">member_come</a>(ID, name);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    printf(<span class="stringliteral">&quot;Welcome to bank, %s, your number is %d\n&quot;</span>, name, <a class="code" href="common_8h.html#a4dd2db3ec3349694aaa8c906d30b852f">cur_pick_num</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    printf(<span class="stringliteral">&quot;欢迎来到银行, %s, 你的取号是 %d\n&quot;</span>, name, <a class="code" href="common_8h.html#a4dd2db3ec3349694aaa8c906d30b852f">cur_pick_num</a>);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// check spare counter</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> serve_flag = 0;</div>
@@ -125,7 +125,7 @@ $(function() {
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (cur_counter-&gt;<a class="code" href="structcounter.html#a38870ed5035d89bb75d9cfb8a826bd54">customer</a> == NULL)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <a class="code" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004">counter_assign_customer</a>(cur_counter, cur_customer);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                printf(<span class="stringliteral">&quot;Counter %d is empty, you can come there to handle the business.\n&quot;</span>, cur_counter-&gt;<a class="code" href="structcounter.html#a7106e2abc437ad981830d14176d15f09">number</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                printf(<span class="stringliteral">&quot;柜台 %d 为空, 您可以在这里办理业务.\n&quot;</span>, cur_counter-&gt;<a class="code" href="structcounter.html#a7106e2abc437ad981830d14176d15f09">number</a>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                serve_flag = 1;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
@@ -134,7 +134,7 @@ $(function() {
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (!serve_flag)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        printf(<span class="stringliteral">&quot;The call number is %d, please wait patiently.\n&quot;</span>, <a class="code" href="common_8h.html#ad4e5c99a741abb03d260d65428799a72">cur_call_num</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        printf(<span class="stringliteral">&quot;目前呼叫号码是 %d, 请稍等.\n&quot;</span>, <a class="code" href="common_8h.html#ad4e5c99a741abb03d260d65428799a72">cur_call_num</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="queue_8h.html#a9c3c337d5bbe22a7a33d4e46e250c8d6">queue_push</a>(<a class="code" href="common_8h.html#ab6dc46b9579fc7c39f8f03ce2466250b">waiting_line</a>, cur_customer);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>

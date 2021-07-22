@@ -59,7 +59,7 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">// log message</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e">show_date</a>(<a class="code" href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a>, <a class="code" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6">get_cur_date</a>());</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    fprintf(<a class="code" href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a>, <span class="stringliteral">&quot; (ID: %d name: %s) pick number %d \n&quot;</span>, ID, name, <a class="code" href="common_8h.html#a4dd2db3ec3349694aaa8c906d30b852f">cur_pick_num</a>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    fprintf(<a class="code" href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a>, <span class="stringliteral">&quot; (ID: %d 姓名: %s) 取到号码为 %d \n&quot;</span>, ID, name, <a class="code" href="common_8h.html#a4dd2db3ec3349694aaa8c906d30b852f">cur_pick_num</a>);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> m;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
@@ -68,7 +68,7 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// log message</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e">show_date</a>(<a class="code" href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a>, <a class="code" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6">get_cur_date</a>());</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    fprintf(<a class="code" href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a>, <span class="stringliteral">&quot; (ID: %d name: %s) leave \n&quot;</span>, m-&gt;<a class="code" href="structmember.html#af180e926633cde08a05ccbc3af397ee4">ID</a>, m-&gt;<a class="code" href="structmember.html#abf5b047e1f527e88ab5997329d1b557b">name</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    fprintf(<a class="code" href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a>, <span class="stringliteral">&quot; (ID: %d 姓名: %s) 离开银行 \n&quot;</span>, m-&gt;<a class="code" href="structmember.html#af180e926633cde08a05ccbc3af397ee4">ID</a>, m-&gt;<a class="code" href="structmember.html#abf5b047e1f527e88ab5997329d1b557b">name</a>);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900">safe_free</a>(m);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
