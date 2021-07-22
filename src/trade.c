@@ -30,7 +30,7 @@ void start_trade()
             switch (choice)
             {
             case '1':
-                check_banlance(&cur_card);
+                check_balance(&cur_card);
                 break;
             case '2':
                 deposit_money(&cur_card);
@@ -55,4 +55,11 @@ void start_trade()
             }
         } while (!flag);
     }
+}
+
+void check_balance(card* cur_card)
+{
+    FILE *cards_file = fopen(user_account_file,"r");
+    
+    fclose(cards_file);
 }

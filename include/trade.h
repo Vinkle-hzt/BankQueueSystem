@@ -15,7 +15,7 @@ void start_trade();
 
 card choose_card(int ID);
 
-void check_banlance(card*);
+void check_balance(card*);
 
 void deposit_money(card*);
 
