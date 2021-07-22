@@ -10,7 +10,7 @@ member* member_come(int ID, char* name)
     
     // log message
     show_date(log_file, get_cur_date());
-    fprintf(log_file, " (ID: %d name: %s) pick number %d \n", ID, name, cur_pick_num);
+    fprintf(log_file, " (ID: %d 姓名: %s) 取到号码为 %d \n", ID, name, cur_pick_num);
 
     return m;
 }
@@ -19,7 +19,7 @@ void member_leave(member* m)
 {
     // log message
     show_date(log_file, get_cur_date());
-    fprintf(log_file, " (ID: %d name: %s) leave \n", m->ID, m->name);
+    fprintf(log_file, " (ID: %d 姓名: %s) 离开银行 \n", m->ID, m->name);
 
     safe_free(m);
 }

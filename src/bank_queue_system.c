@@ -57,14 +57,14 @@ void start_system()
 
 void do_pick_number()
 {
-    printf("Enter you ID and name (separated by a blank space):\n");
+    printf("请输入您的 ID 和姓名 (以空格分隔):\n");
     int waiting_num = waiting_line->size;
     int ID;
     char name[20];
     scanf("%d %s", &ID, name);
     member *cur_customer = member_come(ID, name);
 
-    printf("Welcome to bank, %s, your number is %d\n", name, cur_pick_num);
+    printf("欢迎来到银行, %s, 你的取号是 %d\n", name, cur_pick_num);
 
     // check spare counter
     int serve_flag = 0;
@@ -76,7 +76,7 @@ void do_pick_number()
             if (cur_counter->customer == NULL)
             {
                 counter_assign_customer(cur_counter, cur_customer);
-                printf("Counter %d is empty, you can come there to handle the business.\n", cur_counter->number);
+                printf("柜台 %d 为空, 您可以在这里办理业务.\n", cur_counter->number);
                 serve_flag = 1;
                 break;
             }
@@ -85,7 +85,7 @@ void do_pick_number()
 
     if (!serve_flag)
     {
-        printf("The call number is %d, please wait patiently.\n", cur_call_num);
+        printf("目前呼叫号码是 %d, 请稍等.\n", cur_call_num);
         queue_push(waiting_line, cur_customer);
     }
 

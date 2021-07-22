@@ -24,6 +24,6 @@ void counter_assign_customer(counter *ct, member *customer)
 
     // log
     show_date(log_file, get_cur_date());
-    printf(" (ID: %d name: %s) can enter the counter %d\n",
+    printf(" (ID: %d 姓名: %s) 分配至柜台 %d\n",
            customer->ID, customer->name, ct->number);
 }
