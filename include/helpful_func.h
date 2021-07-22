@@ -30,9 +30,9 @@ void safe_free(void* p);
 uint8_t* getMD5(char* msg);
 
 /**
- * @brief 
+ * @brief 在文件 f 中输出 md5 编码
  * 
- * @param f 
- * @param md5 
+ * @param f 输出文件
+ * @param md5 输出 md5 编码
  */
 void printMD5(FILE* f, uint8_t* md5);

@@ -11,8 +11,6 @@
 
 int main()
 {
-    printMD5(stdout, getMD5("admin"));
-    printf("\n");
     start_system();
     return 0;
 }

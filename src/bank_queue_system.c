@@ -19,7 +19,7 @@ void start_system()
 
     waiting_line = queue_create();
     counters = create_counter(4);
-    trade_conclude all_trade = trade_conclude_create();
+    all_trade = trade_conclude_create();
     // show welcome message
     show_welcome_message();
     // show main menu
@@ -44,24 +44,16 @@ void start_system()
                 break;
             case '3':
                 fflush(stdin);
-                if(login_admin())
-                {
-                    printf("登录成功！！！\n");
-                    show_trade_conclude(&all_trade);
-                }
-                break;
-            case '4':
-                fflush(stdin);
-
+                check_all_trade();
                 break;
             case '0':
                 fflush(stdin);
-
                 show_exit_message();
                 exit_flag = 1;
                 break;
             default:
-
+                printf("非法字符，请重新输入！！！\n");
+                system("pause");
                 break;
             }
         } while (!flag);
@@ -138,7 +130,32 @@ int login_admin()
         if (!strcmp(admin_id, id) && !strncmp(admin_pwd, pwd, 32))
             return 1;
     }
-
+    fclose(admin_file);
     free(pwdmd5);
     return 0;
+}
+
+void check_all_trade()
+{
+    int admin_enter = 0;
+    int login_flag = 0;
+    while (admin_enter < 3)
+    {
+        if (login_admin())
+        {
+            login_flag = 1;
+            break;
+        }
+        admin_enter++;
+        printf("\n 账号或密码错误！！！ 请重新输入 ！！！\n\n");
+    }
+    if (!login_flag)
+        printf("登录失败次数太多，请稍后再试");
+    else
+    {
+        printf("\n登录成功 :) 尊敬的管理员\n");
+        printf("此为银行总交易信息：\n");
+        show_trade_conclude(&all_trade);
+    }
+    system("pause");
 }

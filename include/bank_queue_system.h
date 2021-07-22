@@ -31,9 +31,15 @@ void start_system();
 void do_pick_number();
 
 /**
- * @brief 
+ * @brief 登录管理员账号
  * 
  * @return int 0 登录失败
  *             1 登录成功
  */
 int login_admin();
+
+/**
+ * @brief 查看所有交易记录
+ * 
+ */
+void check_all_trade();
