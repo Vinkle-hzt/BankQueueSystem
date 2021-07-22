@@ -26,6 +26,7 @@ void start_system()
     int exit_flag = 0;
     while (!exit_flag)
     {
+        fflush(stdin);
         show_main_menu();
         char choice = getchar();
         int flag = 1;
@@ -43,7 +44,11 @@ void start_system()
                 break;
             case '3':
                 fflush(stdin);
-
+                if(login_admin())
+                {
+                    printf("登录成功！！！\n");
+                    show_trade_conclude(&all_trade);
+                }
                 break;
             case '4':
                 fflush(stdin);
@@ -61,6 +66,13 @@ void start_system()
             }
         } while (!flag);
     }
+
+    queue_free(waiting_line);
+    al_free(counters);
+
+#ifndef DEBUG
+    fclose(log_file)
+#endif
 }
 
 void do_pick_number()
@@ -100,4 +112,33 @@ void do_pick_number()
     printf("\n");
     getchar();
     system("pause");
+}
+
+int login_admin()
+{
+    char id[40];
+    char pwd[40];
+
+    printf("此为**内部**功能，请登录管理员账号...\n");
+    printf("账号：");
+    scanf("%s", id);
+    printf("密码： ");
+    scanf("%s", pwd);
+
+    FILE* admin_file = fopen("../files/admin.txt", "r");
+    uint8_t* pwdmd5 = getMD5(pwd);
+    
+    char admin_id[40];
+    char admin_pwd[40];
+
+    while (~fscanf(admin_file, "%s %s", admin_id, admin_pwd))
+    {
+        for (int i = 0; i < 16; i++)
+            sprintf((pwd + i * 2), "%2.2x", pwdmd5[i]);
+        if (!strcmp(admin_id, id) && !strncmp(admin_pwd, pwd, 32))
+            return 1;
+    }
+
+    free(pwdmd5);
+    return 0;
 }

@@ -29,3 +29,11 @@ void start_system();
  * 
  */
 void do_pick_number();
+
+/**
+ * @brief 
+ * 
+ * @return int 0 登录失败
+ *             1 登录成功
+ */
+int login_admin();
