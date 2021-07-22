@@ -1,3 +1,11 @@
+/**
+ * @file queue_node.h
+ * @brief 队列节点类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "queue_node.h"
 
 queue_node* queue_node_create(void* val, queue_node* pre, queue_node* next)

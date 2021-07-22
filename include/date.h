@@ -1,11 +1,14 @@
+/**
+ * @file date.h
+ * @brief 日期类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #pragma once
 #include <time.h>
 #include <stdio.h>
-
-typedef enum
-{
-    Deposit
-} Trade_type;
 
 /**
  * @brief 日期类
@@ -17,7 +20,7 @@ typedef struct
     int month;  ///< 月
     int day;    ///< 日
     int hour;   ///< 时
-    int minute; ///<分
+    int minute; ///< 分
 } date;
 
 /**

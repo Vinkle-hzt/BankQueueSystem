@@ -1,3 +1,11 @@
+/**
+ * @file common.h
+ * @brief 存储全局变量
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #pragma once
 
 #include <stdio.h>

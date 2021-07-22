@@ -1,19 +1,27 @@
+/**
+ * @file display.h
+ * @brief 功能面板的展示
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "display.h"
 
-void show_start_menu()
+void show_welcome_message()
 {
-    printf("  *  **       *    *                *  *       ");
-    printf("   **  **    *   **              *  ****  *    ");
-    printf("        **   ** **   *          *  ******  *   ");
-    printf("   **   **   *   ****            *  ****  *    ");
-    printf("    *** **  *****                   *  *       ");
-    printf("       *** **                                  ");
-    printf("        ***                                    ");
-    printf("        ***            欢迎光临!                ");
-    printf("        ***                                    ");
-    printf("        ***                                    ");
-    printf("        ***                                    ");
-    printf("       ****                                    ");
+    printf("  *  **       *    *                *  *       \n");
+    printf("   **  **    *   **              *  ****  *    \n");
+    printf("        **   ** **   *          *  ******  *   \n");
+    printf("   **   **   *   ****            *  ****  *    \n");
+    printf("    *** **  *****                   *  *       \n");
+    printf("       *** **                                  \n");
+    printf("        ***                                    \n");
+    printf("        ***            欢迎光临!               \n ");
+    printf("        ***                                    \n");
+    printf("        ***                                    \n");
+    printf("        ***                                    \n");
+    printf("       ****                                    \n");
 
 }
 

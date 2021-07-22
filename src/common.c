@@ -1,3 +1,11 @@
+/**
+ * @file common.h
+ * @brief 存储全局变量
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "common.h"
 
 int cur_pick_num = 0;

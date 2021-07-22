@@ -1,3 +1,11 @@
+/**
+ * @file date.h
+ * @brief 日期类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "date.h"
 
 date get_cur_date()

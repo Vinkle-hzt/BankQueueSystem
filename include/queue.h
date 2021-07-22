@@ -1,8 +1,16 @@
+/**
+ * @file queue.h
+ * @brief 队列类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #pragma once
 
 #include <stdlib.h>
 #include "queue_node.h"
-#include "safe_free.h"
+#include "helpful_func.h"
 
 /**
  * @brief 队列类

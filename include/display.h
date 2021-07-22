@@ -1,11 +1,11 @@
 /**
  * @file display.h
- * @author your name (you@domain.com)
- * @brief 功能面板的展示和选项
+ * @brief 功能面板的展示
  * 
  * @copyright Copyright (c) 2021
  * 
  */
+
 #pragma once
 #include <stdio.h>
 
@@ -13,7 +13,7 @@
  * @brief 展示进入的菜单页面
  * 
  */
-void show_start_menu();
+void show_welcome_message();
 
 /**
  * @brief 展示功能选择页面

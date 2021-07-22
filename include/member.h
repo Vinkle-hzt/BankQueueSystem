@@ -1,8 +1,16 @@
+/**
+ * @file member.h
+ * @brief 客户类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #pragma once
 
 #define NAME_SIZE 20
 
-#include "safe_free.h"
+#include "helpful_func.h"
 #include "common.h"
 #include "date.h"
 #include "string.h"

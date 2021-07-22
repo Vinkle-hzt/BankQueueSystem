@@ -1,3 +1,11 @@
+/**
+ * @file bank_queue_system.h
+ * @brief 银行排队系统相关函数
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "bank_queue_system.h"
 
 void start_system()
@@ -13,7 +21,7 @@ void start_system()
     counters = create_counter(4);
     trade_conclude all_trade = trade_conclude_create();
     // show welcome message
-
+    show_welcome_message();
     // show main menu
     int exit_flag = 0;
     while (!exit_flag)

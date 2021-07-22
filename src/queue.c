@@ -1,3 +1,11 @@
+/**
+ * @file queue.h
+ * @brief 队列类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "queue.h"
 
 queue* queue_create()

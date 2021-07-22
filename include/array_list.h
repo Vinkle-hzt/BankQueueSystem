@@ -1,7 +1,15 @@
+/**
+ * @file array_list.h
+ * @brief array_list 类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #pragma once
 #define AL_DEFAULT_SIZE 10
 
-#include "safe_free.h"
+#include "helpful_func.h"
 #include <string.h>
 
 /**

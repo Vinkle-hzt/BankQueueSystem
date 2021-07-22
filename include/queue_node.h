@@ -1,7 +1,15 @@
+/**
+ * @file queue_node.h
+ * @brief 队列节点类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #pragma once
 
 #include <stdlib.h>
-#include "safe_free.h"
+#include "helpful_func.h"
 
 /**
  * @brief queue node type

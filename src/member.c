@@ -1,3 +1,11 @@
+/**
+ * @file member.h
+ * @brief 客户类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "member.h"
 
 member* member_come(int ID, char* name)

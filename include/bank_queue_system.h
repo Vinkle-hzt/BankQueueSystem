@@ -1,3 +1,10 @@
+/**
+ * @file bank_queue_system.h
+ * @brief 银行排队系统相关函数
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #pragma once
 
 #include <stdlib.h>
@@ -5,17 +12,11 @@
 #include "display.h"
 #include "queue.h"
 #include "member.h"
-#include "safe_free.h"
+#include "helpful_func.h"
 #include "date.h"
 #include "common.h"
 #include "trade_conclude.h"
 #include "counter.h"
-
-typedef struct
-{
-    date trade_time;
-    Trade_type trade_type;
-} trade_info;
 
 /**
  * @brief 启动银行排队系统

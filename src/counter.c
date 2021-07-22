@@ -1,3 +1,11 @@
+/**
+ * @file counter.h
+ * @brief 柜台类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "counter.h"
 
 array_list *create_counter(int num)

@@ -1,3 +1,11 @@
+/**
+ * @file array_list.h
+ * @brief array_list 类及相关操作
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "array_list.h"
 
 array_list* al_create()
