@@ -55,31 +55,36 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="queue_8h.html">queue.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="member_8h.html">member.h</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="safe__free_8h.html">safe_free.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pick__number_8h.html">pick_number.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="date_8h.html">date.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">common.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structtrade__info.html">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structtrade__info.html#a7247ff8ce9910e1f0e4ab003910bfcbf">   15</a></span>&#160;    <a class="code" href="structdate.html">date</a> <a class="code" href="structtrade__info.html#a7247ff8ce9910e1f0e4ab003910bfcbf">trade_time</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structtrade__info.html#a2a38e9447a9303d9713427b47bcd7154">   16</a></span>&#160;    <a class="code" href="date_8h.html#ae8d36245b38bc5a5b2ffdc245f13b5e0">Trade_type</a> <a class="code" href="structtrade__info.html#a2a38e9447a9303d9713427b47bcd7154">trade_type</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;} <a class="code" href="structtrade__info.html">trade_info</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27">start_system</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="date_8h.html">date.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">common.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="trade__conclude_8h.html">trade_conclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="counter_8h.html">counter.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structtrade__info.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structtrade__info.html#a7247ff8ce9910e1f0e4ab003910bfcbf">   16</a></span>&#160;    <a class="code" href="structdate.html">date</a> <a class="code" href="structtrade__info.html#a7247ff8ce9910e1f0e4ab003910bfcbf">trade_time</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structtrade__info.html#a2a38e9447a9303d9713427b47bcd7154">   17</a></span>&#160;    <a class="code" href="date_8h.html#ae8d36245b38bc5a5b2ffdc245f13b5e0">Trade_type</a> <a class="code" href="structtrade__info.html#a2a38e9447a9303d9713427b47bcd7154">trade_type</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;} <a class="code" href="structtrade__info.html">trade_info</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27">start_system</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b">do_pick_number</a>();</div>
 <div class="ttc" id="aarray__list_8h_html"><div class="ttname"><a href="array__list_8h.html">array_list.h</a></div></div>
-<div class="ttc" id="abank__queue__system_8h_html_a6cb6cd3963cb32d63055dacfa689ed27"><div class="ttname"><a href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27">start_system</a></div><div class="ttdeci">void start_system()</div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8c_source.html#l00003">bank_queue_system.c:3</a></div></div>
+<div class="ttc" id="abank__queue__system_8h_html_a39c0c96389da80e6fad519bed74cd35b"><div class="ttname"><a href="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b">do_pick_number</a></div><div class="ttdeci">void do_pick_number()</div><div class="ttdoc">进行叫号</div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8c_source.html#l00058">bank_queue_system.c:58</a></div></div>
+<div class="ttc" id="abank__queue__system_8h_html_a6cb6cd3963cb32d63055dacfa689ed27"><div class="ttname"><a href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27">start_system</a></div><div class="ttdeci">void start_system()</div><div class="ttdoc">启动银行排队系统</div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8c_source.html#l00003">bank_queue_system.c:3</a></div></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
+<div class="ttc" id="acounter_8h_html"><div class="ttname"><a href="counter_8h.html">counter.h</a></div></div>
 <div class="ttc" id="adate_8h_html"><div class="ttname"><a href="date_8h.html">date.h</a></div></div>
 <div class="ttc" id="adate_8h_html_ae8d36245b38bc5a5b2ffdc245f13b5e0"><div class="ttname"><a href="date_8h.html#ae8d36245b38bc5a5b2ffdc245f13b5e0">Trade_type</a></div><div class="ttdeci">Trade_type</div><div class="ttdef"><b>Definition:</b> <a href="date_8h_source.html#l00005">date.h:6</a></div></div>
 <div class="ttc" id="adisplay_8h_html"><div class="ttname"><a href="display_8h.html">display.h</a></div></div>
 <div class="ttc" id="amember_8h_html"><div class="ttname"><a href="member_8h.html">member.h</a></div></div>
-<div class="ttc" id="apick__number_8h_html"><div class="ttname"><a href="pick__number_8h.html">pick_number.h</a></div></div>
 <div class="ttc" id="aqueue_8h_html"><div class="ttname"><a href="queue_8h.html">queue.h</a></div></div>
 <div class="ttc" id="asafe__free_8h_html"><div class="ttname"><a href="safe__free_8h.html">safe_free.h</a></div></div>
-<div class="ttc" id="astructdate_html"><div class="ttname"><a href="structdate.html">date</a></div><div class="ttdef"><b>Definition:</b> <a href="date_8h_source.html#l00010">date.h:11</a></div></div>
-<div class="ttc" id="astructtrade__info_html"><div class="ttname"><a href="structtrade__info.html">trade_info</a></div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8h_source.html#l00013">bank_queue_system.h:14</a></div></div>
-<div class="ttc" id="astructtrade__info_html_a2a38e9447a9303d9713427b47bcd7154"><div class="ttname"><a href="structtrade__info.html#a2a38e9447a9303d9713427b47bcd7154">trade_info::trade_type</a></div><div class="ttdeci">Trade_type trade_type</div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8h_source.html#l00016">bank_queue_system.h:16</a></div></div>
-<div class="ttc" id="astructtrade__info_html_a7247ff8ce9910e1f0e4ab003910bfcbf"><div class="ttname"><a href="structtrade__info.html#a7247ff8ce9910e1f0e4ab003910bfcbf">trade_info::trade_time</a></div><div class="ttdeci">date trade_time</div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8h_source.html#l00015">bank_queue_system.h:15</a></div></div>
+<div class="ttc" id="astructdate_html"><div class="ttname"><a href="structdate.html">date</a></div><div class="ttdoc">日期类</div><div class="ttdef"><b>Definition:</b> <a href="date_8h_source.html#l00014">date.h:15</a></div></div>
+<div class="ttc" id="astructtrade__info_html"><div class="ttname"><a href="structtrade__info.html">trade_info</a></div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8h_source.html#l00014">bank_queue_system.h:15</a></div></div>
+<div class="ttc" id="astructtrade__info_html_a2a38e9447a9303d9713427b47bcd7154"><div class="ttname"><a href="structtrade__info.html#a2a38e9447a9303d9713427b47bcd7154">trade_info::trade_type</a></div><div class="ttdeci">Trade_type trade_type</div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8h_source.html#l00017">bank_queue_system.h:17</a></div></div>
+<div class="ttc" id="astructtrade__info_html_a7247ff8ce9910e1f0e4ab003910bfcbf"><div class="ttname"><a href="structtrade__info.html#a7247ff8ce9910e1f0e4ab003910bfcbf">trade_info::trade_time</a></div><div class="ttdeci">date trade_time</div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8h_source.html#l00016">bank_queue_system.h:16</a></div></div>
+<div class="ttc" id="atrade__conclude_8h_html"><div class="ttname"><a href="trade__conclude_8h.html">trade_conclude.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

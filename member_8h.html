@@ -78,15 +78,13 @@ member.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="member_8h__dep__incl.png" border="0" usemap="#ainclude_2member_8hdep" alt=""/></div>
 <map name="ainclude_2member_8hdep" id="ainclude_2member_8hdep">
-<area shape="rect" title=" " alt="" coords="235,5,359,32"/>
-<area shape="rect" href="bank__queue__system_8h.html" title=" " alt="" coords="99,229,237,271"/>
-<area shape="rect" href="counter_8h.html" title=" " alt="" coords="287,80,407,107"/>
-<area shape="rect" href="pick__number_8h.html" title=" " alt="" coords="206,155,357,181"/>
-<area shape="rect" href="member_8c.html" title=" " alt="" coords="431,80,532,107"/>
-<area shape="rect" href="bank__queue__system_8c.html" title=" " alt="" coords="5,319,179,345"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="203,319,285,345"/>
-<area shape="rect" href="counter_8c.html" title=" " alt="" coords="381,155,478,181"/>
-<area shape="rect" href="pick__number_8c.html" title=" " alt="" coords="261,237,389,263"/>
+<area shape="rect" title=" " alt="" coords="203,5,327,32"/>
+<area shape="rect" href="bank__queue__system_8h.html" title=" " alt="" coords="99,155,237,196"/>
+<area shape="rect" href="counter_8h.html" title=" " alt="" coords="205,80,325,107"/>
+<area shape="rect" href="member_8c.html" title=" " alt="" coords="349,80,451,107"/>
+<area shape="rect" href="bank__queue__system_8c.html" title=" " alt="" coords="5,244,179,271"/>
+<area shape="rect" href="main_8c.html" title=" " alt="" coords="203,244,285,271"/>
+<area shape="rect" href="counter_8c.html" title=" " alt="" coords="261,162,358,189"/>
 </map>
 </div>
 </div>
@@ -95,6 +93,7 @@ member.h 的引用(Include)关系图:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 结构体</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmember.html">member</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户  <a href="structmember.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -105,8 +104,10 @@ member.h 的引用(Include)关系图:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
 <tr class="memitem:a46c6ed15a09806c3fe1c3a39f97798c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmember.html">member</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2">member_come</a> (int ID, char *name)</td></tr>
+<tr class="memdesc:a46c6ed15a09806c3fe1c3a39f97798c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户进入银行取号  <a href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2">更多...</a><br /></td></tr>
 <tr class="separator:a46c6ed15a09806c3fe1c3a39f97798c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94c0f7a9bf09ae10f73a3d97465a804b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b">member_leave</a> (<a class="el" href="structmember.html">member</a> *m)</td></tr>
+<tr class="memdesc:a94c0f7a9bf09ae10f73a3d97465a804b"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户离开银行  <a href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b">更多...</a><br /></td></tr>
 <tr class="separator:a94c0f7a9bf09ae10f73a3d97465a804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">宏定义说明</h2>
@@ -153,15 +154,25 @@ member.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
+<p>客户进入银行取号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ID</td><td>客户 ID </td></tr>
+    <tr><td class="paramname">name</td><td>客户姓名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>member* 客户指针 </dd></dl>
+
 <p class="definition">在文件 <a class="el" href="member_8c_source.html">member.c</a> 第 <a class="el" href="member_8c_source.html#l00003">3</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="member_8h_a46c6ed15a09806c3fe1c3a39f97798c2_cgraph.png" border="0" usemap="#amember_8h_a46c6ed15a09806c3fe1c3a39f97798c2_cgraph" alt=""/></div>
 <map name="amember_8h_a46c6ed15a09806c3fe1c3a39f97798c2_cgraph" id="amember_8h_a46c6ed15a09806c3fe1c3a39f97798c2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,113,57"/>
-<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title=" " alt="" coords="161,5,259,32"/>
-<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title=" " alt="" coords="167,56,253,83"/>
+<area shape="rect" title="客户进入银行取号" alt="" coords="5,31,113,57"/>
+<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前 UTC 时间" alt="" coords="161,5,259,32"/>
+<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="167,56,253,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -169,9 +180,9 @@ member.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="member_8h_a46c6ed15a09806c3fe1c3a39f97798c2_icgraph.png" border="0" usemap="#amember_8h_a46c6ed15a09806c3fe1c3a39f97798c2_icgraph" alt=""/></div>
 <map name="amember_8h_a46c6ed15a09806c3fe1c3a39f97798c2_icgraph" id="amember_8h_a46c6ed15a09806c3fe1c3a39f97798c2_icgraph">
-<area shape="rect" title=" " alt="" coords="415,5,523,32"/>
-<area shape="rect" href="pick__number_8h.html#a39c0c96389da80e6fad519bed74cd35b" title=" " alt="" coords="249,5,367,32"/>
-<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title=" " alt="" coords="104,5,201,32"/>
+<area shape="rect" title="客户进入银行取号" alt="" coords="415,5,523,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="249,5,367,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
@@ -194,16 +205,24 @@ member.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
+<p>客户离开银行 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>客户指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">在文件 <a class="el" href="member_8c_source.html">member.c</a> 第 <a class="el" href="member_8c_source.html#l00018">18</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="member_8h_a94c0f7a9bf09ae10f73a3d97465a804b_cgraph.png" border="0" usemap="#amember_8h_a94c0f7a9bf09ae10f73a3d97465a804b_cgraph" alt=""/></div>
 <map name="amember_8h_a94c0f7a9bf09ae10f73a3d97465a804b_cgraph" id="amember_8h_a94c0f7a9bf09ae10f73a3d97465a804b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,112,83"/>
-<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title=" " alt="" coords="160,5,257,32"/>
+<area shape="rect" title="客户离开银行" alt="" coords="5,56,112,83"/>
+<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前 UTC 时间" alt="" coords="160,5,257,32"/>
 <area shape="rect" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="171,56,247,83"/>
-<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title=" " alt="" coords="166,107,251,133"/>
+<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="166,107,251,133"/>
 </map>
 </div>
 

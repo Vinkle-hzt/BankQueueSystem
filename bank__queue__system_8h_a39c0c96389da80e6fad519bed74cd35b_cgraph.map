@@ -1,0 +1,10 @@
+<map id="do_pick_number" name="do_pick_number">
+<area shape="rect" id="node1" title="进行叫号" alt="" coords="5,81,123,108"/>
+<area shape="rect" id="node2" href="$array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247" title="get the idx_th element value (start from 0)" alt="" coords="231,5,281,32"/>
+<area shape="rect" id="node3" href="$counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="171,56,341,83"/>
+<area shape="rect" id="node6" href="$member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="202,107,310,133"/>
+<area shape="rect" id="node7" href="$queue_8h.html#a9c3c337d5bbe22a7a33d4e46e250c8d6" title="将元素放入队列中" alt="" coords="210,157,302,184"/>
+<area shape="rect" id="node4" href="$date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前 UTC 时间" alt="" coords="408,107,505,133"/>
+<area shape="rect" id="node5" href="$date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="414,56,499,83"/>
+<area shape="rect" id="node8" href="$queue__node_8h.html#ae26345f83c8cb1efb4ce26e4e9102c72" title="创建一个 queue node" alt="" coords="389,157,524,184"/>
+</map>

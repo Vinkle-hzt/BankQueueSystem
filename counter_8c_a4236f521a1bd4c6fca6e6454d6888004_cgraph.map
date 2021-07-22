@@ -1,0 +1,5 @@
+<map id="counter_assign_customer" name="counter_assign_customer">
+<area shape="rect" id="node1" title="将客户分配到柜台" alt="" coords="5,31,176,57"/>
+<area shape="rect" id="node2" href="$date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前 UTC 时间" alt="" coords="224,5,321,32"/>
+<area shape="rect" id="node3" href="$date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="230,56,315,83"/>
+</map>

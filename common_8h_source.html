@@ -53,15 +53,11 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="array__list_8h.html">array_list.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="queue_8h.html">queue.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="common_8h.html#a4dd2db3ec3349694aaa8c906d30b852f">cur_pick_num</a>; <span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="common_8h.html#ad4e5c99a741abb03d260d65428799a72">cur_call_num</a>; <span class="comment">//</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> FILE* <a class="code" href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a>; <span class="comment">//</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> <a class="code" href="structqueue.html">queue</a> *<a class="code" href="common_8h.html#ab6dc46b9579fc7c39f8f03ce2466250b">waiting_line</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <a class="code" href="structarray__list.html">array_list</a> *<a class="code" href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="common_8h.html#a4dd2db3ec3349694aaa8c906d30b852f">cur_pick_num</a>;     <span class="comment">//当前取号号码</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="common_8h.html#ad4e5c99a741abb03d260d65428799a72">cur_call_num</a>;     <span class="comment">//当前叫号号码</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">extern</span> FILE *<a class="code" href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a>;       <span class="comment">//log输出文件</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <a class="code" href="structqueue.html">queue</a> *<a class="code" href="common_8h.html#ab6dc46b9579fc7c39f8f03ce2466250b">waiting_line</a>;  <span class="comment">// 等待队列</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> <a class="code" href="structarray__list.html">array_list</a> *<a class="code" href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a>; <span class="comment">// 柜台数组</span></div>
 <div class="ttc" id="aarray__list_8h_html"><div class="ttname"><a href="array__list_8h.html">array_list.h</a></div></div>
 <div class="ttc" id="acommon_8h_html_a4dd2db3ec3349694aaa8c906d30b852f"><div class="ttname"><a href="common_8h.html#a4dd2db3ec3349694aaa8c906d30b852f">cur_pick_num</a></div><div class="ttdeci">int cur_pick_num</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00003">common.c:3</a></div></div>
 <div class="ttc" id="acommon_8h_html_a6328f63a5c0a3b0b3f70db82b29e6c4b"><div class="ttname"><a href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a></div><div class="ttdeci">array_list * counters</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00011">common.c:11</a></div></div>
@@ -69,8 +65,8 @@ $(function() {
 <div class="ttc" id="acommon_8h_html_ab936051f5aaca44c6c3c41dee0d19c36"><div class="ttname"><a href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a></div><div class="ttdeci">FILE * log_file</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00007">common.c:7</a></div></div>
 <div class="ttc" id="acommon_8h_html_ad4e5c99a741abb03d260d65428799a72"><div class="ttname"><a href="common_8h.html#ad4e5c99a741abb03d260d65428799a72">cur_call_num</a></div><div class="ttdeci">int cur_call_num</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00005">common.c:5</a></div></div>
 <div class="ttc" id="aqueue_8h_html"><div class="ttname"><a href="queue_8h.html">queue.h</a></div></div>
-<div class="ttc" id="astructarray__list_html"><div class="ttname"><a href="structarray__list.html">array_list</a></div><div class="ttdoc">a list implement by array, the list will append its size automatically</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8h_source.html#l00012">array_list.h:13</a></div></div>
-<div class="ttc" id="astructqueue_html"><div class="ttname"><a href="structqueue.html">queue</a></div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00007">queue.h:8</a></div></div>
+<div class="ttc" id="astructarray__list_html"><div class="ttname"><a href="structarray__list.html">array_list</a></div><div class="ttdoc">用数组实现的线性表，该线性表会自动扩充容量</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8h_source.html#l00011">array_list.h:12</a></div></div>
+<div class="ttc" id="astructqueue_html"><div class="ttname"><a href="structqueue.html">queue</a></div><div class="ttdoc">队列类</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00011">queue.h:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

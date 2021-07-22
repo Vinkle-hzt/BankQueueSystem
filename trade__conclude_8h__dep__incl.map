@@ -1,10 +1,9 @@
 <map id="include/trade_conclude.h" name="include/trade_conclude.h">
-<area shape="rect" id="node1" title=" " alt="" coords="237,5,403,32"/>
-<area shape="rect" id="node2" href="$counter_8h.html" title=" " alt="" coords="260,80,380,107"/>
-<area shape="rect" id="node3" href="$pick__number_8h.html" title=" " alt="" coords="171,155,322,181"/>
-<area shape="rect" id="node8" href="$counter_8c.html" title=" " alt="" coords="346,155,443,181"/>
-<area shape="rect" id="node4" href="$bank__queue__system_8h.html" title=" " alt="" coords="99,229,237,271"/>
-<area shape="rect" id="node7" href="$pick__number_8c.html" title=" " alt="" coords="261,237,389,263"/>
-<area shape="rect" id="node5" href="$bank__queue__system_8c.html" title=" " alt="" coords="5,319,179,345"/>
-<area shape="rect" id="node6" href="$main_8c.html" title=" " alt="" coords="203,319,285,345"/>
+<area shape="rect" id="node1" title=" " alt="" coords="183,5,348,32"/>
+<area shape="rect" id="node2" href="$bank__queue__system_8h.html" title=" " alt="" coords="99,155,237,196"/>
+<area shape="rect" id="node5" href="$counter_8h.html" title=" " alt="" coords="205,80,325,107"/>
+<area shape="rect" id="node7" href="$trade__conclude_8c.html" title=" " alt="" coords="350,80,493,107"/>
+<area shape="rect" id="node3" href="$bank__queue__system_8c.html" title=" " alt="" coords="5,244,179,271"/>
+<area shape="rect" id="node4" href="$main_8c.html" title=" " alt="" coords="203,244,285,271"/>
+<area shape="rect" id="node6" href="$counter_8c.html" title=" " alt="" coords="261,162,358,189"/>
 </map>
