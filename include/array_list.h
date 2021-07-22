@@ -5,21 +5,19 @@
 #include <string.h>
 
 /**
- * @brief  a list implement by array, the list 
- *         will append its size automatically
+ * @brief  用数组实现的线性表，该线性表会自动扩充容量
  * 
  */
 typedef struct
 {
-    void **data; ///< element data
-    int curSize; ///< element array current size
-    int maxSize; ///< element array max size
+    void **data; ///< 数据数组
+    int curSize; ///< 数组当前大小
+    int maxSize; ///< 数据最大大小
 } array_list;
 
 /**
  * @brief create array list
  * 
- * @param CompFunc compare function
  * @return array_list* array_list pointer
  */
 array_list *al_create();

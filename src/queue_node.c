@@ -6,6 +6,7 @@ queue_node* queue_node_create(void* val, queue_node* pre, queue_node* next)
     qn->data = val;
     qn->pre = pre;
     qn->next = next;
+    return qn;
 }
 
 void queue_node_free(queue_node* qn)

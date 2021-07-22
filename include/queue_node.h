@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 #include "safe_free.h"
+
 /**
  * @brief queue node type
  * 
@@ -14,18 +15,18 @@ typedef struct node
 } queue_node;
 
 /**
- * @brief 
+ * @brief 创建一个 queue node
  * 
- * @param val 
- * @param pre 
- * @param next 
- * @return queue_node* 
+ * @param val 节点值指针
+ * @param pre 节点前驱指针
+ * @param next 节点后驱指针
+ * @return queue_node* 队列节点指针
  */
 queue_node *queue_node_create(void *val, queue_node *pre, queue_node *next);
 
 /**
- * @brief 
+ * @brief 释放队列节点空间
  * 
- * @param qn 
+ * @param qn 队列节点指针
  */
 void queue_node_free(queue_node *qn);
