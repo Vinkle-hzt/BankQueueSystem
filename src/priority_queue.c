@@ -30,7 +30,7 @@ void pq_heapify(priority_queue *pq, int i)
         largest = right;
     if (largest != i)
     {
-        swab(&pq->data[i], &pq->data[largest], sizeof(void *));
+        swap(&pq->data[i], &pq->data[largest], sizeof(void *));
         pq_heapify(pq, largest);
     }
 }
@@ -49,7 +49,7 @@ void pq_push(priority_queue *pq, void *elem)
 
     while (i && pq->CompFunc(pq->data[fa], pq->data[i]) < 0)
     {
-        swab(&pq->data[i], &pq->data[fa], sizeof(void *));
+        swap(&pq->data[i], &pq->data[fa], sizeof(void *));
         i = fa;
         fa = (i - 1) / 2;
     }

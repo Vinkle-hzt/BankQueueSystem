@@ -159,16 +159,27 @@ void md5(const uint8_t *initial_msg, size_t initial_len, uint8_t *digest)
     to_bytes(h3, digest + 12);
 }
 
-uint8_t* getMD5(char* msg)
+uint8_t *getMD5(char *msg)
 {
-    uint8_t* res = malloc(sizeof(uint8_t) * 16);
+    uint8_t *res = malloc(sizeof(uint8_t) * 16);
     int len = strlen(msg);
     md5((uint8_t *)msg, len, res);
     return res;
 }
 
-void printMD5(FILE* f, uint8_t* md5)
+void printMD5(FILE *f, uint8_t *md5)
 {
     for (int i = 0; i < 16; i++)
         fprintf(f, "%2.2x", md5[i]);
+}
+
+void swap(void *lhs, void *rhs, int size)
+{
+    void *tmp = (void *)malloc(size);
+
+    memcpy(tmp, lhs, size);
+    memcpy(lhs, rhs, size);
+    memcpy(rhs, tmp, size);
+
+    safe_free(tmp);
 }

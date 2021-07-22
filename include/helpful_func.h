@@ -36,3 +36,6 @@ uint8_t* getMD5(char* msg);
  * @param md5 输出 md5 编码
  */
 void printMD5(FILE* f, uint8_t* md5);
+
+void swap(void *lhs, void *rhs, int size);
+

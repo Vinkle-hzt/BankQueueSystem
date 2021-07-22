@@ -26,7 +26,7 @@ array_list *create_counter(int num)
 
 void counter_assign_customer(counter *ct, member *customer)
 {
-    cur_call_num++;
+    cur_call_num[customer->vip]++;
     ct->customer = customer;
     ct->kpi.customers_num++;
 

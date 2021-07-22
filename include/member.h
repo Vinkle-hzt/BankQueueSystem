@@ -22,7 +22,9 @@
 typedef struct
 {
     int ID;               ///< 客户 ID
-    int pick_num;         ///< 客户取的号码
+    int common_pick_num;       ///< 普通号码
+    int vip_pick_num;         ///< 客户取的号码
+    int vip;               ///< vip 等级
     char name[NAME_SIZE]; ///< 客户姓名
 } member;
 
@@ -41,3 +43,7 @@ member *member_come(int ID, char *name);
  * @param m 客户指针
  */
 void member_leave(member *m);
+
+int member_compare(const void* lhs, const void* rhs);
+
+int get_vip_level(int ID);

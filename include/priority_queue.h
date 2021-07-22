@@ -14,7 +14,7 @@ typedef struct
     int maxSize;                     ///< 最大容量
     int curSize;                     ///< 当前容量
     void **data;                     ///< 数据数组
-    int (*CompFunc)(void *, void *); ///< 比较函数
+    int (*CompFunc)(const void *, const void *); ///< 比较函数
 } priority_queue;
 
 /**

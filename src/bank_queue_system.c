@@ -76,8 +76,9 @@ void do_pick_number()
     scanf("%d %s", &ID, name);
     member *cur_customer = member_come(ID, name);
 
-    printf("欢迎来到银行, %s, 你的取号是 %d\n", name, cur_pick_num);
-
+    printf("欢迎来到银行, %s, 你的总取号码是 %d。\n", name, cur_customer->common_pick_num);
+    printf("您是 vip %d，当前会员取号码位 v%d-%d，你可以最多提前 %d 号进入\n",
+           cur_customer->vip, cur_customer->vip, cur_customer->vip_pick_num, cur_customer->vip * 3);
     // check spare counter
     int serve_flag = 0;
     if (waiting_num == 0)
@@ -97,7 +98,7 @@ void do_pick_number()
 
     if (!serve_flag)
     {
-        printf("目前呼叫号码是 %d, 请稍等.\n", cur_call_num);
+        printf("还未轮到您, 请稍等...\n");
         queue_push(waiting_line, cur_customer);
     }
 
@@ -117,9 +118,9 @@ int login_admin()
     printf("密码： ");
     scanf("%s", pwd);
 
-    FILE* admin_file = fopen("../files/admin.txt", "r");
-    uint8_t* pwdmd5 = getMD5(pwd);
-    
+    FILE *admin_file = fopen("../files/admin.txt", "r");
+    uint8_t *pwdmd5 = getMD5(pwd);
+
     char admin_id[40];
     char admin_pwd[40];
 
