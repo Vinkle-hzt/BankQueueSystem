@@ -27,14 +27,18 @@ void* queue_pop(queue*q)
     q->head->next = cur->next;
     cur->next->pre = q->head;
 
-    queue_node_free(cur);
     q->size--;
+
+    return cur;
 }
 
 void queue_free(queue*q)
 {
     while(q->size)
-        queue_pop(q);
+    {
+        void* val = queue_pop(q);
+        safe_free(val);
+    }
     safe_free(q->head);
     safe_free(q);
 }

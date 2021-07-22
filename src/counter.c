@@ -9,15 +9,14 @@ array_list *create_counter(int num)
         counter *cur = malloc(sizeof(counter));
         cur->customer = NULL;
         cur->number = i + 1;
-        cur->kpi.customers_num = 0;
-        cur->kpi.flowing_water = 0;
+        cur->kpi = trade_conclude_create();
         al_push(counters, cur);
     }
 
     return counters;
 }
 
-void counter_come_customer(counter *ct, member *customer)
+void counter_assign_customer(counter *ct, member *customer)
 {
     cur_call_num++;
     ct->customer = customer;
