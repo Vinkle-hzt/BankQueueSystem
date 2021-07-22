@@ -30,7 +30,7 @@ void start_trade()
             switch (choice)
             {
             case '1':
-                check_banlance(&cur_card);
+                check_balance(&cur_card);
                 break;
             case '2':
                 deposit_money(&cur_card);

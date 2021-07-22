@@ -5,7 +5,6 @@
  * @copyright Copyright (c) 2021
  * 
  */
-
 #include "member.h"
 
 member *member_come(int ID, char *name)

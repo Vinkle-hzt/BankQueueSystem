@@ -5,7 +5,6 @@
  * @copyright Copyright (c) 2021
  * 
  */
-
 #include "counter.h"
 
 array_list *create_counter(int num)
@@ -38,5 +37,5 @@ void counter_assign_customer(counter *ct, member *customer)
 
 void show_counter_customer()
 {
-    
+
 }
