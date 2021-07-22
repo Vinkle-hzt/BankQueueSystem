@@ -1,0 +1,9 @@
+<map id="check_all_trade" name="check_all_trade">
+<area shape="rect" id="node1" title="查看所有交易记录" alt="" coords="5,56,119,83"/>
+<area shape="rect" id="node2" href="$bank__queue__system_8c.html#a735d888e3b623602fdec920477ab33ce" title="登录管理员账号" alt="" coords="195,31,286,57"/>
+<area shape="rect" id="node7" href="$trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9" title="展示交易统计" alt="" coords="167,81,315,108"/>
+<area shape="rect" id="node3" href="$helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9" title="获取字符的 MD5 编码" alt="" coords="363,31,429,57"/>
+<area shape="rect" id="node4" href="$helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25" title=" " alt="" coords="477,31,524,57"/>
+<area shape="rect" id="node5" href="$helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251" title=" " alt="" coords="572,5,643,32"/>
+<area shape="rect" id="node6" href="$helpful__func_8c.html#a8e5b16114900fd4e0b0a467519096299" title=" " alt="" coords="573,56,641,83"/>
+</map>

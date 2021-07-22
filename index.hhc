@@ -86,6 +86,7 @@
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="bank_queue_system.h"><param name="Local" value="bank__queue__system_8h.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="check_all_trade"><param name="Local" value="bank__queue__system_8h.html#aa95930c09af101d16254f670034f7548"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="do_pick_number"><param name="Local" value="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="login_admin"><param name="Local" value="bank__queue__system_8h.html#a735d888e3b623602fdec920477ab33ce"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="start_system"><param name="Local" value="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27"><param name="ImageNumber" value="11"></OBJECT>
@@ -198,12 +199,14 @@
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="bank_queue_system.c"><param name="Local" value="bank__queue__system_8c.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="check_all_trade"><param name="Local" value="bank__queue__system_8c.html#aa95930c09af101d16254f670034f7548"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="do_pick_number"><param name="Local" value="bank__queue__system_8c.html#a39c0c96389da80e6fad519bed74cd35b"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="login_admin"><param name="Local" value="bank__queue__system_8c.html#a735d888e3b623602fdec920477ab33ce"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="start_system"><param name="Local" value="bank__queue__system_8c.html#a6cb6cd3963cb32d63055dacfa689ed27"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="common.c"><param name="Local" value="common_8c.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="all_trade"><param name="Local" value="common_8c.html#ad867f9cc5a6cdef9ecf7a57f7a5579e1"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="counters"><param name="Local" value="common_8c.html#a6328f63a5c0a3b0b3f70db82b29e6c4b"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="cur_call_num"><param name="Local" value="common_8c.html#ad4e5c99a741abb03d260d65428799a72"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="cur_pick_num"><param name="Local" value="common_8c.html#a4dd2db3ec3349694aaa8c906d30b852f"><param name="ImageNumber" value="11"></OBJECT>
