@@ -140,6 +140,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_basicbusiness_menu"><param name="Local" value="display_8h.html#ac4db935f87e3adb1f6eeaf91c6262f64"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_exit_message"><param name="Local" value="display_8h.html#a148b19927556db11d6e5d93e6fbd6c99"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_main_menu"><param name="Local" value="display_8h.html#ac2d6095a7e78918587bb24be0b6aa1fb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="show_start_menu"><param name="Local" value="display_8h.html#a99a0511f930ff0d3ce4266e1fae7139a"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="member.h"><param name="Local" value="member_8h.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -233,6 +234,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_basicbusiness_menu"><param name="Local" value="display_8c.html#ac4db935f87e3adb1f6eeaf91c6262f64"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_exit_message"><param name="Local" value="display_8c.html#a148b19927556db11d6e5d93e6fbd6c99"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_main_menu"><param name="Local" value="display_8c.html#ac2d6095a7e78918587bb24be0b6aa1fb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="show_start_menu"><param name="Local" value="display_8c.html#a99a0511f930ff0d3ce4266e1fae7139a"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="main.c"><param name="Local" value="main_8c.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
