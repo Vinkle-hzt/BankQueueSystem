@@ -1,6 +1,9 @@
 <map id="include/queue.h" name="include/queue.h">
-<area shape="rect" id="node1" title=" " alt="" coords="19,5,131,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="24,229,86,256"/>
-<area shape="rect" id="node3" href="$queue__node_8h.html" title=" " alt="" coords="24,80,126,107"/>
-<area shape="rect" id="node4" href="$safe__free_8h.html" title=" " alt="" coords="93,155,180,181"/>
+<area shape="rect" id="node1" title="队列类及相关操作" alt="" coords="45,5,157,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,229,68,256"/>
+<area shape="rect" id="node3" href="$queue__node_8h.html" title="队列节点类及相关操作" alt="" coords="49,80,152,107"/>
+<area shape="rect" id="node4" href="$helpful__func_8h.html" title="存储一些实用函数" alt="" coords="128,155,231,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="92,229,152,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="177,229,241,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="265,229,329,256"/>
 </map>

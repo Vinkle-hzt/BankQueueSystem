@@ -1,4 +1,5 @@
 <map id="include/trade_conclude.h" name="include/trade_conclude.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,171,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="56,80,120,107"/>
+<area shape="rect" id="node1" title="交易统计类及相关操作" alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="13,80,77,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="102,80,162,107"/>
 </map>

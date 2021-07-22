@@ -1,6 +1,8 @@
 <map id="include/array_list.h" name="include/array_list.h">
-<area shape="rect" id="node1" title=" " alt="" coords="33,5,163,32"/>
-<area shape="rect" id="node2" href="$safe__free_8h.html" title=" " alt="" coords="5,80,92,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="117,80,181,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="17,155,80,181"/>
+<area shape="rect" id="node1" title="array_list 类及相关操作" alt="" coords="187,5,316,32"/>
+<area shape="rect" id="node2" href="$helpful__func_8h.html" title="存储一些实用函数" alt="" coords="156,80,259,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="265,155,329,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="92,155,152,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="177,155,241,181"/>
 </map>

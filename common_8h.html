@@ -49,6 +49,9 @@ $(function() {
 <div class="title">common.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>存储全局变量  
+<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="array__list_8h_source.html">array_list.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="queue_8h_source.html">queue.h</a>&quot;</code><br />
@@ -57,14 +60,15 @@ common.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="common_8h__incl.png" border="0" usemap="#ainclude_2common_8h" alt=""/></div>
 <map name="ainclude_2common_8h" id="ainclude_2common_8h">
-<area shape="rect" title=" " alt="" coords="68,5,195,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,65,107"/>
-<area shape="rect" href="array__list_8h.html" title=" " alt="" coords="89,80,173,107"/>
-<area shape="rect" href="queue_8h.html" title=" " alt="" coords="218,80,285,107"/>
-<area shape="rect" href="safe__free_8h.html" title=" " alt="" coords="143,229,229,256"/>
-<area shape="rect" title=" " alt="" coords="30,155,94,181"/>
-<area shape="rect" title=" " alt="" coords="240,304,303,331"/>
-<area shape="rect" href="queue__node_8h.html" title=" " alt="" coords="220,155,323,181"/>
+<area shape="rect" title="存储全局变量" alt="" coords="55,5,181,32"/>
+<area shape="rect" title=" " alt="" coords="5,304,65,331"/>
+<area shape="rect" href="array__list_8h.html" title="array_list 类及相关操作" alt="" coords="76,155,160,181"/>
+<area shape="rect" href="queue_8h.html" title="队列类及相关操作" alt="" coords="209,80,275,107"/>
+<area shape="rect" href="helpful__func_8h.html" title="存储一些实用函数" alt="" coords="156,229,259,256"/>
+<area shape="rect" title=" " alt="" coords="90,304,154,331"/>
+<area shape="rect" title=" " alt="" coords="267,304,329,331"/>
+<area shape="rect" title=" " alt="" coords="178,304,242,331"/>
+<area shape="rect" href="queue__node_8h.html" title="队列节点类及相关操作" alt="" coords="236,155,339,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -72,13 +76,13 @@ common.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="common_8h__dep__incl.png" border="0" usemap="#ainclude_2common_8hdep" alt=""/></div>
 <map name="ainclude_2common_8hdep" id="ainclude_2common_8hdep">
-<area shape="rect" title=" " alt="" coords="201,5,327,32"/>
-<area shape="rect" href="bank__queue__system_8h.html" title=" " alt="" coords="99,229,237,271"/>
-<area shape="rect" href="member_8h.html" title=" " alt="" coords="202,80,326,107"/>
+<area shape="rect" title="存储全局变量" alt="" coords="201,5,327,32"/>
+<area shape="rect" href="bank__queue__system_8h.html" title="银行排队系统相关函数" alt="" coords="99,229,237,271"/>
+<area shape="rect" href="member_8h.html" title="客户类及相关操作" alt="" coords="202,80,326,107"/>
 <area shape="rect" href="common_8c.html" title=" " alt="" coords="351,80,455,107"/>
 <area shape="rect" href="bank__queue__system_8c.html" title=" " alt="" coords="5,319,179,345"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="203,319,285,345"/>
-<area shape="rect" href="counter_8h.html" title=" " alt="" coords="228,155,348,181"/>
+<area shape="rect" href="main_8c.html" title="系统主入口函数" alt="" coords="203,319,285,345"/>
+<area shape="rect" href="counter_8h.html" title="柜台类及相关操作" alt="" coords="228,155,348,181"/>
 <area shape="rect" href="member_8c.html" title=" " alt="" coords="372,155,473,181"/>
 <area shape="rect" href="counter_8c.html" title=" " alt="" coords="261,237,358,263"/>
 </map>
@@ -104,7 +108,12 @@ common.h 的引用(Include)关系图:</div>
 <tr class="memdesc:a6328f63a5c0a3b0b3f70db82b29e6c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">柜台数组  <a href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">更多...</a><br /></td></tr>
 <tr class="separator:a6328f63a5c0a3b0b3f70db82b29e6c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">变量说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>存储全局变量 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2021 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="common_8h_source.html">common.h</a> 中定义.</p>
+</div><h2 class="groupheader">变量说明</h2>
 <a id="a6328f63a5c0a3b0b3f70db82b29e6c4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6328f63a5c0a3b0b3f70db82b29e6c4b">&#9670;&nbsp;</a></span>counters</h2>
 
@@ -127,7 +136,7 @@ common.h 的引用(Include)关系图:</div>
 
 <p>柜台数组 </p>
 
-<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00011">11</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00019">19</a> 行定义.</p>
 
 </div>
 </div>
@@ -153,7 +162,7 @@ common.h 的引用(Include)关系图:</div>
 
 <p>当前叫号号码 </p>
 
-<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00005">5</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00013">13</a> 行定义.</p>
 
 </div>
 </div>
@@ -179,7 +188,7 @@ common.h 的引用(Include)关系图:</div>
 
 <p>当前取号号码 </p>
 
-<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00003">3</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00011">11</a> 行定义.</p>
 
 </div>
 </div>
@@ -205,7 +214,7 @@ common.h 的引用(Include)关系图:</div>
 
 <p>log输出文件 </p>
 
-<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00007">7</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00015">15</a> 行定义.</p>
 
 </div>
 </div>
@@ -231,7 +240,7 @@ common.h 的引用(Include)关系图:</div>
 
 <p>等待队列 </p>
 
-<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00009">9</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00017">17</a> 行定义.</p>
 
 </div>
 </div>

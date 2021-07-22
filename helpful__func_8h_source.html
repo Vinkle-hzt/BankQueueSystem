@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: include/helpful_func.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">helpful_func.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="helpful__func_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900">safe_free</a>(<span class="keywordtype">void</span>* p);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;uint8_t* <a class="code" href="helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9">getMD5</a>(<span class="keywordtype">char</span>* msg);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="helpful__func_8h.html#ad6f54465d1ab8dde250c8c1ba25af637">printMD5</a>(FILE* f, uint8_t* <a class="code" href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25">md5</a>);</div>
+<div class="ttc" id="ahelpful__func_8c_html_a4242957b34973ded368980a85c4a5a25"><div class="ttname"><a href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25">md5</a></div><div class="ttdeci">void md5(const uint8_t *initial_msg, size_t initial_len, uint8_t *digest)</div><div class="ttdef"><b>Definition:</b> <a href="helpful__func_8c_source.html#l00061">helpful_func.c:61</a></div></div>
+<div class="ttc" id="ahelpful__func_8h_html_a55c355f047f95aba92b4f8c1415de900"><div class="ttname"><a href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900">safe_free</a></div><div class="ttdeci">void safe_free(void *p)</div><div class="ttdoc">free pointer p and set p to NULL</div><div class="ttdef"><b>Definition:</b> <a href="helpful__func_8c_source.html#l00011">helpful_func.c:11</a></div></div>
+<div class="ttc" id="ahelpful__func_8h_html_a904e521b6d2011ec6cb6b6897d590ae9"><div class="ttname"><a href="helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9">getMD5</a></div><div class="ttdeci">uint8_t * getMD5(char *msg)</div><div class="ttdoc">获取字符的 MD5 编码</div><div class="ttdef"><b>Definition:</b> <a href="helpful__func_8c_source.html#l00162">helpful_func.c:162</a></div></div>
+<div class="ttc" id="ahelpful__func_8h_html_ad6f54465d1ab8dde250c8c1ba25af637"><div class="ttname"><a href="helpful__func_8h.html#ad6f54465d1ab8dde250c8c1ba25af637">printMD5</a></div><div class="ttdeci">void printMD5(FILE *f, uint8_t *md5)</div><div class="ttdef"><b>Definition:</b> <a href="helpful__func_8c_source.html#l00170">helpful_func.c:170</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: src/helpful_func.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">helpful_func.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="helpful__func_8h_source.html">helpful_func.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+helpful_func.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c__incl.png" border="0" usemap="#asrc_2helpful__func_8c" alt=""/></div>
+<map name="asrc_2helpful__func_8c" id="asrc_2helpful__func_8c">
+<area shape="rect" title=" " alt="" coords="103,5,227,32"/>
+<area shape="rect" href="helpful__func_8h.html" title="存储一些实用函数" alt="" coords="113,80,216,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect" title=" " alt="" coords="92,155,152,181"/>
+<area shape="rect" title=" " alt="" coords="177,155,241,181"/>
+<area shape="rect" title=" " alt="" coords="265,155,329,181"/>
+</map>
+</div>
+</div>
+<p><a href="helpful__func_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:abceca7779c418db12903dbe2fa56bc21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpful__func_8c.html#abceca7779c418db12903dbe2fa56bc21">LEFTROTATE</a>(x,  c)&#160;&#160;&#160;(((x) &lt;&lt; (c)) | ((x) &gt;&gt; (32 - (c))))</td></tr>
+<tr class="separator:abceca7779c418db12903dbe2fa56bc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a55c355f047f95aba92b4f8c1415de900"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900">safe_free</a> (void *p)</td></tr>
+<tr class="memdesc:a55c355f047f95aba92b4f8c1415de900"><td class="mdescLeft">&#160;</td><td class="mdescRight">free pointer p and set p to NULL  <a href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900">更多...</a><br /></td></tr>
+<tr class="separator:a55c355f047f95aba92b4f8c1415de900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65bb2f6ebf7fbad09f5ff1899b819251"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251">to_bytes</a> (uint32_t val, uint8_t *bytes)</td></tr>
+<tr class="separator:a65bb2f6ebf7fbad09f5ff1899b819251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5b16114900fd4e0b0a467519096299"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpful__func_8c.html#a8e5b16114900fd4e0b0a467519096299">to_int32</a> (const uint8_t *bytes)</td></tr>
+<tr class="separator:a8e5b16114900fd4e0b0a467519096299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4242957b34973ded368980a85c4a5a25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25">md5</a> (const uint8_t *initial_msg, size_t initial_len, uint8_t *digest)</td></tr>
+<tr class="separator:a4242957b34973ded368980a85c4a5a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904e521b6d2011ec6cb6b6897d590ae9"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpful__func_8c.html#a904e521b6d2011ec6cb6b6897d590ae9">getMD5</a> (char *msg)</td></tr>
+<tr class="memdesc:a904e521b6d2011ec6cb6b6897d590ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字符的 MD5 编码  <a href="helpful__func_8c.html#a904e521b6d2011ec6cb6b6897d590ae9">更多...</a><br /></td></tr>
+<tr class="separator:a904e521b6d2011ec6cb6b6897d590ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6f54465d1ab8dde250c8c1ba25af637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpful__func_8c.html#ad6f54465d1ab8dde250c8c1ba25af637">printMD5</a> (FILE *f, uint8_t *<a class="el" href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25">md5</a>)</td></tr>
+<tr class="separator:ad6f54465d1ab8dde250c8c1ba25af637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="abceca7779c418db12903dbe2fa56bc21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abceca7779c418db12903dbe2fa56bc21">&#9670;&nbsp;</a></span>LEFTROTATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEFTROTATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((x) &lt;&lt; (c)) | ((x) &gt;&gt; (32 - (c))))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="helpful__func_8c_source.html">helpful_func.c</a> 第 <a class="el" href="helpful__func_8c_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a904e521b6d2011ec6cb6b6897d590ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a904e521b6d2011ec6cb6b6897d590ae9">&#9670;&nbsp;</a></span>getMD5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* getMD5 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字符的 MD5 编码 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>uint8_t* MD5 编码指针 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="helpful__func_8c_source.html">helpful_func.c</a> 第 <a class="el" href="helpful__func_8c_source.html#l00162">162</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c_a904e521b6d2011ec6cb6b6897d590ae9_cgraph.png" border="0" usemap="#ahelpful__func_8c_a904e521b6d2011ec6cb6b6897d590ae9_cgraph" alt=""/></div>
+<map name="ahelpful__func_8c_a904e521b6d2011ec6cb6b6897d590ae9_cgraph" id="ahelpful__func_8c_a904e521b6d2011ec6cb6b6897d590ae9_cgraph">
+<area shape="rect" title="获取字符的 MD5 编码" alt="" coords="5,31,72,57"/>
+<area shape="rect" href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25" title=" " alt="" coords="120,31,167,57"/>
+<area shape="rect" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251" title=" " alt="" coords="215,5,285,32"/>
+<area shape="rect" href="helpful__func_8c.html#a8e5b16114900fd4e0b0a467519096299" title=" " alt="" coords="216,56,284,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c_a904e521b6d2011ec6cb6b6897d590ae9_icgraph.png" border="0" usemap="#ahelpful__func_8c_a904e521b6d2011ec6cb6b6897d590ae9_icgraph" alt=""/></div>
+<map name="ahelpful__func_8c_a904e521b6d2011ec6cb6b6897d590ae9_icgraph" id="ahelpful__func_8c_a904e521b6d2011ec6cb6b6897d590ae9_icgraph">
+<area shape="rect" title="获取字符的 MD5 编码" alt="" coords="388,31,455,57"/>
+<area shape="rect" href="bank__queue__system_8h.html#a735d888e3b623602fdec920477ab33ce" title=" " alt="" coords="249,5,340,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4242957b34973ded368980a85c4a5a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4242957b34973ded368980a85c4a5a25">&#9670;&nbsp;</a></span>md5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void md5 </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>initial_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>initial_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>digest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="helpful__func_8c_source.html">helpful_func.c</a> 第 <a class="el" href="helpful__func_8c_source.html#l00061">61</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c_a4242957b34973ded368980a85c4a5a25_cgraph.png" border="0" usemap="#ahelpful__func_8c_a4242957b34973ded368980a85c4a5a25_cgraph" alt=""/></div>
+<map name="ahelpful__func_8c_a4242957b34973ded368980a85c4a5a25_cgraph" id="ahelpful__func_8c_a4242957b34973ded368980a85c4a5a25_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,52,57"/>
+<area shape="rect" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251" title=" " alt="" coords="100,5,171,32"/>
+<area shape="rect" href="helpful__func_8c.html#a8e5b16114900fd4e0b0a467519096299" title=" " alt="" coords="101,56,169,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c_a4242957b34973ded368980a85c4a5a25_icgraph.png" border="0" usemap="#ahelpful__func_8c_a4242957b34973ded368980a85c4a5a25_icgraph" alt=""/></div>
+<map name="ahelpful__func_8c_a4242957b34973ded368980a85c4a5a25_icgraph" id="ahelpful__func_8c_a4242957b34973ded368980a85c4a5a25_icgraph">
+<area shape="rect" title=" " alt="" coords="503,81,549,108"/>
+<area shape="rect" href="helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9" title="获取字符的 MD5 编码" alt="" coords="388,56,455,83"/>
+<area shape="rect" href="helpful__func_8h.html#ad6f54465d1ab8dde250c8c1ba25af637" title=" " alt="" coords="257,107,332,133"/>
+<area shape="rect" href="bank__queue__system_8h.html#a735d888e3b623602fdec920477ab33ce" title=" " alt="" coords="249,5,340,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad6f54465d1ab8dde250c8c1ba25af637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f54465d1ab8dde250c8c1ba25af637">&#9670;&nbsp;</a></span>printMD5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printMD5 </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>md5</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td></td></tr>
+    <tr><td class="paramname">md5</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="helpful__func_8c_source.html">helpful_func.c</a> 第 <a class="el" href="helpful__func_8c_source.html#l00170">170</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c_ad6f54465d1ab8dde250c8c1ba25af637_cgraph.png" border="0" usemap="#ahelpful__func_8c_ad6f54465d1ab8dde250c8c1ba25af637_cgraph" alt=""/></div>
+<map name="ahelpful__func_8c_ad6f54465d1ab8dde250c8c1ba25af637_cgraph" id="ahelpful__func_8c_ad6f54465d1ab8dde250c8c1ba25af637_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,80,57"/>
+<area shape="rect" href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25" title=" " alt="" coords="128,31,175,57"/>
+<area shape="rect" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251" title=" " alt="" coords="223,5,293,32"/>
+<area shape="rect" href="helpful__func_8c.html#a8e5b16114900fd4e0b0a467519096299" title=" " alt="" coords="224,56,292,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c_ad6f54465d1ab8dde250c8c1ba25af637_icgraph.png" border="0" usemap="#ahelpful__func_8c_ad6f54465d1ab8dde250c8c1ba25af637_icgraph" alt=""/></div>
+<map name="ahelpful__func_8c_ad6f54465d1ab8dde250c8c1ba25af637_icgraph" id="ahelpful__func_8c_ad6f54465d1ab8dde250c8c1ba25af637_icgraph">
+<area shape="rect" title=" " alt="" coords="104,5,179,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a55c355f047f95aba92b4f8c1415de900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c355f047f95aba92b4f8c1415de900">&#9670;&nbsp;</a></span>safe_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void safe_free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free pointer p and set p to NULL </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>free pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="helpful__func_8c_source.html">helpful_func.c</a> 第 <a class="el" href="helpful__func_8c_source.html#l00011">11</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c_a55c355f047f95aba92b4f8c1415de900_icgraph.png" border="0" usemap="#ahelpful__func_8c_a55c355f047f95aba92b4f8c1415de900_icgraph" alt=""/></div>
+<map name="ahelpful__func_8c_a55c355f047f95aba92b4f8c1415de900_icgraph" id="ahelpful__func_8c_a55c355f047f95aba92b4f8c1415de900_icgraph">
+<area shape="rect" title="free pointer p and set p to NULL" alt="" coords="689,107,765,133"/>
+<area shape="rect" href="array__list_8h.html#a7e85a97073f192ff04e94025cf233a69" title="free the array list" alt="" coords="408,5,469,32"/>
+<area shape="rect" href="array__list_8h.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="resize the array list size" alt="" coords="544,56,617,83"/>
+<area shape="rect" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="527,107,634,133"/>
+<area shape="rect" href="queue_8h.html#abf604398920042a8056f257d292fe8a3" title="释放队列空间" alt="" coords="260,132,347,159"/>
+<area shape="rect" href="queue__node_8h.html#a5a5a41ee8e2e91eb3905dc7f939a3576" title="释放队列节点空间" alt="" coords="520,208,641,235"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,56,201,83"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" href="array__list_8h.html#a6b792272494e473122e892e232500d8d" title="insert element value val to the end of array list" alt="" coords="405,56,472,83"/>
+<area shape="rect" href="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title="创建一个 array_list* 类型的柜台表" alt="" coords="249,56,357,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a65bb2f6ebf7fbad09f5ff1899b819251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65bb2f6ebf7fbad09f5ff1899b819251">&#9670;&nbsp;</a></span>to_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void to_bytes </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="helpful__func_8c_source.html">helpful_func.c</a> 第 <a class="el" href="helpful__func_8c_source.html#l00048">48</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c_a65bb2f6ebf7fbad09f5ff1899b819251_icgraph.png" border="0" usemap="#ahelpful__func_8c_a65bb2f6ebf7fbad09f5ff1899b819251_icgraph" alt=""/></div>
+<map name="ahelpful__func_8c_a65bb2f6ebf7fbad09f5ff1899b819251_icgraph" id="ahelpful__func_8c_a65bb2f6ebf7fbad09f5ff1899b819251_icgraph">
+<area shape="rect" title=" " alt="" coords="597,81,668,108"/>
+<area shape="rect" href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25" title=" " alt="" coords="503,81,549,108"/>
+<area shape="rect" href="helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9" title="获取字符的 MD5 编码" alt="" coords="388,56,455,83"/>
+<area shape="rect" href="helpful__func_8h.html#ad6f54465d1ab8dde250c8c1ba25af637" title=" " alt="" coords="257,107,332,133"/>
+<area shape="rect" href="bank__queue__system_8h.html#a735d888e3b623602fdec920477ab33ce" title=" " alt="" coords="249,5,340,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8e5b16114900fd4e0b0a467519096299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5b16114900fd4e0b0a467519096299">&#9670;&nbsp;</a></span>to_int32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t to_int32 </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>bytes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="helpful__func_8c_source.html">helpful_func.c</a> 第 <a class="el" href="helpful__func_8c_source.html#l00056">56</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpful__func_8c_a8e5b16114900fd4e0b0a467519096299_icgraph.png" border="0" usemap="#ahelpful__func_8c_a8e5b16114900fd4e0b0a467519096299_icgraph" alt=""/></div>
+<map name="ahelpful__func_8c_a8e5b16114900fd4e0b0a467519096299_icgraph" id="ahelpful__func_8c_a8e5b16114900fd4e0b0a467519096299_icgraph">
+<area shape="rect" title=" " alt="" coords="597,81,665,108"/>
+<area shape="rect" href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25" title=" " alt="" coords="503,81,549,108"/>
+<area shape="rect" href="helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9" title="获取字符的 MD5 编码" alt="" coords="388,56,455,83"/>
+<area shape="rect" href="helpful__func_8h.html#ad6f54465d1ab8dde250c8c1ba25af637" title=" " alt="" coords="257,107,332,133"/>
+<area shape="rect" href="bank__queue__system_8h.html#a735d888e3b623602fdec920477ab33ce" title=" " alt="" coords="249,5,340,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

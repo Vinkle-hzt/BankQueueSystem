@@ -50,14 +50,19 @@ $(function() {
 <div class="title">trade_conclude.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>交易统计类及相关操作  
+<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 trade_conclude.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade__conclude_8h__incl.png" border="0" usemap="#ainclude_2trade__conclude_8h" alt=""/></div>
 <map name="ainclude_2trade__conclude_8h" id="ainclude_2trade__conclude_8h">
-<area shape="rect" title=" " alt="" coords="5,5,171,32"/>
-<area shape="rect" title=" " alt="" coords="56,80,120,107"/>
+<area shape="rect" title="交易统计类及相关操作" alt="" coords="5,5,171,32"/>
+<area shape="rect" title=" " alt="" coords="13,80,77,107"/>
+<area shape="rect" title=" " alt="" coords="102,80,162,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -65,12 +70,12 @@ trade_conclude.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade__conclude_8h__dep__incl.png" border="0" usemap="#ainclude_2trade__conclude_8hdep" alt=""/></div>
 <map name="ainclude_2trade__conclude_8hdep" id="ainclude_2trade__conclude_8hdep">
-<area shape="rect" title=" " alt="" coords="183,5,348,32"/>
-<area shape="rect" href="bank__queue__system_8h.html" title=" " alt="" coords="99,155,237,196"/>
-<area shape="rect" href="counter_8h.html" title=" " alt="" coords="205,80,325,107"/>
+<area shape="rect" title="交易统计类及相关操作" alt="" coords="183,5,348,32"/>
+<area shape="rect" href="bank__queue__system_8h.html" title="银行排队系统相关函数" alt="" coords="99,155,237,196"/>
+<area shape="rect" href="counter_8h.html" title="柜台类及相关操作" alt="" coords="205,80,325,107"/>
 <area shape="rect" href="trade__conclude_8c.html" title=" " alt="" coords="350,80,493,107"/>
 <area shape="rect" href="bank__queue__system_8c.html" title=" " alt="" coords="5,244,179,271"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="203,244,285,271"/>
+<area shape="rect" href="main_8c.html" title="系统主入口函数" alt="" coords="203,244,285,271"/>
 <area shape="rect" href="counter_8c.html" title=" " alt="" coords="261,162,358,189"/>
 </map>
 </div>
@@ -88,8 +93,54 @@ trade_conclude.h 的引用(Include)关系图:</div>
 <tr class="memitem:a7a16a0f7b2f2b9cb60adc938d83254df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtrade__conclude.html">trade_conclude</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade__conclude_8h.html#a7a16a0f7b2f2b9cb60adc938d83254df">trade_conclude_create</a> ()</td></tr>
 <tr class="memdesc:a7a16a0f7b2f2b9cb60adc938d83254df"><td class="mdescLeft">&#160;</td><td class="mdescRight">建立交易统计对象  <a href="trade__conclude_8h.html#a7a16a0f7b2f2b9cb60adc938d83254df">更多...</a><br /></td></tr>
 <tr class="separator:a7a16a0f7b2f2b9cb60adc938d83254df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45190cffa731230e3b1510be09a94fa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9">show_trade_conclude</a> (<a class="el" href="structtrade__conclude.html">trade_conclude</a> *tc)</td></tr>
+<tr class="memdesc:a45190cffa731230e3b1510be09a94fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">展示交易统计  <a href="trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9">更多...</a><br /></td></tr>
+<tr class="separator:a45190cffa731230e3b1510be09a94fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">函数说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>交易统计类及相关操作 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2021 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="trade__conclude_8h_source.html">trade_conclude.h</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a45190cffa731230e3b1510be09a94fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45190cffa731230e3b1510be09a94fa9">&#9670;&nbsp;</a></span>show_trade_conclude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void show_trade_conclude </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtrade__conclude.html">trade_conclude</a> *&#160;</td>
+          <td class="paramname"><em>tc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>展示交易统计 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tc</td><td>交易统计类指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="trade__conclude_8c_source.html">trade_conclude.c</a> 第 <a class="el" href="trade__conclude_8c_source.html#l00018">18</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="trade__conclude_8h_a45190cffa731230e3b1510be09a94fa9_icgraph.png" border="0" usemap="#atrade__conclude_8h_a45190cffa731230e3b1510be09a94fa9_icgraph" alt=""/></div>
+<map name="atrade__conclude_8h_a45190cffa731230e3b1510be09a94fa9_icgraph" id="atrade__conclude_8h_a45190cffa731230e3b1510be09a94fa9_icgraph">
+<area shape="rect" title="展示交易统计" alt="" coords="249,5,397,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a7a16a0f7b2f2b9cb60adc938d83254df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a16a0f7b2f2b9cb60adc938d83254df">&#9670;&nbsp;</a></span>trade_conclude_create()</h2>
 
@@ -108,7 +159,7 @@ trade_conclude.h 的引用(Include)关系图:</div>
 <p>建立交易统计对象 </p>
 <dl class="section return"><dt>返回</dt><dd><a class="el" href="structtrade__conclude.html" title="交易统计类型">trade_conclude</a> 交易统计 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="trade__conclude_8c_source.html">trade_conclude.c</a> 第 <a class="el" href="trade__conclude_8c_source.html#l00003">3</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade__conclude_8c_source.html">trade_conclude.c</a> 第 <a class="el" href="trade__conclude_8c_source.html#l00011">11</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">

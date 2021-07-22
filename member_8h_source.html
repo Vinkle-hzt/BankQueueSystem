@@ -47,34 +47,35 @@ $(function() {
 <div class="title">member.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="member_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="member_8h.html#a834e9a379307f869a10f4da078be5786">    3</a></span>&#160;<span class="preprocessor">#define NAME_SIZE 20</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="safe__free_8h.html">safe_free.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">common.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="date_8h.html">date.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;string.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structmember.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structmember.html#af180e926633cde08a05ccbc3af397ee4">   16</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structmember.html#af180e926633cde08a05ccbc3af397ee4">ID</a>;               </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structmember.html#ad5dd78a20c361a2964d2c38c579678c9">   17</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structmember.html#ad5dd78a20c361a2964d2c38c579678c9">pick_num</a>;         </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structmember.html#abf5b047e1f527e88ab5997329d1b557b">   18</a></span>&#160;    <span class="keywordtype">char</span> name[<a class="code" href="member_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <a class="code" href="structmember.html">member</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<a class="code" href="structmember.html">member</a> *<a class="code" href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2">member_come</a>(<span class="keywordtype">int</span> ID, <span class="keywordtype">char</span> *name);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b">member_leave</a>(<a class="code" href="structmember.html">member</a> *m);</div>
-<div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
-<div class="ttc" id="adate_8h_html"><div class="ttname"><a href="date_8h.html">date.h</a></div></div>
-<div class="ttc" id="amember_8h_html_a46c6ed15a09806c3fe1c3a39f97798c2"><div class="ttname"><a href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2">member_come</a></div><div class="ttdeci">member * member_come(int ID, char *name)</div><div class="ttdoc">客户进入银行取号</div><div class="ttdef"><b>Definition:</b> <a href="member_8c_source.html#l00003">member.c:3</a></div></div>
-<div class="ttc" id="amember_8h_html_a834e9a379307f869a10f4da078be5786"><div class="ttname"><a href="member_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a></div><div class="ttdeci">#define NAME_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00003">member.h:3</a></div></div>
-<div class="ttc" id="amember_8h_html_a94c0f7a9bf09ae10f73a3d97465a804b"><div class="ttname"><a href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b">member_leave</a></div><div class="ttdeci">void member_leave(member *m)</div><div class="ttdoc">客户离开银行</div><div class="ttdef"><b>Definition:</b> <a href="member_8c_source.html#l00018">member.c:18</a></div></div>
-<div class="ttc" id="asafe__free_8h_html"><div class="ttname"><a href="safe__free_8h.html">safe_free.h</a></div></div>
-<div class="ttc" id="astructmember_html"><div class="ttname"><a href="structmember.html">member</a></div><div class="ttdoc">客户</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00014">member.h:15</a></div></div>
-<div class="ttc" id="astructmember_html_ad5dd78a20c361a2964d2c38c579678c9"><div class="ttname"><a href="structmember.html#ad5dd78a20c361a2964d2c38c579678c9">member::pick_num</a></div><div class="ttdeci">int pick_num</div><div class="ttdoc">客户取的号码</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00017">member.h:17</a></div></div>
-<div class="ttc" id="astructmember_html_af180e926633cde08a05ccbc3af397ee4"><div class="ttname"><a href="structmember.html#af180e926633cde08a05ccbc3af397ee4">member::ID</a></div><div class="ttdeci">int ID</div><div class="ttdoc">客户 ID</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00016">member.h:16</a></div></div>
+<a href="member_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="member_8h.html#a834e9a379307f869a10f4da078be5786">   11</a></span>&#160;<span class="preprocessor">#define NAME_SIZE 20</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="helpful__func_8h.html">helpful_func.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">common.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="date_8h.html">date.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;string.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structmember.html">   22</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structmember.html#af180e926633cde08a05ccbc3af397ee4">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structmember.html#af180e926633cde08a05ccbc3af397ee4">ID</a>;               </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structmember.html#ad5dd78a20c361a2964d2c38c579678c9">   25</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structmember.html#ad5dd78a20c361a2964d2c38c579678c9">pick_num</a>;         </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structmember.html#abf5b047e1f527e88ab5997329d1b557b">   26</a></span>&#160;    <span class="keywordtype">char</span> name[<a class="code" href="member_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <a class="code" href="structmember.html">member</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="structmember.html">member</a> *<a class="code" href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2">member_come</a>(<span class="keywordtype">int</span> ID, <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b">member_leave</a>(<a class="code" href="structmember.html">member</a> *m);</div>
+<div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div><div class="ttdoc">存储全局变量</div></div>
+<div class="ttc" id="adate_8h_html"><div class="ttname"><a href="date_8h.html">date.h</a></div><div class="ttdoc">日期类及相关操作</div></div>
+<div class="ttc" id="ahelpful__func_8h_html"><div class="ttname"><a href="helpful__func_8h.html">helpful_func.h</a></div><div class="ttdoc">存储一些实用函数</div></div>
+<div class="ttc" id="amember_8h_html_a46c6ed15a09806c3fe1c3a39f97798c2"><div class="ttname"><a href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2">member_come</a></div><div class="ttdeci">member * member_come(int ID, char *name)</div><div class="ttdoc">客户进入银行取号</div><div class="ttdef"><b>Definition:</b> <a href="member_8c_source.html#l00011">member.c:11</a></div></div>
+<div class="ttc" id="amember_8h_html_a834e9a379307f869a10f4da078be5786"><div class="ttname"><a href="member_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a></div><div class="ttdeci">#define NAME_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00011">member.h:11</a></div></div>
+<div class="ttc" id="amember_8h_html_a94c0f7a9bf09ae10f73a3d97465a804b"><div class="ttname"><a href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b">member_leave</a></div><div class="ttdeci">void member_leave(member *m)</div><div class="ttdoc">客户离开银行</div><div class="ttdef"><b>Definition:</b> <a href="member_8c_source.html#l00026">member.c:26</a></div></div>
+<div class="ttc" id="astructmember_html"><div class="ttname"><a href="structmember.html">member</a></div><div class="ttdoc">客户</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00022">member.h:23</a></div></div>
+<div class="ttc" id="astructmember_html_ad5dd78a20c361a2964d2c38c579678c9"><div class="ttname"><a href="structmember.html#ad5dd78a20c361a2964d2c38c579678c9">member::pick_num</a></div><div class="ttdeci">int pick_num</div><div class="ttdoc">客户取的号码</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00025">member.h:25</a></div></div>
+<div class="ttc" id="astructmember_html_af180e926633cde08a05ccbc3af397ee4"><div class="ttname"><a href="structmember.html#af180e926633cde08a05ccbc3af397ee4">member::ID</a></div><div class="ttdeci">int ID</div><div class="ttdoc">客户 ID</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00024">member.h:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -50,18 +50,24 @@ $(function() {
 <div class="title">queue.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>队列类及相关操作  
+<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="queue__node_8h_source.html">queue_node.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="safe__free_8h_source.html">safe_free.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="helpful__func_8h_source.html">helpful_func.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 queue.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="queue_8h__incl.png" border="0" usemap="#ainclude_2queue_8h" alt=""/></div>
 <map name="ainclude_2queue_8h" id="ainclude_2queue_8h">
-<area shape="rect" title=" " alt="" coords="19,5,131,32"/>
-<area shape="rect" title=" " alt="" coords="24,229,86,256"/>
-<area shape="rect" href="queue__node_8h.html" title=" " alt="" coords="24,80,126,107"/>
-<area shape="rect" href="safe__free_8h.html" title=" " alt="" coords="93,155,180,181"/>
+<area shape="rect" title="队列类及相关操作" alt="" coords="45,5,157,32"/>
+<area shape="rect" title=" " alt="" coords="5,229,68,256"/>
+<area shape="rect" href="queue__node_8h.html" title="队列节点类及相关操作" alt="" coords="49,80,152,107"/>
+<area shape="rect" href="helpful__func_8h.html" title="存储一些实用函数" alt="" coords="128,155,231,181"/>
+<area shape="rect" title=" " alt="" coords="92,229,152,256"/>
+<area shape="rect" title=" " alt="" coords="177,229,241,256"/>
+<area shape="rect" title=" " alt="" coords="265,229,329,256"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -69,15 +75,15 @@ queue.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="queue_8h__dep__incl.png" border="0" usemap="#ainclude_2queue_8hdep" alt=""/></div>
 <map name="ainclude_2queue_8hdep" id="ainclude_2queue_8hdep">
-<area shape="rect" title=" " alt="" coords="183,5,295,32"/>
-<area shape="rect" href="bank__queue__system_8h.html" title=" " alt="" coords="99,304,237,345"/>
-<area shape="rect" href="common_8h.html" title=" " alt="" coords="175,80,302,107"/>
+<area shape="rect" title="队列类及相关操作" alt="" coords="183,5,295,32"/>
+<area shape="rect" href="bank__queue__system_8h.html" title="银行排队系统相关函数" alt="" coords="99,304,237,345"/>
+<area shape="rect" href="common_8h.html" title="存储全局变量" alt="" coords="175,80,302,107"/>
 <area shape="rect" href="queue_8c.html" title=" " alt="" coords="326,80,415,107"/>
 <area shape="rect" href="bank__queue__system_8c.html" title=" " alt="" coords="5,393,179,420"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="203,393,285,420"/>
-<area shape="rect" href="member_8h.html" title=" " alt="" coords="202,155,326,181"/>
+<area shape="rect" href="main_8c.html" title="系统主入口函数" alt="" coords="203,393,285,420"/>
+<area shape="rect" href="member_8h.html" title="客户类及相关操作" alt="" coords="202,155,326,181"/>
 <area shape="rect" href="common_8c.html" title=" " alt="" coords="351,155,455,181"/>
-<area shape="rect" href="counter_8h.html" title=" " alt="" coords="252,229,372,256"/>
+<area shape="rect" href="counter_8h.html" title="柜台类及相关操作" alt="" coords="252,229,372,256"/>
 <area shape="rect" href="member_8c.html" title=" " alt="" coords="396,229,497,256"/>
 <area shape="rect" href="counter_8c.html" title=" " alt="" coords="263,311,361,338"/>
 </map>
@@ -106,7 +112,12 @@ queue.h 的引用(Include)关系图:</div>
 <tr class="memdesc:abf604398920042a8056f257d292fe8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放队列空间  <a href="queue_8h.html#abf604398920042a8056f257d292fe8a3">更多...</a><br /></td></tr>
 <tr class="separator:abf604398920042a8056f257d292fe8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">函数说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>队列类及相关操作 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2021 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
 <a id="a92701bd736280dc3fdb399deaca4b6d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92701bd736280dc3fdb399deaca4b6d0">&#9670;&nbsp;</a></span>queue_create()</h2>
 
@@ -125,7 +136,7 @@ queue.h 的引用(Include)关系图:</div>
 <p>创建一个队列 </p>
 <dl class="section return"><dt>返回</dt><dd>queue* 队列指针 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00003">3</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00011">11</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -163,7 +174,7 @@ queue.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00035">35</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00043">43</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -171,7 +182,17 @@ queue.h 的引用(Include)关系图:</div>
 <map name="aqueue_8h_abf604398920042a8056f257d292fe8a3_cgraph" id="aqueue_8h_abf604398920042a8056f257d292fe8a3_cgraph">
 <area shape="rect" title="释放队列空间" alt="" coords="5,31,92,57"/>
 <area shape="rect" href="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7" title="将元素从队列中取出" alt="" coords="140,5,225,32"/>
-<area shape="rect" href="safe__free_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="145,56,221,83"/>
+<area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="145,56,221,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_abf604398920042a8056f257d292fe8a3_icgraph.png" border="0" usemap="#aqueue_8h_abf604398920042a8056f257d292fe8a3_icgraph" alt=""/></div>
+<map name="aqueue_8h_abf604398920042a8056f257d292fe8a3_icgraph" id="aqueue_8h_abf604398920042a8056f257d292fe8a3_icgraph">
+<area shape="rect" title="释放队列空间" alt="" coords="249,5,336,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
 
@@ -202,14 +223,16 @@ queue.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>void* 元素指针 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00021">21</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00029">29</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="queue_8h_a485893d2333e46eca6bdd15cc6d18ad7_icgraph.png" border="0" usemap="#aqueue_8h_a485893d2333e46eca6bdd15cc6d18ad7_icgraph" alt=""/></div>
 <map name="aqueue_8h_a485893d2333e46eca6bdd15cc6d18ad7_icgraph" id="aqueue_8h_a485893d2333e46eca6bdd15cc6d18ad7_icgraph">
-<area shape="rect" title="将元素从队列中取出" alt="" coords="140,5,225,32"/>
-<area shape="rect" href="queue_8h.html#abf604398920042a8056f257d292fe8a3" title="释放队列空间" alt="" coords="5,5,92,32"/>
+<area shape="rect" title="将元素从队列中取出" alt="" coords="384,5,469,32"/>
+<area shape="rect" href="queue_8h.html#abf604398920042a8056f257d292fe8a3" title="释放队列空间" alt="" coords="249,5,336,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
 
@@ -250,7 +273,7 @@ queue.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00013">13</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00021">21</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
