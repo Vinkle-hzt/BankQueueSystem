@@ -1,6 +1,6 @@
 #include "array_list.h"
 
-array_list* al_create(int(*CompFunc)(const void*,const void*))
+array_list* al_create()
 {
     array_list* al = malloc(sizeof(array_list));
     al->data = malloc(sizeof(void*) * AL_DEFAULT_SIZE);
