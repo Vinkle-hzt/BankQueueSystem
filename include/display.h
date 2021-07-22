@@ -23,4 +23,4 @@ void show_basicbusiness_menu();
  * @brief show exit menu
  * 
  */
-void show_exit_menu();
+void show_exit_message();

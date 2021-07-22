@@ -44,7 +44,7 @@ void show_basicbusiness_menu()
     printf(" ------------------------------------------------\n");
 }
 
-void show_exit_menu()
+void show_exit_message()
 {
     printf("              ******           ******            \n");
     printf("           ***********       ***********         \n");

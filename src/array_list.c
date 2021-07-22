@@ -1,6 +1,4 @@
 #include "array_list.h"
-#include <stdlib.h>
-#include <string.h>
 
 array_list* al_create(int(*CompFunc)(const void*,const void*))
 {
@@ -8,18 +6,12 @@ array_list* al_create(int(*CompFunc)(const void*,const void*))
     al->data = malloc(sizeof(void*) * AL_DEFAULT_SIZE);
     al->curSize = 0;
     al->maxSize = AL_DEFAULT_SIZE;
-    al->CompFunc = CompFunc;
     return al;
 }
 
 void* al_at(array_list* al, int idx)
 {
     return al->data[idx];
-}
-
-void al_sort(array_list* al)
-{
-    qsort(al->data, al->curSize, sizeof(void*), al->CompFunc);
 }
 
 void al_push(array_list* al, void* val)
@@ -32,8 +24,8 @@ void al_push(array_list* al, void* val)
 
 void al_free(array_list* al)
 {
-    free(al->data);
-    free(al);
+    safe_free(al->data);
+    safe_free(al);
 }
 
 void al_resize(array_list* al)
@@ -42,7 +34,7 @@ void al_resize(array_list* al)
     al->data = malloc(sizeof(void*) * al->maxSize * 2);
     memcpy(al->data, tmp, sizeof(void*) * al->maxSize);
     al->maxSize *= 2;
-    free(tmp);
+    safe_free(tmp);
 }
 
 void* al_pop(array_list* al, int idx)
