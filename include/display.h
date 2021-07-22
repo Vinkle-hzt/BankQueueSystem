@@ -2,6 +2,12 @@
 #include <stdio.h>
 
 /**
+ * @brief show start menu
+ * 
+ */
+void show_start_menu();
+
+/**
  * @brief show main menu
  * 
  */

@@ -1,5 +1,22 @@
 #include "display.h"
 
+void show_start_menu()
+{
+    printf("    **                                      ");
+    printf("  **  **                                    ");
+    printf("       **                                    ");
+    printf("       **                                    ");
+    printf("       **                                    ");
+    printf("       **                                    ");
+    printf("       **                                    ");
+    printf("       ***                                    ");
+    printf("       ***                                    ");
+    printf("       ***                                    ");
+    printf("       ***                                    ");
+    printf("      ****                                    ");
+
+}
+
 void show_main_menu()
 {
     printf(" ------------------------------------------------\n");
@@ -34,7 +51,7 @@ void show_exit_menu()
     printf("          **************   **************        \n");
     printf("         *********************************       \n");
     printf("         ***********------------**********       \n");
-    printf("          **********|  Goodbye | *********        \n");
+    printf("          **********|  Goodbye | *********       \n");
     printf("           *********------------********         \n");
     printf("             *************************           \n");
     printf("               *********************             \n");
