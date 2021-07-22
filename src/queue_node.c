@@ -1,5 +1,5 @@
 /**
- * @file queue_node.h
+ * @file queue_node.c
  * @brief 队列节点类及相关操作
  * 
  * @copyright Copyright (c) 2021

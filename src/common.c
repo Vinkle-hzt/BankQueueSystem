@@ -1,5 +1,5 @@
 /**
- * @file common.h
+ * @file common.c
  * @brief 存储全局变量
  * 
  * @copyright Copyright (c) 2021

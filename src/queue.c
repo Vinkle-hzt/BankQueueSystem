@@ -1,5 +1,5 @@
 /**
- * @file queue.h
+ * @file queue.c
  * @brief 队列类及相关操作
  * 
  * @copyright Copyright (c) 2021

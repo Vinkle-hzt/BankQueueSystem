@@ -1,5 +1,5 @@
 /**
- * @file helpful_func.h
+ * @file helpful_func.c
  * @brief 存储一些实用函数
  * 
  * @copyright Copyright (c) 2021

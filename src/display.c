@@ -1,5 +1,5 @@
 /**
- * @file display.h
+ * @file display.c
  * @brief 功能面板的展示
  * 
  * @copyright Copyright (c) 2021

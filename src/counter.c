@@ -1,5 +1,5 @@
 /**
- * @file counter.h
+ * @file counter.c
  * @brief 柜台类及相关操作
  * 
  * @copyright Copyright (c) 2021

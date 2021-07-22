@@ -1,5 +1,5 @@
 /**
- * @file array_list.h
+ * @file array_list.c
  * @brief array_list 类及相关操作
  * 
  * @copyright Copyright (c) 2021

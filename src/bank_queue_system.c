@@ -1,5 +1,5 @@
 /**
- * @file bank_queue_system.h
+ * @file bank_queue_system.c
  * @brief 银行排队系统相关函数
  * 
  * @copyright Copyright (c) 2021
