@@ -85,6 +85,10 @@ member.c 的引用(Include)关系图:</div>
 <tr class="memitem:a94c0f7a9bf09ae10f73a3d97465a804b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="member_8c.html#a94c0f7a9bf09ae10f73a3d97465a804b">member_leave</a> (<a class="el" href="structmember.html">member</a> *m)</td></tr>
 <tr class="memdesc:a94c0f7a9bf09ae10f73a3d97465a804b"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户离开银行  <a href="member_8c.html#a94c0f7a9bf09ae10f73a3d97465a804b">更多...</a><br /></td></tr>
 <tr class="separator:a94c0f7a9bf09ae10f73a3d97465a804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fa49af4b5640c8ca1a4577bc6aed9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="member_8c.html#a54fa49af4b5640c8ca1a4577bc6aed9e">member_compare</a> (const void *lhs, const void *rhs)</td></tr>
+<tr class="separator:a54fa49af4b5640c8ca1a4577bc6aed9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f29ff1b600b42b8768af3c4f4ff6ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="member_8c.html#a72f29ff1b600b42b8768af3c4f4ff6ed">get_vip_level</a> (int ID)</td></tr>
+<tr class="separator:a72f29ff1b600b42b8768af3c4f4ff6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>客户类及相关操作 </p>
@@ -92,6 +96,38 @@ member.c 的引用(Include)关系图:</div>
 
 <p class="definition">在文件 <a class="el" href="member_8c_source.html">member.c</a> 中定义.</p>
 </div><h2 class="groupheader">函数说明</h2>
+<a id="a72f29ff1b600b42b8768af3c4f4ff6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f29ff1b600b42b8768af3c4f4ff6ed">&#9670;&nbsp;</a></span>get_vip_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_vip_level </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="member_8c_source.html">member.c</a> 第 <a class="el" href="member_8c_source.html#l00045">45</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="member_8c_a72f29ff1b600b42b8768af3c4f4ff6ed_icgraph.png" border="0" usemap="#amember_8c_a72f29ff1b600b42b8768af3c4f4ff6ed_icgraph" alt=""/></div>
+<map name="amember_8c_a72f29ff1b600b42b8768af3c4f4ff6ed_icgraph" id="amember_8c_a72f29ff1b600b42b8768af3c4f4ff6ed_icgraph">
+<area shape="rect" title=" " alt="" coords="571,5,669,32"/>
+<area shape="rect" href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="415,5,523,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="249,5,367,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a46c6ed15a09806c3fe1c3a39f97798c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46c6ed15a09806c3fe1c3a39f97798c2">&#9670;&nbsp;</a></span>member_come()</h2>
 
@@ -134,9 +170,10 @@ member.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="member_8c_a46c6ed15a09806c3fe1c3a39f97798c2_cgraph.png" border="0" usemap="#amember_8c_a46c6ed15a09806c3fe1c3a39f97798c2_cgraph" alt=""/></div>
 <map name="amember_8c_a46c6ed15a09806c3fe1c3a39f97798c2_cgraph" id="amember_8c_a46c6ed15a09806c3fe1c3a39f97798c2_cgraph">
-<area shape="rect" title="客户进入银行取号" alt="" coords="5,31,113,57"/>
-<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前 UTC 时间" alt="" coords="161,5,259,32"/>
-<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="167,56,253,83"/>
+<area shape="rect" title="客户进入银行取号" alt="" coords="5,56,113,83"/>
+<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前 UTC 时间" alt="" coords="162,5,259,32"/>
+<area shape="rect" href="member_8c.html#a72f29ff1b600b42b8768af3c4f4ff6ed" title=" " alt="" coords="161,56,260,83"/>
+<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="168,107,253,133"/>
 </map>
 </div>
 <div class="dynheader">
@@ -150,6 +187,36 @@ member.c 的引用(Include)关系图:</div>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a54fa49af4b5640c8ca1a4577bc6aed9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54fa49af4b5640c8ca1a4577bc6aed9e">&#9670;&nbsp;</a></span>member_compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int member_compare </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="member_8c_source.html">member.c</a> 第 <a class="el" href="member_8c_source.html#l00038">38</a> 行定义.</p>
 
 </div>
 </div>
@@ -177,7 +244,7 @@ member.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="member_8c_source.html">member.c</a> 第 <a class="el" href="member_8c_source.html#l00026">26</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="member_8c_source.html">member.c</a> 第 <a class="el" href="member_8c_source.html#l00029">29</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">

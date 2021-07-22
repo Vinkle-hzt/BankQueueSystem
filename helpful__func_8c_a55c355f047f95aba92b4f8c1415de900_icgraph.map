@@ -1,12 +1,18 @@
 <map id="safe_free" name="safe_free">
-<area shape="rect" id="node1" title="free pointer p and set p to NULL" alt="" coords="689,107,765,133"/>
-<area shape="rect" id="node2" href="$array__list_8h.html#a7e85a97073f192ff04e94025cf233a69" title="free the array list" alt="" coords="408,5,469,32"/>
-<area shape="rect" id="node5" href="$array__list_8h.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="resize the array list size" alt="" coords="544,56,617,83"/>
-<area shape="rect" id="node8" href="$member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="527,107,634,133"/>
-<area shape="rect" id="node9" href="$queue_8h.html#abf604398920042a8056f257d292fe8a3" title="释放队列空间" alt="" coords="260,132,347,159"/>
-<area shape="rect" id="node10" href="$queue__node_8h.html#a5a5a41ee8e2e91eb3905dc7f939a3576" title="释放队列节点空间" alt="" coords="520,208,641,235"/>
-<area shape="rect" id="node3" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,56,201,83"/>
-<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
-<area shape="rect" id="node6" href="$array__list_8h.html#a6b792272494e473122e892e232500d8d" title="insert element value val to the end of array list" alt="" coords="405,56,472,83"/>
-<area shape="rect" id="node7" href="$counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title="创建一个 array_list* 类型的柜台表" alt="" coords="249,56,357,83"/>
+<area shape="rect" id="node1" title="free pointer p and set p to NULL" alt="" coords="724,197,800,224"/>
+<area shape="rect" id="node2" href="$array__list_8h.html#a7e85a97073f192ff04e94025cf233a69" title="free the array list" alt="" coords="287,12,349,39"/>
+<area shape="rect" id="node5" href="$array__list_8h.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="resize the array list size" alt="" coords="579,65,652,92"/>
+<area shape="rect" id="node8" href="$member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="562,121,669,148"/>
+<area shape="rect" id="node9" href="$priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title=" " alt="" coords="132,289,203,316"/>
+<area shape="rect" id="node10" href="$priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title=" " alt="" coords="5,328,71,355"/>
+<area shape="rect" id="node11" href="$queue_8h.html#abf604398920042a8056f257d292fe8a3" title="释放队列空间" alt="" coords="420,113,507,140"/>
+<area shape="rect" id="node12" href="$queue__node_8h.html#a5a5a41ee8e2e91eb3905dc7f939a3576" title="释放队列节点空间" alt="" coords="555,336,676,363"/>
+<area shape="rect" id="node13" href="$helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title=" " alt="" coords="589,223,642,249"/>
+<area shape="rect" id="node3" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="119,63,216,89"/>
+<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="13,63,63,89"/>
+<area shape="rect" id="node6" href="$array__list_8h.html#a6b792272494e473122e892e232500d8d" title="insert element value val to the end of array list" alt="" coords="430,63,497,89"/>
+<area shape="rect" id="node7" href="$counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title="创建一个 array_list* 类型的柜台表" alt="" coords="264,63,372,89"/>
+<area shape="rect" id="node14" href="$priority__queue_8h.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="421,188,505,215"/>
+<area shape="rect" id="node16" href="$priority__queue_8h.html#a8b0374f7ed8ea317892fd30d02a5c24b" title=" " alt="" coords="428,239,499,265"/>
+<area shape="rect" id="node15" href="$priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="286,213,350,240"/>
 </map>
