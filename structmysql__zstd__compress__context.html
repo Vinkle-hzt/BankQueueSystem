@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: mysql_zstd_compress_context结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle">
+<div class="title">mysql_zstd_compress_context结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="my__compress_8h_source.html">my_compress.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a5e7b59c88bbb6f3eec5d187dda6c426a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="my__compress_8h.html#a9ccc575a7e1f1afd01e76c0fa98d957d">ZSTD_CCtx</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmysql__zstd__compress__context.html#a5e7b59c88bbb6f3eec5d187dda6c426a">cctx</a></td></tr>
+<tr class="separator:a5e7b59c88bbb6f3eec5d187dda6c426a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469b7363a5ffed97f6cb37bbb9f757ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="my__compress_8h.html#a9ce4435ca683f0e7cb2b90ca9eb1fce4">ZSTD_DCtx</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmysql__zstd__compress__context.html#a469b7363a5ffed97f6cb37bbb9f757ab">dctx</a></td></tr>
+<tr class="separator:a469b7363a5ffed97f6cb37bbb9f757ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbe809289662e4403c47207bbba0241"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmysql__zstd__compress__context.html#a0cbe809289662e4403c47207bbba0241">compression_level</a></td></tr>
+<tr class="separator:a0cbe809289662e4403c47207bbba0241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Compress context information relating to zstd compression. </p>
+
+<p class="definition">在文件 <a class="el" href="my__compress_8h_source.html">my_compress.h</a> 第 <a class="el" href="my__compress_8h_source.html#l00052">52</a> 行定义.</p>
+</div><h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a5e7b59c88bbb6f3eec5d187dda6c426a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e7b59c88bbb6f3eec5d187dda6c426a">&#9670;&nbsp;</a></span>cctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="my__compress_8h.html#a9ccc575a7e1f1afd01e76c0fa98d957d">ZSTD_CCtx</a>* cctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to compressor context. </p>
+
+<p class="definition">在文件 <a class="el" href="my__compress_8h_source.html">my_compress.h</a> 第 <a class="el" href="my__compress_8h_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0cbe809289662e4403c47207bbba0241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cbe809289662e4403c47207bbba0241">&#9670;&nbsp;</a></span>compression_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int compression_level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compression level to use in zstd compression. </p>
+
+<p class="definition">在文件 <a class="el" href="my__compress_8h_source.html">my_compress.h</a> 第 <a class="el" href="my__compress_8h_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a469b7363a5ffed97f6cb37bbb9f757ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469b7363a5ffed97f6cb37bbb9f757ab">&#9670;&nbsp;</a></span>dctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="my__compress_8h.html#a9ce4435ca683f0e7cb2b90ca9eb1fce4">ZSTD_DCtx</a>* dctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to decompressor context. </p>
+
+<p class="definition">在文件 <a class="el" href="my__compress_8h_source.html">my_compress.h</a> 第 <a class="el" href="my__compress_8h_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>thirdparty/MySQL/include/<a class="el" href="my__compress_8h_source.html">my_compress.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

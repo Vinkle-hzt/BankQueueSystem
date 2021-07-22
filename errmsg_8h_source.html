@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: thirdparty/MySQL/include/errmsg.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7f51fab15f37f4c20c90b1af38889ac7.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_06aff2f6cd7e85963200bfa75f3e631a.html">MySQL</a></li><li class="navelem"><a class="el" href="dir_c29e2d722f8e7e8f26472c529f734ef3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">errmsg.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="errmsg_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ERRMSG_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ERRMSG_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">   This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">   it under the terms of the GNU General Public License, version 2.0,</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">   as published by the Free Software Foundation.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">   This program is also distributed with certain software (including</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">   but not limited to OpenSSL) that is licensed under separate terms,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">   as designated in a particular file or component or in included license</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">   documentation.  The authors of MySQL hereby grant you an additional</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   permission to link the program and your derivative works with the</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   separately licensed software that they have included with MySQL.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">   Without limiting anything contained in the foregoing, this file,</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   which is part of C Driver for MySQL (Connector/C), is also subject to the</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   Universal FOSS Exception, version 1.0, a copy of which can be found at</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   http://oss.oracle.com/licenses/universal-foss-exception.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">   This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">   but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">   GNU General Public License, version 2.0, for more details.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   along with this program; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a3126f70314ce99869a2d34ecff8ba0e5">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="errmsg_8h.html#a3126f70314ce99869a2d34ecff8ba0e5">init_client_errs</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a76bd4c29e5c58804f95796997a0b320a">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="errmsg_8h.html#a76bd4c29e5c58804f95796997a0b320a">finish_client_errs</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="errmsg_8h.html#a6a3cd1e68ce134f2ca3ae89efeb02533">client_errors</a>[]; <span class="comment">/* Error messages */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a388dfa929a97bf34d5ddf406f754713b">   51</a></span>&#160;<span class="preprocessor">#define CR_MIN_ERROR 2000 </span><span class="comment">/* For easier client code */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="errmsg_8h.html#aced7c95eea994d599feefd883f1d28ed">   52</a></span>&#160;<span class="preprocessor">#define CR_MAX_ERROR 2999</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ab19f7f4c4f91688b86d395492f41c701">   53</a></span>&#160;<span class="preprocessor">#define CLIENT_ERRMAP 2 </span><span class="comment">/* Errormap used by my_error() */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/* Do not add error numbers before CR_ERROR_FIRST. */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/* If necessary to add lower numbers, change CR_ERROR_FIRST accordingly. */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ae4d5063f7036385842f95e12afbfd9d6">   57</a></span>&#160;<span class="preprocessor">#define CR_ERROR_FIRST 2000 </span><span class="comment">/*Copy first error nr.*/</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a4894e9c9e390f10ecfa47c12e35b300f">   58</a></span>&#160;<span class="preprocessor">#define CR_UNKNOWN_ERROR 2000</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ac5efd8a360b9de0ba36c6dbb4ef0d2f8">   59</a></span>&#160;<span class="preprocessor">#define CR_SOCKET_CREATE_ERROR 2001</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a89847e08712cd2f6e98d868d8fa646be">   60</a></span>&#160;<span class="preprocessor">#define CR_CONNECTION_ERROR 2002</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ac996b6b9b0e0399c3afb9f7bd9ddcbd3">   61</a></span>&#160;<span class="preprocessor">#define CR_CONN_HOST_ERROR 2003</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="errmsg_8h.html#aafaa4c71cf8630cb2328550c6f2e9b67">   62</a></span>&#160;<span class="preprocessor">#define CR_IPSOCK_ERROR 2004</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a7016c12960e297a10d00aae59692314c">   63</a></span>&#160;<span class="preprocessor">#define CR_UNKNOWN_HOST 2005</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a29c74cfa766ed8c2e06718a52b0b60ee">   64</a></span>&#160;<span class="preprocessor">#define CR_SERVER_GONE_ERROR 2006</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a16423b2845e53b9b46b708916dc25f41">   65</a></span>&#160;<span class="preprocessor">#define CR_VERSION_ERROR 2007</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a2ade0496d13411711dfa6a8503507d38">   66</a></span>&#160;<span class="preprocessor">#define CR_OUT_OF_MEMORY 2008</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a8b5e8272b1c56197c7eda9028a6bf493">   67</a></span>&#160;<span class="preprocessor">#define CR_WRONG_HOST_INFO 2009</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="errmsg_8h.html#abd90490ab1b7cbb6d64329ea416f3911">   68</a></span>&#160;<span class="preprocessor">#define CR_LOCALHOST_CONNECTION 2010</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a600dcb543ece179af5b8d7d9a5e48c73">   69</a></span>&#160;<span class="preprocessor">#define CR_TCP_CONNECTION 2011</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a2ecadb9de0c8da7afbeec449d8817706">   70</a></span>&#160;<span class="preprocessor">#define CR_SERVER_HANDSHAKE_ERR 2012</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a057dc122082ea5b47db99487107a48b6">   71</a></span>&#160;<span class="preprocessor">#define CR_SERVER_LOST 2013</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a94c9c80cbafa6b48f5d7d5e2ef4de22e">   72</a></span>&#160;<span class="preprocessor">#define CR_COMMANDS_OUT_OF_SYNC 2014</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a17ae16c479ee62f2675a7023d88c66a3">   73</a></span>&#160;<span class="preprocessor">#define CR_NAMEDPIPE_CONNECTION 2015</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a751da60ba507c1b1edc19a93ead569c5">   74</a></span>&#160;<span class="preprocessor">#define CR_NAMEDPIPEWAIT_ERROR 2016</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a8a8ff690211f32ba2e54e26374933f0d">   75</a></span>&#160;<span class="preprocessor">#define CR_NAMEDPIPEOPEN_ERROR 2017</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a011cc28c651cfbcb413b643489e21a4a">   76</a></span>&#160;<span class="preprocessor">#define CR_NAMEDPIPESETSTATE_ERROR 2018</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a41077e45f70366587bf3b209eff3196d">   77</a></span>&#160;<span class="preprocessor">#define CR_CANT_READ_CHARSET 2019</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a5d2905cb9a1e63ad8a95b707c43a5a7c">   78</a></span>&#160;<span class="preprocessor">#define CR_NET_PACKET_TOO_LARGE 2020</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ab7e336b72ded42f507d54f34e3de3380">   79</a></span>&#160;<span class="preprocessor">#define CR_EMBEDDED_CONNECTION 2021</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a5108bbd55103fd697763e548725008c4">   80</a></span>&#160;<span class="preprocessor">#define CR_PROBE_SLAVE_STATUS 2022</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a058f4fb3af4779df205992f4bf8bb48a">   81</a></span>&#160;<span class="preprocessor">#define CR_PROBE_SLAVE_HOSTS 2023</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ab87234dac1d46f8d5c2916f6691efbc0">   82</a></span>&#160;<span class="preprocessor">#define CR_PROBE_SLAVE_CONNECT 2024</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ad171e08b162b8c2e5d56b8fd033694f4">   83</a></span>&#160;<span class="preprocessor">#define CR_PROBE_MASTER_CONNECT 2025</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a1417629a0138810437b50d5b1b813658">   84</a></span>&#160;<span class="preprocessor">#define CR_SSL_CONNECTION_ERROR 2026</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a2943d879c4463f77aebf37a8ef01483d">   85</a></span>&#160;<span class="preprocessor">#define CR_MALFORMED_PACKET 2027</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a2863b7b46205e28c468e5f4c43292219">   86</a></span>&#160;<span class="preprocessor">#define CR_WRONG_LICENSE 2028</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/* new 4.1 error codes */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="errmsg_8h.html#adabc3f5d660d9ad7fd7b9e123413244f">   89</a></span>&#160;<span class="preprocessor">#define CR_NULL_POINTER 2029</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a4211446b2cab4cf045d34b1288f0b677">   90</a></span>&#160;<span class="preprocessor">#define CR_NO_PREPARE_STMT 2030</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a573714b5d8c5c911773012f9145fe362">   91</a></span>&#160;<span class="preprocessor">#define CR_PARAMS_NOT_BOUND 2031</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a3227547c52382a186406288cae9521cd">   92</a></span>&#160;<span class="preprocessor">#define CR_DATA_TRUNCATED 2032</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="errmsg_8h.html#aed3226868ec182537bed5583c6cc4afe">   93</a></span>&#160;<span class="preprocessor">#define CR_NO_PARAMETERS_EXISTS 2033</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a6541c9d1dedc80e93a6dca051e5d3970">   94</a></span>&#160;<span class="preprocessor">#define CR_INVALID_PARAMETER_NO 2034</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ac8223557641e0152e08b3c3106602d93">   95</a></span>&#160;<span class="preprocessor">#define CR_INVALID_BUFFER_USE 2035</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a0c17e2d487c36338ae7cf87d8798537d">   96</a></span>&#160;<span class="preprocessor">#define CR_UNSUPPORTED_PARAM_TYPE 2036</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ab72fd21dd4280e882c61b857fe2e9935">   98</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_CONNECTION 2037</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a94765c7f696f09025181d65ebd7d5f8d">   99</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_CONNECT_REQUEST_ERROR 2038</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a9e491584429614c1022973f3e0a3123c">  100</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_CONNECT_ANSWER_ERROR 2039</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ace925cd47958e0c5ea4cd685fafe66d4">  101</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_CONNECT_FILE_MAP_ERROR 2040</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a702c2452699e97f050d9780a5c85a241">  102</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_CONNECT_MAP_ERROR 2041</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ab5fe34e187eafb313120e43ac1032caf">  103</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_FILE_MAP_ERROR 2042</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a63dbea7801227ead1648f06f4a88479f">  104</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_MAP_ERROR 2043</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a3938cfd7872f08ae5c443669ec5e2583">  105</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_EVENT_ERROR 2044</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ab650249d3b11297660a204ebf6f3bc66">  106</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_CONNECT_ABANDONED_ERROR 2045</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ae6a8e2ca4b909b9f8f908ae4cf9799ba">  107</a></span>&#160;<span class="preprocessor">#define CR_SHARED_MEMORY_CONNECT_SET_ERROR 2046</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="errmsg_8h.html#aeaa629c66168e14fa5ebaeb696f94c6a">  108</a></span>&#160;<span class="preprocessor">#define CR_CONN_UNKNOW_PROTOCOL 2047</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a15f9bf5b1a8b40161185c463504e9331">  109</a></span>&#160;<span class="preprocessor">#define CR_INVALID_CONN_HANDLE 2048</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a2c44233729da9878ea0949115edb6cbd">  110</a></span>&#160;<span class="preprocessor">#define CR_UNUSED_1 2049</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a7093123b1434d11ee5a96d397838929b">  111</a></span>&#160;<span class="preprocessor">#define CR_FETCH_CANCELED 2050</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a5cc31cdcbc5b070bcf846b15a3ba1df0">  112</a></span>&#160;<span class="preprocessor">#define CR_NO_DATA 2051</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a57b0b97e6e4d0a29e22ae4add861ceef">  113</a></span>&#160;<span class="preprocessor">#define CR_NO_STMT_METADATA 2052</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a960dead0a609efa997ad8555c1bdb8af">  114</a></span>&#160;<span class="preprocessor">#define CR_NO_RESULT_SET 2053</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a1cf6a526753ca234a1b50b49f8d3c323">  115</a></span>&#160;<span class="preprocessor">#define CR_NOT_IMPLEMENTED 2054</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ab797865ea4d25f9fc537af74f610994d">  116</a></span>&#160;<span class="preprocessor">#define CR_SERVER_LOST_EXTENDED 2055</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a5012c5e15c2bc7dfc1ea357bed99c7dd">  117</a></span>&#160;<span class="preprocessor">#define CR_STMT_CLOSED 2056</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a7748f33bb45c1792ffcf8cbd3d415310">  118</a></span>&#160;<span class="preprocessor">#define CR_NEW_STMT_METADATA 2057</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a90fe79a7b697875fb6d80217c9891140">  119</a></span>&#160;<span class="preprocessor">#define CR_ALREADY_CONNECTED 2058</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ae3cd3a1a7e629af4dde1b7d254ff4f7a">  120</a></span>&#160;<span class="preprocessor">#define CR_AUTH_PLUGIN_CANNOT_LOAD 2059</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a96e4ba532faf0e29e0cefb1ba05e73e2">  121</a></span>&#160;<span class="preprocessor">#define CR_DUPLICATE_CONNECTION_ATTR 2060</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a125c23f6f8b9c65b785e2de9f64f9e02">  122</a></span>&#160;<span class="preprocessor">#define CR_AUTH_PLUGIN_ERR 2061</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="errmsg_8h.html#aad45db7728f201c11399f84de6f90cfa">  123</a></span>&#160;<span class="preprocessor">#define CR_INSECURE_API_ERR 2062</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a71db66624ccdd2c9e11b28f7d7711217">  124</a></span>&#160;<span class="preprocessor">#define CR_FILE_NAME_TOO_LONG 2063</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="errmsg_8h.html#ad9778806794a90c0d7e9cbaddc25703a">  125</a></span>&#160;<span class="preprocessor">#define CR_SSL_FIPS_MODE_ERR 2064</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="errmsg_8h.html#abbf2225845861415c87f691c15485f0a">  126</a></span>&#160;<span class="preprocessor">#define CR_COMPRESSION_NOT_SUPPORTED 2065</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="errmsg_8h.html#abfee1366d73e66c88d83e5aa39098211">  127</a></span>&#160;<span class="preprocessor">#define CR_COMPRESSION_WRONGLY_CONFIGURED 2066</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="errmsg_8h.html#af59645d979a0f7bdcd67da285e0fb3fe">  128</a></span>&#160;<span class="preprocessor">#define CR_KERBEROS_USER_NOT_FOUND 2067</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="errmsg_8h.html#a3dfae215bf7af23453d2999bf8284e9c">  129</a></span>&#160;<span class="preprocessor">#define CR_ERROR_LAST </span><span class="comment">/*Copy last error nr:*/</span><span class="preprocessor"> 2067</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">/* Add error numbers before CR_ERROR_LAST and change it accordingly. */</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">/* Visual Studio requires &#39;__inline&#39; for C code */</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *ER_CLIENT(<span class="keywordtype">int</span> client_errno) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">if</span> (client_errno &gt;= <a class="code" href="errmsg_8h.html#ae4d5063f7036385842f95e12afbfd9d6">CR_ERROR_FIRST</a> &amp;&amp; client_errno &lt;= <a class="code" href="errmsg_8h.html#a3dfae215bf7af23453d2999bf8284e9c">CR_ERROR_LAST</a>)</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="errmsg_8h.html#a6a3cd1e68ce134f2ca3ae89efeb02533">client_errors</a>[client_errno - <a class="code" href="errmsg_8h.html#ae4d5063f7036385842f95e12afbfd9d6">CR_ERROR_FIRST</a>];</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="errmsg_8h.html#a6a3cd1e68ce134f2ca3ae89efeb02533">client_errors</a>[<a class="code" href="errmsg_8h.html#a4894e9c9e390f10ecfa47c12e35b300f">CR_UNKNOWN_ERROR</a>];</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ERRMSG_INCLUDED */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aerrmsg_8h_html_a3126f70314ce99869a2d34ecff8ba0e5"><div class="ttname"><a href="errmsg_8h.html#a3126f70314ce99869a2d34ecff8ba0e5">init_client_errs</a></div><div class="ttdeci">void init_client_errs(void)</div></div>
+<div class="ttc" id="aerrmsg_8h_html_a3dfae215bf7af23453d2999bf8284e9c"><div class="ttname"><a href="errmsg_8h.html#a3dfae215bf7af23453d2999bf8284e9c">CR_ERROR_LAST</a></div><div class="ttdeci">#define CR_ERROR_LAST</div><div class="ttdef"><b>Definition:</b> <a href="errmsg_8h_source.html#l00129">errmsg.h:129</a></div></div>
+<div class="ttc" id="aerrmsg_8h_html_a4894e9c9e390f10ecfa47c12e35b300f"><div class="ttname"><a href="errmsg_8h.html#a4894e9c9e390f10ecfa47c12e35b300f">CR_UNKNOWN_ERROR</a></div><div class="ttdeci">#define CR_UNKNOWN_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="errmsg_8h_source.html#l00058">errmsg.h:58</a></div></div>
+<div class="ttc" id="aerrmsg_8h_html_a6a3cd1e68ce134f2ca3ae89efeb02533"><div class="ttname"><a href="errmsg_8h.html#a6a3cd1e68ce134f2ca3ae89efeb02533">client_errors</a></div><div class="ttdeci">const char * client_errors[]</div></div>
+<div class="ttc" id="aerrmsg_8h_html_a76bd4c29e5c58804f95796997a0b320a"><div class="ttname"><a href="errmsg_8h.html#a76bd4c29e5c58804f95796997a0b320a">finish_client_errs</a></div><div class="ttdeci">void finish_client_errs(void)</div></div>
+<div class="ttc" id="aerrmsg_8h_html_ae4d5063f7036385842f95e12afbfd9d6"><div class="ttname"><a href="errmsg_8h.html#ae4d5063f7036385842f95e12afbfd9d6">CR_ERROR_FIRST</a></div><div class="ttdeci">#define CR_ERROR_FIRST</div><div class="ttdef"><b>Definition:</b> <a href="errmsg_8h_source.html#l00057">errmsg.h:57</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

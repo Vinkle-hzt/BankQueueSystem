@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: mysql_compress_context结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle">
+<div class="title">mysql_compress_context结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="my__compress_8h_source.html">my_compress.h</a>&gt;</code></p>
+<div class="dynheader">
+mysql_compress_context 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structmysql__compress__context__coll__graph.png" border="0" usemap="#amysql__compress__context_coll__map" alt="Collaboration graph"/></div>
+<map name="amysql__compress__context_coll__map" id="amysql__compress__context_coll__map">
+<area shape="rect" title=" " alt="" coords="81,109,250,136"/>
+<area shape="rect" href="structmysql__zlib__compress__context.html" title=" " alt="" coords="5,5,152,47"/>
+<area shape="rect" href="structmysql__zstd__compress__context.html" title=" " alt="" coords="177,5,327,47"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a9efaaf3c97b74e6df56f72e9e94b700b"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="my__compress_8h.html#ac642ed3f19606395d6d43c4cdd3aa639">enum_compression_algorithm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmysql__compress__context.html#a9efaaf3c97b74e6df56f72e9e94b700b">algorithm</a></td></tr>
+<tr class="memdesc:a9efaaf3c97b74e6df56f72e9e94b700b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compression algorithm name.  <a href="structmysql__compress__context.html#a9efaaf3c97b74e6df56f72e9e94b700b">更多...</a><br /></td></tr>
+<tr class="separator:a9efaaf3c97b74e6df56f72e9e94b700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51e4cabdc6cce9aadfbae3babf1b1a7"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a641d2bb718d9165f3e364c2431d22b4e"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structmysql__zlib__compress__context.html">mysql_zlib_compress_context</a>&#160;&#160;&#160;<a class="el" href="structmysql__compress__context.html#a641d2bb718d9165f3e364c2431d22b4e">zlib_ctx</a></td></tr>
+<tr class="memdesc:a641d2bb718d9165f3e364c2431d22b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context information of zlib.  <a href="unionmysql__compress__context_1_1_0d0.html#a641d2bb718d9165f3e364c2431d22b4e">更多...</a><br /></td></tr>
+<tr class="separator:a641d2bb718d9165f3e364c2431d22b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c16390cc5e94bb98f617c78dbbd5641"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structmysql__zstd__compress__context.html">mysql_zstd_compress_context</a>&#160;&#160;&#160;<a class="el" href="structmysql__compress__context.html#a1c16390cc5e94bb98f617c78dbbd5641">zstd_ctx</a></td></tr>
+<tr class="memdesc:a1c16390cc5e94bb98f617c78dbbd5641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context information of zstd.  <a href="unionmysql__compress__context_1_1_0d0.html#a1c16390cc5e94bb98f617c78dbbd5641">更多...</a><br /></td></tr>
+<tr class="separator:a1c16390cc5e94bb98f617c78dbbd5641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51e4cabdc6cce9aadfbae3babf1b1a7"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmysql__compress__context.html#ab51e4cabdc6cce9aadfbae3babf1b1a7">u</a></td></tr>
+<tr class="separator:ab51e4cabdc6cce9aadfbae3babf1b1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Compression context information. It encapsulate the context information based on compression method and presents a generic struct. </p>
+
+<p class="definition">在文件 <a class="el" href="my__compress_8h_source.html">my_compress.h</a> 第 <a class="el" href="my__compress_8h_source.html#l00073">73</a> 行定义.</p>
+</div><h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a9efaaf3c97b74e6df56f72e9e94b700b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efaaf3c97b74e6df56f72e9e94b700b">&#9670;&nbsp;</a></span>algorithm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="my__compress_8h.html#ac642ed3f19606395d6d43c4cdd3aa639">enum_compression_algorithm</a> algorithm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compression algorithm name. </p>
+
+<p class="definition">在文件 <a class="el" href="my__compress_8h_source.html">my_compress.h</a> 第 <a class="el" href="my__compress_8h_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab51e4cabdc6cce9aadfbae3babf1b1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51e4cabdc6cce9aadfbae3babf1b1a7">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }  u</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a641d2bb718d9165f3e364c2431d22b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641d2bb718d9165f3e364c2431d22b4e">&#9670;&nbsp;</a></span>zlib_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmysql__zlib__compress__context.html">mysql_zlib_compress_context</a> zlib_ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Context information of zlib. </p>
+
+<p class="definition">在文件 <a class="el" href="my__compress_8h_source.html">my_compress.h</a> 第 <a class="el" href="my__compress_8h_source.html#l00076">76</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1c16390cc5e94bb98f617c78dbbd5641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c16390cc5e94bb98f617c78dbbd5641">&#9670;&nbsp;</a></span>zstd_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmysql__zstd__compress__context.html">mysql_zstd_compress_context</a> zstd_ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Context information of zstd. </p>
+
+<p class="definition">在文件 <a class="el" href="my__compress_8h_source.html">my_compress.h</a> 第 <a class="el" href="my__compress_8h_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>thirdparty/MySQL/include/<a class="el" href="my__compress_8h_source.html">my_compress.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

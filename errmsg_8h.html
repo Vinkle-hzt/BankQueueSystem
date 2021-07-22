@@ -1,0 +1,1468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: thirdparty/MySQL/include/errmsg.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7f51fab15f37f4c20c90b1af38889ac7.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_06aff2f6cd7e85963200bfa75f3e631a.html">MySQL</a></li><li class="navelem"><a class="el" href="dir_c29e2d722f8e7e8f26472c529f734ef3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">errmsg.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="errmsg_8h__dep__incl.png" border="0" usemap="#athirdparty_2_my_s_q_l_2include_2errmsg_8hdep" alt=""/></div>
+<map name="athirdparty_2_my_s_q_l_2include_2errmsg_8hdep" id="athirdparty_2_my_s_q_l_2include_2errmsg_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,173,47"/>
+<area shape="rect" href="mysql_8h.html" title=" " alt="" coords="5,95,173,136"/>
+</map>
+</div>
+</div>
+<p><a href="errmsg_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a388dfa929a97bf34d5ddf406f754713b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a388dfa929a97bf34d5ddf406f754713b">CR_MIN_ERROR</a>&#160;&#160;&#160;2000 /* For easier client code */</td></tr>
+<tr class="separator:a388dfa929a97bf34d5ddf406f754713b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced7c95eea994d599feefd883f1d28ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#aced7c95eea994d599feefd883f1d28ed">CR_MAX_ERROR</a>&#160;&#160;&#160;2999</td></tr>
+<tr class="separator:aced7c95eea994d599feefd883f1d28ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19f7f4c4f91688b86d395492f41c701"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ab19f7f4c4f91688b86d395492f41c701">CLIENT_ERRMAP</a>&#160;&#160;&#160;2 /* Errormap used by my_error() */</td></tr>
+<tr class="separator:ab19f7f4c4f91688b86d395492f41c701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d5063f7036385842f95e12afbfd9d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ae4d5063f7036385842f95e12afbfd9d6">CR_ERROR_FIRST</a>&#160;&#160;&#160;2000 /*Copy first error nr.*/</td></tr>
+<tr class="separator:ae4d5063f7036385842f95e12afbfd9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4894e9c9e390f10ecfa47c12e35b300f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a4894e9c9e390f10ecfa47c12e35b300f">CR_UNKNOWN_ERROR</a>&#160;&#160;&#160;2000</td></tr>
+<tr class="separator:a4894e9c9e390f10ecfa47c12e35b300f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5efd8a360b9de0ba36c6dbb4ef0d2f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ac5efd8a360b9de0ba36c6dbb4ef0d2f8">CR_SOCKET_CREATE_ERROR</a>&#160;&#160;&#160;2001</td></tr>
+<tr class="separator:ac5efd8a360b9de0ba36c6dbb4ef0d2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89847e08712cd2f6e98d868d8fa646be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a89847e08712cd2f6e98d868d8fa646be">CR_CONNECTION_ERROR</a>&#160;&#160;&#160;2002</td></tr>
+<tr class="separator:a89847e08712cd2f6e98d868d8fa646be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac996b6b9b0e0399c3afb9f7bd9ddcbd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ac996b6b9b0e0399c3afb9f7bd9ddcbd3">CR_CONN_HOST_ERROR</a>&#160;&#160;&#160;2003</td></tr>
+<tr class="separator:ac996b6b9b0e0399c3afb9f7bd9ddcbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafaa4c71cf8630cb2328550c6f2e9b67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#aafaa4c71cf8630cb2328550c6f2e9b67">CR_IPSOCK_ERROR</a>&#160;&#160;&#160;2004</td></tr>
+<tr class="separator:aafaa4c71cf8630cb2328550c6f2e9b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7016c12960e297a10d00aae59692314c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a7016c12960e297a10d00aae59692314c">CR_UNKNOWN_HOST</a>&#160;&#160;&#160;2005</td></tr>
+<tr class="separator:a7016c12960e297a10d00aae59692314c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c74cfa766ed8c2e06718a52b0b60ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a29c74cfa766ed8c2e06718a52b0b60ee">CR_SERVER_GONE_ERROR</a>&#160;&#160;&#160;2006</td></tr>
+<tr class="separator:a29c74cfa766ed8c2e06718a52b0b60ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16423b2845e53b9b46b708916dc25f41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a16423b2845e53b9b46b708916dc25f41">CR_VERSION_ERROR</a>&#160;&#160;&#160;2007</td></tr>
+<tr class="separator:a16423b2845e53b9b46b708916dc25f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ade0496d13411711dfa6a8503507d38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a2ade0496d13411711dfa6a8503507d38">CR_OUT_OF_MEMORY</a>&#160;&#160;&#160;2008</td></tr>
+<tr class="separator:a2ade0496d13411711dfa6a8503507d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5e8272b1c56197c7eda9028a6bf493"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a8b5e8272b1c56197c7eda9028a6bf493">CR_WRONG_HOST_INFO</a>&#160;&#160;&#160;2009</td></tr>
+<tr class="separator:a8b5e8272b1c56197c7eda9028a6bf493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd90490ab1b7cbb6d64329ea416f3911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#abd90490ab1b7cbb6d64329ea416f3911">CR_LOCALHOST_CONNECTION</a>&#160;&#160;&#160;2010</td></tr>
+<tr class="separator:abd90490ab1b7cbb6d64329ea416f3911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600dcb543ece179af5b8d7d9a5e48c73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a600dcb543ece179af5b8d7d9a5e48c73">CR_TCP_CONNECTION</a>&#160;&#160;&#160;2011</td></tr>
+<tr class="separator:a600dcb543ece179af5b8d7d9a5e48c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ecadb9de0c8da7afbeec449d8817706"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a2ecadb9de0c8da7afbeec449d8817706">CR_SERVER_HANDSHAKE_ERR</a>&#160;&#160;&#160;2012</td></tr>
+<tr class="separator:a2ecadb9de0c8da7afbeec449d8817706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057dc122082ea5b47db99487107a48b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a057dc122082ea5b47db99487107a48b6">CR_SERVER_LOST</a>&#160;&#160;&#160;2013</td></tr>
+<tr class="separator:a057dc122082ea5b47db99487107a48b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c9c80cbafa6b48f5d7d5e2ef4de22e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a94c9c80cbafa6b48f5d7d5e2ef4de22e">CR_COMMANDS_OUT_OF_SYNC</a>&#160;&#160;&#160;2014</td></tr>
+<tr class="separator:a94c9c80cbafa6b48f5d7d5e2ef4de22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ae16c479ee62f2675a7023d88c66a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a17ae16c479ee62f2675a7023d88c66a3">CR_NAMEDPIPE_CONNECTION</a>&#160;&#160;&#160;2015</td></tr>
+<tr class="separator:a17ae16c479ee62f2675a7023d88c66a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751da60ba507c1b1edc19a93ead569c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a751da60ba507c1b1edc19a93ead569c5">CR_NAMEDPIPEWAIT_ERROR</a>&#160;&#160;&#160;2016</td></tr>
+<tr class="separator:a751da60ba507c1b1edc19a93ead569c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a8ff690211f32ba2e54e26374933f0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a8a8ff690211f32ba2e54e26374933f0d">CR_NAMEDPIPEOPEN_ERROR</a>&#160;&#160;&#160;2017</td></tr>
+<tr class="separator:a8a8ff690211f32ba2e54e26374933f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011cc28c651cfbcb413b643489e21a4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a011cc28c651cfbcb413b643489e21a4a">CR_NAMEDPIPESETSTATE_ERROR</a>&#160;&#160;&#160;2018</td></tr>
+<tr class="separator:a011cc28c651cfbcb413b643489e21a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41077e45f70366587bf3b209eff3196d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a41077e45f70366587bf3b209eff3196d">CR_CANT_READ_CHARSET</a>&#160;&#160;&#160;2019</td></tr>
+<tr class="separator:a41077e45f70366587bf3b209eff3196d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2905cb9a1e63ad8a95b707c43a5a7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a5d2905cb9a1e63ad8a95b707c43a5a7c">CR_NET_PACKET_TOO_LARGE</a>&#160;&#160;&#160;2020</td></tr>
+<tr class="separator:a5d2905cb9a1e63ad8a95b707c43a5a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e336b72ded42f507d54f34e3de3380"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ab7e336b72ded42f507d54f34e3de3380">CR_EMBEDDED_CONNECTION</a>&#160;&#160;&#160;2021</td></tr>
+<tr class="separator:ab7e336b72ded42f507d54f34e3de3380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5108bbd55103fd697763e548725008c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a5108bbd55103fd697763e548725008c4">CR_PROBE_SLAVE_STATUS</a>&#160;&#160;&#160;2022</td></tr>
+<tr class="separator:a5108bbd55103fd697763e548725008c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058f4fb3af4779df205992f4bf8bb48a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a058f4fb3af4779df205992f4bf8bb48a">CR_PROBE_SLAVE_HOSTS</a>&#160;&#160;&#160;2023</td></tr>
+<tr class="separator:a058f4fb3af4779df205992f4bf8bb48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87234dac1d46f8d5c2916f6691efbc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ab87234dac1d46f8d5c2916f6691efbc0">CR_PROBE_SLAVE_CONNECT</a>&#160;&#160;&#160;2024</td></tr>
+<tr class="separator:ab87234dac1d46f8d5c2916f6691efbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad171e08b162b8c2e5d56b8fd033694f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ad171e08b162b8c2e5d56b8fd033694f4">CR_PROBE_MASTER_CONNECT</a>&#160;&#160;&#160;2025</td></tr>
+<tr class="separator:ad171e08b162b8c2e5d56b8fd033694f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1417629a0138810437b50d5b1b813658"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a1417629a0138810437b50d5b1b813658">CR_SSL_CONNECTION_ERROR</a>&#160;&#160;&#160;2026</td></tr>
+<tr class="separator:a1417629a0138810437b50d5b1b813658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2943d879c4463f77aebf37a8ef01483d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a2943d879c4463f77aebf37a8ef01483d">CR_MALFORMED_PACKET</a>&#160;&#160;&#160;2027</td></tr>
+<tr class="separator:a2943d879c4463f77aebf37a8ef01483d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2863b7b46205e28c468e5f4c43292219"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a2863b7b46205e28c468e5f4c43292219">CR_WRONG_LICENSE</a>&#160;&#160;&#160;2028</td></tr>
+<tr class="separator:a2863b7b46205e28c468e5f4c43292219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adabc3f5d660d9ad7fd7b9e123413244f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#adabc3f5d660d9ad7fd7b9e123413244f">CR_NULL_POINTER</a>&#160;&#160;&#160;2029</td></tr>
+<tr class="separator:adabc3f5d660d9ad7fd7b9e123413244f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4211446b2cab4cf045d34b1288f0b677"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a4211446b2cab4cf045d34b1288f0b677">CR_NO_PREPARE_STMT</a>&#160;&#160;&#160;2030</td></tr>
+<tr class="separator:a4211446b2cab4cf045d34b1288f0b677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573714b5d8c5c911773012f9145fe362"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a573714b5d8c5c911773012f9145fe362">CR_PARAMS_NOT_BOUND</a>&#160;&#160;&#160;2031</td></tr>
+<tr class="separator:a573714b5d8c5c911773012f9145fe362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3227547c52382a186406288cae9521cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a3227547c52382a186406288cae9521cd">CR_DATA_TRUNCATED</a>&#160;&#160;&#160;2032</td></tr>
+<tr class="separator:a3227547c52382a186406288cae9521cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3226868ec182537bed5583c6cc4afe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#aed3226868ec182537bed5583c6cc4afe">CR_NO_PARAMETERS_EXISTS</a>&#160;&#160;&#160;2033</td></tr>
+<tr class="separator:aed3226868ec182537bed5583c6cc4afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6541c9d1dedc80e93a6dca051e5d3970"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a6541c9d1dedc80e93a6dca051e5d3970">CR_INVALID_PARAMETER_NO</a>&#160;&#160;&#160;2034</td></tr>
+<tr class="separator:a6541c9d1dedc80e93a6dca051e5d3970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8223557641e0152e08b3c3106602d93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ac8223557641e0152e08b3c3106602d93">CR_INVALID_BUFFER_USE</a>&#160;&#160;&#160;2035</td></tr>
+<tr class="separator:ac8223557641e0152e08b3c3106602d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c17e2d487c36338ae7cf87d8798537d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a0c17e2d487c36338ae7cf87d8798537d">CR_UNSUPPORTED_PARAM_TYPE</a>&#160;&#160;&#160;2036</td></tr>
+<tr class="separator:a0c17e2d487c36338ae7cf87d8798537d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72fd21dd4280e882c61b857fe2e9935"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ab72fd21dd4280e882c61b857fe2e9935">CR_SHARED_MEMORY_CONNECTION</a>&#160;&#160;&#160;2037</td></tr>
+<tr class="separator:ab72fd21dd4280e882c61b857fe2e9935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94765c7f696f09025181d65ebd7d5f8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a94765c7f696f09025181d65ebd7d5f8d">CR_SHARED_MEMORY_CONNECT_REQUEST_ERROR</a>&#160;&#160;&#160;2038</td></tr>
+<tr class="separator:a94765c7f696f09025181d65ebd7d5f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e491584429614c1022973f3e0a3123c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a9e491584429614c1022973f3e0a3123c">CR_SHARED_MEMORY_CONNECT_ANSWER_ERROR</a>&#160;&#160;&#160;2039</td></tr>
+<tr class="separator:a9e491584429614c1022973f3e0a3123c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace925cd47958e0c5ea4cd685fafe66d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ace925cd47958e0c5ea4cd685fafe66d4">CR_SHARED_MEMORY_CONNECT_FILE_MAP_ERROR</a>&#160;&#160;&#160;2040</td></tr>
+<tr class="separator:ace925cd47958e0c5ea4cd685fafe66d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702c2452699e97f050d9780a5c85a241"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a702c2452699e97f050d9780a5c85a241">CR_SHARED_MEMORY_CONNECT_MAP_ERROR</a>&#160;&#160;&#160;2041</td></tr>
+<tr class="separator:a702c2452699e97f050d9780a5c85a241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5fe34e187eafb313120e43ac1032caf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ab5fe34e187eafb313120e43ac1032caf">CR_SHARED_MEMORY_FILE_MAP_ERROR</a>&#160;&#160;&#160;2042</td></tr>
+<tr class="separator:ab5fe34e187eafb313120e43ac1032caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63dbea7801227ead1648f06f4a88479f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a63dbea7801227ead1648f06f4a88479f">CR_SHARED_MEMORY_MAP_ERROR</a>&#160;&#160;&#160;2043</td></tr>
+<tr class="separator:a63dbea7801227ead1648f06f4a88479f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3938cfd7872f08ae5c443669ec5e2583"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a3938cfd7872f08ae5c443669ec5e2583">CR_SHARED_MEMORY_EVENT_ERROR</a>&#160;&#160;&#160;2044</td></tr>
+<tr class="separator:a3938cfd7872f08ae5c443669ec5e2583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab650249d3b11297660a204ebf6f3bc66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ab650249d3b11297660a204ebf6f3bc66">CR_SHARED_MEMORY_CONNECT_ABANDONED_ERROR</a>&#160;&#160;&#160;2045</td></tr>
+<tr class="separator:ab650249d3b11297660a204ebf6f3bc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a8e2ca4b909b9f8f908ae4cf9799ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ae6a8e2ca4b909b9f8f908ae4cf9799ba">CR_SHARED_MEMORY_CONNECT_SET_ERROR</a>&#160;&#160;&#160;2046</td></tr>
+<tr class="separator:ae6a8e2ca4b909b9f8f908ae4cf9799ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa629c66168e14fa5ebaeb696f94c6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#aeaa629c66168e14fa5ebaeb696f94c6a">CR_CONN_UNKNOW_PROTOCOL</a>&#160;&#160;&#160;2047</td></tr>
+<tr class="separator:aeaa629c66168e14fa5ebaeb696f94c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f9bf5b1a8b40161185c463504e9331"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a15f9bf5b1a8b40161185c463504e9331">CR_INVALID_CONN_HANDLE</a>&#160;&#160;&#160;2048</td></tr>
+<tr class="separator:a15f9bf5b1a8b40161185c463504e9331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c44233729da9878ea0949115edb6cbd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a2c44233729da9878ea0949115edb6cbd">CR_UNUSED_1</a>&#160;&#160;&#160;2049</td></tr>
+<tr class="separator:a2c44233729da9878ea0949115edb6cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7093123b1434d11ee5a96d397838929b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a7093123b1434d11ee5a96d397838929b">CR_FETCH_CANCELED</a>&#160;&#160;&#160;2050</td></tr>
+<tr class="separator:a7093123b1434d11ee5a96d397838929b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc31cdcbc5b070bcf846b15a3ba1df0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a5cc31cdcbc5b070bcf846b15a3ba1df0">CR_NO_DATA</a>&#160;&#160;&#160;2051</td></tr>
+<tr class="separator:a5cc31cdcbc5b070bcf846b15a3ba1df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b0b97e6e4d0a29e22ae4add861ceef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a57b0b97e6e4d0a29e22ae4add861ceef">CR_NO_STMT_METADATA</a>&#160;&#160;&#160;2052</td></tr>
+<tr class="separator:a57b0b97e6e4d0a29e22ae4add861ceef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960dead0a609efa997ad8555c1bdb8af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a960dead0a609efa997ad8555c1bdb8af">CR_NO_RESULT_SET</a>&#160;&#160;&#160;2053</td></tr>
+<tr class="separator:a960dead0a609efa997ad8555c1bdb8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf6a526753ca234a1b50b49f8d3c323"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a1cf6a526753ca234a1b50b49f8d3c323">CR_NOT_IMPLEMENTED</a>&#160;&#160;&#160;2054</td></tr>
+<tr class="separator:a1cf6a526753ca234a1b50b49f8d3c323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab797865ea4d25f9fc537af74f610994d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ab797865ea4d25f9fc537af74f610994d">CR_SERVER_LOST_EXTENDED</a>&#160;&#160;&#160;2055</td></tr>
+<tr class="separator:ab797865ea4d25f9fc537af74f610994d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5012c5e15c2bc7dfc1ea357bed99c7dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a5012c5e15c2bc7dfc1ea357bed99c7dd">CR_STMT_CLOSED</a>&#160;&#160;&#160;2056</td></tr>
+<tr class="separator:a5012c5e15c2bc7dfc1ea357bed99c7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7748f33bb45c1792ffcf8cbd3d415310"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a7748f33bb45c1792ffcf8cbd3d415310">CR_NEW_STMT_METADATA</a>&#160;&#160;&#160;2057</td></tr>
+<tr class="separator:a7748f33bb45c1792ffcf8cbd3d415310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90fe79a7b697875fb6d80217c9891140"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a90fe79a7b697875fb6d80217c9891140">CR_ALREADY_CONNECTED</a>&#160;&#160;&#160;2058</td></tr>
+<tr class="separator:a90fe79a7b697875fb6d80217c9891140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3cd3a1a7e629af4dde1b7d254ff4f7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ae3cd3a1a7e629af4dde1b7d254ff4f7a">CR_AUTH_PLUGIN_CANNOT_LOAD</a>&#160;&#160;&#160;2059</td></tr>
+<tr class="separator:ae3cd3a1a7e629af4dde1b7d254ff4f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e4ba532faf0e29e0cefb1ba05e73e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a96e4ba532faf0e29e0cefb1ba05e73e2">CR_DUPLICATE_CONNECTION_ATTR</a>&#160;&#160;&#160;2060</td></tr>
+<tr class="separator:a96e4ba532faf0e29e0cefb1ba05e73e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125c23f6f8b9c65b785e2de9f64f9e02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a125c23f6f8b9c65b785e2de9f64f9e02">CR_AUTH_PLUGIN_ERR</a>&#160;&#160;&#160;2061</td></tr>
+<tr class="separator:a125c23f6f8b9c65b785e2de9f64f9e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad45db7728f201c11399f84de6f90cfa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#aad45db7728f201c11399f84de6f90cfa">CR_INSECURE_API_ERR</a>&#160;&#160;&#160;2062</td></tr>
+<tr class="separator:aad45db7728f201c11399f84de6f90cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71db66624ccdd2c9e11b28f7d7711217"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a71db66624ccdd2c9e11b28f7d7711217">CR_FILE_NAME_TOO_LONG</a>&#160;&#160;&#160;2063</td></tr>
+<tr class="separator:a71db66624ccdd2c9e11b28f7d7711217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9778806794a90c0d7e9cbaddc25703a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#ad9778806794a90c0d7e9cbaddc25703a">CR_SSL_FIPS_MODE_ERR</a>&#160;&#160;&#160;2064</td></tr>
+<tr class="separator:ad9778806794a90c0d7e9cbaddc25703a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf2225845861415c87f691c15485f0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#abbf2225845861415c87f691c15485f0a">CR_COMPRESSION_NOT_SUPPORTED</a>&#160;&#160;&#160;2065</td></tr>
+<tr class="separator:abbf2225845861415c87f691c15485f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfee1366d73e66c88d83e5aa39098211"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#abfee1366d73e66c88d83e5aa39098211">CR_COMPRESSION_WRONGLY_CONFIGURED</a>&#160;&#160;&#160;2066</td></tr>
+<tr class="separator:abfee1366d73e66c88d83e5aa39098211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59645d979a0f7bdcd67da285e0fb3fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#af59645d979a0f7bdcd67da285e0fb3fe">CR_KERBEROS_USER_NOT_FOUND</a>&#160;&#160;&#160;2067</td></tr>
+<tr class="separator:af59645d979a0f7bdcd67da285e0fb3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dfae215bf7af23453d2999bf8284e9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a3dfae215bf7af23453d2999bf8284e9c">CR_ERROR_LAST</a>&#160;&#160;&#160;/*Copy last error nr:*/ 2067</td></tr>
+<tr class="separator:a3dfae215bf7af23453d2999bf8284e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a3126f70314ce99869a2d34ecff8ba0e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a3126f70314ce99869a2d34ecff8ba0e5">init_client_errs</a> (void)</td></tr>
+<tr class="separator:a3126f70314ce99869a2d34ecff8ba0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bd4c29e5c58804f95796997a0b320a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a76bd4c29e5c58804f95796997a0b320a">finish_client_errs</a> (void)</td></tr>
+<tr class="separator:a76bd4c29e5c58804f95796997a0b320a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a6a3cd1e68ce134f2ca3ae89efeb02533"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errmsg_8h.html#a6a3cd1e68ce134f2ca3ae89efeb02533">client_errors</a> []</td></tr>
+<tr class="separator:a6a3cd1e68ce134f2ca3ae89efeb02533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Error messages for MySQL clients. These are constant and use the CR_ prefix. &lt;mysqlclient_ername.h&gt; will contain auto-generated mappings containing the symbolic name and the number from this file, and the english error messages in libmysql/errmsg.c.</p>
+<p>Dynamic error messages for the daemon are in share/language/errmsg.sys. The server equivalent to &lt;<a class="el" href="errmsg_8h.html">errmsg.h</a>&gt; is &lt;<a class="el" href="mysqld__error_8h.html">mysqld_error.h</a>&gt;. The server equivalent to &lt;mysqlclient_ername.h&gt; is &lt;mysqld_ername.h&gt;.</p>
+<p>Note that the auth subsystem also uses codes with a CR_ prefix. </p>
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="ab19f7f4c4f91688b86d395492f41c701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19f7f4c4f91688b86d395492f41c701">&#9670;&nbsp;</a></span>CLIENT_ERRMAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLIENT_ERRMAP&#160;&#160;&#160;2 /* Errormap used by my_error() */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a90fe79a7b697875fb6d80217c9891140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90fe79a7b697875fb6d80217c9891140">&#9670;&nbsp;</a></span>CR_ALREADY_CONNECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_ALREADY_CONNECTED&#160;&#160;&#160;2058</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae3cd3a1a7e629af4dde1b7d254ff4f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3cd3a1a7e629af4dde1b7d254ff4f7a">&#9670;&nbsp;</a></span>CR_AUTH_PLUGIN_CANNOT_LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_AUTH_PLUGIN_CANNOT_LOAD&#160;&#160;&#160;2059</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00120">120</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a125c23f6f8b9c65b785e2de9f64f9e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125c23f6f8b9c65b785e2de9f64f9e02">&#9670;&nbsp;</a></span>CR_AUTH_PLUGIN_ERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_AUTH_PLUGIN_ERR&#160;&#160;&#160;2061</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00122">122</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a41077e45f70366587bf3b209eff3196d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41077e45f70366587bf3b209eff3196d">&#9670;&nbsp;</a></span>CR_CANT_READ_CHARSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_CANT_READ_CHARSET&#160;&#160;&#160;2019</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a94c9c80cbafa6b48f5d7d5e2ef4de22e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c9c80cbafa6b48f5d7d5e2ef4de22e">&#9670;&nbsp;</a></span>CR_COMMANDS_OUT_OF_SYNC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_COMMANDS_OUT_OF_SYNC&#160;&#160;&#160;2014</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abbf2225845861415c87f691c15485f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf2225845861415c87f691c15485f0a">&#9670;&nbsp;</a></span>CR_COMPRESSION_NOT_SUPPORTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_COMPRESSION_NOT_SUPPORTED&#160;&#160;&#160;2065</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00126">126</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abfee1366d73e66c88d83e5aa39098211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfee1366d73e66c88d83e5aa39098211">&#9670;&nbsp;</a></span>CR_COMPRESSION_WRONGLY_CONFIGURED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_COMPRESSION_WRONGLY_CONFIGURED&#160;&#160;&#160;2066</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00127">127</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac996b6b9b0e0399c3afb9f7bd9ddcbd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac996b6b9b0e0399c3afb9f7bd9ddcbd3">&#9670;&nbsp;</a></span>CR_CONN_HOST_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_CONN_HOST_ERROR&#160;&#160;&#160;2003</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00061">61</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aeaa629c66168e14fa5ebaeb696f94c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa629c66168e14fa5ebaeb696f94c6a">&#9670;&nbsp;</a></span>CR_CONN_UNKNOW_PROTOCOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_CONN_UNKNOW_PROTOCOL&#160;&#160;&#160;2047</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a89847e08712cd2f6e98d868d8fa646be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89847e08712cd2f6e98d868d8fa646be">&#9670;&nbsp;</a></span>CR_CONNECTION_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_CONNECTION_ERROR&#160;&#160;&#160;2002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3227547c52382a186406288cae9521cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3227547c52382a186406288cae9521cd">&#9670;&nbsp;</a></span>CR_DATA_TRUNCATED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_DATA_TRUNCATED&#160;&#160;&#160;2032</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00092">92</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a96e4ba532faf0e29e0cefb1ba05e73e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e4ba532faf0e29e0cefb1ba05e73e2">&#9670;&nbsp;</a></span>CR_DUPLICATE_CONNECTION_ATTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_DUPLICATE_CONNECTION_ATTR&#160;&#160;&#160;2060</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab7e336b72ded42f507d54f34e3de3380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e336b72ded42f507d54f34e3de3380">&#9670;&nbsp;</a></span>CR_EMBEDDED_CONNECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_EMBEDDED_CONNECTION&#160;&#160;&#160;2021</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00079">79</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae4d5063f7036385842f95e12afbfd9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d5063f7036385842f95e12afbfd9d6">&#9670;&nbsp;</a></span>CR_ERROR_FIRST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_ERROR_FIRST&#160;&#160;&#160;2000 /*Copy first error nr.*/</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3dfae215bf7af23453d2999bf8284e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dfae215bf7af23453d2999bf8284e9c">&#9670;&nbsp;</a></span>CR_ERROR_LAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_ERROR_LAST&#160;&#160;&#160;/*Copy last error nr:*/ 2067</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00129">129</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7093123b1434d11ee5a96d397838929b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7093123b1434d11ee5a96d397838929b">&#9670;&nbsp;</a></span>CR_FETCH_CANCELED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_FETCH_CANCELED&#160;&#160;&#160;2050</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00111">111</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a71db66624ccdd2c9e11b28f7d7711217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71db66624ccdd2c9e11b28f7d7711217">&#9670;&nbsp;</a></span>CR_FILE_NAME_TOO_LONG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_FILE_NAME_TOO_LONG&#160;&#160;&#160;2063</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00124">124</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aad45db7728f201c11399f84de6f90cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad45db7728f201c11399f84de6f90cfa">&#9670;&nbsp;</a></span>CR_INSECURE_API_ERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_INSECURE_API_ERR&#160;&#160;&#160;2062</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00123">123</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac8223557641e0152e08b3c3106602d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8223557641e0152e08b3c3106602d93">&#9670;&nbsp;</a></span>CR_INVALID_BUFFER_USE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_INVALID_BUFFER_USE&#160;&#160;&#160;2035</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00095">95</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a15f9bf5b1a8b40161185c463504e9331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f9bf5b1a8b40161185c463504e9331">&#9670;&nbsp;</a></span>CR_INVALID_CONN_HANDLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_INVALID_CONN_HANDLE&#160;&#160;&#160;2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00109">109</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6541c9d1dedc80e93a6dca051e5d3970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6541c9d1dedc80e93a6dca051e5d3970">&#9670;&nbsp;</a></span>CR_INVALID_PARAMETER_NO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_INVALID_PARAMETER_NO&#160;&#160;&#160;2034</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aafaa4c71cf8630cb2328550c6f2e9b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafaa4c71cf8630cb2328550c6f2e9b67">&#9670;&nbsp;</a></span>CR_IPSOCK_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_IPSOCK_ERROR&#160;&#160;&#160;2004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00062">62</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af59645d979a0f7bdcd67da285e0fb3fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59645d979a0f7bdcd67da285e0fb3fe">&#9670;&nbsp;</a></span>CR_KERBEROS_USER_NOT_FOUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_KERBEROS_USER_NOT_FOUND&#160;&#160;&#160;2067</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00128">128</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abd90490ab1b7cbb6d64329ea416f3911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd90490ab1b7cbb6d64329ea416f3911">&#9670;&nbsp;</a></span>CR_LOCALHOST_CONNECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_LOCALHOST_CONNECTION&#160;&#160;&#160;2010</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00068">68</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2943d879c4463f77aebf37a8ef01483d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2943d879c4463f77aebf37a8ef01483d">&#9670;&nbsp;</a></span>CR_MALFORMED_PACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_MALFORMED_PACKET&#160;&#160;&#160;2027</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00085">85</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aced7c95eea994d599feefd883f1d28ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced7c95eea994d599feefd883f1d28ed">&#9670;&nbsp;</a></span>CR_MAX_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_MAX_ERROR&#160;&#160;&#160;2999</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a388dfa929a97bf34d5ddf406f754713b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a388dfa929a97bf34d5ddf406f754713b">&#9670;&nbsp;</a></span>CR_MIN_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_MIN_ERROR&#160;&#160;&#160;2000 /* For easier client code */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a17ae16c479ee62f2675a7023d88c66a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ae16c479ee62f2675a7023d88c66a3">&#9670;&nbsp;</a></span>CR_NAMEDPIPE_CONNECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NAMEDPIPE_CONNECTION&#160;&#160;&#160;2015</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00073">73</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8a8ff690211f32ba2e54e26374933f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a8ff690211f32ba2e54e26374933f0d">&#9670;&nbsp;</a></span>CR_NAMEDPIPEOPEN_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NAMEDPIPEOPEN_ERROR&#160;&#160;&#160;2017</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00075">75</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a011cc28c651cfbcb413b643489e21a4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011cc28c651cfbcb413b643489e21a4a">&#9670;&nbsp;</a></span>CR_NAMEDPIPESETSTATE_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NAMEDPIPESETSTATE_ERROR&#160;&#160;&#160;2018</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00076">76</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a751da60ba507c1b1edc19a93ead569c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751da60ba507c1b1edc19a93ead569c5">&#9670;&nbsp;</a></span>CR_NAMEDPIPEWAIT_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NAMEDPIPEWAIT_ERROR&#160;&#160;&#160;2016</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00074">74</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5d2905cb9a1e63ad8a95b707c43a5a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2905cb9a1e63ad8a95b707c43a5a7c">&#9670;&nbsp;</a></span>CR_NET_PACKET_TOO_LARGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NET_PACKET_TOO_LARGE&#160;&#160;&#160;2020</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7748f33bb45c1792ffcf8cbd3d415310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7748f33bb45c1792ffcf8cbd3d415310">&#9670;&nbsp;</a></span>CR_NEW_STMT_METADATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NEW_STMT_METADATA&#160;&#160;&#160;2057</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00118">118</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5cc31cdcbc5b070bcf846b15a3ba1df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc31cdcbc5b070bcf846b15a3ba1df0">&#9670;&nbsp;</a></span>CR_NO_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NO_DATA&#160;&#160;&#160;2051</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00112">112</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aed3226868ec182537bed5583c6cc4afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed3226868ec182537bed5583c6cc4afe">&#9670;&nbsp;</a></span>CR_NO_PARAMETERS_EXISTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NO_PARAMETERS_EXISTS&#160;&#160;&#160;2033</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00093">93</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4211446b2cab4cf045d34b1288f0b677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4211446b2cab4cf045d34b1288f0b677">&#9670;&nbsp;</a></span>CR_NO_PREPARE_STMT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NO_PREPARE_STMT&#160;&#160;&#160;2030</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a960dead0a609efa997ad8555c1bdb8af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a960dead0a609efa997ad8555c1bdb8af">&#9670;&nbsp;</a></span>CR_NO_RESULT_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NO_RESULT_SET&#160;&#160;&#160;2053</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00114">114</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a57b0b97e6e4d0a29e22ae4add861ceef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b0b97e6e4d0a29e22ae4add861ceef">&#9670;&nbsp;</a></span>CR_NO_STMT_METADATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NO_STMT_METADATA&#160;&#160;&#160;2052</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00113">113</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1cf6a526753ca234a1b50b49f8d3c323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf6a526753ca234a1b50b49f8d3c323">&#9670;&nbsp;</a></span>CR_NOT_IMPLEMENTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NOT_IMPLEMENTED&#160;&#160;&#160;2054</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00115">115</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adabc3f5d660d9ad7fd7b9e123413244f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adabc3f5d660d9ad7fd7b9e123413244f">&#9670;&nbsp;</a></span>CR_NULL_POINTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_NULL_POINTER&#160;&#160;&#160;2029</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00089">89</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2ade0496d13411711dfa6a8503507d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ade0496d13411711dfa6a8503507d38">&#9670;&nbsp;</a></span>CR_OUT_OF_MEMORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_OUT_OF_MEMORY&#160;&#160;&#160;2008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a573714b5d8c5c911773012f9145fe362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573714b5d8c5c911773012f9145fe362">&#9670;&nbsp;</a></span>CR_PARAMS_NOT_BOUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_PARAMS_NOT_BOUND&#160;&#160;&#160;2031</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad171e08b162b8c2e5d56b8fd033694f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad171e08b162b8c2e5d56b8fd033694f4">&#9670;&nbsp;</a></span>CR_PROBE_MASTER_CONNECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_PROBE_MASTER_CONNECT&#160;&#160;&#160;2025</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00083">83</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab87234dac1d46f8d5c2916f6691efbc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab87234dac1d46f8d5c2916f6691efbc0">&#9670;&nbsp;</a></span>CR_PROBE_SLAVE_CONNECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_PROBE_SLAVE_CONNECT&#160;&#160;&#160;2024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a058f4fb3af4779df205992f4bf8bb48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a058f4fb3af4779df205992f4bf8bb48a">&#9670;&nbsp;</a></span>CR_PROBE_SLAVE_HOSTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_PROBE_SLAVE_HOSTS&#160;&#160;&#160;2023</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5108bbd55103fd697763e548725008c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5108bbd55103fd697763e548725008c4">&#9670;&nbsp;</a></span>CR_PROBE_SLAVE_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_PROBE_SLAVE_STATUS&#160;&#160;&#160;2022</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a29c74cfa766ed8c2e06718a52b0b60ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c74cfa766ed8c2e06718a52b0b60ee">&#9670;&nbsp;</a></span>CR_SERVER_GONE_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SERVER_GONE_ERROR&#160;&#160;&#160;2006</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2ecadb9de0c8da7afbeec449d8817706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ecadb9de0c8da7afbeec449d8817706">&#9670;&nbsp;</a></span>CR_SERVER_HANDSHAKE_ERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SERVER_HANDSHAKE_ERR&#160;&#160;&#160;2012</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00070">70</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a057dc122082ea5b47db99487107a48b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057dc122082ea5b47db99487107a48b6">&#9670;&nbsp;</a></span>CR_SERVER_LOST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SERVER_LOST&#160;&#160;&#160;2013</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab797865ea4d25f9fc537af74f610994d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab797865ea4d25f9fc537af74f610994d">&#9670;&nbsp;</a></span>CR_SERVER_LOST_EXTENDED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SERVER_LOST_EXTENDED&#160;&#160;&#160;2055</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00116">116</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab650249d3b11297660a204ebf6f3bc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab650249d3b11297660a204ebf6f3bc66">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_CONNECT_ABANDONED_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_CONNECT_ABANDONED_ERROR&#160;&#160;&#160;2045</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00106">106</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9e491584429614c1022973f3e0a3123c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e491584429614c1022973f3e0a3123c">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_CONNECT_ANSWER_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_CONNECT_ANSWER_ERROR&#160;&#160;&#160;2039</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00100">100</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ace925cd47958e0c5ea4cd685fafe66d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace925cd47958e0c5ea4cd685fafe66d4">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_CONNECT_FILE_MAP_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_CONNECT_FILE_MAP_ERROR&#160;&#160;&#160;2040</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a702c2452699e97f050d9780a5c85a241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702c2452699e97f050d9780a5c85a241">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_CONNECT_MAP_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_CONNECT_MAP_ERROR&#160;&#160;&#160;2041</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00102">102</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a94765c7f696f09025181d65ebd7d5f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94765c7f696f09025181d65ebd7d5f8d">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_CONNECT_REQUEST_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_CONNECT_REQUEST_ERROR&#160;&#160;&#160;2038</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00099">99</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae6a8e2ca4b909b9f8f908ae4cf9799ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a8e2ca4b909b9f8f908ae4cf9799ba">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_CONNECT_SET_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_CONNECT_SET_ERROR&#160;&#160;&#160;2046</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab72fd21dd4280e882c61b857fe2e9935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72fd21dd4280e882c61b857fe2e9935">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_CONNECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_CONNECTION&#160;&#160;&#160;2037</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00098">98</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3938cfd7872f08ae5c443669ec5e2583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3938cfd7872f08ae5c443669ec5e2583">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_EVENT_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_EVENT_ERROR&#160;&#160;&#160;2044</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00105">105</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab5fe34e187eafb313120e43ac1032caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5fe34e187eafb313120e43ac1032caf">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_FILE_MAP_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_FILE_MAP_ERROR&#160;&#160;&#160;2042</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00103">103</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a63dbea7801227ead1648f06f4a88479f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63dbea7801227ead1648f06f4a88479f">&#9670;&nbsp;</a></span>CR_SHARED_MEMORY_MAP_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SHARED_MEMORY_MAP_ERROR&#160;&#160;&#160;2043</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac5efd8a360b9de0ba36c6dbb4ef0d2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5efd8a360b9de0ba36c6dbb4ef0d2f8">&#9670;&nbsp;</a></span>CR_SOCKET_CREATE_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SOCKET_CREATE_ERROR&#160;&#160;&#160;2001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1417629a0138810437b50d5b1b813658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1417629a0138810437b50d5b1b813658">&#9670;&nbsp;</a></span>CR_SSL_CONNECTION_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SSL_CONNECTION_ERROR&#160;&#160;&#160;2026</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00084">84</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad9778806794a90c0d7e9cbaddc25703a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9778806794a90c0d7e9cbaddc25703a">&#9670;&nbsp;</a></span>CR_SSL_FIPS_MODE_ERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_SSL_FIPS_MODE_ERR&#160;&#160;&#160;2064</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00125">125</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5012c5e15c2bc7dfc1ea357bed99c7dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5012c5e15c2bc7dfc1ea357bed99c7dd">&#9670;&nbsp;</a></span>CR_STMT_CLOSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_STMT_CLOSED&#160;&#160;&#160;2056</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a600dcb543ece179af5b8d7d9a5e48c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600dcb543ece179af5b8d7d9a5e48c73">&#9670;&nbsp;</a></span>CR_TCP_CONNECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_TCP_CONNECTION&#160;&#160;&#160;2011</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00069">69</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4894e9c9e390f10ecfa47c12e35b300f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4894e9c9e390f10ecfa47c12e35b300f">&#9670;&nbsp;</a></span>CR_UNKNOWN_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_UNKNOWN_ERROR&#160;&#160;&#160;2000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7016c12960e297a10d00aae59692314c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7016c12960e297a10d00aae59692314c">&#9670;&nbsp;</a></span>CR_UNKNOWN_HOST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_UNKNOWN_HOST&#160;&#160;&#160;2005</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0c17e2d487c36338ae7cf87d8798537d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c17e2d487c36338ae7cf87d8798537d">&#9670;&nbsp;</a></span>CR_UNSUPPORTED_PARAM_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_UNSUPPORTED_PARAM_TYPE&#160;&#160;&#160;2036</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2c44233729da9878ea0949115edb6cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c44233729da9878ea0949115edb6cbd">&#9670;&nbsp;</a></span>CR_UNUSED_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_UNUSED_1&#160;&#160;&#160;2049</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00110">110</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a16423b2845e53b9b46b708916dc25f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16423b2845e53b9b46b708916dc25f41">&#9670;&nbsp;</a></span>CR_VERSION_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_VERSION_ERROR&#160;&#160;&#160;2007</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8b5e8272b1c56197c7eda9028a6bf493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5e8272b1c56197c7eda9028a6bf493">&#9670;&nbsp;</a></span>CR_WRONG_HOST_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_WRONG_HOST_INFO&#160;&#160;&#160;2009</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2863b7b46205e28c468e5f4c43292219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2863b7b46205e28c468e5f4c43292219">&#9670;&nbsp;</a></span>CR_WRONG_LICENSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CR_WRONG_LICENSE&#160;&#160;&#160;2028</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="errmsg_8h_source.html">errmsg.h</a> 第 <a class="el" href="errmsg_8h_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a76bd4c29e5c58804f95796997a0b320a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76bd4c29e5c58804f95796997a0b320a">&#9670;&nbsp;</a></span>finish_client_errs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void finish_client_errs </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3126f70314ce99869a2d34ecff8ba0e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3126f70314ce99869a2d34ecff8ba0e5">&#9670;&nbsp;</a></span>init_client_errs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_client_errs </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a6a3cd1e68ce134f2ca3ae89efeb02533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3cd1e68ce134f2ca3ae89efeb02533">&#9670;&nbsp;</a></span>client_errors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* client_errors[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

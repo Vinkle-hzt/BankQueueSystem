@@ -1,0 +1,5 @@
+<map id="mysql_compress_context" name="mysql_compress_context">
+<area shape="rect" id="node1" title=" " alt="" coords="81,109,250,136"/>
+<area shape="rect" id="node2" href="$structmysql__zlib__compress__context.html" title=" " alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node3" href="$structmysql__zstd__compress__context.html" title=" " alt="" coords="177,5,327,47"/>
+</map>

@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BankQueueSystem: thirdparty/MySQL/include/openssl/applink.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BankQueueSystem
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7f51fab15f37f4c20c90b1af38889ac7.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_06aff2f6cd7e85963200bfa75f3e631a.html">MySQL</a></li><li class="navelem"><a class="el" href="dir_c29e2d722f8e7e8f26472c529f734ef3.html">include</a></li><li class="navelem"><a class="el" href="dir_ccb42119cb8f8ae43d567b51564b7524.html">openssl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">applink.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="applink_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright 2004-2016 The OpenSSL Project Authors. All Rights Reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Licensed under the OpenSSL license (the &quot;License&quot;).  You may not use</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * this file except in compliance with the License.  You can obtain a copy</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * in the file LICENSE in the source distribution or at</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * https://www.openssl.org/source/license.html</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="applink_8c.html#a21992357c12b22576ea318ecea2edf06">   10</a></span>&#160;<span class="preprocessor">#define APPLINK_STDIN   1</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="applink_8c.html#a0a1313500bd5aa3b2a682b998419e32f">   11</a></span>&#160;<span class="preprocessor">#define APPLINK_STDOUT  2</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="applink_8c.html#a2d9a27102568226120dd8c6ba0aec7cd">   12</a></span>&#160;<span class="preprocessor">#define APPLINK_STDERR  3</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="applink_8c.html#a66f451305bf0533727a813346d8a5cb1">   13</a></span>&#160;<span class="preprocessor">#define APPLINK_FPRINTF 4</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="applink_8c.html#aadf6a2b81e6b6840c7e931eefb2cb68c">   14</a></span>&#160;<span class="preprocessor">#define APPLINK_FGETS   5</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="applink_8c.html#aa6536b36f82c9847c4950c5da52b15f0">   15</a></span>&#160;<span class="preprocessor">#define APPLINK_FREAD   6</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="applink_8c.html#a02ac9d856c66c3ae13176b2a59330ae6">   16</a></span>&#160;<span class="preprocessor">#define APPLINK_FWRITE  7</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="applink_8c.html#a2e083d8cf916f35c18fd39b9b62260f6">   17</a></span>&#160;<span class="preprocessor">#define APPLINK_FSETMOD 8</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="applink_8c.html#a4a63835ca1e78b2108e5fa90bab10942">   18</a></span>&#160;<span class="preprocessor">#define APPLINK_FEOF    9</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="applink_8c.html#a1e9dff28b1a3b7f0895043784d06f8e4">   19</a></span>&#160;<span class="preprocessor">#define APPLINK_FCLOSE  10      </span><span class="comment">/* should not be used */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="applink_8c.html#a34c2c60a02ec027353fb9d5bccc40b66">   21</a></span>&#160;<span class="preprocessor">#define APPLINK_FOPEN   11      </span><span class="comment">/* solely for completeness */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="applink_8c.html#ae83ee54705d98eecdc00861d278a235c">   22</a></span>&#160;<span class="preprocessor">#define APPLINK_FSEEK   12</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="applink_8c.html#a4e9eb2a505fc7828527d3f2d9c900ca6">   23</a></span>&#160;<span class="preprocessor">#define APPLINK_FTELL   13</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="applink_8c.html#a596cf6e820a88233e461122d77196848">   24</a></span>&#160;<span class="preprocessor">#define APPLINK_FFLUSH  14</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="applink_8c.html#aff9fab71d7f3e830054072f436f9d42e">   25</a></span>&#160;<span class="preprocessor">#define APPLINK_FERROR  15</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="applink_8c.html#a8338fb75afd3b1ba628173fe61c47b9b">   26</a></span>&#160;<span class="preprocessor">#define APPLINK_CLEARERR 16</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="applink_8c.html#ae01f71f354dd39130e9920b9d3919880">   27</a></span>&#160;<span class="preprocessor">#define APPLINK_FILENO  17      </span><span class="comment">/* to be used with below */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="applink_8c.html#a0c7d7e024b55365a722f83caca88a99e">   29</a></span>&#160;<span class="preprocessor">#define APPLINK_OPEN    18      </span><span class="comment">/* formally can&#39;t be used, as flags can vary */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="applink_8c.html#af44bba99d98c1641364d4b983f230388">   30</a></span>&#160;<span class="preprocessor">#define APPLINK_READ    19</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="applink_8c.html#a8a08180b7d9bf48c4a221cd521740cb2">   31</a></span>&#160;<span class="preprocessor">#define APPLINK_WRITE   20</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="applink_8c.html#afef180179fab371c5dc4bee478811330">   32</a></span>&#160;<span class="preprocessor">#define APPLINK_LSEEK   21</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="applink_8c.html#abd448e01990dcb472fba962fde2fbabd">   33</a></span>&#160;<span class="preprocessor">#define APPLINK_CLOSE   22</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="applink_8c.html#a8e2ffc72a82b4a11468334e84267bf39">   34</a></span>&#160;<span class="preprocessor">#define APPLINK_MAX     22      </span><span class="comment">/* always same as last macro */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef APPMACROS_ONLY</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"># include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"># include &lt;io.h&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"># include &lt;fcntl.h&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> *app_stdin(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> stdin;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> *app_stdout(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> stdout;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> *app_stderr(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> stderr;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> app_feof(FILE *fp)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> feof(fp);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> app_ferror(FILE *fp)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> ferror(fp);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> app_clearerr(FILE *fp)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    clearerr(fp);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> app_fileno(FILE *fp)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> _fileno(fp);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> app_fsetmod(FILE *fp, <span class="keywordtype">char</span> mod)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> _setmode(_fileno(fp), mod == <span class="charliteral">&#39;b&#39;</span> ? _O_BINARY : _O_TEXT);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="applink_8c.html#ace782387dccc59824c26bc22e7bba792">   85</a></span>&#160;<a class="code" href="applink_8c.html#ace782387dccc59824c26bc22e7bba792">__declspec</a>(dllexport)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> **</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"># if defined(__BORLANDC__)</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * __stdcall appears to be the only way to get the name</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * decoration right with Borland C. Otherwise it works</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * purely incidentally, as we pass no parameters.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;__stdcall</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"># else</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;__cdecl</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"># endif</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;OPENSSL_Applink(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> once = 1;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> *OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a8e2ffc72a82b4a11468334e84267bf39">APPLINK_MAX</a> + 1] =</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        { (<span class="keywordtype">void</span> *)<a class="code" href="applink_8c.html#a8e2ffc72a82b4a11468334e84267bf39">APPLINK_MAX</a> };</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (once) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a21992357c12b22576ea318ecea2edf06">APPLINK_STDIN</a>] = app_stdin;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a0a1313500bd5aa3b2a682b998419e32f">APPLINK_STDOUT</a>] = app_stdout;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a2d9a27102568226120dd8c6ba0aec7cd">APPLINK_STDERR</a>] = app_stderr;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a66f451305bf0533727a813346d8a5cb1">APPLINK_FPRINTF</a>] = fprintf;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#aadf6a2b81e6b6840c7e931eefb2cb68c">APPLINK_FGETS</a>] = fgets;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#aa6536b36f82c9847c4950c5da52b15f0">APPLINK_FREAD</a>] = fread;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a02ac9d856c66c3ae13176b2a59330ae6">APPLINK_FWRITE</a>] = fwrite;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a2e083d8cf916f35c18fd39b9b62260f6">APPLINK_FSETMOD</a>] = app_fsetmod;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a4a63835ca1e78b2108e5fa90bab10942">APPLINK_FEOF</a>] = app_feof;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a1e9dff28b1a3b7f0895043784d06f8e4">APPLINK_FCLOSE</a>] = fclose;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a34c2c60a02ec027353fb9d5bccc40b66">APPLINK_FOPEN</a>] = fopen;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#ae83ee54705d98eecdc00861d278a235c">APPLINK_FSEEK</a>] = fseek;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a4e9eb2a505fc7828527d3f2d9c900ca6">APPLINK_FTELL</a>] = ftell;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a596cf6e820a88233e461122d77196848">APPLINK_FFLUSH</a>] = fflush;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#aff9fab71d7f3e830054072f436f9d42e">APPLINK_FERROR</a>] = app_ferror;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a8338fb75afd3b1ba628173fe61c47b9b">APPLINK_CLEARERR</a>] = app_clearerr;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#ae01f71f354dd39130e9920b9d3919880">APPLINK_FILENO</a>] = app_fileno;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a0c7d7e024b55365a722f83caca88a99e">APPLINK_OPEN</a>] = _open;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#af44bba99d98c1641364d4b983f230388">APPLINK_READ</a>] = _read;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#a8a08180b7d9bf48c4a221cd521740cb2">APPLINK_WRITE</a>] = _write;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#afef180179fab371c5dc4bee478811330">APPLINK_LSEEK</a>] = _lseek;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        OPENSSL_ApplinkTable[<a class="code" href="applink_8c.html#abd448e01990dcb472fba962fde2fbabd">APPLINK_CLOSE</a>] = _close;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        once = 0;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> OPENSSL_ApplinkTable;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aapplink_8c_html_a02ac9d856c66c3ae13176b2a59330ae6"><div class="ttname"><a href="applink_8c.html#a02ac9d856c66c3ae13176b2a59330ae6">APPLINK_FWRITE</a></div><div class="ttdeci">#define APPLINK_FWRITE</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00016">applink.c:16</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a0a1313500bd5aa3b2a682b998419e32f"><div class="ttname"><a href="applink_8c.html#a0a1313500bd5aa3b2a682b998419e32f">APPLINK_STDOUT</a></div><div class="ttdeci">#define APPLINK_STDOUT</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00011">applink.c:11</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a0c7d7e024b55365a722f83caca88a99e"><div class="ttname"><a href="applink_8c.html#a0c7d7e024b55365a722f83caca88a99e">APPLINK_OPEN</a></div><div class="ttdeci">#define APPLINK_OPEN</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00029">applink.c:29</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a1e9dff28b1a3b7f0895043784d06f8e4"><div class="ttname"><a href="applink_8c.html#a1e9dff28b1a3b7f0895043784d06f8e4">APPLINK_FCLOSE</a></div><div class="ttdeci">#define APPLINK_FCLOSE</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00019">applink.c:19</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a21992357c12b22576ea318ecea2edf06"><div class="ttname"><a href="applink_8c.html#a21992357c12b22576ea318ecea2edf06">APPLINK_STDIN</a></div><div class="ttdeci">#define APPLINK_STDIN</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00010">applink.c:10</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a2d9a27102568226120dd8c6ba0aec7cd"><div class="ttname"><a href="applink_8c.html#a2d9a27102568226120dd8c6ba0aec7cd">APPLINK_STDERR</a></div><div class="ttdeci">#define APPLINK_STDERR</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00012">applink.c:12</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a2e083d8cf916f35c18fd39b9b62260f6"><div class="ttname"><a href="applink_8c.html#a2e083d8cf916f35c18fd39b9b62260f6">APPLINK_FSETMOD</a></div><div class="ttdeci">#define APPLINK_FSETMOD</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00017">applink.c:17</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a34c2c60a02ec027353fb9d5bccc40b66"><div class="ttname"><a href="applink_8c.html#a34c2c60a02ec027353fb9d5bccc40b66">APPLINK_FOPEN</a></div><div class="ttdeci">#define APPLINK_FOPEN</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00021">applink.c:21</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a4a63835ca1e78b2108e5fa90bab10942"><div class="ttname"><a href="applink_8c.html#a4a63835ca1e78b2108e5fa90bab10942">APPLINK_FEOF</a></div><div class="ttdeci">#define APPLINK_FEOF</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00018">applink.c:18</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a4e9eb2a505fc7828527d3f2d9c900ca6"><div class="ttname"><a href="applink_8c.html#a4e9eb2a505fc7828527d3f2d9c900ca6">APPLINK_FTELL</a></div><div class="ttdeci">#define APPLINK_FTELL</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00023">applink.c:23</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a596cf6e820a88233e461122d77196848"><div class="ttname"><a href="applink_8c.html#a596cf6e820a88233e461122d77196848">APPLINK_FFLUSH</a></div><div class="ttdeci">#define APPLINK_FFLUSH</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00024">applink.c:24</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a66f451305bf0533727a813346d8a5cb1"><div class="ttname"><a href="applink_8c.html#a66f451305bf0533727a813346d8a5cb1">APPLINK_FPRINTF</a></div><div class="ttdeci">#define APPLINK_FPRINTF</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00013">applink.c:13</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a8338fb75afd3b1ba628173fe61c47b9b"><div class="ttname"><a href="applink_8c.html#a8338fb75afd3b1ba628173fe61c47b9b">APPLINK_CLEARERR</a></div><div class="ttdeci">#define APPLINK_CLEARERR</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00026">applink.c:26</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a8a08180b7d9bf48c4a221cd521740cb2"><div class="ttname"><a href="applink_8c.html#a8a08180b7d9bf48c4a221cd521740cb2">APPLINK_WRITE</a></div><div class="ttdeci">#define APPLINK_WRITE</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00031">applink.c:31</a></div></div>
+<div class="ttc" id="aapplink_8c_html_a8e2ffc72a82b4a11468334e84267bf39"><div class="ttname"><a href="applink_8c.html#a8e2ffc72a82b4a11468334e84267bf39">APPLINK_MAX</a></div><div class="ttdeci">#define APPLINK_MAX</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00034">applink.c:34</a></div></div>
+<div class="ttc" id="aapplink_8c_html_aa6536b36f82c9847c4950c5da52b15f0"><div class="ttname"><a href="applink_8c.html#aa6536b36f82c9847c4950c5da52b15f0">APPLINK_FREAD</a></div><div class="ttdeci">#define APPLINK_FREAD</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00015">applink.c:15</a></div></div>
+<div class="ttc" id="aapplink_8c_html_aadf6a2b81e6b6840c7e931eefb2cb68c"><div class="ttname"><a href="applink_8c.html#aadf6a2b81e6b6840c7e931eefb2cb68c">APPLINK_FGETS</a></div><div class="ttdeci">#define APPLINK_FGETS</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00014">applink.c:14</a></div></div>
+<div class="ttc" id="aapplink_8c_html_abd448e01990dcb472fba962fde2fbabd"><div class="ttname"><a href="applink_8c.html#abd448e01990dcb472fba962fde2fbabd">APPLINK_CLOSE</a></div><div class="ttdeci">#define APPLINK_CLOSE</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00033">applink.c:33</a></div></div>
+<div class="ttc" id="aapplink_8c_html_ace782387dccc59824c26bc22e7bba792"><div class="ttname"><a href="applink_8c.html#ace782387dccc59824c26bc22e7bba792">__declspec</a></div><div class="ttdeci">__declspec(dllexport)</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00085">applink.c:85</a></div></div>
+<div class="ttc" id="aapplink_8c_html_ae01f71f354dd39130e9920b9d3919880"><div class="ttname"><a href="applink_8c.html#ae01f71f354dd39130e9920b9d3919880">APPLINK_FILENO</a></div><div class="ttdeci">#define APPLINK_FILENO</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00027">applink.c:27</a></div></div>
+<div class="ttc" id="aapplink_8c_html_ae83ee54705d98eecdc00861d278a235c"><div class="ttname"><a href="applink_8c.html#ae83ee54705d98eecdc00861d278a235c">APPLINK_FSEEK</a></div><div class="ttdeci">#define APPLINK_FSEEK</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00022">applink.c:22</a></div></div>
+<div class="ttc" id="aapplink_8c_html_af44bba99d98c1641364d4b983f230388"><div class="ttname"><a href="applink_8c.html#af44bba99d98c1641364d4b983f230388">APPLINK_READ</a></div><div class="ttdeci">#define APPLINK_READ</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00030">applink.c:30</a></div></div>
+<div class="ttc" id="aapplink_8c_html_afef180179fab371c5dc4bee478811330"><div class="ttname"><a href="applink_8c.html#afef180179fab371c5dc4bee478811330">APPLINK_LSEEK</a></div><div class="ttdeci">#define APPLINK_LSEEK</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00032">applink.c:32</a></div></div>
+<div class="ttc" id="aapplink_8c_html_aff9fab71d7f3e830054072f436f9d42e"><div class="ttname"><a href="applink_8c.html#aff9fab71d7f3e830054072f436f9d42e">APPLINK_FERROR</a></div><div class="ttdeci">#define APPLINK_FERROR</div><div class="ttdef"><b>Definition:</b> <a href="applink_8c_source.html#l00025">applink.c:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
