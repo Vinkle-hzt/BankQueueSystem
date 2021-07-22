@@ -1,5 +1,5 @@
 <map id="src/queue.c" name="src/queue.c">
-<area shape="rect" id="node1" title=" " alt="" coords="56,5,145,32"/>
+<area shape="rect" id="node1" title="队列类及相关操作" alt="" coords="56,5,145,32"/>
 <area shape="rect" id="node2" href="$queue_8h.html" title="队列类及相关操作" alt="" coords="67,80,134,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,304,68,331"/>
 <area shape="rect" id="node4" href="$queue__node_8h.html" title="队列节点类及相关操作" alt="" coords="49,155,152,181"/>

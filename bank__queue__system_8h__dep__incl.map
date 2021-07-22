@@ -1,5 +1,5 @@
 <map id="include/bank_queue_system.h" name="include/bank_queue_system.h">
 <area shape="rect" id="node1" title="银行排队系统相关函数" alt="" coords="99,5,237,47"/>
-<area shape="rect" id="node2" href="$bank__queue__system_8c.html" title=" " alt="" coords="5,95,179,121"/>
+<area shape="rect" id="node2" href="$bank__queue__system_8c.html" title="银行排队系统相关函数" alt="" coords="5,95,179,121"/>
 <area shape="rect" id="node3" href="$main_8c.html" title="系统主入口函数" alt="" coords="203,95,285,121"/>
 </map>
