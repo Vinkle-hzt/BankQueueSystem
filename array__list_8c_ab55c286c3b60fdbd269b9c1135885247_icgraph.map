@@ -1,6 +1,7 @@
 <map id="al_at" name="al_at">
-<area shape="rect" id="node1" title="get the idx_th element value (start from 0)" alt="" coords="415,5,465,32"/>
+<area shape="rect" id="node1" title="get the idx_th element value (start from 0)" alt="" coords="415,31,465,57"/>
 <area shape="rect" id="node2" href="$bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="249,5,367,32"/>
-<area shape="rect" id="node3" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
-<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node5" href="$trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="266,56,350,83"/>
+<area shape="rect" id="node3" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,31,201,57"/>
+<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
 </map>

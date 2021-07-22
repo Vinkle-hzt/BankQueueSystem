@@ -48,7 +48,81 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="trade_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="trade_8h.html">trade.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5">    3</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="trade_8c.html#ac55e1399ed4641e788ac06fe604374d5">start_trade</a>()</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="comment">// 选择柜台</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="counter_8h.html#aa8daf9e82a8ca950eac00c466c14fea6">show_counter_customer</a>();</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">int</span> counter_num = getchar() - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    fflush(stdin);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="structcounter.html">counter</a>* cur_counter = (<a class="code" href="structcounter.html">counter</a>*) <a class="code" href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247">al_at</a>(<a class="code" href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a>, counter_num);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span> (!cur_counter-&gt;<a class="code" href="structcounter.html#a38870ed5035d89bb75d9cfb8a826bd54">customer</a>)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// 选择卡</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="structcard.html">card</a> cur_card = <a class="code" href="trade_8h.html#a626bc03ad7d66834551550612489987b">choose_card</a>(cur_counter-&gt;<a class="code" href="structcounter.html#a38870ed5035d89bb75d9cfb8a826bd54">customer</a>-&gt;<a class="code" href="structmember.html#af180e926633cde08a05ccbc3af397ee4">ID</a>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// 显示交易菜单</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="display_8h.html#ac4db935f87e3adb1f6eeaf91c6262f64">show_basicbusiness_menu</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> exit_flag = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 交易菜单选择</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">while</span> (!exit_flag)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        fflush(stdin);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="display_8h.html#ac2d6095a7e78918587bb24be0b6aa1fb">show_main_menu</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">char</span> choice = getchar();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        fflush(stdin);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">int</span> flag = 1;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">switch</span> (choice)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;1&#39;</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="trade_8h.html#ae7d6f4b460fb282c319602576f99cbb9">check_banlance</a>(&amp;cur_card);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;2&#39;</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="trade_8h.html#a2a8f235f6bfa5528e550b030bbed196a">deposit_money</a>(&amp;cur_card);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;3&#39;</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <a class="code" href="trade_8h.html#a3a7fb17ec552fc4cbcfae8eff41d77bb">withdraw_money</a>(&amp;cur_card);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;4&#39;</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="trade_8h.html#a560539031d45c77a56d5afce38a5643f">transfer_accounts</a>(&amp;cur_card);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;5&#39;</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="trade_8h.html#a654014bfdd9853d123a46255ac00f1a7">view_transactions</a>(&amp;cur_card);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;0&#39;</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <a class="code" href="display_8h.html#a148b19927556db11d6e5d93e6fbd6c99">show_exit_message</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                exit_flag = 1;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                printf(<span class="stringliteral">&quot;非法字符，请重新输入！！！\n&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        } <span class="keywordflow">while</span> (!flag);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="ttc" id="aarray__list_8h_html_ab55c286c3b60fdbd269b9c1135885247"><div class="ttname"><a href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247">al_at</a></div><div class="ttdeci">void * al_at(array_list *al, int idx)</div><div class="ttdoc">get the idx_th element value (start from 0)</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00020">array_list.c:20</a></div></div>
+<div class="ttc" id="acommon_8h_html_a6328f63a5c0a3b0b3f70db82b29e6c4b"><div class="ttname"><a href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a></div><div class="ttdeci">array_list * counters</div><div class="ttdoc">柜台数组</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00016">common.c:16</a></div></div>
+<div class="ttc" id="acounter_8h_html_aa8daf9e82a8ca950eac00c466c14fea6"><div class="ttname"><a href="counter_8h.html#aa8daf9e82a8ca950eac00c466c14fea6">show_counter_customer</a></div><div class="ttdeci">void show_counter_customer()</div><div class="ttdef"><b>Definition:</b> <a href="counter_8c_source.html#l00039">counter.c:39</a></div></div>
+<div class="ttc" id="adisplay_8h_html_a148b19927556db11d6e5d93e6fbd6c99"><div class="ttname"><a href="display_8h.html#a148b19927556db11d6e5d93e6fbd6c99">show_exit_message</a></div><div class="ttdeci">void show_exit_message()</div><div class="ttdoc">展示结束页面</div><div class="ttdef"><b>Definition:</b> <a href="display_8c_source.html#l00054">display.c:54</a></div></div>
+<div class="ttc" id="adisplay_8h_html_ac2d6095a7e78918587bb24be0b6aa1fb"><div class="ttname"><a href="display_8h.html#ac2d6095a7e78918587bb24be0b6aa1fb">show_main_menu</a></div><div class="ttdeci">void show_main_menu()</div><div class="ttdoc">展示功能选择页面</div><div class="ttdef"><b>Definition:</b> <a href="display_8c_source.html#l00028">display.c:28</a></div></div>
+<div class="ttc" id="adisplay_8h_html_ac4db935f87e3adb1f6eeaf91c6262f64"><div class="ttname"><a href="display_8h.html#ac4db935f87e3adb1f6eeaf91c6262f64">show_basicbusiness_menu</a></div><div class="ttdeci">void show_basicbusiness_menu()</div><div class="ttdoc">展示业务办理页面</div><div class="ttdef"><b>Definition:</b> <a href="display_8c_source.html#l00040">display.c:40</a></div></div>
+<div class="ttc" id="astructcard_html"><div class="ttname"><a href="structcard.html">card</a></div><div class="ttdef"><b>Definition:</b> <a href="trade_8h_source.html#l00007">trade.h:8</a></div></div>
+<div class="ttc" id="astructcounter_html"><div class="ttname"><a href="structcounter.html">counter</a></div><div class="ttdoc">柜台类，用于存储柜台信息</div><div class="ttdef"><b>Definition:</b> <a href="counter_8h_source.html#l00018">counter.h:19</a></div></div>
+<div class="ttc" id="astructcounter_html_a38870ed5035d89bb75d9cfb8a826bd54"><div class="ttname"><a href="structcounter.html#a38870ed5035d89bb75d9cfb8a826bd54">counter::customer</a></div><div class="ttdeci">member * customer</div><div class="ttdoc">柜台当前用户</div><div class="ttdef"><b>Definition:</b> <a href="counter_8h_source.html#l00022">counter.h:22</a></div></div>
+<div class="ttc" id="astructmember_html_af180e926633cde08a05ccbc3af397ee4"><div class="ttname"><a href="structmember.html#af180e926633cde08a05ccbc3af397ee4">member::ID</a></div><div class="ttdeci">int ID</div><div class="ttdoc">客户 ID</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00024">member.h:24</a></div></div>
+<div class="ttc" id="atrade_8c_html_ac55e1399ed4641e788ac06fe604374d5"><div class="ttname"><a href="trade_8c.html#ac55e1399ed4641e788ac06fe604374d5">start_trade</a></div><div class="ttdeci">void start_trade()</div><div class="ttdef"><b>Definition:</b> <a href="trade_8c_source.html#l00003">trade.c:3</a></div></div>
 <div class="ttc" id="atrade_8h_html"><div class="ttname"><a href="trade_8h.html">trade.h</a></div></div>
+<div class="ttc" id="atrade_8h_html_a2a8f235f6bfa5528e550b030bbed196a"><div class="ttname"><a href="trade_8h.html#a2a8f235f6bfa5528e550b030bbed196a">deposit_money</a></div><div class="ttdeci">void deposit_money(card *)</div></div>
+<div class="ttc" id="atrade_8h_html_a3a7fb17ec552fc4cbcfae8eff41d77bb"><div class="ttname"><a href="trade_8h.html#a3a7fb17ec552fc4cbcfae8eff41d77bb">withdraw_money</a></div><div class="ttdeci">void withdraw_money(card *)</div></div>
+<div class="ttc" id="atrade_8h_html_a560539031d45c77a56d5afce38a5643f"><div class="ttname"><a href="trade_8h.html#a560539031d45c77a56d5afce38a5643f">transfer_accounts</a></div><div class="ttdeci">void transfer_accounts(card *)</div></div>
+<div class="ttc" id="atrade_8h_html_a626bc03ad7d66834551550612489987b"><div class="ttname"><a href="trade_8h.html#a626bc03ad7d66834551550612489987b">choose_card</a></div><div class="ttdeci">card choose_card(int ID)</div></div>
+<div class="ttc" id="atrade_8h_html_a654014bfdd9853d123a46255ac00f1a7"><div class="ttname"><a href="trade_8h.html#a654014bfdd9853d123a46255ac00f1a7">view_transactions</a></div><div class="ttdeci">void view_transactions(card *)</div></div>
+<div class="ttc" id="atrade_8h_html_ae7d6f4b460fb282c319602576f99cbb9"><div class="ttname"><a href="trade_8h.html#ae7d6f4b460fb282c319602576f99cbb9">check_banlance</a></div><div class="ttdeci">void check_banlance(card *)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

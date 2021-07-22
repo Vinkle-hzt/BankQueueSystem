@@ -1,11 +1,13 @@
 <map id="include/common.h" name="include/common.h">
-<area shape="rect" id="node1" title="存储全局变量" alt="" coords="201,5,327,32"/>
-<area shape="rect" id="node2" href="$bank__queue__system_8h.html" title="银行排队系统相关函数" alt="" coords="99,229,237,271"/>
-<area shape="rect" id="node5" href="$member_8h.html" title="客户类及相关操作" alt="" coords="202,80,326,107"/>
-<area shape="rect" id="node9" href="$common_8c.html" title="存储全局变量" alt="" coords="351,80,455,107"/>
-<area shape="rect" id="node3" href="$bank__queue__system_8c.html" title="银行排队系统相关函数" alt="" coords="5,319,179,345"/>
-<area shape="rect" id="node4" href="$main_8c.html" title="系统主入口函数" alt="" coords="203,319,285,345"/>
-<area shape="rect" id="node6" href="$counter_8h.html" title="柜台类及相关操作" alt="" coords="228,155,348,181"/>
-<area shape="rect" id="node8" href="$member_8c.html" title="客户类及相关操作" alt="" coords="372,155,473,181"/>
-<area shape="rect" id="node7" href="$counter_8c.html" title="柜台类及相关操作" alt="" coords="261,237,358,263"/>
+<area shape="rect" id="node1" title="存储全局变量" alt="" coords="343,5,470,32"/>
+<area shape="rect" id="node2" href="$bank__queue__system_8h.html" title="银行排队系统相关函数" alt="" coords="99,304,237,345"/>
+<area shape="rect" id="node5" href="$member_8h.html" title="客户类及相关操作" alt="" coords="234,80,358,107"/>
+<area shape="rect" id="node7" href="$trade_8h.html" title=" " alt="" coords="353,229,460,256"/>
+<area shape="rect" id="node11" href="$common_8c.html" title="存储全局变量" alt="" coords="500,80,604,107"/>
+<area shape="rect" id="node3" href="$bank__queue__system_8c.html" title="银行排队系统相关函数" alt="" coords="5,393,179,420"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="系统主入口函数" alt="" coords="203,393,285,420"/>
+<area shape="rect" id="node6" href="$counter_8h.html" title="柜台类及相关操作" alt="" coords="180,155,300,181"/>
+<area shape="rect" id="node10" href="$member_8c.html" title="客户类及相关操作" alt="" coords="324,155,425,181"/>
+<area shape="rect" id="node9" href="$counter_8c.html" title="柜台类及相关操作" alt="" coords="231,229,329,256"/>
+<area shape="rect" id="node8" href="$trade_8c.html" title=" " alt="" coords="365,311,448,338"/>
 </map>

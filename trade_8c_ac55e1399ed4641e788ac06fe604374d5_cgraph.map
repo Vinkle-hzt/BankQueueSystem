@@ -1,0 +1,14 @@
+<map id="start_trade" name="start_trade">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,89,285"/>
+<area shape="rect" id="node2" href="$array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247" title="get the idx_th element value (start from 0)" alt="" coords="203,5,254,32"/>
+<area shape="rect" id="node3" href="$trade_8h.html#ae7d6f4b460fb282c319602576f99cbb9" title=" " alt="" coords="171,56,287,83"/>
+<area shape="rect" id="node4" href="$trade_8h.html#a626bc03ad7d66834551550612489987b" title=" " alt="" coords="181,107,277,133"/>
+<area shape="rect" id="node5" href="$trade_8h.html#a2a8f235f6bfa5528e550b030bbed196a" title=" " alt="" coords="174,157,283,184"/>
+<area shape="rect" id="node6" href="$display_8h.html#ac4db935f87e3adb1f6eeaf91c6262f64" title="展示业务办理页面" alt="" coords="137,208,320,235"/>
+<area shape="rect" id="node7" href="$counter_8h.html#aa8daf9e82a8ca950eac00c466c14fea6" title=" " alt="" coords="147,259,311,285"/>
+<area shape="rect" id="node8" href="$display_8h.html#a148b19927556db11d6e5d93e6fbd6c99" title="展示结束页面" alt="" coords="159,309,299,336"/>
+<area shape="rect" id="node9" href="$display_8h.html#ac2d6095a7e78918587bb24be0b6aa1fb" title="展示功能选择页面" alt="" coords="165,360,292,387"/>
+<area shape="rect" id="node10" href="$trade_8h.html#a560539031d45c77a56d5afce38a5643f" title=" " alt="" coords="165,411,292,437"/>
+<area shape="rect" id="node11" href="$trade_8h.html#a654014bfdd9853d123a46255ac00f1a7" title=" " alt="" coords="165,461,292,488"/>
+<area shape="rect" id="node12" href="$trade_8h.html#a3a7fb17ec552fc4cbcfae8eff41d77bb" title=" " alt="" coords="169,512,288,539"/>
+</map>
