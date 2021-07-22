@@ -2,18 +2,18 @@
 
 void show_start_menu()
 {
-    printf("    **                                      ");
-    printf("  **  **                                    ");
-    printf("       **                                    ");
-    printf("       **                                    ");
-    printf("       **                                    ");
-    printf("       **                                    ");
-    printf("       **                                    ");
-    printf("       ***                                    ");
-    printf("       ***                                    ");
-    printf("       ***                                    ");
-    printf("       ***                                    ");
-    printf("      ****                                    ");
+    printf("  *  **       *    *                *  *       ");
+    printf("   **  **    *   **              *  ****  *    ");
+    printf("        **   ** **   *          *  ******  *   ");
+    printf("   **   **   *   ****            *  ****  *    ");
+    printf("    *** **  *****                   *  *       ");
+    printf("       *** **                                  ");
+    printf("        ***                                    ");
+    printf("        ***            欢迎光临!                ");
+    printf("        ***                                    ");
+    printf("        ***                                    ");
+    printf("        ***                                    ");
+    printf("       ****                                    ");
 
 }
 
@@ -21,11 +21,10 @@ void show_main_menu()
 {
     printf(" ------------------------------------------------\n");
     printf("|                                                |\n");
-    printf("|            1.Picking up a number               |\n");
-    printf("|            2.Handling business                 |\n");
-    printf("|            3.Logging out of the system         |\n");
-    printf("|            4.Trading summary                   |\n");
-    printf("|            0.Exit                              |\n");
+    printf("|            1.取号                               |\n");
+    printf("|            2.办理业务                           |\n");
+    printf("|            3.查看交易量                         |\n");
+    printf("|            0.结束交易                           |\n");
     printf("|                                                |\n");
     printf(" ------------------------------------------------\n");
 }
@@ -34,12 +33,12 @@ void show_basicbusiness_menu()
 {
     printf(" ------------------------------------------------\n");
     printf("|                                                |\n");
-    printf("|            1.Check balance                     |\n");
-    printf("|            2.Deposit                           |\n");
-    printf("|            3.Withdrawal                        |\n");
-    printf("|            4.Transfer                          |\n");
-    printf("|            5.Check transaction records         |\n");
-    printf("|            0.Close the deal                    |\n");
+    printf("|            1.查询余额                           |\n");
+    printf("|            2.存款                               |\n");
+    printf("|            3.取款                               |\n");
+    printf("|            4.转账                               |\n");
+    printf("|            5.查看交易记录                       |\n");
+    printf("|            0.结束业务办理                       |\n");
     printf("|                                                |\n");
     printf(" ------------------------------------------------\n");
 }
