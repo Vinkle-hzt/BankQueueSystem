@@ -6582,7 +6582,14 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="bank__queue__system_8h.html#aa95930c09af101d16254f670034f7548"><param name="Name" value="bank_queue_system.h"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a0520e5cdb6bb4e1899f7918866b9ef79"><param name="Name" value="check_balance"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a0520e5cdb6bb4e1899f7918866b9ef79"><param name="Name" value="trade.c"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a723b15c76b3dbf9c74dbe1f6b7066100"><param name="Name" value="check_balance"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a723b15c76b3dbf9c74dbe1f6b7066100"><param name="Name" value="trade.h"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mysql__com_8h.html#a49d7e27de311d8e92616804d13b1aa5b"><param name="Name" value="check_scramble"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mysql__com_8h.html#a53dbad52991c52ae247cf71b9955ee6c"><param name="Name" value="check_scramble_323"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a626bc03ad7d66834551550612489987b"><param name="Name" value="choose_card"></OBJECT>
@@ -30143,7 +30150,14 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="helpful__func_8c.html#a8e5b16114900fd4e0b0a467519096299"><param name="Name" value="to_int32"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html#af9cdc8bb476ec5042860ac4b472c9569"><param name="Name" value="total_deposits"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html#aac60ec37971c4250151a00e343d71fa2"><param name="Name" value="total_loans"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#ac55e1399ed4641e788ac06fe604374d5"><param name="Name" value="trade.c"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html"><param name="Name" value="trade.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a0520e5cdb6bb4e1899f7918866b9ef79"><param name="Name" value="check_balance"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html"><param name="Name" value="trade.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#ac55e1399ed4641e788ac06fe604374d5"><param name="Name" value="start_trade"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html"><param name="Name" value="trade.h"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a723b15c76b3dbf9c74dbe1f6b7066100"><param name="Name" value="check_balance"></OBJECT>
