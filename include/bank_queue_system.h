@@ -17,6 +17,8 @@
 #include "common.h"
 #include "trade_conclude.h"
 #include "counter.h"
+#include "priority_queue.h"
+#include "trade.h"
 
 /**
  * @brief 启动银行排队系统

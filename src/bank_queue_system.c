@@ -17,7 +17,7 @@ void start_system()
     log_file = fopen("BankQueueSystem.log", "a");
 #endif
 
-    waiting_line = queue_create();
+    waiting_line = pq_create(member_compare);
     counters = create_counter(4);
     all_trade = trade_conclude_create();
     // show welcome message
@@ -40,7 +40,7 @@ void start_system()
                 break;
             case '2':
                 fflush(stdin);
-
+                start_trade();
                 break;
             case '3':
                 fflush(stdin);
@@ -70,7 +70,7 @@ void start_system()
 void do_pick_number()
 {
     printf("请输入您的 ID 和姓名 (以空格分隔):\n");
-    int waiting_num = waiting_line->size;
+    int waiting_num = waiting_line->curSize;
     int ID;
     char name[20];
     scanf("%d %s", &ID, name);

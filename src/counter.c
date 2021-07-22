@@ -35,3 +35,8 @@ void counter_assign_customer(counter *ct, member *customer)
     printf(" (ID: %d 姓名: %s) 分配至柜台 %d\n",
            customer->ID, customer->name, ct->number);
 }
+
+void show_counter_customer()
+{
+    
+}

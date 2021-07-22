@@ -13,13 +13,13 @@
 #include <stdio.h>
 #include "trade_conclude.h"
 #include "array_list.h"
-#include "queue.h"
+#include "priority_queue.h"
 
 extern int cur_common_num;             ///< 总叫号
 extern int cur_pick_num[VIP_LEVEL];    ///< 当前取号号码
 extern int cur_call_num[VIP_LEVEL];    ///< 当前叫号号码
 extern FILE *log_file;                 ///< log输出文件
-extern queue *waiting_line;            ///< 等待队列
+extern priority_queue *waiting_line;            ///< 等待队列
 extern array_list *counters;           ///< 柜台数组
 extern trade_conclude all_trade;       ///< 交易总量
 extern const char *admin_account_file; ///< 管理员用户账号文件

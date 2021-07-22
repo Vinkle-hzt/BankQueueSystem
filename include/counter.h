@@ -37,3 +37,5 @@ array_list *create_counter(int num);
  * @param customer 客户指针
  */
 void counter_assign_customer(counter *ct, member *customer);
+
+void show_counter_customer();
