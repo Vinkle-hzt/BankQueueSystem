@@ -56,3 +56,10 @@ void start_trade()
         } while (!flag);
     }
 }
+
+void check_balance(card* cur_card)
+{
+    FILE *cards_file = fopen(user_account_file,"r");
+    
+    fclose(cards_file);
+}
