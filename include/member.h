@@ -15,6 +15,9 @@
 #include "date.h"
 #include "string.h"
 
+extern int member_error_1;
+extern int member_error_2;
+
 /**
  * @brief 客户
  * 
@@ -46,4 +49,4 @@ void member_leave(member *m);
 
 int member_compare(const void* lhs, const void* rhs);
 
-int get_vip_level(int ID);
+int get_vip_level(int* ID, char *name);

@@ -16,7 +16,7 @@ void start_system()
 #else
     log_file = fopen("BankQueueSystem.log", "a");
 #endif
-
+    start_mysql();
     waiting_line = pq_create(member_compare);
     counters = create_counter(4);
     all_trade = trade_conclude_create();
@@ -40,7 +40,7 @@ void start_system()
                 break;
             case '2':
                 fflush(stdin);
-                start_trade();
+                // start_trade();
                 break;
             case '3':
                 fflush(stdin);
@@ -53,13 +53,13 @@ void start_system()
                 break;
             default:
                 printf("非法字符，请重新输入！！！\n");
-                system("pause");
                 break;
             }
+            system("pause");
         } while (!flag);
     }
 
-    queue_free(waiting_line);
+    pq_free(waiting_line);
     al_free(counters);
 
 #ifndef DEBUG
@@ -69,12 +69,23 @@ void start_system()
 
 void do_pick_number()
 {
-    printf("请输入您的 ID 和姓名 (以空格分隔):\n");
+    printf("请输入您的 ID 和姓名 (以空格分隔，若要新建用户，请将ID 输为 0):\n");
     int waiting_num = waiting_line->curSize;
     int ID;
     char name[20];
     scanf("%d %s", &ID, name);
     member *cur_customer = member_come(ID, name);
+
+    if (cur_customer == (member *)&member_error_1)
+    {
+        printf("ID 与姓名不匹配！！！\n");
+        return;
+    }
+    if (cur_customer == (member *)&member_error_2)
+    {
+        printf("没有此 ID， 请检查您的 ID 号码！！！\n");
+        return;
+    }
 
     printf("欢迎来到银行, %s, 你的总取号码是 %d。\n", name, cur_customer->common_pick_num);
     printf("您是 vip %d，当前会员取号码位 v%d-%d，你可以最多提前 %d 号进入\n",
@@ -99,12 +110,11 @@ void do_pick_number()
     if (!serve_flag)
     {
         printf("还未轮到您, 请稍等...\n");
-        queue_push(waiting_line, cur_customer);
+        pq_push(waiting_line, cur_customer);
     }
 
     printf("\n");
     getchar();
-    system("pause");
 }
 
 int login_admin()

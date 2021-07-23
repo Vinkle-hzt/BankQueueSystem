@@ -15,7 +15,7 @@ date get_cur_date()
     struct tm *p;
     
     time(&timep);
-    p = gmtime(&timep);
+    p = localtime(&timep);
     cur.minute = p->tm_min;
     cur.hour = p->tm_hour;
     cur.day = p->tm_mday;
@@ -27,5 +27,5 @@ date get_cur_date()
 
 void show_date(FILE *f, date d)
 {
-    fprintf(f, "[UTC %d/%d/%d %d:%d]", d.year, d.month, d.day, d.hour, d.minute);
+    fprintf(f, "[%d/%d/%d %d:%d]", d.year, d.month, d.day, d.hour, d.minute);
 }
