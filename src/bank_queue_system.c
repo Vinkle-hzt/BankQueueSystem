@@ -169,3 +169,13 @@ void check_all_trade()
         show_trade_conclude(&all_trade);
     }
 }
+
+void call_next(counter* ct)
+{
+    if (waiting_line->curSize)
+    {
+        ct->customer = (member*)pq_top(waiting_line);
+        printf("请 v%d-%d 到柜台 %d 办理业务！\n", ct->customer->vip, ct->customer->vip_pick_num, ct->number);
+        pq_pop(waiting_line);
+    }
+}

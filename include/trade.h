@@ -13,16 +13,22 @@ typedef struct
 
 void start_trade();
 
-void show_cards();
+int show_cards(int ID);
 
-// card choose_card(int ID);
+card choose_card(int ID);
 
-// void check_balance(card*);
+void check_balance(int card_ID);
 
-// void deposit_money(card*);
+void deposit_money(int card_ID);
 
-// void withdraw_money(card*);
+void withdraw_money(int card_ID);
 
-// void transfer_accounts(card*);
+void transfer_accounts(int card_ID);
 
-// void view_transactions(card*);
+void view_transactions(int card_ID);
+
+void end_trade(counter* ct);
+
+void create_card(int ID);
+
+int check_card(int card_ID, int user_ID);
