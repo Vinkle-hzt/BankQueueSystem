@@ -54,6 +54,7 @@ $(function() {
 <p>存储全局变量  
 <a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;mysql.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="trade__conclude_8h_source.html">trade_conclude.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="array__list_8h_source.html">array_list.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>&quot;</code><br />
@@ -62,14 +63,15 @@ common.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="common_8h__incl.png" border="0" usemap="#ainclude_2common_8h" alt=""/></div>
 <map name="ainclude_2common_8h" id="ainclude_2common_8h">
-<area shape="rect" title="存储全局变量" alt="" coords="74,5,200,32"/>
+<area shape="rect" title="存储全局变量" alt="" coords="115,5,242,32"/>
 <area shape="rect" title=" " alt="" coords="51,229,111,256"/>
+<area shape="rect" title=" " alt="" coords="381,80,448,107"/>
 <area shape="rect" href="trade__conclude_8h.html" title="交易统计类及相关操作" alt="" coords="21,155,141,181"/>
-<area shape="rect" href="array__list_8h.html" title="array_list 类及相关操作" alt="" coords="136,80,220,107"/>
-<area shape="rect" href="priority__queue_8h.html" title=" " alt="" coords="273,80,385,107"/>
-<area shape="rect" title=" " alt="" coords="146,229,210,256"/>
-<area shape="rect" href="helpful__func_8h.html" title="存储一些实用函数" alt="" coords="216,155,319,181"/>
-<area shape="rect" title=" " alt="" coords="350,229,412,256"/>
+<area shape="rect" href="array__list_8h.html" title="array_list 类及相关操作" alt="" coords="137,80,221,107"/>
+<area shape="rect" href="priority__queue_8h.html" title=" " alt="" coords="245,80,357,107"/>
+<area shape="rect" title=" " alt="" coords="147,229,211,256"/>
+<area shape="rect" href="helpful__func_8h.html" title="存储一些实用函数" alt="" coords="217,155,319,181"/>
+<area shape="rect" title=" " alt="" coords="350,229,413,256"/>
 <area shape="rect" title=" " alt="" coords="236,229,300,256"/>
 </map>
 </div>
@@ -78,17 +80,17 @@ common.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="common_8h__dep__incl.png" border="0" usemap="#ainclude_2common_8hdep" alt=""/></div>
 <map name="ainclude_2common_8hdep" id="ainclude_2common_8hdep">
-<area shape="rect" title="存储全局变量" alt="" coords="343,5,470,32"/>
-<area shape="rect" href="bank__queue__system_8h.html" title="银行排队系统相关函数" alt="" coords="99,304,237,345"/>
-<area shape="rect" href="member_8h.html" title="客户类及相关操作" alt="" coords="234,80,358,107"/>
-<area shape="rect" href="trade_8h.html" title=" " alt="" coords="353,229,460,256"/>
-<area shape="rect" href="common_8c.html" title="存储全局变量" alt="" coords="500,80,604,107"/>
-<area shape="rect" href="bank__queue__system_8c.html" title="银行排队系统相关函数" alt="" coords="5,393,179,420"/>
-<area shape="rect" href="main_8c.html" title="系统主入口函数" alt="" coords="203,393,285,420"/>
-<area shape="rect" href="counter_8h.html" title="柜台类及相关操作" alt="" coords="180,155,300,181"/>
-<area shape="rect" href="member_8c.html" title="客户类及相关操作" alt="" coords="324,155,425,181"/>
-<area shape="rect" href="counter_8c.html" title="柜台类及相关操作" alt="" coords="231,229,329,256"/>
-<area shape="rect" href="trade_8c.html" title=" " alt="" coords="365,311,448,338"/>
+<area shape="rect" title="存储全局变量" alt="" coords="178,5,305,32"/>
+<area shape="rect" href="bank__queue__system_8h.html" title="银行排队系统相关函数" alt="" coords="99,229,237,271"/>
+<area shape="rect" href="init__sql_8h.html" title=" " alt="" coords="110,80,229,107"/>
+<area shape="rect" href="member_8h.html" title="客户类及相关操作" alt="" coords="253,80,377,107"/>
+<area shape="rect" href="common_8c.html" title="存储全局变量" alt="" coords="401,80,505,107"/>
+<area shape="rect" href="bank__queue__system_8c.html" title="银行排队系统相关函数" alt="" coords="5,319,179,345"/>
+<area shape="rect" href="main_8c.html" title="系统主入口函数" alt="" coords="203,319,285,345"/>
+<area shape="rect" href="init__sql_8c.html" title=" " alt="" coords="142,155,237,181"/>
+<area shape="rect" href="counter_8h.html" title="柜台类及相关操作" alt="" coords="312,155,432,181"/>
+<area shape="rect" href="member_8c.html" title="客户类及相关操作" alt="" coords="456,155,557,181"/>
+<area shape="rect" href="counter_8c.html" title="柜台类及相关操作" alt="" coords="323,237,421,263"/>
 </map>
 </div>
 </div>
@@ -128,6 +130,21 @@ common.h 的引用(Include)关系图:</div>
 <tr class="memitem:a56b15173e7200e3c05317443b2aad6ad"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a56b15173e7200e3c05317443b2aad6ad">user_account_file</a></td></tr>
 <tr class="memdesc:a56b15173e7200e3c05317443b2aad6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">普通用户账号文件  <a href="common_8h.html#a56b15173e7200e3c05317443b2aad6ad">更多...</a><br /></td></tr>
 <tr class="separator:a56b15173e7200e3c05317443b2aad6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7976493cf3790a3f8022f2044c8f0eae"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a7976493cf3790a3f8022f2044c8f0eae">vip_level_file</a></td></tr>
+<tr class="memdesc:a7976493cf3790a3f8022f2044c8f0eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">vip等级文件  <a href="common_8h.html#a7976493cf3790a3f8022f2044c8f0eae">更多...</a><br /></td></tr>
+<tr class="separator:a7976493cf3790a3f8022f2044c8f0eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759958e8439d1252745aa0a9793b4bc1"><td class="memItemLeft" align="right" valign="top">MYSQL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a759958e8439d1252745aa0a9793b4bc1">mysql_connect</a></td></tr>
+<tr class="memdesc:a759958e8439d1252745aa0a9793b4bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">数据源指针  <a href="common_8h.html#a759958e8439d1252745aa0a9793b4bc1">更多...</a><br /></td></tr>
+<tr class="separator:a759958e8439d1252745aa0a9793b4bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace128b10bd112020e1a540e7e12cb0cf"><td class="memItemLeft" align="right" valign="top">MYSQL_RES *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ace128b10bd112020e1a540e7e12cb0cf">mysql_res</a></td></tr>
+<tr class="memdesc:ace128b10bd112020e1a540e7e12cb0cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询结果集  <a href="common_8h.html#ace128b10bd112020e1a540e7e12cb0cf">更多...</a><br /></td></tr>
+<tr class="separator:ace128b10bd112020e1a540e7e12cb0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1fade3116f30fc473f85fddf47d7fb"><td class="memItemLeft" align="right" valign="top">MYSQL_FIELD *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#acf1fade3116f30fc473f85fddf47d7fb">mysql_field</a></td></tr>
+<tr class="memdesc:acf1fade3116f30fc473f85fddf47d7fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">包含字段信息的结构指针  <a href="common_8h.html#acf1fade3116f30fc473f85fddf47d7fb">更多...</a><br /></td></tr>
+<tr class="separator:acf1fade3116f30fc473f85fddf47d7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0a0cfbd83aeaa0d2dd189990e2345b"><td class="memItemLeft" align="right" valign="top">MYSQL_ROW&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a0d0a0cfbd83aeaa0d2dd189990e2345b">mysql_next_row</a></td></tr>
+<tr class="memdesc:a0d0a0cfbd83aeaa0d2dd189990e2345b"><td class="mdescLeft">&#160;</td><td class="mdescRight">存放查询sql语句字符串数组  <a href="common_8h.html#a0d0a0cfbd83aeaa0d2dd189990e2345b">更多...</a><br /></td></tr>
+<tr class="separator:a0d0a0cfbd83aeaa0d2dd189990e2345b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>存储全局变量 </p>
@@ -334,6 +351,110 @@ common.h 的引用(Include)关系图:</div>
 
 </div>
 </div>
+<a id="a759958e8439d1252745aa0a9793b4bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759958e8439d1252745aa0a9793b4bc1">&#9670;&nbsp;</a></span>mysql_connect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL mysql_connect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>数据源指针 </p>
+
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acf1fade3116f30fc473f85fddf47d7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1fade3116f30fc473f85fddf47d7fb">&#9670;&nbsp;</a></span>mysql_field</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL_FIELD* mysql_field</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>包含字段信息的结构指针 </p>
+
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0d0a0cfbd83aeaa0d2dd189990e2345b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0a0cfbd83aeaa0d2dd189990e2345b">&#9670;&nbsp;</a></span>mysql_next_row</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL_ROW mysql_next_row</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>存放查询sql语句字符串数组 </p>
+
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ace128b10bd112020e1a540e7e12cb0cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace128b10bd112020e1a540e7e12cb0cf">&#9670;&nbsp;</a></span>mysql_res</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL_RES* mysql_res</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询结果集 </p>
+
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
 <a id="a56b15173e7200e3c05317443b2aad6ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56b15173e7200e3c05317443b2aad6ad">&#9670;&nbsp;</a></span>user_account_file</h2>
 
@@ -357,6 +478,32 @@ common.h 的引用(Include)关系图:</div>
 <p>普通用户账号文件 </p>
 
 <p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7976493cf3790a3f8022f2044c8f0eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7976493cf3790a3f8022f2044c8f0eae">&#9670;&nbsp;</a></span>vip_level_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* vip_level_file</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>vip等级文件 </p>
+
+<p class="definition">在文件 <a class="el" href="common_8c_source.html">common.c</a> 第 <a class="el" href="common_8c_source.html#l00020">20</a> 行定义.</p>
 
 </div>
 </div>

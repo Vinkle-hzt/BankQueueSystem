@@ -47,46 +47,32 @@ $(function() {
 <div class="title">trade.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="trade_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="trade_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// #pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="display_8h.html">display.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">common.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="counter_8h.html">counter.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// #include &quot;display.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// #include &quot;common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// #include &quot;counter.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structcard.html">    7</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structcard.html#a2f8c66a334a0b0c2a0cac812b89edf36">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcard.html#a2f8c66a334a0b0c2a0cac812b89edf36">user_ID</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structcard.html#ad812fde2add501dfc2b65aef98ffb00a">   10</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcard.html#ad812fde2add501dfc2b65aef98ffb00a">card_ID</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structcard.html#a42aff0df672868aa35c1f4ff29eb8edd">   11</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structcard.html#a42aff0df672868aa35c1f4ff29eb8edd">money</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;} <a class="code" href="structcard.html">card</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// typedef struct</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// {</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//     int user_ID;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//     int card_ID;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//     double money;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// } card;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span> <a class="code" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5">start_trade</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// void start_trade();</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="trade_8h.html#a626bc03ad7d66834551550612489987b">   16</a></span>&#160;<a class="code" href="structcard.html">card</a> <a class="code" href="trade_8h.html#a626bc03ad7d66834551550612489987b">choose_card</a>(<span class="keywordtype">int</span> ID);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// card choose_card(int ID);</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="trade_8h.html#a723b15c76b3dbf9c74dbe1f6b7066100">check_balance</a>(<a class="code" href="structcard.html">card</a>*);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// void check_balance(card*);</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="trade_8h.html#a2a8f235f6bfa5528e550b030bbed196a">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="trade_8h.html#a2a8f235f6bfa5528e550b030bbed196a">deposit_money</a>(<a class="code" href="structcard.html">card</a>*);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// void deposit_money(card*);</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="trade_8h.html#a3a7fb17ec552fc4cbcfae8eff41d77bb">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="trade_8h.html#a3a7fb17ec552fc4cbcfae8eff41d77bb">withdraw_money</a>(<a class="code" href="structcard.html">card</a>*);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// void withdraw_money(card*);</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="trade_8h.html#a560539031d45c77a56d5afce38a5643f">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="trade_8h.html#a560539031d45c77a56d5afce38a5643f">transfer_accounts</a>(<a class="code" href="structcard.html">card</a>*);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// void transfer_accounts(card*);</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="trade_8h.html#a654014bfdd9853d123a46255ac00f1a7">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="trade_8h.html#a654014bfdd9853d123a46255ac00f1a7">view_transactions</a>(<a class="code" href="structcard.html">card</a>*);</div>
-<div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div><div class="ttdoc">存储全局变量</div></div>
-<div class="ttc" id="acounter_8h_html"><div class="ttname"><a href="counter_8h.html">counter.h</a></div><div class="ttdoc">柜台类及相关操作</div></div>
-<div class="ttc" id="adisplay_8h_html"><div class="ttname"><a href="display_8h.html">display.h</a></div><div class="ttdoc">功能面板的展示</div></div>
-<div class="ttc" id="astructcard_html"><div class="ttname"><a href="structcard.html">card</a></div><div class="ttdef"><b>Definition:</b> <a href="trade_8h_source.html#l00007">trade.h:8</a></div></div>
-<div class="ttc" id="astructcard_html_a2f8c66a334a0b0c2a0cac812b89edf36"><div class="ttname"><a href="structcard.html#a2f8c66a334a0b0c2a0cac812b89edf36">card::user_ID</a></div><div class="ttdeci">int user_ID</div><div class="ttdef"><b>Definition:</b> <a href="trade_8h_source.html#l00009">trade.h:9</a></div></div>
-<div class="ttc" id="astructcard_html_a42aff0df672868aa35c1f4ff29eb8edd"><div class="ttname"><a href="structcard.html#a42aff0df672868aa35c1f4ff29eb8edd">card::money</a></div><div class="ttdeci">double money</div><div class="ttdef"><b>Definition:</b> <a href="trade_8h_source.html#l00011">trade.h:11</a></div></div>
-<div class="ttc" id="astructcard_html_ad812fde2add501dfc2b65aef98ffb00a"><div class="ttname"><a href="structcard.html#ad812fde2add501dfc2b65aef98ffb00a">card::card_ID</a></div><div class="ttdeci">int card_ID</div><div class="ttdef"><b>Definition:</b> <a href="trade_8h_source.html#l00010">trade.h:10</a></div></div>
-<div class="ttc" id="atrade_8h_html_a2a8f235f6bfa5528e550b030bbed196a"><div class="ttname"><a href="trade_8h.html#a2a8f235f6bfa5528e550b030bbed196a">deposit_money</a></div><div class="ttdeci">void deposit_money(card *)</div></div>
-<div class="ttc" id="atrade_8h_html_a3a7fb17ec552fc4cbcfae8eff41d77bb"><div class="ttname"><a href="trade_8h.html#a3a7fb17ec552fc4cbcfae8eff41d77bb">withdraw_money</a></div><div class="ttdeci">void withdraw_money(card *)</div></div>
-<div class="ttc" id="atrade_8h_html_a560539031d45c77a56d5afce38a5643f"><div class="ttname"><a href="trade_8h.html#a560539031d45c77a56d5afce38a5643f">transfer_accounts</a></div><div class="ttdeci">void transfer_accounts(card *)</div></div>
-<div class="ttc" id="atrade_8h_html_a626bc03ad7d66834551550612489987b"><div class="ttname"><a href="trade_8h.html#a626bc03ad7d66834551550612489987b">choose_card</a></div><div class="ttdeci">card choose_card(int ID)</div></div>
-<div class="ttc" id="atrade_8h_html_a654014bfdd9853d123a46255ac00f1a7"><div class="ttname"><a href="trade_8h.html#a654014bfdd9853d123a46255ac00f1a7">view_transactions</a></div><div class="ttdeci">void view_transactions(card *)</div></div>
-<div class="ttc" id="atrade_8h_html_a723b15c76b3dbf9c74dbe1f6b7066100"><div class="ttname"><a href="trade_8h.html#a723b15c76b3dbf9c74dbe1f6b7066100">check_balance</a></div><div class="ttdeci">void check_balance(card *)</div><div class="ttdef"><b>Definition:</b> <a href="trade_8c_source.html#l00060">trade.c:60</a></div></div>
-<div class="ttc" id="atrade_8h_html_ac55e1399ed4641e788ac06fe604374d5"><div class="ttname"><a href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5">start_trade</a></div><div class="ttdeci">void start_trade()</div><div class="ttdef"><b>Definition:</b> <a href="trade_8c_source.html#l00003">trade.c:3</a></div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// void view_transactions(card*);</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
