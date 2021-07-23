@@ -21,12 +21,14 @@
 *.a
 *.la
 *.lo
+!libmysql.lib
 
 # Shared objects (inc. Windows DLLs)
 *.dll
 *.so
 *.so.*
 *.dylib
+!libmysql.dll
 
 # Executables
 *.exe
