@@ -40,7 +40,7 @@ void start_system()
                 break;
             case '2':
                 fflush(stdin);
-                // start_trade();
+                start_trade();
                 break;
             case '3':
                 fflush(stdin);
@@ -128,21 +128,21 @@ int login_admin()
     printf("密码： ");
     scanf("%s", pwd);
 
-    FILE *admin_file = fopen("../files/admin.txt", "r");
     uint8_t *pwdmd5 = getMD5(pwd);
+    for (int i = 0; i < 16; i++)
+        sprintf((pwd + i * 2), "%2.2x", pwdmd5[i]);
 
-    char admin_id[40];
-    char admin_pwd[40];
+    sprintf(mysql_buffer, "SELECT * FROM `admin` WHERE(`ID` = \"%s\" AND `password` = \"%s\")", id, pwd);
 
-    while (~fscanf(admin_file, "%s %s", admin_id, admin_pwd))
-    {
-        for (int i = 0; i < 16; i++)
-            sprintf((pwd + i * 2), "%2.2x", pwdmd5[i]);
-        if (!strcmp(admin_id, id) && !strncmp(admin_pwd, pwd, 32))
-            return 1;
-    }
-    fclose(admin_file);
+    // printf("mysql_buffer: %s \n", mysql_buffer);
+
+    mysql_query(&mysql_connect, mysql_buffer);
+    mysql_res = mysql_store_result(&mysql_connect);
     free(pwdmd5);
+
+    int row = mysql_num_rows(mysql_res);
+    if (row)
+        return 1;
     return 0;
 }
 
@@ -161,12 +161,11 @@ void check_all_trade()
         printf("\n 账号或密码错误！！！ 请重新输入 ！！！\n\n");
     }
     if (!login_flag)
-        printf("登录失败次数太多，请稍后再试");
+        printf("登录失败次数太多，请稍后再试\n");
     else
     {
         printf("\n登录成功 :) 尊敬的管理员\n");
         printf("此为银行总交易信息：\n");
         show_trade_conclude(&all_trade);
     }
-    system("pause");
 }

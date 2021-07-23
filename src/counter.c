@@ -37,5 +37,13 @@ void counter_assign_customer(counter *ct, member *customer)
 
 void show_counter_customer()
 {
-
+    for (int i = 0; i < counters->curSize; i++)
+    {
+        counter *cur_counter = (counter *)al_at(counters, i);
+        if (cur_counter->customer != NULL)
+            printf("柜台 %d >> ID：%d 姓名：%s 可以办理业务\n", i + 1,
+                   cur_counter->customer->ID, cur_counter->customer->name);
+        else
+            printf("柜台 %d 空闲中\n", i + 1);
+    }
 }

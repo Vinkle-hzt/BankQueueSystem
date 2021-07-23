@@ -15,7 +15,7 @@ member *member_come(int ID, char *name)
     member *m = malloc(sizeof(member));
     m->ID = ID;
     strncpy(m->name, name, NAME_SIZE);
-    m->vip = get_vip_level(&ID, name);
+    m->vip = get_vip_level(&m->ID, name);
 
     if (m->vip == member_error_1)
     {
@@ -73,7 +73,7 @@ int get_vip_level(int* ID, char *name)
         {
             // int field_count = mysql_field_count(&mysql_connect);
             int row = mysql_num_rows(mysql_res);
-            if (row > 1)
+            if (row > 0)
             {
                 int vip_column = -1;
                 int name_column = -1;
@@ -111,7 +111,7 @@ int get_vip_level(int* ID, char *name)
         mysql_res = mysql_store_result(&mysql_connect);
         mysql_next_row = mysql_fetch_row(mysql_res);
         *ID = atoi(mysql_next_row[0]);
-        
+
         printf("尊敬的%s，已自动为您生成 ID，您的 ID 号为 %d\n", name, *ID);
         return 0;
     }
