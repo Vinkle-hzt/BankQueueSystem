@@ -1,0 +1,6 @@
+<map id="start_trade" name="start_trade">
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,89,53"/>
+<area shape="rect" id="node2" href="$array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247" title="get the idx_th element value (start from 0)" alt="" coords="368,27,419,53"/>
+<area shape="rect" id="node3" href="$display_8h.html#ac4db935f87e3adb1f6eeaf91c6262f64" title="展示业务办理页面" alt="" coords="137,27,320,53"/>
+<area shape="rect" id="node4" href="$counter_8h.html#aa8daf9e82a8ca950eac00c466c14fea6" title=" " alt="" coords="147,77,311,104"/>
+</map>

@@ -1,15 +1,17 @@
 <map id="include/priority_queue.h" name="include/priority_queue.h">
-<area shape="rect" id="node1" title=" " alt="" coords="136,5,293,32"/>
-<area shape="rect" id="node2" href="$bank__queue__system_8h.html" title="银行排队系统相关函数" alt="" coords="99,304,237,345"/>
-<area shape="rect" id="node5" href="$common_8h.html" title="存储全局变量" alt="" coords="151,80,278,107"/>
-<area shape="rect" id="node13" href="$priority__queue_8c.html" title=" " alt="" coords="302,80,437,107"/>
-<area shape="rect" id="node3" href="$bank__queue__system_8c.html" title="银行排队系统相关函数" alt="" coords="5,393,179,420"/>
-<area shape="rect" id="node4" href="$main_8c.html" title="系统主入口函数" alt="" coords="203,393,285,420"/>
-<area shape="rect" id="node6" href="$init__sql_8h.html" title=" " alt="" coords="155,155,274,181"/>
-<area shape="rect" id="node8" href="$member_8h.html" title="客户类及相关操作" alt="" coords="298,155,422,181"/>
-<area shape="rect" id="node12" href="$common_8c.html" title="存储全局变量" alt="" coords="447,155,551,181"/>
-<area shape="rect" id="node7" href="$init__sql_8c.html" title=" " alt="" coords="206,229,301,256"/>
-<area shape="rect" id="node9" href="$counter_8h.html" title="柜台类及相关操作" alt="" coords="376,229,496,256"/>
-<area shape="rect" id="node11" href="$member_8c.html" title="客户类及相关操作" alt="" coords="520,229,621,256"/>
-<area shape="rect" id="node10" href="$counter_8c.html" title="柜台类及相关操作" alt="" coords="387,311,485,338"/>
+<area shape="rect" id="node1" title=" " alt="" coords="195,5,352,32"/>
+<area shape="rect" id="node2" href="$bank__queue__system_8h.html" title="银行排队系统相关函数" alt="" coords="123,379,261,420"/>
+<area shape="rect" id="node5" href="$common_8h.html" title="存储全局变量" alt="" coords="210,80,337,107"/>
+<area shape="rect" id="node15" href="$priority__queue_8c.html" title=" " alt="" coords="361,80,495,107"/>
+<area shape="rect" id="node3" href="$bank__queue__system_8c.html" title="银行排队系统相关函数" alt="" coords="29,468,203,495"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="系统主入口函数" alt="" coords="227,468,309,495"/>
+<area shape="rect" id="node6" href="$init__sql_8h.html" title=" " alt="" coords="133,155,251,181"/>
+<area shape="rect" id="node8" href="$member_8h.html" title="客户类及相关操作" alt="" coords="294,155,418,181"/>
+<area shape="rect" id="node10" href="$trade_8h.html" title=" " alt="" coords="488,304,595,331"/>
+<area shape="rect" id="node14" href="$common_8c.html" title="存储全局变量" alt="" coords="635,155,739,181"/>
+<area shape="rect" id="node7" href="$init__sql_8c.html" title=" " alt="" coords="145,229,239,256"/>
+<area shape="rect" id="node9" href="$counter_8h.html" title="柜台类及相关操作" alt="" coords="315,229,435,256"/>
+<area shape="rect" id="node13" href="$member_8c.html" title="客户类及相关操作" alt="" coords="459,229,560,256"/>
+<area shape="rect" id="node12" href="$counter_8c.html" title="柜台类及相关操作" alt="" coords="366,304,463,331"/>
+<area shape="rect" id="node11" href="$trade_8c.html" title=" " alt="" coords="500,386,583,413"/>
 </map>

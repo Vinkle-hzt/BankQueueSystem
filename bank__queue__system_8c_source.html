@@ -82,7 +82,7 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;2&#39;</span>:</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                fflush(stdin);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="comment">// start_trade();</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5">start_trade</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;3&#39;</span>:</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                fflush(stdin);</div>
@@ -170,21 +170,21 @@ $(function() {
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    printf(<span class="stringliteral">&quot;密码： &quot;</span>);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    scanf(<span class="stringliteral">&quot;%s&quot;</span>, pwd);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    FILE *admin_file = fopen(<span class="stringliteral">&quot;../files/admin.txt&quot;</span>, <span class="stringliteral">&quot;r&quot;</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    uint8_t *pwdmd5 = <a class="code" href="helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9">getMD5</a>(pwd);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">char</span> admin_id[40];</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">char</span> admin_pwd[40];</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    uint8_t *pwdmd5 = <a class="code" href="helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9">getMD5</a>(pwd);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 16; i++)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        sprintf((pwd + i * 2), <span class="stringliteral">&quot;%2.2x&quot;</span>, pwdmd5[i]);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    sprintf(mysql_buffer, <span class="stringliteral">&quot;SELECT * FROM `admin` WHERE(`ID` = \&quot;%s\&quot; AND `password` = \&quot;%s\&quot;)&quot;</span>, <span class="keywordtype">id</span>, pwd);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">while</span> (~fscanf(admin_file, <span class="stringliteral">&quot;%s %s&quot;</span>, admin_id, admin_pwd))</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 16; i++)</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            sprintf((pwd + i * 2), <span class="stringliteral">&quot;%2.2x&quot;</span>, pwdmd5[i]);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">if</span> (!strcmp(admin_id, <span class="keywordtype">id</span>) &amp;&amp; !strncmp(admin_pwd, pwd, 32))</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    fclose(admin_file);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    free(pwdmd5);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// printf(&quot;mysql_buffer: %s \n&quot;, mysql_buffer);</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    mysql_query(&amp;<a class="code" href="common_8h.html#a759958e8439d1252745aa0a9793b4bc1">mysql_connect</a>, mysql_buffer);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="common_8h.html#ace128b10bd112020e1a540e7e12cb0cf">mysql_res</a> = mysql_store_result(&amp;<a class="code" href="common_8h.html#a759958e8439d1252745aa0a9793b4bc1">mysql_connect</a>);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    free(pwdmd5);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">int</span> row = mysql_num_rows(<a class="code" href="common_8h.html#ace128b10bd112020e1a540e7e12cb0cf">mysql_res</a>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">if</span> (row)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
@@ -203,15 +203,14 @@ $(function() {
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        printf(<span class="stringliteral">&quot;\n 账号或密码错误！！！ 请重新输入 ！！！\n\n&quot;</span>);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span> (!login_flag)</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        printf(<span class="stringliteral">&quot;登录失败次数太多，请稍后再试&quot;</span>);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        printf(<span class="stringliteral">&quot;登录失败次数太多，请稍后再试\n&quot;</span>);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        printf(<span class="stringliteral">&quot;\n登录成功 :) 尊敬的管理员\n&quot;</span>);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        printf(<span class="stringliteral">&quot;此为银行总交易信息：\n&quot;</span>);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9">show_trade_conclude</a>(&amp;<a class="code" href="common_8h.html#ad867f9cc5a6cdef9ecf7a57f7a5579e1">all_trade</a>);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
 <div class="ttc" id="aarray__list_8h_html_a7e85a97073f192ff04e94025cf233a69"><div class="ttname"><a href="array__list_8h.html#a7e85a97073f192ff04e94025cf233a69">al_free</a></div><div class="ttdeci">void al_free(array_list *al)</div><div class="ttdoc">free the array list</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00033">array_list.c:33</a></div></div>
 <div class="ttc" id="aarray__list_8h_html_ab55c286c3b60fdbd269b9c1135885247"><div class="ttname"><a href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247">al_at</a></div><div class="ttdeci">void * al_at(array_list *al, int idx)</div><div class="ttdoc">get the idx_th element value (start from 0)</div><div class="ttdef"><b>Definition:</b> <a href="array__list_8c_source.html#l00020">array_list.c:20</a></div></div>
 <div class="ttc" id="abank__queue__system_8c_html_a39c0c96389da80e6fad519bed74cd35b"><div class="ttname"><a href="bank__queue__system_8c.html#a39c0c96389da80e6fad519bed74cd35b">do_pick_number</a></div><div class="ttdeci">void do_pick_number()</div><div class="ttdoc">进行叫号</div><div class="ttdef"><b>Definition:</b> <a href="bank__queue__system_8c_source.html#l00070">bank_queue_system.c:70</a></div></div>
@@ -221,7 +220,9 @@ $(function() {
 <div class="ttc" id="abank__queue__system_8h_html"><div class="ttname"><a href="bank__queue__system_8h.html">bank_queue_system.h</a></div><div class="ttdoc">银行排队系统相关函数</div></div>
 <div class="ttc" id="acommon_8h_html_a4fd0372f6b79b583f28e319cc9cf37f4"><div class="ttname"><a href="common_8h.html#a4fd0372f6b79b583f28e319cc9cf37f4">waiting_line</a></div><div class="ttdeci">priority_queue * waiting_line</div><div class="ttdoc">等待队列</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00015">common.c:15</a></div></div>
 <div class="ttc" id="acommon_8h_html_a6328f63a5c0a3b0b3f70db82b29e6c4b"><div class="ttname"><a href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a></div><div class="ttdeci">array_list * counters</div><div class="ttdoc">柜台数组</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00016">common.c:16</a></div></div>
+<div class="ttc" id="acommon_8h_html_a759958e8439d1252745aa0a9793b4bc1"><div class="ttname"><a href="common_8h.html#a759958e8439d1252745aa0a9793b4bc1">mysql_connect</a></div><div class="ttdeci">MYSQL mysql_connect</div><div class="ttdoc">数据源指针</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00018">common.c:18</a></div></div>
 <div class="ttc" id="acommon_8h_html_ab936051f5aaca44c6c3c41dee0d19c36"><div class="ttname"><a href="common_8h.html#ab936051f5aaca44c6c3c41dee0d19c36">log_file</a></div><div class="ttdeci">FILE * log_file</div><div class="ttdoc">log输出文件</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00014">common.c:14</a></div></div>
+<div class="ttc" id="acommon_8h_html_ace128b10bd112020e1a540e7e12cb0cf"><div class="ttname"><a href="common_8h.html#ace128b10bd112020e1a540e7e12cb0cf">mysql_res</a></div><div class="ttdeci">MYSQL_RES * mysql_res</div><div class="ttdoc">查询结果集</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00019">common.c:19</a></div></div>
 <div class="ttc" id="acommon_8h_html_ad867f9cc5a6cdef9ecf7a57f7a5579e1"><div class="ttname"><a href="common_8h.html#ad867f9cc5a6cdef9ecf7a57f7a5579e1">all_trade</a></div><div class="ttdeci">trade_conclude all_trade</div><div class="ttdoc">交易总量</div><div class="ttdef"><b>Definition:</b> <a href="common_8c_source.html#l00017">common.c:17</a></div></div>
 <div class="ttc" id="acounter_8h_html_a4236f521a1bd4c6fca6e6454d6888004"><div class="ttname"><a href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004">counter_assign_customer</a></div><div class="ttdeci">void counter_assign_customer(counter *ct, member *customer)</div><div class="ttdoc">将客户分配到柜台</div><div class="ttdef"><b>Definition:</b> <a href="counter_8c_source.html#l00026">counter.c:26</a></div></div>
 <div class="ttc" id="acounter_8h_html_abe5e067848d0e6d85ac6434adbdf27e1"><div class="ttname"><a href="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1">create_counter</a></div><div class="ttdeci">array_list * create_counter(int num)</div><div class="ttdoc">创建一个 array_list* 类型的柜台表</div><div class="ttdef"><b>Definition:</b> <a href="counter_8c_source.html#l00010">counter.c:10</a></div></div>
@@ -246,6 +247,7 @@ $(function() {
 <div class="ttc" id="astructmember_html_a7f6ac764168456a67e6335061a1a8895"><div class="ttname"><a href="structmember.html#a7f6ac764168456a67e6335061a1a8895">member::vip_pick_num</a></div><div class="ttdeci">int vip_pick_num</div><div class="ttdoc">客户取的号码</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00029">member.h:29</a></div></div>
 <div class="ttc" id="astructmember_html_aa064948b71641740f34371b6ade5c94a"><div class="ttname"><a href="structmember.html#aa064948b71641740f34371b6ade5c94a">member::vip</a></div><div class="ttdeci">int vip</div><div class="ttdoc">vip 等级</div><div class="ttdef"><b>Definition:</b> <a href="member_8h_source.html#l00030">member.h:30</a></div></div>
 <div class="ttc" id="astructpriority__queue_html_a98651570e427af3e1198d4553188aa8b"><div class="ttname"><a href="structpriority__queue.html#a98651570e427af3e1198d4553188aa8b">priority_queue::curSize</a></div><div class="ttdeci">int curSize</div><div class="ttdoc">当前容量</div><div class="ttdef"><b>Definition:</b> <a href="priority__queue_8h_source.html#l00015">priority_queue.h:15</a></div></div>
+<div class="ttc" id="atrade_8h_html_ac55e1399ed4641e788ac06fe604374d5"><div class="ttname"><a href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5">start_trade</a></div><div class="ttdeci">void start_trade()</div><div class="ttdef"><b>Definition:</b> <a href="trade_8c_source.html#l00003">trade.c:3</a></div></div>
 <div class="ttc" id="atrade__conclude_8h_html_a45190cffa731230e3b1510be09a94fa9"><div class="ttname"><a href="trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9">show_trade_conclude</a></div><div class="ttdeci">void show_trade_conclude(trade_conclude *tc)</div><div class="ttdoc">展示交易统计</div><div class="ttdef"><b>Definition:</b> <a href="trade__conclude_8c_source.html#l00018">trade_conclude.c:18</a></div></div>
 <div class="ttc" id="atrade__conclude_8h_html_a7a16a0f7b2f2b9cb60adc938d83254df"><div class="ttname"><a href="trade__conclude_8h.html#a7a16a0f7b2f2b9cb60adc938d83254df">trade_conclude_create</a></div><div class="ttdeci">trade_conclude trade_conclude_create()</div><div class="ttdoc">建立交易统计对象</div><div class="ttdef"><b>Definition:</b> <a href="trade__conclude_8c_source.html#l00011">trade_conclude.c:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
