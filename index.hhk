@@ -1034,6 +1034,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="display_8h.html#ac4db935f87e3adb1f6eeaf91c6262f64"><param name="Name" value="display.h"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a5b0bf9a75212aa067bb5cebb8e925ae4"><param name="Name" value="show_cards"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8c.html#aa8daf9e82a8ca950eac00c466c14fea6"><param name="Name" value="show_counter_customer"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8c.html#aa8daf9e82a8ca950eac00c466c14fea6"><param name="Name" value="counter.c"></OBJECT>
@@ -1120,7 +1121,14 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html#af9cdc8bb476ec5042860ac4b472c9569"><param name="Name" value="total_deposits"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html#aac60ec37971c4250151a00e343d71fa2"><param name="Name" value="total_loans"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#ac55e1399ed4641e788ac06fe604374d5"><param name="Name" value="trade.c"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5"><param name="Name" value="trade.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html"><param name="Name" value="trade.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a5b0bf9a75212aa067bb5cebb8e925ae4"><param name="Name" value="show_cards"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html"><param name="Name" value="trade.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5"><param name="Name" value="start_trade"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html"><param name="Name" value="trade_conclude"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html"><param name="Name" value="trade_conclude.c"></OBJECT>
   <UL>
