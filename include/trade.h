@@ -13,6 +13,8 @@ typedef struct
 
 void start_trade();
 
+void show_cards();
+
 // card choose_card(int ID);
 
 // void check_balance(card*);
