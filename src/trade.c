@@ -131,22 +131,79 @@ void check_balance(int card_ID)
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
     mysql_next_row = mysql_fetch_row(mysql_res);
-    printf("\n卡号：%d，余额：%s\n",card_ID, mysql_next_row[0]);
+    printf("\n卡号：%d，余额：%s\n", card_ID, mysql_next_row[0]);
 }
 
 void deposit_money(int card_ID)
 {
-
+    double card_deposit = 0;
+    printf("请输入您要存款的钱数：\n");
+    scanf("%lf", &card_deposit);
+    sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_deposit, card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+    check_balance(card_ID);
 }
 
 void withdraw_money(int card_ID)
 {
+    double card_withdraw = 0;
+    printf("请输入您要取款的钱数：\n");
+    scanf("%lf", &card_withdraw);
 
+    //查询卡内余额
+    sprintf(mysql_buffer, "SELECT money FROM card WHERE card_ID = %d", card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+    mysql_res = mysql_store_result(&mysql_connect);
+    mysql_next_row = mysql_fetch_row(mysql_res);
+    double now_money = atof(mysql_next_row[0]);
+    if (now_money < card_withdraw)
+    {
+        printf("您的余额不足！！！\n");
+        return;
+    }
+
+    //取款过程
+    sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d", card_withdraw, card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+    check_balance(card_ID);
 }
 
 void transfer_accounts(int card_ID)
 {
+    double card_transfer = 0;
+    int card_IDout = 0;
+    printf("请输入您要转账的 ID 与 钱数（以空格分隔）：\n");
+    scanf("%d %lf", &card_IDout, &card_transfer);
 
+    //查询卡内余额
+    sprintf(mysql_buffer, "SELECT money FROM card WHERE card_ID = %d", card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+    mysql_res = mysql_store_result(&mysql_connect);
+    mysql_next_row = mysql_fetch_row(mysql_res);
+    double now_money = atof(mysql_next_row[0]);
+    if (now_money < card_transfer)
+    {
+        printf("您的余额不足！！！\n");
+        return;
+    }
+
+    //查询对方账户是否存在
+    sprintf(mysql_buffer, "SELECT * FROM card WHERE card_ID = %d", card_IDout);
+    mysql_query(&mysql_connect, mysql_buffer);
+    mysql_res = mysql_store_result(&mysql_connect);
+    int row = mysql_num_rows(mysql_res);
+    if( !row )
+    {
+        printf("没有此账户！！！\n");
+        return;
+    }
+
+    //转账过程
+    sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d", card_transfer, card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+    sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_transfer, card_IDout);
+    mysql_query(&mysql_connect, mysql_buffer);
+    check_balance(card_ID);
 }
 
 void view_transactions(int card_ID)
@@ -183,6 +240,6 @@ int check_card(int card_ID, int user_ID)
             card_ID, user_ID);
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
-    
+
     return mysql_num_rows(mysql_res);
 }
