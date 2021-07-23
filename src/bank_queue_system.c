@@ -63,7 +63,7 @@ void start_system()
     al_free(counters);
 
 #ifndef DEBUG
-    fclose(log_file)
+    fclose(log_file);
 #endif
 }
 

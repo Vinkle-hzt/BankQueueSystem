@@ -21,7 +21,7 @@ file(GLOB_RECURSE SRCS "src/*.c")
 link_directories(${MYSQL_LIB})
 add_executable(BankQueueSystem ${SRCS})
 include_directories(${PROJECT_SOURCE_DIR}/include ${MYSQL_INC})
-target_link_libraries(BankQueueSystem libmysql.lib)
+target_link_libraries(BankQueueSystem  ${MYSQL_LIB}/libmysql.lib)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
