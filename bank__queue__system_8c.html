@@ -98,6 +98,8 @@ bank_queue_system.c 的引用(Include)关系图:</div>
 <tr class="memitem:aa95930c09af101d16254f670034f7548"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bank__queue__system_8c.html#aa95930c09af101d16254f670034f7548">check_all_trade</a> ()</td></tr>
 <tr class="memdesc:aa95930c09af101d16254f670034f7548"><td class="mdescLeft">&#160;</td><td class="mdescRight">查看所有交易记录  <a href="bank__queue__system_8c.html#aa95930c09af101d16254f670034f7548">更多...</a><br /></td></tr>
 <tr class="separator:aa95930c09af101d16254f670034f7548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e00091a11dbc131165293bc78c633ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bank__queue__system_8c.html#a4e00091a11dbc131165293bc78c633ae">call_next</a> (<a class="el" href="structcounter.html">counter</a> *ct)</td></tr>
+<tr class="separator:a4e00091a11dbc131165293bc78c633ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>银行排队系统相关函数 </p>
@@ -105,6 +107,39 @@ bank_queue_system.c 的引用(Include)关系图:</div>
 
 <p class="definition">在文件 <a class="el" href="bank__queue__system_8c_source.html">bank_queue_system.c</a> 中定义.</p>
 </div><h2 class="groupheader">函数说明</h2>
+<a id="a4e00091a11dbc131165293bc78c633ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e00091a11dbc131165293bc78c633ae">&#9670;&nbsp;</a></span>call_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void call_next </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcounter.html">counter</a> *&#160;</td>
+          <td class="paramname"><em>ct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bank__queue__system_8c_source.html">bank_queue_system.c</a> 第 <a class="el" href="bank__queue__system_8c_source.html#l00173">173</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bank__queue__system_8c_a4e00091a11dbc131165293bc78c633ae_cgraph.png" border="0" usemap="#abank__queue__system_8c_a4e00091a11dbc131165293bc78c633ae_cgraph" alt=""/></div>
+<map name="abank__queue__system_8c_a4e00091a11dbc131165293bc78c633ae_cgraph" id="abank__queue__system_8c_a4e00091a11dbc131165293bc78c633ae_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,79,81"/>
+<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="127,29,191,56"/>
+<area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="128,80,189,107"/>
+<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="239,29,323,56"/>
+<area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title=" " alt="" coords="371,29,424,56"/>
+<area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="472,29,548,56"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aa95930c09af101d16254f670034f7548"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa95930c09af101d16254f670034f7548">&#9670;&nbsp;</a></span>check_all_trade()</h2>
 
@@ -267,46 +302,56 @@ bank_queue_system.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="bank__queue__system_8c_a6cb6cd3963cb32d63055dacfa689ed27_cgraph.png" border="0" usemap="#abank__queue__system_8c_a6cb6cd3963cb32d63055dacfa689ed27_cgraph" alt=""/></div>
 <map name="abank__queue__system_8c_a6cb6cd3963cb32d63055dacfa689ed27_cgraph" id="abank__queue__system_8c_a6cb6cd3963cb32d63055dacfa689ed27_cgraph">
-<area shape="rect" title="启动银行排队系统" alt="" coords="5,512,103,539"/>
-<area shape="rect" href="array__list_8h.html#a7e85a97073f192ff04e94025cf233a69" title="free the array list" alt="" coords="656,208,717,235"/>
-<area shape="rect" href="bank__queue__system_8c.html#aa95930c09af101d16254f670034f7548" title="查看所有交易记录" alt="" coords="180,512,293,539"/>
-<area shape="rect" href="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title="创建一个 array_list* 类型的柜台表" alt="" coords="183,309,291,336"/>
-<area shape="rect" href="trade__conclude_8h.html#a7a16a0f7b2f2b9cb60adc938d83254df" title="建立交易统计对象" alt="" coords="385,360,539,387"/>
-<area shape="rect" href="bank__queue__system_8c.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="403,411,521,437"/>
-<area shape="rect" href="member_8h.html#a54fa49af4b5640c8ca1a4577bc6aed9e" title=" " alt="" coords="173,563,300,589"/>
-<area shape="rect" href="priority__queue_8h.html#a5bbaa49901528ed8adc6f6d4e62db1b8" title=" " alt="" coords="197,613,276,640"/>
-<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title=" " alt="" coords="204,157,269,184"/>
-<area shape="rect" href="display_8h.html#a148b19927556db11d6e5d93e6fbd6c99" title="展示结束页面" alt="" coords="167,664,307,691"/>
-<area shape="rect" href="display_8h.html#ac2d6095a7e78918587bb24be0b6aa1fb" title="展示功能选择页面" alt="" coords="173,715,300,741"/>
-<area shape="rect" href="display_8h.html#a7d333a60972421e525d0d704c64dea94" title="展示进入的菜单页面" alt="" coords="151,765,323,792"/>
-<area shape="rect" href="init__sql_8h.html#a6db4f3b38bcc0fb1f71104d9e8c94aef" title=" " alt="" coords="192,816,281,843"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="195,461,279,488"/>
-<area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="831,183,907,209"/>
-<area shape="rect" href="bank__queue__system_8c.html#a735d888e3b623602fdec920477ab33ce" title="登录管理员账号" alt="" coords="417,613,507,640"/>
-<area shape="rect" href="trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9" title="展示交易统计" alt="" coords="388,664,536,691"/>
-<area shape="rect" href="helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9" title="获取字符的 MD5 编码" alt="" coords="653,613,720,640"/>
-<area shape="rect" href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25" title=" " alt="" coords="846,613,893,640"/>
-<area shape="rect" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251" title=" " alt="" coords="967,639,1037,665"/>
-<area shape="rect" href="helpful__func_8c.html#a8e5b16114900fd4e0b0a467519096299" title=" " alt="" coords="968,588,1036,615"/>
-<area shape="rect" href="array__list_8h.html#a3f34db16c1c96fbaf30a72919bfd176c" title="create array list" alt="" coords="425,309,499,336"/>
-<area shape="rect" href="array__list_8h.html#a6b792272494e473122e892e232500d8d" title="insert element value val to the end of array list" alt="" coords="429,259,495,285"/>
-<area shape="rect" href="array__list_8c.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="resize the array list size" alt="" coords="650,259,723,285"/>
-<area shape="rect" href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247" title="get the idx_th element value (start from 0)" alt="" coords="661,461,712,488"/>
-<area shape="rect" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="601,309,772,336"/>
-<area shape="rect" href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="633,360,741,387"/>
-<area shape="rect" href="priority__queue_8h.html#a8b0374f7ed8ea317892fd30d02a5c24b" title=" " alt="" coords="651,411,722,437"/>
-<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前 UTC 时间" alt="" coords="821,309,918,336"/>
-<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="827,259,912,285"/>
-<area shape="rect" href="member_8c.html#afa4cea7100830e03c042944d884de59d" title=" " alt="" coords="820,360,919,387"/>
-<area shape="rect" href="priority__queue_8c.html#a6f8080006ca1d286b6e32ee6e154ad87" title=" " alt="" coords="831,461,908,488"/>
-<area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title=" " alt="" coords="975,284,1029,311"/>
-<area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="1085,284,1161,311"/>
-<area shape="rect" href="priority__queue_8c.html#ad3813d3c5901d1930a5438bbdd5c9955" title=" " alt="" coords="427,81,497,108"/>
-<area shape="rect" href="priority__queue_8c.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="655,56,719,83"/>
-<area shape="rect" href="priority__queue_8c.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="656,5,717,32"/>
-<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="827,95,911,121"/>
-<area shape="rect" href="display_8h.html#ac4db935f87e3adb1f6eeaf91c6262f64" title="展示业务办理页面" alt="" coords="371,563,553,589"/>
-<area shape="rect" href="counter_8h.html#aa8daf9e82a8ca950eac00c466c14fea6" title=" " alt="" coords="380,512,544,539"/>
+<area shape="rect" title="启动银行排队系统" alt="" coords="5,702,103,728"/>
+<area shape="rect" href="array__list_8h.html#a7e85a97073f192ff04e94025cf233a69" title="free the array list" alt="" coords="656,18,717,44"/>
+<area shape="rect" href="bank__queue__system_8c.html#aa95930c09af101d16254f670034f7548" title="查看所有交易记录" alt="" coords="180,702,293,728"/>
+<area shape="rect" href="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title="创建一个 array_list* 类型的柜台表" alt="" coords="183,220,291,247"/>
+<area shape="rect" href="trade__conclude_8h.html#a7a16a0f7b2f2b9cb60adc938d83254df" title="建立交易统计对象" alt="" coords="385,271,539,298"/>
+<area shape="rect" href="bank__queue__system_8c.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="403,980,521,1007"/>
+<area shape="rect" href="member_8h.html#a54fa49af4b5640c8ca1a4577bc6aed9e" title=" " alt="" coords="173,752,300,779"/>
+<area shape="rect" href="priority__queue_8h.html#a5bbaa49901528ed8adc6f6d4e62db1b8" title=" " alt="" coords="197,803,276,830"/>
+<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title=" " alt="" coords="204,119,269,146"/>
+<area shape="rect" href="display_8h.html#a148b19927556db11d6e5d93e6fbd6c99" title="展示结束页面" alt="" coords="167,854,307,880"/>
+<area shape="rect" href="display_8h.html#ac2d6095a7e78918587bb24be0b6aa1fb" title="展示功能选择页面" alt="" coords="173,904,300,931"/>
+<area shape="rect" href="display_8h.html#a7d333a60972421e525d0d704c64dea94" title="展示进入的菜单页面" alt="" coords="151,955,323,982"/>
+<area shape="rect" href="init__sql_8h.html#a6db4f3b38bcc0fb1f71104d9e8c94aef" title=" " alt="" coords="192,1006,281,1032"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="195,600,279,627"/>
+<area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="831,119,907,146"/>
+<area shape="rect" href="bank__queue__system_8c.html#a735d888e3b623602fdec920477ab33ce" title="登录管理员账号" alt="" coords="417,1031,507,1058"/>
+<area shape="rect" href="trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9" title="展示交易统计" alt="" coords="388,1082,536,1108"/>
+<area shape="rect" href="helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9" title="获取字符的 MD5 编码" alt="" coords="653,1031,720,1058"/>
+<area shape="rect" href="helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25" title=" " alt="" coords="846,1082,893,1108"/>
+<area shape="rect" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251" title=" " alt="" coords="967,1082,1037,1108"/>
+<area shape="rect" href="array__list_8h.html#a3f34db16c1c96fbaf30a72919bfd176c" title="create array list" alt="" coords="425,220,499,247"/>
+<area shape="rect" href="array__list_8h.html#a6b792272494e473122e892e232500d8d" title="insert element value val to the end of array list" alt="" coords="429,170,495,196"/>
+<area shape="rect" href="array__list_8c.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="resize the array list size" alt="" coords="650,220,723,247"/>
+<area shape="rect" href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247" title="get the idx_th element value (start from 0)" alt="" coords="661,828,712,855"/>
+<area shape="rect" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="601,879,772,906"/>
+<area shape="rect" href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="633,930,741,956"/>
+<area shape="rect" href="priority__queue_8h.html#a8b0374f7ed8ea317892fd30d02a5c24b" title=" " alt="" coords="651,980,722,1007"/>
+<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前 UTC 时间" alt="" coords="821,879,918,906"/>
+<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="827,828,912,855"/>
+<area shape="rect" href="member_8c.html#afa4cea7100830e03c042944d884de59d" title=" " alt="" coords="820,930,919,956"/>
+<area shape="rect" href="priority__queue_8c.html#a6f8080006ca1d286b6e32ee6e154ad87" title=" " alt="" coords="831,980,908,1007"/>
+<area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title=" " alt="" coords="975,651,1029,678"/>
+<area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="1085,651,1161,678"/>
+<area shape="rect" href="priority__queue_8c.html#ad3813d3c5901d1930a5438bbdd5c9955" title=" " alt="" coords="427,119,497,146"/>
+<area shape="rect" href="priority__queue_8c.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="655,366,719,392"/>
+<area shape="rect" href="priority__queue_8c.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="656,170,717,196"/>
+<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="827,555,911,582"/>
+<area shape="rect" href="trade_8c.html#a3d62f6a21895c8bf7bdb57374454d1e6" title=" " alt="" coords="407,322,517,348"/>
+<area shape="rect" href="trade_8c.html#ab72dab19fcb1cf7a64faadb6a2294af3" title=" " alt="" coords="417,423,507,450"/>
+<area shape="rect" href="trade_8h.html#a626bc03ad7d66834551550612489987b" title=" " alt="" coords="414,474,510,500"/>
+<area shape="rect" href="trade_8c.html#a306c5209838a5ebf5fea730785723557" title=" " alt="" coords="417,524,507,551"/>
+<area shape="rect" href="trade_8c.html#afcee734dca55c035c8de9b849bd53eb3" title=" " alt="" coords="407,575,517,602"/>
+<area shape="rect" href="trade_8c.html#a5c3ec099cbeb6068634e97ed18977979" title=" " alt="" coords="423,372,501,399"/>
+<area shape="rect" href="display_8h.html#ac4db935f87e3adb1f6eeaf91c6262f64" title="展示业务办理页面" alt="" coords="371,626,553,652"/>
+<area shape="rect" href="trade_8c.html#a2a450dbf85b2bae7ce93433989127af1" title=" " alt="" coords="416,676,508,703"/>
+<area shape="rect" href="counter_8h.html#aa8daf9e82a8ca950eac00c466c14fea6" title=" " alt="" coords="380,930,544,956"/>
+<area shape="rect" href="trade_8c.html#a313ab03b107a8c788c62e1aaf9ea5a64" title=" " alt="" coords="399,727,525,754"/>
+<area shape="rect" href="trade_8c.html#a77151d1e1b4c4426510b6dd4e05c79cc" title=" " alt="" coords="399,778,525,804"/>
+<area shape="rect" href="trade_8c.html#ae23eea082b3ad83fbca0945c218c6290" title=" " alt="" coords="403,879,521,906"/>
+<area shape="rect" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="633,575,740,602"/>
 </map>
 </div>
 <div class="dynheader">
