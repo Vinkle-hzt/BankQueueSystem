@@ -52,7 +52,7 @@ int member_compare(const void *lhs, const void *rhs)
 {
     member *lp = (member *)lhs;
     member *rp = (member *)rhs;
-    return ((lp->common_pick_num - lp->vip * 3) - (rp->common_pick_num - rp->vip * 3));
+    return ((rp->common_pick_num - rp->vip * 3) - (lp->common_pick_num - lp->vip * 3));
 }
 
 int get_vip_level(int* ID, char *name)

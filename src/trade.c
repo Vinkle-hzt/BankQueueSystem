@@ -216,6 +216,7 @@ void end_trade(counter *ct)
     printf("\n欢迎下次光临 :)\n");
     member_leave(ct->customer);
     ct->customer = NULL;
+    call_next(ct);
 }
 
 void create_card(int ID)
@@ -242,4 +243,15 @@ int check_card(int card_ID, int user_ID)
     mysql_res = mysql_store_result(&mysql_connect);
 
     return mysql_num_rows(mysql_res);
+}
+
+void call_next(counter* ct)
+{
+    if (waiting_line->curSize)
+    {
+        member* customer = (member*)pq_top(waiting_line);
+        counter_assign_customer(ct, customer);
+        printf("请 v%d-%d 到柜台 %d 办理业务！\n", ct->customer->vip, ct->customer->vip_pick_num, ct->number);
+        pq_pop(waiting_line);
+    }
 }

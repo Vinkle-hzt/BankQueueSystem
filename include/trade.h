@@ -32,3 +32,6 @@ void end_trade(counter* ct);
 void create_card(int ID);
 
 int check_card(int card_ID, int user_ID);
+
+void call_next(counter* ct);
+

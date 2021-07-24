@@ -9,6 +9,7 @@
 #pragma once
 
 #define VIP_LEVEL 3
+#define COUNTER_NUM 1
 
 #include <stdio.h>
 #include <mysql.h>
