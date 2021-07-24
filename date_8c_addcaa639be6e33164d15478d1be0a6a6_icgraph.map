@@ -1,5 +1,5 @@
 <map id="get_cur_date" name="get_cur_date">
-<area shape="rect" id="node1" title="获取当前 UTC 时间" alt="" coords="892,56,989,83"/>
+<area shape="rect" id="node1" title="获取当前时间" alt="" coords="892,56,989,83"/>
 <area shape="rect" id="node2" href="$counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="673,56,844,83"/>
 <area shape="rect" id="node9" href="$member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="705,107,813,133"/>
 <area shape="rect" id="node10" href="$member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="513,5,620,32"/>
