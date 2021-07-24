@@ -225,10 +225,7 @@ void transfer_accounts(counter *ct, int card_ID)
 
 void view_transactions(int card_ID)
 {
-<<<<<<< HEAD
     
-=======
->>>>>>> 01e7bd278387ae359325ee94c047b7ea99897e73
 }
 
 void end_trade(counter *ct)
