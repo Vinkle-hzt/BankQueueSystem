@@ -46,3 +46,9 @@ int login_admin();
  * 
  */
 void check_all_trade();
+
+/**
+ * @brief 升级VIP
+ * 
+ */
+void update_VIP();

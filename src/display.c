@@ -33,6 +33,7 @@ void show_main_menu()
     printf("|              1.取号                            |\n");
     printf("|              2.办理业务                        |\n");
     printf("|              3.查看交易量                      |\n");
+    printf("|              4.升级VIP                         |\n");
     printf("|              0.结束交易                        |\n");
     printf("|                                                |\n");
     printf(" ------------------------------------------------\n");

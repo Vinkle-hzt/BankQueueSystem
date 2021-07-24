@@ -49,6 +49,10 @@ void start_system()
                 fflush(stdin);
                 check_all_trade();
                 break;
+            case '4':
+                fflush(stdin);
+                update_VIP();
+                break;
             case '0':
                 fflush(stdin);
                 show_exit_message();
@@ -179,6 +183,67 @@ void check_all_trade()
             printf("\n此为柜台 %d 的交易信息：\n", i + 1);
             counter* cur_counter = (counter*) al_at(counters, i);
             show_trade_conclude(&cur_counter->kpi);
+        }
+    }
+}
+
+void update_VIP()
+{
+    printf("请输入您的 ID 和姓名 (以空格分隔，若要新建用户，请将ID 输为 0):\n");
+    int ID;
+    char name[20];
+    scanf("%d %s", &ID, name);
+    member *cur_customer = member_come(ID, name);
+
+    // 判断 ID 与姓名是否匹配
+    if (cur_customer == (member *)&member_error_1)
+    {
+        printf("ID 与姓名不匹配！！！\n");
+        return;
+    }
+
+    // 判断 ID 是否存在
+    if (cur_customer == (member *)&member_error_2)
+    {
+        printf("没有此 ID， 请检查您的 ID 号码！！！\n");
+        return;
+    }
+
+    printf("VIP升级规则为：\n0:现有存款大于0\n");
+    printf("1:现有存款大于100000\n2:现有存款大于500000\n");
+
+    sprintf(mysql_buffer,"SELECT SUM(money) FROM card WHERE user_ID = %d",ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+    mysql_res = mysql_store_result(&mysql_connect);
+    mysql_next_row = mysql_fetch_row(mysql_res);
+    double sum_money = atof(mysql_next_row[0]);
+    printf("您目前的VIP等级为：%d\n",cur_customer->vip);
+    printf("您目前的总存款为：%lf\n",sum_money);
+    printf("正在为您查询. . .\n");
+
+    int vip_level = 0;
+    if (sum_money >= 500000)
+        vip_level = 2;
+    else if (sum_money >= 100000)
+        vip_level = 1;
+
+    if (cur_customer->vip < vip_level)
+    {
+        sprintf(mysql_buffer, "update user set vip = %d where user_ID = %d", vip_level, cur_customer->ID);
+        mysql_query(&mysql_connect, mysql_buffer);
+        printf("您的vip等级已为您升级至%d级\n",vip_level);
+    }
+    else
+    {
+        if (cur_customer->vip == 2)
+        {
+            printf("您已升到最高级！\n");
+            return;
+        }
+        else 
+        {
+            printf("您未达到升级要求！\n");
+            return;
         }
     }
 }
