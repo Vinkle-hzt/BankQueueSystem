@@ -4,6 +4,14 @@
 #include "common.h"
 #include "counter.h"
 
+enum Trade_type
+{
+    Deposit,
+    Withdraw,
+    Transfer,
+    BeTransferred
+};
+
 typedef struct
 {
     int user_ID;
@@ -61,5 +69,5 @@ int check_card(int card_ID, int user_ID);
  */
 void call_next(counter* ct);
 
-double get_banlance(int card_ID);
+double get_balance(int card_ID);
 
