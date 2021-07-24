@@ -46,5 +46,3 @@ int login_admin();
  * 
  */
 void check_all_trade();
-
-void call_next(counter* ct);

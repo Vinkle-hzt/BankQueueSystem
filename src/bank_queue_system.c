@@ -18,7 +18,7 @@ void start_system()
 #endif
     start_mysql();
     waiting_line = pq_create(member_compare);
-    counters = create_counter(4);
+    counters = create_counter(COUNTER_NUM);
     all_trade = trade_conclude_create();
 
     // 显示欢迎信息
@@ -67,7 +67,7 @@ void start_system()
     al_free(counters);
 
 #ifndef DEBUG
-    fclose(log_file)
+    fclose(log_file);
 #endif
 }
 
@@ -175,15 +175,5 @@ void check_all_trade()
         printf("\n登录成功 :) 尊敬的管理员\n");
         printf("此为银行总交易信息：\n");
         show_trade_conclude(&all_trade);
-    }
-}
-
-void call_next(counter* ct)
-{
-    if (waiting_line->curSize)
-    {
-        ct->customer = (member*)pq_top(waiting_line);
-        printf("请 v%d-%d 到柜台 %d 办理业务！\n", ct->customer->vip, ct->customer->vip_pick_num, ct->number);
-        pq_pop(waiting_line);
     }
 }

@@ -76,3 +76,5 @@ void *al_pop(array_list *al, int idx);
  * @param al array list
  */
 void al_clean(array_list *al);
+
+void** al_get_pointer(array_list *al, int idx);
