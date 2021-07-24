@@ -83,13 +83,13 @@ void start_trade()
                 check_balance(choose_card);
                 break;
             case '2':
-                deposit_money(choose_card);
+                deposit_money(cur_counter, choose_card);
                 break;
             case '3':
-                withdraw_money(choose_card);
+                withdraw_money(cur_counter, choose_card);
                 break;
             case '4':
-                transfer_accounts(choose_card);
+                transfer_accounts(cur_counter, choose_card);
                 break;
             case '5':
                 view_transactions(choose_card);
@@ -127,14 +127,10 @@ int show_cards(int ID)
 
 void check_balance(int card_ID)
 {
-    sprintf(mysql_buffer, "SELECT money FROM card WHERE card_ID = %d", card_ID);
-    mysql_query(&mysql_connect, mysql_buffer);
-    mysql_res = mysql_store_result(&mysql_connect);
-    mysql_next_row = mysql_fetch_row(mysql_res);
-    printf("\n卡号：%d，余额：%s\n", card_ID, mysql_next_row[0]);
+    printf("\n卡号：%d，余额：%lf\n", card_ID, get_banlance(card_ID));
 }
 
-void deposit_money(int card_ID)
+void deposit_money(counter* ct, int card_ID)
 {
     double card_deposit = 0;
     printf("请输入您要存款的钱数：\n");
@@ -144,7 +140,7 @@ void deposit_money(int card_ID)
     check_balance(card_ID);
 }
 
-void withdraw_money(int card_ID)
+void withdraw_money(counter* ct, int card_ID)
 {
     double card_withdraw = 0;
     printf("请输入您要取款的钱数：\n");
@@ -168,7 +164,7 @@ void withdraw_money(int card_ID)
     check_balance(card_ID);
 }
 
-void transfer_accounts(int card_ID)
+void transfer_accounts(counter* ct, int card_ID)
 {
     double card_transfer = 0;
     int card_IDout = 0;
@@ -254,4 +250,13 @@ void call_next(counter* ct)
         printf("请 v%d-%d 到柜台 %d 办理业务！\n", ct->customer->vip, ct->customer->vip_pick_num, ct->number);
         pq_pop(waiting_line);
     }
+}
+
+double get_banlance(int card_ID)
+{
+    sprintf(mysql_buffer, "SELECT money FROM card WHERE card_ID = %d", card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+    mysql_res = mysql_store_result(&mysql_connect);
+    mysql_next_row = mysql_fetch_row(mysql_res);
+    return atof(mysql_next_row[0]);
 }

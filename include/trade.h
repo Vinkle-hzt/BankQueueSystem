@@ -11,6 +11,10 @@ typedef struct
     double money;
 } card;
 
+/**
+ * @brief 交易主函数入口
+ * 
+ */
 void start_trade();
 
 int show_cards(int ID);
@@ -19,19 +23,43 @@ card choose_card(int ID);
 
 void check_balance(int card_ID);
 
-void deposit_money(int card_ID);
+void deposit_money(counter* ct, int card_ID);
 
-void withdraw_money(int card_ID);
+void withdraw_money(counter* ct, int card_ID);
 
-void transfer_accounts(int card_ID);
+void transfer_accounts(counter* ct, int card_ID);
 
 void view_transactions(int card_ID);
 
+/**
+ * @brief 结束当前柜台业务
+ * 
+ * @param ct 柜台指针
+ */
 void end_trade(counter* ct);
 
+/**
+ * @brief 为客户办理银行卡
+ * 
+ * @param ID 客户号
+ */
 void create_card(int ID);
 
+/**
+ * @brief 检查银行卡号和客户是否匹配
+ * 
+ * @param card_ID 银行卡号
+ * @param user_ID 客户号
+ * @return int 0 不匹配 1 匹配
+ */
 int check_card(int card_ID, int user_ID);
 
+/**
+ * @brief 叫下一个客户
+ * 
+ * @param ct 柜台指针
+ */
 void call_next(counter* ct);
+
+double get_banlance(int card_ID);
 

@@ -24,10 +24,9 @@ void start_system()
     // 显示欢迎信息
     show_welcome_message();
 
-    // 显示主菜单
-    int exit_flag = 0;
+    int exit_flag = 0; // 退出菜单标志
 
-    // 功能菜单选择
+    // 显示主菜单
     while (!exit_flag)
     {
         fflush(stdin);
@@ -115,6 +114,7 @@ void do_pick_number()
         }
     }
 
+    // 如果没有空柜台，进入队列
     if (!serve_flag)
     {
         printf("还未轮到您, 请稍等...\n");
@@ -122,7 +122,6 @@ void do_pick_number()
     }
 
     printf("\n");
-    getchar();
 }
 
 int login_admin()
@@ -142,11 +141,9 @@ int login_admin()
 
     // 判断 ID 与密码是否符合
     sprintf(mysql_buffer, "SELECT * FROM `admin` WHERE(`ID` = \"%s\" AND `password` = \"%s\")", id, pwd);
-
-    // printf("mysql_buffer: %s \n", mysql_buffer);
-
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
+    
     free(pwdmd5);
 
     int row = mysql_num_rows(mysql_res);
