@@ -138,6 +138,12 @@ void deposit_money(counter* ct, int card_ID)
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_deposit, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
     check_balance(card_ID);
+
+    // 统计交易金额
+    all_trade.flowing_water += card_deposit;
+    all_trade.total_deposits += card_deposit;
+    ct->kpi.total_deposits += card_deposit;
+
 }
 
 void withdraw_money(counter* ct, int card_ID)
@@ -162,6 +168,10 @@ void withdraw_money(counter* ct, int card_ID)
     sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d", card_withdraw, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
     check_balance(card_ID);
+
+    // 统计交易金额
+    all_trade.flowing_water += card_withdraw;
+    ct->kpi.flowing_water += card_withdraw;
 }
 
 void transfer_accounts(counter* ct, int card_ID)
@@ -200,11 +210,15 @@ void transfer_accounts(counter* ct, int card_ID)
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_transfer, card_IDout);
     mysql_query(&mysql_connect, mysql_buffer);
     check_balance(card_ID);
+
+    // 统计交易金额
+    all_trade.flowing_water += card_transfer;
+    ct->kpi.flowing_water += card_transfer;
 }
 
 void view_transactions(int card_ID)
 {
-
+    
 }
 
 void end_trade(counter *ct)
