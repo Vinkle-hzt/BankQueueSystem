@@ -1251,6 +1251,10 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html"><param name="Name" value="trade.c"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a8cb09a78984d4b3d5236715c82e3a328"><param name="Name" value="upload_trade"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html"><param name="Name" value="trade.c"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a77151d1e1b4c4426510b6dd4e05c79cc"><param name="Name" value="view_transactions"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html"><param name="Name" value="trade.c"></OBJECT>
@@ -1319,6 +1323,10 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html"><param name="Name" value="trade.h"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a8cb09a78984d4b3d5236715c82e3a328"><param name="Name" value="upload_trade"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html"><param name="Name" value="trade.h"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a77151d1e1b4c4426510b6dd4e05c79cc"><param name="Name" value="view_transactions"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html"><param name="Name" value="trade.h"></OBJECT>
@@ -1373,6 +1381,14 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a04723fa2776242162325a3ce2732dcf5"><param name="Name" value="transfer_accounts"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a04723fa2776242162325a3ce2732dcf5"><param name="Name" value="trade.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a8cb09a78984d4b3d5236715c82e3a328"><param name="Name" value="upload_trade"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a8cb09a78984d4b3d5236715c82e3a328"><param name="Name" value="trade.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a8cb09a78984d4b3d5236715c82e3a328"><param name="Name" value="upload_trade"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#a8cb09a78984d4b3d5236715c82e3a328"><param name="Name" value="trade.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structcard.html#a2f8c66a334a0b0c2a0cac812b89edf36"><param name="Name" value="user_ID"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a77151d1e1b4c4426510b6dd4e05c79cc"><param name="Name" value="view_transactions"></OBJECT>

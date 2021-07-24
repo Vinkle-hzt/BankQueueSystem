@@ -1,6 +1,7 @@
 <map id="deposit_money" name="deposit_money">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,115,83"/>
 <area shape="rect" id="node2" href="$trade_8c.html#a3d62f6a21895c8bf7bdb57374454d1e6" title=" " alt="" coords="163,5,272,32"/>
-<area shape="rect" id="node3" href="$trade_8c.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf" title=" " alt="" coords="320,31,412,57"/>
-<area shape="rect" id="node4" href="$date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="169,107,266,133"/>
+<area shape="rect" id="node3" href="$trade_8c.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf" title=" " alt="" coords="323,31,415,57"/>
+<area shape="rect" id="node4" href="$trade_8c.html#a8cb09a78984d4b3d5236715c82e3a328" title=" " alt="" coords="169,107,265,133"/>
+<area shape="rect" id="node5" href="$date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="320,107,417,133"/>
 </map>
