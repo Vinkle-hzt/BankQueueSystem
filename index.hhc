@@ -102,6 +102,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="do_pick_number"><param name="Local" value="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="login_admin"><param name="Local" value="bank__queue__system_8h.html#a735d888e3b623602fdec920477ab33ce"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="start_system"><param name="Local" value="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="update_VIP"><param name="Local" value="bank__queue__system_8h.html#ad551911c63210975999952b77bec3cf7"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="common.h"><param name="Local" value="common_8h.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -277,6 +278,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="do_pick_number"><param name="Local" value="bank__queue__system_8c.html#a39c0c96389da80e6fad519bed74cd35b"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="login_admin"><param name="Local" value="bank__queue__system_8c.html#a735d888e3b623602fdec920477ab33ce"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="start_system"><param name="Local" value="bank__queue__system_8c.html#a6cb6cd3963cb32d63055dacfa689ed27"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="update_VIP"><param name="Local" value="bank__queue__system_8c.html#ad551911c63210975999952b77bec3cf7"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="common.c"><param name="Local" value="common_8c.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
