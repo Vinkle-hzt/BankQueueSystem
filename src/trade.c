@@ -140,12 +140,7 @@ void deposit_money(counter *ct, int card_ID)
     mysql_query(&mysql_connect, mysql_buffer);
 
     //生成日志
-    date cur_date = get_cur_date();
-    sprintf(mysql_buffer, "INSERT INTO trade"
-                          "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
-                          "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
-            card_ID, Deposit, cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute, now_money, now_money + card_deposit, card_ID);
-    mysql_query(&mysql_connect, mysql_buffer);
+    upload_trade(card_ID, Deposit, now_money, now_money + card_deposit, card_ID);
 
     check_balance(card_ID);
 
@@ -174,12 +169,7 @@ void withdraw_money(counter *ct, int card_ID)
     mysql_query(&mysql_connect, mysql_buffer);
 
     //生成日志
-    date cur_date = get_cur_date();
-    sprintf(mysql_buffer, "INSERT INTO trade"
-                          "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
-                          "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
-            card_ID, Withdraw, cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute, now_money, now_money - card_withdraw, card_ID);
-    mysql_query(&mysql_connect, mysql_buffer);
+    upload_trade(card_ID, Withdraw, now_money, now_money - card_withdraw, card_ID);
 
     check_balance(card_ID);
 
@@ -220,26 +210,11 @@ void transfer_accounts(counter *ct, int card_ID)
     mysql_query(&mysql_connect, mysql_buffer);
 
     //生成日志
-    date cur_date = get_cur_date();
-    sprintf(mysql_buffer,
-            "INSERT INTO trade"
-            "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
-            "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
-            card_ID, Transfer,
-            cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute,
-            now_money, now_money - card_transfer, card_ID);
-    mysql_query(&mysql_connect, mysql_buffer);
+    upload_trade(card_ID, Transfer, now_money, now_money - card_transfer, card_IDout);
 
-    date cur_date = get_cur_date();
     double tred_now_money = get_balance(card_IDout);
-    sprintf(mysql_buffer,
-            "INSERT INTO trade"
-            "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
-            "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
-            card_ID, BeTransferred,
-            cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute,
-            tred_now_money, tred_now_money + card_transfer, card_ID);
-    mysql_query(&mysql_connect, mysql_buffer);
+    upload_trade(card_IDout, BeTransferred, tred_now_money, tred_now_money + card_transfer, card_ID);
+
 
     check_balance(card_ID);
 
@@ -308,4 +283,18 @@ double get_balance(int card_ID)
     mysql_res = mysql_store_result(&mysql_connect);
     mysql_next_row = mysql_fetch_row(mysql_res);
     return atof(mysql_next_row[0]);
+}
+
+void upload_trade(int card_ID, enum Trade_type ty,
+               double pre_money, double cur_money, int trade_ID)
+{
+    date cur_date = get_cur_date();
+    sprintf(mysql_buffer,
+            "INSERT INTO trade"
+            "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
+            "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
+            card_ID, ty,
+            cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute,
+            pre_money, cur_money, card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
 }

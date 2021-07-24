@@ -31,11 +31,11 @@ card choose_card(int ID);
 
 void check_balance(int card_ID);
 
-void deposit_money(counter* ct, int card_ID);
+void deposit_money(counter *ct, int card_ID);
 
-void withdraw_money(counter* ct, int card_ID);
+void withdraw_money(counter *ct, int card_ID);
 
-void transfer_accounts(counter* ct, int card_ID);
+void transfer_accounts(counter *ct, int card_ID);
 
 void view_transactions(int card_ID);
 
@@ -44,7 +44,7 @@ void view_transactions(int card_ID);
  * 
  * @param ct 柜台指针
  */
-void end_trade(counter* ct);
+void end_trade(counter *ct);
 
 /**
  * @brief 为客户办理银行卡
@@ -67,7 +67,9 @@ int check_card(int card_ID, int user_ID);
  * 
  * @param ct 柜台指针
  */
-void call_next(counter* ct);
+void call_next(counter *ct);
 
 double get_balance(int card_ID);
 
+void upload_trade(int card_ID, enum Trade_type ty,
+               double pre_money, double cur_money, int trade_ID);
