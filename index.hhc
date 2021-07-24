@@ -235,6 +235,13 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="money"><param name="Local" value="structcard.html#a42aff0df672868aa35c1f4ff29eb8edd"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="user_ID"><param name="Local" value="structcard.html#a2f8c66a334a0b0c2a0cac812b89edf36"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Trade_type"><param name="Local" value="trade_8h.html#ae8d36245b38bc5a5b2ffdc245f13b5e0"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Deposit"><param name="Local" value="trade_8h.html#ae8d36245b38bc5a5b2ffdc245f13b5e0af67df4f9d0ace67d34a7c35f075ab2e2"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Withdraw"><param name="Local" value="trade_8h.html#ae8d36245b38bc5a5b2ffdc245f13b5e0ad4254779b9e6ba881290031601bfaddb"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Transfer"><param name="Local" value="trade_8h.html#ae8d36245b38bc5a5b2ffdc245f13b5e0a0f6148e320034642ee8ec78d5cbb03aa"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="BeTransferred"><param name="Local" value="trade_8h.html#ae8d36245b38bc5a5b2ffdc245f13b5e0ab4650f5615d2cd5c4a25d7492b77aa17"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="call_next"><param name="Local" value="trade_8h.html#a4e00091a11dbc131165293bc78c633ae"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="check_balance"><param name="Local" value="trade_8h.html#a3d62f6a21895c8bf7bdb57374454d1e6"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="check_card"><param name="Local" value="trade_8h.html#ab72dab19fcb1cf7a64faadb6a2294af3"><param name="ImageNumber" value="11"></OBJECT>
@@ -242,7 +249,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="create_card"><param name="Local" value="trade_8h.html#a306c5209838a5ebf5fea730785723557"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="deposit_money"><param name="Local" value="trade_8h.html#a7ee6439e41e3bfdc40d00dd973b263dc"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="end_trade"><param name="Local" value="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_banlance"><param name="Local" value="trade_8h.html#a55d97a8490375fe6d2a9e5a9f6ebf87f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_balance"><param name="Local" value="trade_8h.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_cards"><param name="Local" value="trade_8h.html#a2a450dbf85b2bae7ce93433989127af1"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="start_trade"><param name="Local" value="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="transfer_accounts"><param name="Local" value="trade_8h.html#a04723fa2776242162325a3ce2732dcf5"><param name="ImageNumber" value="11"></OBJECT>
@@ -373,7 +380,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="create_card"><param name="Local" value="trade_8c.html#a306c5209838a5ebf5fea730785723557"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="deposit_money"><param name="Local" value="trade_8c.html#a7ee6439e41e3bfdc40d00dd973b263dc"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="end_trade"><param name="Local" value="trade_8c.html#a5c3ec099cbeb6068634e97ed18977979"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_banlance"><param name="Local" value="trade_8c.html#a55d97a8490375fe6d2a9e5a9f6ebf87f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_balance"><param name="Local" value="trade_8c.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_cards"><param name="Local" value="trade_8c.html#a2a450dbf85b2bae7ce93433989127af1"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="start_trade"><param name="Local" value="trade_8c.html#ac55e1399ed4641e788ac06fe604374d5"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="transfer_accounts"><param name="Local" value="trade_8c.html#a04723fa2776242162325a3ce2732dcf5"><param name="ImageNumber" value="11"></OBJECT>
@@ -393,6 +400,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="函数"><param name="Local" value="globals_func.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="变量"><param name="Local" value="globals_vars.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="类型定义"><param name="Local" value="globals_type.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="枚举"><param name="Local" value="globals_enum.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="枚举值"><param name="Local" value="globals_eval.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="宏定义"><param name="Local" value="globals_defs.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   </UL>
