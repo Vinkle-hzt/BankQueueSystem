@@ -150,7 +150,7 @@ void withdraw_money(int card_ID)
     printf("请输入您要取款的钱数：\n");
     scanf("%lf", &card_withdraw);
 
-    //查询卡内余额
+    // 查询卡内余额
     sprintf(mysql_buffer, "SELECT money FROM card WHERE card_ID = %d", card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
@@ -162,7 +162,7 @@ void withdraw_money(int card_ID)
         return;
     }
 
-    //取款过程
+    // 取款过程
     sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d", card_withdraw, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
     check_balance(card_ID);
@@ -175,7 +175,7 @@ void transfer_accounts(int card_ID)
     printf("请输入您要转账的 ID 与 钱数（以空格分隔）：\n");
     scanf("%d %lf", &card_IDout, &card_transfer);
 
-    //查询卡内余额
+    // 查询卡内余额
     sprintf(mysql_buffer, "SELECT money FROM card WHERE card_ID = %d", card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
@@ -187,7 +187,7 @@ void transfer_accounts(int card_ID)
         return;
     }
 
-    //查询对方账户是否存在
+    // 查询对方账户是否存在
     sprintf(mysql_buffer, "SELECT * FROM card WHERE card_ID = %d", card_IDout);
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
@@ -198,7 +198,7 @@ void transfer_accounts(int card_ID)
         return;
     }
 
-    //转账过程
+    // 转账过程
     sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d", card_transfer, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_transfer, card_IDout);
