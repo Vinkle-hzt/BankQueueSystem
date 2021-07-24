@@ -185,7 +185,7 @@ $(function() {
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    sprintf(mysql_buffer, <span class="stringliteral">&quot;SELECT * FROM `admin` WHERE(`ID` = \&quot;%s\&quot; AND `password` = \&quot;%s\&quot;)&quot;</span>, <span class="keywordtype">id</span>, pwd);</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    mysql_query(&amp;<a class="code" href="common_8h.html#a759958e8439d1252745aa0a9793b4bc1">mysql_connect</a>, mysql_buffer);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="common_8h.html#ace128b10bd112020e1a540e7e12cb0cf">mysql_res</a> = mysql_store_result(&amp;<a class="code" href="common_8h.html#a759958e8439d1252745aa0a9793b4bc1">mysql_connect</a>);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    free(pwdmd5);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">int</span> row = mysql_num_rows(<a class="code" href="common_8h.html#ace128b10bd112020e1a540e7e12cb0cf">mysql_res</a>);</div>
@@ -212,13 +212,13 @@ $(function() {
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        printf(<span class="stringliteral">&quot;登录失败次数太多，请稍后再试\n&quot;</span>);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        printf(<span class="stringliteral">&quot;\n登录成功 :) 尊敬的管理员\n&quot;</span>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        printf(<span class="stringliteral">&quot;\n登录成功 :) 尊敬的管理员\n\n&quot;</span>);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        printf(<span class="stringliteral">&quot;此为银行总交易信息：\n&quot;</span>);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9">show_trade_conclude</a>(&amp;<a class="code" href="common_8h.html#ad867f9cc5a6cdef9ecf7a57f7a5579e1">all_trade</a>);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a>-&gt;<a class="code" href="structarray__list.html#a98651570e427af3e1198d4553188aa8b">curSize</a>; i++)</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            printf(<span class="stringliteral">&quot;\n此为柜台 %d 的交易信息：\n&quot;</span>, i);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            printf(<span class="stringliteral">&quot;\n此为柜台 %d 的交易信息：\n&quot;</span>, i + 1);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <a class="code" href="structcounter.html">counter</a>* cur_counter = (<a class="code" href="structcounter.html">counter</a>*) <a class="code" href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247">al_at</a>(<a class="code" href="common_8h.html#a6328f63a5c0a3b0b3f70db82b29e6c4b">counters</a>, i);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <a class="code" href="trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9">show_trade_conclude</a>(&amp;cur_counter-&gt;<a class="code" href="structcounter.html#a9bbea130b399fb049ef2bd9ca6bdb79e">kpi</a>);</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        }</div>
