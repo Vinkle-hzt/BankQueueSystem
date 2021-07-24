@@ -102,7 +102,8 @@ void start_trade()
                 printf("非法字符，请重新输入！！！\n");
                 break;
             }
-            system("pause");
+            if (!exit_flag)
+                system("pause");
         } while (!flag);
     }
 }
@@ -148,7 +149,7 @@ void deposit_money(counter *ct, int card_ID)
     all_trade.flowing_water += card_deposit;
     all_trade.total_deposits += card_deposit;
     ct->kpi.total_deposits += card_deposit;
-
+    ct->kpi.flowing_water += card_deposit;
 }
 
 void withdraw_money(counter *ct, int card_ID)
@@ -215,7 +216,6 @@ void transfer_accounts(counter *ct, int card_ID)
     double tred_now_money = get_balance(card_IDout);
     upload_trade(card_IDout, BeTransferred, tred_now_money, tred_now_money + card_transfer, card_ID);
 
-
     check_balance(card_ID);
 
     // 统计交易金额
@@ -225,7 +225,35 @@ void transfer_accounts(counter *ct, int card_ID)
 
 void view_transactions(int card_ID)
 {
-    
+    sprintf(mysql_buffer, "SELECT * FROM `trade` WHERE card_ID = %d", card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+    mysql_res = mysql_store_result(&mysql_connect);
+
+    printf("\n尊敬的用户，您的卡（卡号：%d）交易记录如下：\n", card_ID);
+    printf("[       时间        ][交易类型][  交易前余额  ][  交易后余额  ][        备注        ]\n");
+    int row = mysql_num_rows(mysql_res);
+    for (int i = 0; i < row; i++)
+    {
+        mysql_next_row = mysql_fetch_row(mysql_res);
+        printf("[%8s]", mysql_next_row[3]);
+        int t_type = atoi(mysql_next_row[2]);
+        if (t_type == Deposit)
+            printf("   存款   ");
+        if (t_type == Withdraw)
+            printf("   取款   ");
+        if (t_type == Transfer)
+            printf("   转账   ");
+        if (t_type == BeTransferred)
+            printf("  被转账  ");
+
+        printf("   %-12s    %-12s", mysql_next_row[4], mysql_next_row[5]);
+
+        if (t_type == Transfer)
+            printf("    转入账户 %s", mysql_next_row[6]);
+        if (t_type == BeTransferred)
+            printf("    从账户 %s 转入", mysql_next_row[6]);
+        printf("\n");
+    }
 }
 
 void end_trade(counter *ct)
@@ -283,7 +311,7 @@ double get_balance(int card_ID)
 }
 
 void upload_trade(int card_ID, enum Trade_type ty,
-               double pre_money, double cur_money, int trade_ID)
+                  double pre_money, double cur_money, int trade_ID)
 {
     date cur_date = get_cur_date();
     sprintf(mysql_buffer,
@@ -292,6 +320,6 @@ void upload_trade(int card_ID, enum Trade_type ty,
             "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
             card_ID, ty,
             cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute,
-            pre_money, cur_money, card_ID);
+            pre_money, cur_money, trade_ID);
     mysql_query(&mysql_connect, mysql_buffer);
 }

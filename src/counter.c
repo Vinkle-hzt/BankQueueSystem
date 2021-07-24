@@ -28,7 +28,8 @@ void counter_assign_customer(counter *ct, member *customer)
     cur_call_num[customer->vip]++;
     ct->customer = customer;
     ct->kpi.customers_num++;
-
+    all_trade.customers_num++;
+    
     // 分配柜台
     show_date(log_file, get_cur_date());
     printf(" (ID: %d 姓名: %s) 分配至柜台 %d\n",

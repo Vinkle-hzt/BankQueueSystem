@@ -31,6 +31,7 @@ void start_system()
     {
         fflush(stdin);
         show_main_menu();
+        printf("选择您要操作的选项：\n");
         char choice = getchar();
         int flag = 1;
         do
@@ -143,7 +144,7 @@ int login_admin()
     sprintf(mysql_buffer, "SELECT * FROM `admin` WHERE(`ID` = \"%s\" AND `password` = \"%s\")", id, pwd);
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
-    
+
     free(pwdmd5);
 
     int row = mysql_num_rows(mysql_res);
@@ -170,13 +171,13 @@ void check_all_trade()
         printf("登录失败次数太多，请稍后再试\n");
     else
     {
-        printf("\n登录成功 :) 尊敬的管理员\n");
+        printf("\n登录成功 :) 尊敬的管理员\n\n");
         printf("此为银行总交易信息：\n");
         show_trade_conclude(&all_trade);
 
         for (int i = 0; i < counters->curSize; i++)
         {
-            printf("\n此为柜台 %d 的交易信息：\n", i);
+            printf("\n此为柜台 %d 的交易信息：\n", i + 1);
             counter* cur_counter = (counter*) al_at(counters, i);
             show_trade_conclude(&cur_counter->kpi);
         }
