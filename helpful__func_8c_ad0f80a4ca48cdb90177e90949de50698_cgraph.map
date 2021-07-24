@@ -1,4 +1,4 @@
 <map id="swap" name="swap">
 <area shape="rect" id="node1" title="交换函数" alt="" coords="5,5,59,32"/>
-<area shape="rect" id="node2" href="$helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="107,5,183,32"/>
+<area shape="rect" id="node2" href="$helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="107,5,183,32"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="al_create" name="al_create">
-<area shape="rect" id="node1" title="create array list" alt="" coords="405,5,480,32"/>
+<area shape="rect" id="node1" title="创建一个线性表" alt="" coords="405,5,480,32"/>
 <area shape="rect" id="node2" href="$counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title="创建一个 array_list* 类型的柜台表" alt="" coords="249,5,357,32"/>
 <area shape="rect" id="node3" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>

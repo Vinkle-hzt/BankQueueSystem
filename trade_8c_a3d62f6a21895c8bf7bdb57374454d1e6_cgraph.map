@@ -1,4 +1,4 @@
 <map id="check_balance" name="check_balance">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,115,32"/>
-<area shape="rect" id="node2" href="$trade_8c.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf" title=" " alt="" coords="163,5,255,32"/>
+<area shape="rect" id="node1" title="查询卡内余额" alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$trade_8c.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf" title="返回银行卡余额" alt="" coords="163,5,255,32"/>
 </map>

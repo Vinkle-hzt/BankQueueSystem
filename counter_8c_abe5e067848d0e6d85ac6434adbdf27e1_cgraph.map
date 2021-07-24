@@ -1,8 +1,8 @@
 <map id="create_counter" name="create_counter">
 <area shape="rect" id="node1" title="创建一个 array_list* 类型的柜台表" alt="" coords="5,56,113,83"/>
-<area shape="rect" id="node2" href="$array__list_8h.html#a3f34db16c1c96fbaf30a72919bfd176c" title="create array list" alt="" coords="201,5,275,32"/>
+<area shape="rect" id="node2" href="$array__list_8h.html#a3f34db16c1c96fbaf30a72919bfd176c" title="创建一个线性表" alt="" coords="201,5,275,32"/>
 <area shape="rect" id="node3" href="$array__list_8h.html#a6b792272494e473122e892e232500d8d" title="insert element value val to the end of array list" alt="" coords="205,56,271,83"/>
 <area shape="rect" id="node6" href="$trade__conclude_8h.html#a7a16a0f7b2f2b9cb60adc938d83254df" title="建立交易统计对象" alt="" coords="161,107,315,133"/>
 <area shape="rect" id="node4" href="$array__list_8c.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="resize the array list size" alt="" coords="363,56,436,83"/>
-<area shape="rect" id="node5" href="$helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="484,56,560,83"/>
+<area shape="rect" id="node5" href="$helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="484,56,560,83"/>
 </map>

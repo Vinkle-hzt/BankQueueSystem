@@ -1,4 +1,4 @@
 <map id="queue" name="queue">
 <area shape="rect" id="node1" title="队列类" alt="" coords="5,97,63,124"/>
-<area shape="rect" id="node2" href="$structnode.html" title="queue node type" alt="" coords="9,7,59,33"/>
+<area shape="rect" id="node2" href="$structnode.html" title="队列节点类" alt="" coords="9,7,59,33"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="safe_free" name="safe_free">
-<area shape="rect" id="node1" title="free pointer p and set p to NULL" alt="" coords="1159,257,1235,284"/>
+<area shape="rect" id="node1" title="释放指针P并将p设为NULL" alt="" coords="1159,257,1235,284"/>
 <area shape="rect" id="node2" href="$array__list_8h.html#a7e85a97073f192ff04e94025cf233a69" title="free the array list" alt="" coords="261,5,322,32"/>
 <area shape="rect" id="node5" href="$array__list_8h.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="resize the array list size" alt="" coords="1013,93,1087,120"/>
 <area shape="rect" id="node8" href="$member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="537,232,644,259"/>

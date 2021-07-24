@@ -1,7 +1,7 @@
 <map id="withdraw_money" name="withdraw_money">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,124,83"/>
-<area shape="rect" id="node2" href="$trade_8c.html#a3d62f6a21895c8bf7bdb57374454d1e6" title=" " alt="" coords="172,5,281,32"/>
-<area shape="rect" id="node3" href="$trade_8c.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf" title=" " alt="" coords="332,31,424,57"/>
-<area shape="rect" id="node4" href="$trade_8c.html#a8cb09a78984d4b3d5236715c82e3a328" title=" " alt="" coords="179,107,275,133"/>
+<area shape="rect" id="node1" title="取钱业务" alt="" coords="5,56,124,83"/>
+<area shape="rect" id="node2" href="$trade_8c.html#a3d62f6a21895c8bf7bdb57374454d1e6" title="查询卡内余额" alt="" coords="172,5,281,32"/>
+<area shape="rect" id="node3" href="$trade_8c.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf" title="返回银行卡余额" alt="" coords="332,31,424,57"/>
+<area shape="rect" id="node4" href="$trade_8c.html#a8cb09a78984d4b3d5236715c82e3a328" title="获取交易记录" alt="" coords="179,107,275,133"/>
 <area shape="rect" id="node5" href="$date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="329,107,427,133"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="member_leave" name="member_leave">
 <area shape="rect" id="node1" title="客户离开银行" alt="" coords="5,56,112,83"/>
 <area shape="rect" id="node2" href="$date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="160,5,257,32"/>
-<area shape="rect" id="node3" href="$helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="171,56,247,83"/>
+<area shape="rect" id="node3" href="$helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="171,56,247,83"/>
 <area shape="rect" id="node4" href="$date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="166,107,251,133"/>
 </map>
