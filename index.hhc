@@ -240,13 +240,14 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="check_card"><param name="Local" value="trade_8h.html#ab72dab19fcb1cf7a64faadb6a2294af3"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="choose_card"><param name="Local" value="trade_8h.html#a626bc03ad7d66834551550612489987b"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="create_card"><param name="Local" value="trade_8h.html#a306c5209838a5ebf5fea730785723557"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="deposit_money"><param name="Local" value="trade_8h.html#afcee734dca55c035c8de9b849bd53eb3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="deposit_money"><param name="Local" value="trade_8h.html#a7ee6439e41e3bfdc40d00dd973b263dc"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="end_trade"><param name="Local" value="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_banlance"><param name="Local" value="trade_8h.html#a55d97a8490375fe6d2a9e5a9f6ebf87f"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_cards"><param name="Local" value="trade_8h.html#a2a450dbf85b2bae7ce93433989127af1"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="start_trade"><param name="Local" value="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="transfer_accounts"><param name="Local" value="trade_8h.html#a313ab03b107a8c788c62e1aaf9ea5a64"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="transfer_accounts"><param name="Local" value="trade_8h.html#a04723fa2776242162325a3ce2732dcf5"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="view_transactions"><param name="Local" value="trade_8h.html#a77151d1e1b4c4426510b6dd4e05c79cc"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="withdraw_money"><param name="Local" value="trade_8h.html#ae23eea082b3ad83fbca0945c218c6290"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="withdraw_money"><param name="Local" value="trade_8h.html#a8cf36b9cbe3b435eb1c16ddcd840d56e"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="trade_conclude.h"><param name="Local" value="trade__conclude_8h.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -370,13 +371,14 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="check_balance"><param name="Local" value="trade_8c.html#a3d62f6a21895c8bf7bdb57374454d1e6"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="check_card"><param name="Local" value="trade_8c.html#ab72dab19fcb1cf7a64faadb6a2294af3"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="create_card"><param name="Local" value="trade_8c.html#a306c5209838a5ebf5fea730785723557"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="deposit_money"><param name="Local" value="trade_8c.html#afcee734dca55c035c8de9b849bd53eb3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="deposit_money"><param name="Local" value="trade_8c.html#a7ee6439e41e3bfdc40d00dd973b263dc"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="end_trade"><param name="Local" value="trade_8c.html#a5c3ec099cbeb6068634e97ed18977979"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_banlance"><param name="Local" value="trade_8c.html#a55d97a8490375fe6d2a9e5a9f6ebf87f"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_cards"><param name="Local" value="trade_8c.html#a2a450dbf85b2bae7ce93433989127af1"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="start_trade"><param name="Local" value="trade_8c.html#ac55e1399ed4641e788ac06fe604374d5"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="transfer_accounts"><param name="Local" value="trade_8c.html#a313ab03b107a8c788c62e1aaf9ea5a64"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="transfer_accounts"><param name="Local" value="trade_8c.html#a04723fa2776242162325a3ce2732dcf5"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="view_transactions"><param name="Local" value="trade_8c.html#a77151d1e1b4c4426510b6dd4e05c79cc"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="withdraw_money"><param name="Local" value="trade_8c.html#ae23eea082b3ad83fbca0945c218c6290"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="withdraw_money"><param name="Local" value="trade_8c.html#a8cf36b9cbe3b435eb1c16ddcd840d56e"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="trade_conclude.c"><param name="Local" value="trade__conclude_8c.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>

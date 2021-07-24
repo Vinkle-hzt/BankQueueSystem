@@ -1,4 +1,4 @@
 <map id="show_counter_customer" name="show_counter_customer">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node1" title="展示所有柜台当前办理业务人员信息" alt="" coords="5,5,169,32"/>
 <area shape="rect" id="node2" href="$array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247" title="get the idx_th element value (start from 0)" alt="" coords="217,5,268,32"/>
 </map>

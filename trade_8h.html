@@ -99,6 +99,7 @@ trade.h 的引用(Include)关系图:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
 <tr class="memitem:ac55e1399ed4641e788ac06fe604374d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5">start_trade</a> ()</td></tr>
+<tr class="memdesc:ac55e1399ed4641e788ac06fe604374d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">交易主函数入口  <a href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5">更多...</a><br /></td></tr>
 <tr class="separator:ac55e1399ed4641e788ac06fe604374d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a450dbf85b2bae7ce93433989127af1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a2a450dbf85b2bae7ce93433989127af1">show_cards</a> (int ID)</td></tr>
 <tr class="separator:a2a450dbf85b2bae7ce93433989127af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,22 +107,28 @@ trade.h 的引用(Include)关系图:</div>
 <tr class="separator:a626bc03ad7d66834551550612489987b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d62f6a21895c8bf7bdb57374454d1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a3d62f6a21895c8bf7bdb57374454d1e6">check_balance</a> (int card_ID)</td></tr>
 <tr class="separator:a3d62f6a21895c8bf7bdb57374454d1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcee734dca55c035c8de9b849bd53eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#afcee734dca55c035c8de9b849bd53eb3">deposit_money</a> (int card_ID)</td></tr>
-<tr class="separator:afcee734dca55c035c8de9b849bd53eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae23eea082b3ad83fbca0945c218c6290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#ae23eea082b3ad83fbca0945c218c6290">withdraw_money</a> (int card_ID)</td></tr>
-<tr class="separator:ae23eea082b3ad83fbca0945c218c6290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a313ab03b107a8c788c62e1aaf9ea5a64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a313ab03b107a8c788c62e1aaf9ea5a64">transfer_accounts</a> (int card_ID)</td></tr>
-<tr class="separator:a313ab03b107a8c788c62e1aaf9ea5a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee6439e41e3bfdc40d00dd973b263dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a7ee6439e41e3bfdc40d00dd973b263dc">deposit_money</a> (<a class="el" href="structcounter.html">counter</a> *ct, int card_ID)</td></tr>
+<tr class="separator:a7ee6439e41e3bfdc40d00dd973b263dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf36b9cbe3b435eb1c16ddcd840d56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a8cf36b9cbe3b435eb1c16ddcd840d56e">withdraw_money</a> (<a class="el" href="structcounter.html">counter</a> *ct, int card_ID)</td></tr>
+<tr class="separator:a8cf36b9cbe3b435eb1c16ddcd840d56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04723fa2776242162325a3ce2732dcf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a04723fa2776242162325a3ce2732dcf5">transfer_accounts</a> (<a class="el" href="structcounter.html">counter</a> *ct, int card_ID)</td></tr>
+<tr class="separator:a04723fa2776242162325a3ce2732dcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77151d1e1b4c4426510b6dd4e05c79cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a77151d1e1b4c4426510b6dd4e05c79cc">view_transactions</a> (int card_ID)</td></tr>
 <tr class="separator:a77151d1e1b4c4426510b6dd4e05c79cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c3ec099cbeb6068634e97ed18977979"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979">end_trade</a> (<a class="el" href="structcounter.html">counter</a> *ct)</td></tr>
+<tr class="memdesc:a5c3ec099cbeb6068634e97ed18977979"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束当前柜台业务  <a href="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979">更多...</a><br /></td></tr>
 <tr class="separator:a5c3ec099cbeb6068634e97ed18977979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306c5209838a5ebf5fea730785723557"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a306c5209838a5ebf5fea730785723557">create_card</a> (int ID)</td></tr>
+<tr class="memdesc:a306c5209838a5ebf5fea730785723557"><td class="mdescLeft">&#160;</td><td class="mdescRight">为客户办理银行卡  <a href="trade_8h.html#a306c5209838a5ebf5fea730785723557">更多...</a><br /></td></tr>
 <tr class="separator:a306c5209838a5ebf5fea730785723557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab72dab19fcb1cf7a64faadb6a2294af3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#ab72dab19fcb1cf7a64faadb6a2294af3">check_card</a> (int card_ID, int user_ID)</td></tr>
+<tr class="memdesc:ab72dab19fcb1cf7a64faadb6a2294af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查银行卡号和客户是否匹配  <a href="trade_8h.html#ab72dab19fcb1cf7a64faadb6a2294af3">更多...</a><br /></td></tr>
 <tr class="separator:ab72dab19fcb1cf7a64faadb6a2294af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e00091a11dbc131165293bc78c633ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a4e00091a11dbc131165293bc78c633ae">call_next</a> (<a class="el" href="structcounter.html">counter</a> *ct)</td></tr>
+<tr class="memdesc:a4e00091a11dbc131165293bc78c633ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">叫下一个客户  <a href="trade_8h.html#a4e00091a11dbc131165293bc78c633ae">更多...</a><br /></td></tr>
 <tr class="separator:a4e00091a11dbc131165293bc78c633ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d97a8490375fe6d2a9e5a9f6ebf87f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trade_8h.html#a55d97a8490375fe6d2a9e5a9f6ebf87f">get_banlance</a> (int card_ID)</td></tr>
+<tr class="separator:a55d97a8490375fe6d2a9e5a9f6ebf87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">函数说明</h2>
 <a id="a4e00091a11dbc131165293bc78c633ae"></a>
@@ -140,20 +147,28 @@ trade.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00248">248</a> 行定义.</p>
+<p>叫下一个客户 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ct</td><td>柜台指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00244">244</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_a4e00091a11dbc131165293bc78c633ae_cgraph.png" border="0" usemap="#atrade_8h_a4e00091a11dbc131165293bc78c633ae_cgraph" alt=""/></div>
 <map name="atrade_8h_a4e00091a11dbc131165293bc78c633ae_cgraph" id="atrade_8h_a4e00091a11dbc131165293bc78c633ae_cgraph">
-<area shape="rect" title=" " alt="" coords="5,119,79,145"/>
+<area shape="rect" title="叫下一个客户" alt="" coords="5,119,79,145"/>
 <area shape="rect" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="127,56,297,83"/>
 <area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="180,119,244,145"/>
 <area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="181,169,243,196"/>
 <area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="345,5,443,32"/>
 <area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="351,56,437,83"/>
 <area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="352,131,436,157"/>
-<area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title=" " alt="" coords="491,131,544,157"/>
+<area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="491,131,544,157"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="592,131,668,157"/>
 </map>
 </div>
@@ -162,9 +177,9 @@ trade.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_a4e00091a11dbc131165293bc78c633ae_icgraph.png" border="0" usemap="#atrade_8h_a4e00091a11dbc131165293bc78c633ae_icgraph" alt=""/></div>
 <map name="atrade_8h_a4e00091a11dbc131165293bc78c633ae_icgraph" id="atrade_8h_a4e00091a11dbc131165293bc78c633ae_icgraph">
-<area shape="rect" title=" " alt="" coords="508,5,581,32"/>
-<area shape="rect" href="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979" title=" " alt="" coords="381,5,460,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" title="叫下一个客户" alt="" coords="508,5,581,32"/>
+<area shape="rect" href="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979" title="结束当前柜台业务" alt="" coords="381,5,460,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -190,15 +205,24 @@ trade.h 的引用(Include)关系图:</div>
 
 <p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00128">128</a> 行定义.</p>
 <div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="trade_8h_a3d62f6a21895c8bf7bdb57374454d1e6_cgraph.png" border="0" usemap="#atrade_8h_a3d62f6a21895c8bf7bdb57374454d1e6_cgraph" alt=""/></div>
+<map name="atrade_8h_a3d62f6a21895c8bf7bdb57374454d1e6_cgraph" id="atrade_8h_a3d62f6a21895c8bf7bdb57374454d1e6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,115,32"/>
+<area shape="rect" href="trade_8c.html#a55d97a8490375fe6d2a9e5a9f6ebf87f" title=" " alt="" coords="163,5,261,32"/>
+</map>
+</div>
+<div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_a3d62f6a21895c8bf7bdb57374454d1e6_icgraph.png" border="0" usemap="#atrade_8h_a3d62f6a21895c8bf7bdb57374454d1e6_icgraph" alt=""/></div>
 <map name="atrade_8h_a3d62f6a21895c8bf7bdb57374454d1e6_icgraph" id="atrade_8h_a3d62f6a21895c8bf7bdb57374454d1e6_icgraph">
 <area shape="rect" title=" " alt="" coords="556,81,665,108"/>
-<area shape="rect" href="trade_8h.html#afcee734dca55c035c8de9b849bd53eb3" title=" " alt="" coords="390,5,499,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,81,333,108"/>
-<area shape="rect" href="trade_8h.html#a313ab03b107a8c788c62e1aaf9ea5a64" title=" " alt="" coords="381,107,508,133"/>
-<area shape="rect" href="trade_8h.html#ae23eea082b3ad83fbca0945c218c6290" title=" " alt="" coords="385,157,504,184"/>
+<area shape="rect" href="trade_8h.html#a7ee6439e41e3bfdc40d00dd973b263dc" title=" " alt="" coords="390,5,499,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,81,333,108"/>
+<area shape="rect" href="trade_8h.html#a04723fa2776242162325a3ce2732dcf5" title=" " alt="" coords="381,107,508,133"/>
+<area shape="rect" href="trade_8h.html#a8cf36b9cbe3b435eb1c16ddcd840d56e" title=" " alt="" coords="385,157,504,184"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,81,201,108"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
 </map>
@@ -232,14 +256,24 @@ trade.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00237">237</a> 行定义.</p>
+<p>检查银行卡号和客户是否匹配 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">card_ID</td><td>银行卡号 </td></tr>
+    <tr><td class="paramname">user_ID</td><td>客户号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int 0 不匹配 1 匹配 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00233">233</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_ab72dab19fcb1cf7a64faadb6a2294af3_icgraph.png" border="0" usemap="#atrade_8h_ab72dab19fcb1cf7a64faadb6a2294af3_icgraph" alt=""/></div>
 <map name="atrade_8h_ab72dab19fcb1cf7a64faadb6a2294af3_icgraph" id="atrade_8h_ab72dab19fcb1cf7a64faadb6a2294af3_icgraph">
-<area shape="rect" title=" " alt="" coords="381,5,471,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" title="检查银行卡号和客户是否匹配" alt="" coords="381,5,471,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -268,7 +302,7 @@ trade.h 的引用(Include)关系图:</div>
 <div class="center"><img src="trade_8h_a626bc03ad7d66834551550612489987b_icgraph.png" border="0" usemap="#atrade_8h_a626bc03ad7d66834551550612489987b_icgraph" alt=""/></div>
 <map name="atrade_8h_a626bc03ad7d66834551550612489987b_icgraph" id="atrade_8h_a626bc03ad7d66834551550612489987b_icgraph">
 <area shape="rect" title=" " alt="" coords="381,5,477,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -292,14 +326,22 @@ trade.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00222">222</a> 行定义.</p>
+<p>为客户办理银行卡 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ID</td><td>客户号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00218">218</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_a306c5209838a5ebf5fea730785723557_icgraph.png" border="0" usemap="#atrade_8h_a306c5209838a5ebf5fea730785723557_icgraph" alt=""/></div>
 <map name="atrade_8h_a306c5209838a5ebf5fea730785723557_icgraph" id="atrade_8h_a306c5209838a5ebf5fea730785723557_icgraph">
-<area shape="rect" title=" " alt="" coords="381,5,472,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" title="为客户办理银行卡" alt="" coords="381,5,472,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -307,8 +349,8 @@ trade.h 的引用(Include)关系图:</div>
 
 </div>
 </div>
-<a id="afcee734dca55c035c8de9b849bd53eb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcee734dca55c035c8de9b849bd53eb3">&#9670;&nbsp;</a></span>deposit_money()</h2>
+<a id="a7ee6439e41e3bfdc40d00dd973b263dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ee6439e41e3bfdc40d00dd973b263dc">&#9670;&nbsp;</a></span>deposit_money()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,30 +358,41 @@ trade.h 的引用(Include)关系图:</div>
         <tr>
           <td class="memname">void deposit_money </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>card_ID</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structcounter.html">counter</a> *&#160;</td>
+          <td class="paramname"><em>ct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>card_ID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00137">137</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00133">133</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="trade_8h_afcee734dca55c035c8de9b849bd53eb3_cgraph.png" border="0" usemap="#atrade_8h_afcee734dca55c035c8de9b849bd53eb3_cgraph" alt=""/></div>
-<map name="atrade_8h_afcee734dca55c035c8de9b849bd53eb3_cgraph" id="atrade_8h_afcee734dca55c035c8de9b849bd53eb3_cgraph">
+<div class="center"><img src="trade_8h_a7ee6439e41e3bfdc40d00dd973b263dc_cgraph.png" border="0" usemap="#atrade_8h_a7ee6439e41e3bfdc40d00dd973b263dc_cgraph" alt=""/></div>
+<map name="atrade_8h_a7ee6439e41e3bfdc40d00dd973b263dc_cgraph" id="atrade_8h_a7ee6439e41e3bfdc40d00dd973b263dc_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,115,32"/>
 <area shape="rect" href="trade_8c.html#a3d62f6a21895c8bf7bdb57374454d1e6" title=" " alt="" coords="163,5,272,32"/>
+<area shape="rect" href="trade_8c.html#a55d97a8490375fe6d2a9e5a9f6ebf87f" title=" " alt="" coords="320,5,419,32"/>
 </map>
 </div>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="trade_8h_afcee734dca55c035c8de9b849bd53eb3_icgraph.png" border="0" usemap="#atrade_8h_afcee734dca55c035c8de9b849bd53eb3_icgraph" alt=""/></div>
-<map name="atrade_8h_afcee734dca55c035c8de9b849bd53eb3_icgraph" id="atrade_8h_afcee734dca55c035c8de9b849bd53eb3_icgraph">
+<div class="center"><img src="trade_8h_a7ee6439e41e3bfdc40d00dd973b263dc_icgraph.png" border="0" usemap="#atrade_8h_a7ee6439e41e3bfdc40d00dd973b263dc_icgraph" alt=""/></div>
+<map name="atrade_8h_a7ee6439e41e3bfdc40d00dd973b263dc_icgraph" id="atrade_8h_a7ee6439e41e3bfdc40d00dd973b263dc_icgraph">
 <area shape="rect" title=" " alt="" coords="381,5,491,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -363,14 +416,22 @@ trade.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00214">214</a> 行定义.</p>
+<p>结束当前柜台业务 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ct</td><td>柜台指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00210">210</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_a5c3ec099cbeb6068634e97ed18977979_cgraph.png" border="0" usemap="#atrade_8h_a5c3ec099cbeb6068634e97ed18977979_cgraph" alt=""/></div>
 <map name="atrade_8h_a5c3ec099cbeb6068634e97ed18977979_cgraph" id="atrade_8h_a5c3ec099cbeb6068634e97ed18977979_cgraph">
-<area shape="rect" title=" " alt="" coords="5,107,84,133"/>
-<area shape="rect" href="trade_8c.html#a4e00091a11dbc131165293bc78c633ae" title=" " alt="" coords="132,132,205,159"/>
+<area shape="rect" title="结束当前柜台业务" alt="" coords="5,107,84,133"/>
+<area shape="rect" href="trade_8c.html#a4e00091a11dbc131165293bc78c633ae" title="叫下一个客户" alt="" coords="132,132,205,159"/>
 <area shape="rect" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="285,56,392,83"/>
 <area shape="rect" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="253,107,424,133"/>
 <area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="307,208,371,235"/>
@@ -378,7 +439,7 @@ trade.h 的引用(Include)关系图:</div>
 <area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="472,107,569,133"/>
 <area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="478,56,563,83"/>
 <area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="479,208,563,235"/>
-<area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title=" " alt="" coords="617,208,671,235"/>
+<area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="617,208,671,235"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="719,208,795,235"/>
 <area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="483,5,559,32"/>
 </map>
@@ -388,10 +449,45 @@ trade.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_a5c3ec099cbeb6068634e97ed18977979_icgraph.png" border="0" usemap="#atrade_8h_a5c3ec099cbeb6068634e97ed18977979_icgraph" alt=""/></div>
 <map name="atrade_8h_a5c3ec099cbeb6068634e97ed18977979_icgraph" id="atrade_8h_a5c3ec099cbeb6068634e97ed18977979_icgraph">
-<area shape="rect" title=" " alt="" coords="381,5,460,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" title="结束当前柜台业务" alt="" coords="381,5,460,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a55d97a8490375fe6d2a9e5a9f6ebf87f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d97a8490375fe6d2a9e5a9f6ebf87f">&#9670;&nbsp;</a></span>get_banlance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double get_banlance </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>card_ID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00255">255</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="trade_8h_a55d97a8490375fe6d2a9e5a9f6ebf87f_icgraph.png" border="0" usemap="#atrade_8h_a55d97a8490375fe6d2a9e5a9f6ebf87f_icgraph" alt=""/></div>
+<map name="atrade_8h_a55d97a8490375fe6d2a9e5a9f6ebf87f_icgraph" id="atrade_8h_a55d97a8490375fe6d2a9e5a9f6ebf87f_icgraph">
+<area shape="rect" title=" " alt="" coords="713,81,812,108"/>
+<area shape="rect" href="trade_8h.html#a3d62f6a21895c8bf7bdb57374454d1e6" title=" " alt="" coords="556,81,665,108"/>
+<area shape="rect" href="trade_8h.html#a7ee6439e41e3bfdc40d00dd973b263dc" title=" " alt="" coords="390,5,499,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,81,333,108"/>
+<area shape="rect" href="trade_8h.html#a04723fa2776242162325a3ce2732dcf5" title=" " alt="" coords="381,107,508,133"/>
+<area shape="rect" href="trade_8h.html#a8cf36b9cbe3b435eb1c16ddcd840d56e" title=" " alt="" coords="385,157,504,184"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,81,201,108"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
 </map>
 </div>
 
@@ -420,7 +516,7 @@ trade.h 的引用(Include)关系图:</div>
 <div class="center"><img src="trade_8h_a2a450dbf85b2bae7ce93433989127af1_icgraph.png" border="0" usemap="#atrade_8h_a2a450dbf85b2bae7ce93433989127af1_icgraph" alt=""/></div>
 <map name="atrade_8h_a2a450dbf85b2bae7ce93433989127af1_icgraph" id="atrade_8h_a2a450dbf85b2bae7ce93433989127af1_icgraph">
 <area shape="rect" title=" " alt="" coords="381,5,473,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -443,37 +539,40 @@ trade.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
+<p>交易主函数入口 </p>
+
 <p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00003">3</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_ac55e1399ed4641e788ac06fe604374d5_cgraph.png" border="0" usemap="#atrade_8h_ac55e1399ed4641e788ac06fe604374d5_cgraph" alt=""/></div>
 <map name="atrade_8h_ac55e1399ed4641e788ac06fe604374d5_cgraph" id="atrade_8h_ac55e1399ed4641e788ac06fe604374d5_cgraph">
-<area shape="rect" title=" " alt="" coords="5,309,89,336"/>
+<area shape="rect" title="交易主函数入口" alt="" coords="5,309,89,336"/>
 <area shape="rect" href="array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247" title="get the idx_th element value (start from 0)" alt="" coords="397,31,448,57"/>
 <area shape="rect" href="trade_8c.html#a3d62f6a21895c8bf7bdb57374454d1e6" title=" " alt="" coords="368,183,477,209"/>
-<area shape="rect" href="trade_8c.html#ab72dab19fcb1cf7a64faadb6a2294af3" title=" " alt="" coords="184,309,273,336"/>
+<area shape="rect" href="trade_8c.html#ab72dab19fcb1cf7a64faadb6a2294af3" title="检查银行卡号和客户是否匹配" alt="" coords="184,309,273,336"/>
 <area shape="rect" href="trade_8h.html#a626bc03ad7d66834551550612489987b" title=" " alt="" coords="181,360,277,387"/>
-<area shape="rect" href="trade_8c.html#a306c5209838a5ebf5fea730785723557" title=" " alt="" coords="183,411,274,437"/>
-<area shape="rect" href="trade_8c.html#afcee734dca55c035c8de9b849bd53eb3" title=" " alt="" coords="174,208,283,235"/>
-<area shape="rect" href="trade_8c.html#a5c3ec099cbeb6068634e97ed18977979" title=" " alt="" coords="189,461,268,488"/>
+<area shape="rect" href="trade_8c.html#a306c5209838a5ebf5fea730785723557" title="为客户办理银行卡" alt="" coords="183,411,274,437"/>
+<area shape="rect" href="trade_8c.html#a7ee6439e41e3bfdc40d00dd973b263dc" title=" " alt="" coords="174,107,283,133"/>
+<area shape="rect" href="trade_8c.html#a5c3ec099cbeb6068634e97ed18977979" title="结束当前柜台业务" alt="" coords="189,461,268,488"/>
 <area shape="rect" href="display_8h.html#ac4db935f87e3adb1f6eeaf91c6262f64" title="展示业务办理页面" alt="" coords="137,512,320,539"/>
 <area shape="rect" href="trade_8c.html#a2a450dbf85b2bae7ce93433989127af1" title=" " alt="" coords="183,563,275,589"/>
-<area shape="rect" href="counter_8h.html#aa8daf9e82a8ca950eac00c466c14fea6" title=" " alt="" coords="147,5,311,32"/>
-<area shape="rect" href="trade_8c.html#a313ab03b107a8c788c62e1aaf9ea5a64" title=" " alt="" coords="165,259,292,285"/>
+<area shape="rect" href="counter_8h.html#aa8daf9e82a8ca950eac00c466c14fea6" title="展示所有柜台当前办理业务人员信息" alt="" coords="147,5,311,32"/>
+<area shape="rect" href="trade_8c.html#a04723fa2776242162325a3ce2732dcf5" title=" " alt="" coords="165,157,292,184"/>
 <area shape="rect" href="trade_8c.html#a77151d1e1b4c4426510b6dd4e05c79cc" title=" " alt="" coords="165,613,292,640"/>
-<area shape="rect" href="trade_8c.html#ae23eea082b3ad83fbca0945c218c6290" title=" " alt="" coords="169,107,288,133"/>
-<area shape="rect" href="trade_8c.html#a4e00091a11dbc131165293bc78c633ae" title=" " alt="" coords="386,499,459,525"/>
-<area shape="rect" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="557,423,664,449"/>
-<area shape="rect" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="525,473,696,500"/>
-<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="579,575,643,601"/>
-<area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="580,524,641,551"/>
-<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="744,473,841,500"/>
-<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="750,423,835,449"/>
-<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="751,575,835,601"/>
-<area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title=" " alt="" coords="889,575,943,601"/>
-<area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="991,575,1067,601"/>
-<area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="755,372,831,399"/>
+<area shape="rect" href="trade_8c.html#a8cf36b9cbe3b435eb1c16ddcd840d56e" title=" " alt="" coords="169,208,288,235"/>
+<area shape="rect" href="trade_8c.html#a55d97a8490375fe6d2a9e5a9f6ebf87f" title=" " alt="" coords="561,183,660,209"/>
+<area shape="rect" href="trade_8c.html#a4e00091a11dbc131165293bc78c633ae" title="叫下一个客户" alt="" coords="386,492,459,519"/>
+<area shape="rect" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="557,416,664,443"/>
+<area shape="rect" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="525,517,696,544"/>
+<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="579,573,643,600"/>
+<area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="580,467,641,493"/>
+<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="744,460,841,487"/>
+<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="750,511,835,537"/>
+<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="751,585,835,612"/>
+<area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="889,585,943,612"/>
+<area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="991,585,1067,612"/>
+<area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="755,409,831,436"/>
 </map>
 </div>
 <div class="dynheader">
@@ -481,7 +580,7 @@ trade.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_ac55e1399ed4641e788ac06fe604374d5_icgraph.png" border="0" usemap="#atrade_8h_ac55e1399ed4641e788ac06fe604374d5_icgraph" alt=""/></div>
 <map name="atrade_8h_ac55e1399ed4641e788ac06fe604374d5_icgraph" id="atrade_8h_ac55e1399ed4641e788ac06fe604374d5_icgraph">
-<area shape="rect" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -489,8 +588,8 @@ trade.h 的引用(Include)关系图:</div>
 
 </div>
 </div>
-<a id="a313ab03b107a8c788c62e1aaf9ea5a64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a313ab03b107a8c788c62e1aaf9ea5a64">&#9670;&nbsp;</a></span>transfer_accounts()</h2>
+<a id="a04723fa2776242162325a3ce2732dcf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04723fa2776242162325a3ce2732dcf5">&#9670;&nbsp;</a></span>transfer_accounts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,30 +597,41 @@ trade.h 的引用(Include)关系图:</div>
         <tr>
           <td class="memname">void transfer_accounts </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>card_ID</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structcounter.html">counter</a> *&#160;</td>
+          <td class="paramname"><em>ct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>card_ID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00171">171</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00167">167</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="trade_8h_a313ab03b107a8c788c62e1aaf9ea5a64_cgraph.png" border="0" usemap="#atrade_8h_a313ab03b107a8c788c62e1aaf9ea5a64_cgraph" alt=""/></div>
-<map name="atrade_8h_a313ab03b107a8c788c62e1aaf9ea5a64_cgraph" id="atrade_8h_a313ab03b107a8c788c62e1aaf9ea5a64_cgraph">
+<div class="center"><img src="trade_8h_a04723fa2776242162325a3ce2732dcf5_cgraph.png" border="0" usemap="#atrade_8h_a04723fa2776242162325a3ce2732dcf5_cgraph" alt=""/></div>
+<map name="atrade_8h_a04723fa2776242162325a3ce2732dcf5_cgraph" id="atrade_8h_a04723fa2776242162325a3ce2732dcf5_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,132,32"/>
 <area shape="rect" href="trade_8c.html#a3d62f6a21895c8bf7bdb57374454d1e6" title=" " alt="" coords="180,5,289,32"/>
+<area shape="rect" href="trade_8c.html#a55d97a8490375fe6d2a9e5a9f6ebf87f" title=" " alt="" coords="337,5,436,32"/>
 </map>
 </div>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="trade_8h_a313ab03b107a8c788c62e1aaf9ea5a64_icgraph.png" border="0" usemap="#atrade_8h_a313ab03b107a8c788c62e1aaf9ea5a64_icgraph" alt=""/></div>
-<map name="atrade_8h_a313ab03b107a8c788c62e1aaf9ea5a64_icgraph" id="atrade_8h_a313ab03b107a8c788c62e1aaf9ea5a64_icgraph">
+<div class="center"><img src="trade_8h_a04723fa2776242162325a3ce2732dcf5_icgraph.png" border="0" usemap="#atrade_8h_a04723fa2776242162325a3ce2732dcf5_icgraph" alt=""/></div>
+<map name="atrade_8h_a04723fa2776242162325a3ce2732dcf5_icgraph" id="atrade_8h_a04723fa2776242162325a3ce2732dcf5_icgraph">
 <area shape="rect" title=" " alt="" coords="381,5,508,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -545,14 +655,14 @@ trade.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00209">209</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00205">205</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8h_a77151d1e1b4c4426510b6dd4e05c79cc_icgraph.png" border="0" usemap="#atrade_8h_a77151d1e1b4c4426510b6dd4e05c79cc_icgraph" alt=""/></div>
 <map name="atrade_8h_a77151d1e1b4c4426510b6dd4e05c79cc_icgraph" id="atrade_8h_a77151d1e1b4c4426510b6dd4e05c79cc_icgraph">
 <area shape="rect" title=" " alt="" coords="381,5,508,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -560,8 +670,8 @@ trade.h 的引用(Include)关系图:</div>
 
 </div>
 </div>
-<a id="ae23eea082b3ad83fbca0945c218c6290"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae23eea082b3ad83fbca0945c218c6290">&#9670;&nbsp;</a></span>withdraw_money()</h2>
+<a id="a8cf36b9cbe3b435eb1c16ddcd840d56e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf36b9cbe3b435eb1c16ddcd840d56e">&#9670;&nbsp;</a></span>withdraw_money()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,30 +679,41 @@ trade.h 的引用(Include)关系图:</div>
         <tr>
           <td class="memname">void withdraw_money </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>card_ID</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structcounter.html">counter</a> *&#160;</td>
+          <td class="paramname"><em>ct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>card_ID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00147">147</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00143">143</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="trade_8h_ae23eea082b3ad83fbca0945c218c6290_cgraph.png" border="0" usemap="#atrade_8h_ae23eea082b3ad83fbca0945c218c6290_cgraph" alt=""/></div>
-<map name="atrade_8h_ae23eea082b3ad83fbca0945c218c6290_cgraph" id="atrade_8h_ae23eea082b3ad83fbca0945c218c6290_cgraph">
+<div class="center"><img src="trade_8h_a8cf36b9cbe3b435eb1c16ddcd840d56e_cgraph.png" border="0" usemap="#atrade_8h_a8cf36b9cbe3b435eb1c16ddcd840d56e_cgraph" alt=""/></div>
+<map name="atrade_8h_a8cf36b9cbe3b435eb1c16ddcd840d56e_cgraph" id="atrade_8h_a8cf36b9cbe3b435eb1c16ddcd840d56e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,124,32"/>
 <area shape="rect" href="trade_8c.html#a3d62f6a21895c8bf7bdb57374454d1e6" title=" " alt="" coords="172,5,281,32"/>
+<area shape="rect" href="trade_8c.html#a55d97a8490375fe6d2a9e5a9f6ebf87f" title=" " alt="" coords="329,5,428,32"/>
 </map>
 </div>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="trade_8h_ae23eea082b3ad83fbca0945c218c6290_icgraph.png" border="0" usemap="#atrade_8h_ae23eea082b3ad83fbca0945c218c6290_icgraph" alt=""/></div>
-<map name="atrade_8h_ae23eea082b3ad83fbca0945c218c6290_icgraph" id="atrade_8h_ae23eea082b3ad83fbca0945c218c6290_icgraph">
+<div class="center"><img src="trade_8h_a8cf36b9cbe3b435eb1c16ddcd840d56e_icgraph.png" border="0" usemap="#atrade_8h_a8cf36b9cbe3b435eb1c16ddcd840d56e_icgraph" alt=""/></div>
+<map name="atrade_8h_a8cf36b9cbe3b435eb1c16ddcd840d56e_icgraph" id="atrade_8h_a8cf36b9cbe3b435eb1c16ddcd840d56e_icgraph">
 <area shape="rect" title=" " alt="" coords="381,5,500,32"/>
-<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title=" " alt="" coords="249,5,333,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
