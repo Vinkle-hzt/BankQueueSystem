@@ -80,14 +80,14 @@ void do_pick_number()
     scanf("%d %s", &ID, name);
     member *cur_customer = member_come(ID, name);
 
-    //判断 ID 与姓名是否匹配
+    // 判断 ID 与姓名是否匹配
     if (cur_customer == (member *)&member_error_1)
     {
         printf("ID 与姓名不匹配！！！\n");
         return;
     }
 
-    //判断 ID 是否存在
+    // 判断 ID 是否存在
     if (cur_customer == (member *)&member_error_2)
     {
         printf("没有此 ID， 请检查您的 ID 号码！！！\n");
@@ -140,6 +140,7 @@ int login_admin()
     for (int i = 0; i < 16; i++)
         sprintf((pwd + i * 2), "%2.2x", pwdmd5[i]);
 
+    // 判断 ID 与密码是否符合
     sprintf(mysql_buffer, "SELECT * FROM `admin` WHERE(`ID` = \"%s\" AND `password` = \"%s\")", id, pwd);
 
     // printf("mysql_buffer: %s \n", mysql_buffer);

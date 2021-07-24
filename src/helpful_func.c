@@ -96,7 +96,7 @@ void md5(const uint8_t *initial_msg, size_t initial_len, uint8_t *digest)
     to_bytes(initial_len >> 29, msg + new_len + 4);
 
     // Process the message in successive 512-bit chunks:
-    //for each 512-bit chunk of message:
+    // for each 512-bit chunk of message:
     for (offset = 0; offset < new_len; offset += (512 / 8))
     {
 
@@ -152,7 +152,7 @@ void md5(const uint8_t *initial_msg, size_t initial_len, uint8_t *digest)
     // cleanup
     free(msg);
 
-    //var char digest[16] := h0 append h1 append h2 append h3 //(Output is in little-endian)
+    // var char digest[16] := h0 append h1 append h2 append h3 //(Output is in little-endian)
     to_bytes(h0, digest);
     to_bytes(h1, digest + 4);
     to_bytes(h2, digest + 8);
