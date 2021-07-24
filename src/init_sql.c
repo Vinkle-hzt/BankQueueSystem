@@ -4,7 +4,7 @@ void start_mysql()
 {
     printf("start mysql...\n");
     mysql_init(&mysql_connect);
-    if (!(mysql_real_connect(&mysql_connect, "localhost", "root", "gcmjqcsj1", "bank_queue_system", 3306, NULL, 0)))
+    if (!(mysql_real_connect(&mysql_connect, "localhost", "root", "15868372516", "bank_queue_system", 3306, NULL, 0)))
     {
         printf("Failed to access to the database...Error: %s\n", mysql_error(&mysql_connect));
     }
