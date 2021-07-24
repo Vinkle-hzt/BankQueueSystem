@@ -127,39 +127,36 @@ int show_cards(int ID)
 
 void check_balance(int card_ID)
 {
-    printf("\n卡号：%d，余额：%lf\n", card_ID, get_banlance(card_ID));
+    printf("\n卡号：%d，余额：%lf\n", card_ID, get_balance(card_ID));
 }
 
-void deposit_money(counter* ct, int card_ID)
+void deposit_money(counter *ct, int card_ID)
 {
     double card_deposit = 0;
+    double now_money = get_balance(card_ID);
     printf("请输入您要存款的钱数：\n");
     scanf("%lf", &card_deposit);
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_deposit, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
 
+    //生成日志
     date cur_date = get_cur_date();
     sprintf(mysql_buffer, "INSERT INTO trade"
                           "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
                           "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
-                          card_ID, Deposit, cur_date.year,cur_date.month, cur_date.day, cur_date.hour, cur_date.minute, , ,card_ID);
+            card_ID, Deposit, cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute, now_money, now_money + card_deposit, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
 
     check_balance(card_ID);
 }
 
-void withdraw_money(counter* ct, int card_ID)
+void withdraw_money(counter *ct, int card_ID)
 {
     double card_withdraw = 0;
     printf("请输入您要取款的钱数：\n");
     scanf("%lf", &card_withdraw);
 
-    // 查询卡内余额
-    sprintf(mysql_buffer, "SELECT money FROM card WHERE card_ID = %d", card_ID);
-    mysql_query(&mysql_connect, mysql_buffer);
-    mysql_res = mysql_store_result(&mysql_connect);
-    mysql_next_row = mysql_fetch_row(mysql_res);
-    double now_money = atof(mysql_next_row[0]);
+    double now_money = get_balance(card_ID);
     if (now_money < card_withdraw)
     {
         printf("您的余额不足！！！\n");
@@ -169,22 +166,26 @@ void withdraw_money(counter* ct, int card_ID)
     // 取款过程
     sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d", card_withdraw, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
+
+    //生成日志
+    date cur_date = get_cur_date();
+    sprintf(mysql_buffer, "INSERT INTO trade"
+                          "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
+                          "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
+            card_ID, Withdraw, cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute, now_money, now_money - card_withdraw, card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+
     check_balance(card_ID);
 }
 
-void transfer_accounts(counter* ct, int card_ID)
+void transfer_accounts(counter *ct, int card_ID)
 {
     double card_transfer = 0;
     int card_IDout = 0;
     printf("请输入您要转账的 ID 与 钱数（以空格分隔）：\n");
     scanf("%d %lf", &card_IDout, &card_transfer);
 
-    // 查询卡内余额
-    sprintf(mysql_buffer, "SELECT money FROM card WHERE card_ID = %d", card_ID);
-    mysql_query(&mysql_connect, mysql_buffer);
-    mysql_res = mysql_store_result(&mysql_connect);
-    mysql_next_row = mysql_fetch_row(mysql_res);
-    double now_money = atof(mysql_next_row[0]);
+    double now_money = get_balance(card_ID);
     if (now_money < card_transfer)
     {
         printf("您的余额不足！！！\n");
@@ -207,6 +208,29 @@ void transfer_accounts(counter* ct, int card_ID)
     mysql_query(&mysql_connect, mysql_buffer);
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_transfer, card_IDout);
     mysql_query(&mysql_connect, mysql_buffer);
+
+    //生成日志
+    date cur_date = get_cur_date();
+    sprintf(mysql_buffer,
+            "INSERT INTO trade"
+            "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
+            "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
+            card_ID, Transfer,
+            cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute,
+            now_money, now_money - card_transfer, card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+
+    date cur_date = get_cur_date();
+    double tred_now_money = get_balance(card_IDout);
+    sprintf(mysql_buffer,
+            "INSERT INTO trade"
+            "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
+            "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
+            card_ID, BeTransferred,
+            cur_date.year, cur_date.month, cur_date.day, cur_date.hour, cur_date.minute,
+            tred_now_money, tred_now_money + card_transfer, card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+
     check_balance(card_ID);
 }
 
@@ -259,7 +283,7 @@ void call_next(counter *ct)
     }
 }
 
-double get_banlance(int card_ID)
+double get_balance(int card_ID)
 {
     sprintf(mysql_buffer, "SELECT money FROM card WHERE card_ID = %d", card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
