@@ -127,7 +127,7 @@ int show_cards(int ID)
 
 void check_balance(int card_ID)
 {
-    printf("\n卡号：%d，余额：%lf\n", card_ID, get_balance(card_ID));
+    printf("卡号：%d，余额：%lf\n\n", card_ID, get_balance(card_ID));
 }
 
 void deposit_money(counter *ct, int card_ID)

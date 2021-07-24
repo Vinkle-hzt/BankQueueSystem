@@ -20,5 +20,4 @@ void show_trade_conclude(trade_conclude* tc)
     printf("招待客户总数：%d\n", tc->customers_num);
     printf("总流水：%d\n", tc->flowing_water);
     printf("总存款量：%d\n", tc->total_deposits);
-    printf("总贷款量：%d\n", tc->total_loans);
 }
