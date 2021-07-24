@@ -29,7 +29,7 @@ void counter_assign_customer(counter *ct, member *customer)
     ct->customer = customer;
     ct->kpi.customers_num++;
 
-    // log
+    // 分配柜台
     show_date(log_file, get_cur_date());
     printf(" (ID: %d 姓名: %s) 分配至柜台 %d\n",
            customer->ID, customer->name, ct->number);
@@ -37,6 +37,7 @@ void counter_assign_customer(counter *ct, member *customer)
 
 void show_counter_customer()
 {
+    // 判断柜台是否空闲
     for (int i = 0; i < counters->curSize; i++)
     {
         counter *cur_counter = (counter *)al_at(counters, i);

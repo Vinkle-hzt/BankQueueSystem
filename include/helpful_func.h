@@ -37,5 +37,12 @@ uint8_t* getMD5(char* msg);
  */
 void printMD5(FILE* f, uint8_t* md5);
 
+/**
+ * @brief 交换函数
+ * 
+ * @param lhs 变量指针 1
+ * @param rhs 变量指针 2
+ * @param size 交换变量大小
+ */
 void swap(void *lhs, void *rhs, int size);
 

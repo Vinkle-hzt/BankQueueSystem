@@ -38,4 +38,8 @@ array_list *create_counter(int num);
  */
 void counter_assign_customer(counter *ct, member *customer);
 
+/**
+ * @brief 展示所有柜台当前办理业务人员信息
+ * 
+ */
 void show_counter_customer();

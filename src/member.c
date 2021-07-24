@@ -17,6 +17,7 @@ member *member_come(int ID, char *name)
     strncpy(m->name, name, NAME_SIZE);
     m->vip = get_vip_level(&m->ID, name);
 
+    // 错误判断
     if (m->vip == member_error_1)
     {
         free(m);
@@ -32,7 +33,7 @@ member *member_come(int ID, char *name)
     cur_common_num++;
     m->vip_pick_num = cur_pick_num[m->vip];
     m->common_pick_num = cur_common_num;
-    // log message
+    // 日志信息
     show_date(log_file, get_cur_date());
     fprintf(log_file, " (ID: %d 姓名: %s, vip：%d) 取到号码为 %d \n", ID, name, m->vip, m->common_pick_num);
 
@@ -41,7 +42,7 @@ member *member_come(int ID, char *name)
 
 void member_leave(member *m)
 {
-    // log message
+    // 日志信息
     show_date(log_file, get_cur_date());
     fprintf(log_file, " (ID: %d 姓名: %s, vip：%d) 离开银行 \n", m->ID, m->name, m->vip);
 

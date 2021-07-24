@@ -24,7 +24,7 @@ typedef struct
 } date;
 
 /**
- * @brief 获取当前 UTC 时间
+ * @brief 获取当前时间
  * 
  * @return date 日期类
  */
