@@ -176,5 +176,12 @@ void check_all_trade()
         printf("\n登录成功 :) 尊敬的管理员\n");
         printf("此为银行总交易信息：\n");
         show_trade_conclude(&all_trade);
+
+        for (int i = 0; i < counters->curSize; i++)
+        {
+            printf("\n此为柜台 %d 的交易信息：\n", i);
+            counter* cur_counter = (counter*) al_at(counters, i);
+            show_trade_conclude(&cur_counter->kpi);
+        }
     }
 }
