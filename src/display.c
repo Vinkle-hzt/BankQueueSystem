@@ -10,18 +10,18 @@
 
 void show_welcome_message()
 {
-    printf("  *  **       *    *                *  *       \n");
-    printf("   **  **    *   **              *  ****  *    \n");
-    printf("        **   ** **   *          *  ******  *   \n");
-    printf("   **   **   *   ****            *  ****  *    \n");
-    printf("    *** **  *****                   *  *       \n");
-    printf("       *** **                                  \n");
-    printf("        ***                                    \n");
-    printf("        ***            欢迎光临!               \n ");
-    printf("        ***                                    \n");
-    printf("        ***                                    \n");
-    printf("        ***                                    \n");
-    printf("       ****                                    \n");
+    printf("\n|    *  **       *    *                *  *      |\n");
+    printf("|     **  **    *   **              *  ****  *   |\n");
+    printf("|          **   ** **   *          *  ******  *  |\n");
+    printf("|     **   **   *   ****            *  ****  *   |\n");
+    printf("|      *** **  *****                   *  *      |\n");
+    printf("|         *** **                                 |\n");
+    printf("|          ***                                   |\n");
+    printf("|          ***            欢迎光临!              |\n");
+    printf("|          ***                                   |\n");
+    printf("|          ***                                   |\n");
+    printf("|          ***                                   |\n");
+    printf("|         ****                                   |\n");
 
 }
 

@@ -10,7 +10,7 @@
 
 void start_system()
 {
-    // init variable
+    // 初始化变量
 #ifdef DEBUG
     log_file = stdout;
 #else
@@ -20,10 +20,14 @@ void start_system()
     waiting_line = pq_create(member_compare);
     counters = create_counter(4);
     all_trade = trade_conclude_create();
-    // show welcome message
+
+    // 显示欢迎信息
     show_welcome_message();
-    // show main menu
+
+    // 显示主菜单
     int exit_flag = 0;
+
+    // 功能菜单选择
     while (!exit_flag)
     {
         fflush(stdin);
@@ -76,11 +80,14 @@ void do_pick_number()
     scanf("%d %s", &ID, name);
     member *cur_customer = member_come(ID, name);
 
+    //判断 ID 与姓名是否匹配
     if (cur_customer == (member *)&member_error_1)
     {
         printf("ID 与姓名不匹配！！！\n");
         return;
     }
+
+    //判断 ID 是否存在
     if (cur_customer == (member *)&member_error_2)
     {
         printf("没有此 ID， 请检查您的 ID 号码！！！\n");
@@ -90,7 +97,8 @@ void do_pick_number()
     printf("欢迎来到银行, %s, 你的总取号码是 %d。\n", name, cur_customer->common_pick_num);
     printf("您是 vip %d，当前会员取号码位 v%d-%d，你可以最多提前 %d 号进入\n",
            cur_customer->vip, cur_customer->vip, cur_customer->vip_pick_num, cur_customer->vip * 3);
-    // check spare counter
+
+    // 查询空柜台
     int serve_flag = 0;
     if (waiting_num == 0)
     {
@@ -125,7 +133,7 @@ int login_admin()
     printf("此为**内部**功能，请登录管理员账号...\n");
     printf("账号：");
     scanf("%s", id);
-    printf("密码： ");
+    printf("密码：");
     scanf("%s", pwd);
 
     uint8_t *pwdmd5 = getMD5(pwd);
