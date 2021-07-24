@@ -1,8 +1,0 @@
-<map id="call_next" name="call_next">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,79,81"/>
-<area shape="rect" id="node2" href="$priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="127,29,191,56"/>
-<area shape="rect" id="node6" href="$priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="128,80,189,107"/>
-<area shape="rect" id="node3" href="$priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="239,29,323,56"/>
-<area shape="rect" id="node4" href="$helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title=" " alt="" coords="371,29,424,56"/>
-<area shape="rect" id="node5" href="$helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="free pointer p and set p to NULL" alt="" coords="472,29,548,56"/>
-</map>
