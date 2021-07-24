@@ -4,6 +4,14 @@
 #include "common.h"
 #include "counter.h"
 
+enum Trade_type
+{
+    Deposit,
+    Withdraw,
+    Transfer,
+    BeTransferred
+};
+
 typedef struct
 {
     int user_ID;

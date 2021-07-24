@@ -141,6 +141,14 @@ void deposit_money(int card_ID)
     scanf("%lf", &card_deposit);
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_deposit, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
+
+    date cur_date = get_cur_date();
+    sprintf(mysql_buffer, "INSERT INTO trade"
+                          "(card_ID, trade_type, trade_time, pre_money, cur_money, trade_ID)"
+                          "VALUES(%d, %d, \"%d-%d-%d %d:%d\", %lf, %lf, %d)",
+                          card_ID, Deposit, cur_date.year,cur_date.month, cur_date.day, cur_date.hour, cur_date.minute, , ,card_ID);
+    mysql_query(&mysql_connect, mysql_buffer);
+
     check_balance(card_ID);
 }
 
@@ -192,7 +200,7 @@ void transfer_accounts(int card_ID)
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
     int row = mysql_num_rows(mysql_res);
-    if( !row )
+    if (!row)
     {
         printf("没有此账户！！！\n");
         return;
@@ -208,7 +216,6 @@ void transfer_accounts(int card_ID)
 
 void view_transactions(int card_ID)
 {
-
 }
 
 void end_trade(counter *ct)
@@ -245,11 +252,11 @@ int check_card(int card_ID, int user_ID)
     return mysql_num_rows(mysql_res);
 }
 
-void call_next(counter* ct)
+void call_next(counter *ct)
 {
     if (waiting_line->curSize)
     {
-        member* customer = (member*)pq_top(waiting_line);
+        member *customer = (member *)pq_top(waiting_line);
         counter_assign_customer(ct, customer);
         printf("请 v%d-%d 到柜台 %d 办理业务！\n", ct->customer->vip, ct->customer->vip_pick_num, ct->number);
         pq_pop(waiting_line);
