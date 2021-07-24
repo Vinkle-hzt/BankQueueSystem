@@ -135,7 +135,7 @@ void deposit_money(counter *ct, int card_ID)
 {
     double card_deposit = 0;
     double now_money = get_balance(card_ID);
-    printf("请输入您要存款的钱数：\n");
+    printf("请输入您要存款的钱数：");
     scanf("%lf", &card_deposit);
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_deposit, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
@@ -155,7 +155,7 @@ void deposit_money(counter *ct, int card_ID)
 void withdraw_money(counter *ct, int card_ID)
 {
     double card_withdraw = 0;
-    printf("请输入您要取款的钱数：\n");
+    printf("请输入您要取款的钱数：");
     scanf("%lf", &card_withdraw);
 
     double now_money = get_balance(card_ID);

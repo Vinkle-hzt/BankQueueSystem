@@ -31,7 +31,6 @@ void start_system()
     {
         fflush(stdin);
         show_main_menu();
-        printf("选择您要操作的选项：\n");
         char choice = getchar();
         int flag = 1;
         do

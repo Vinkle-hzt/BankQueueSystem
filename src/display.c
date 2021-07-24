@@ -36,6 +36,7 @@ void show_main_menu()
     printf("|              0.结束交易                        |\n");
     printf("|                                                |\n");
     printf(" ------------------------------------------------\n");
+    printf("请选择需要的功能：");
 }
 
 void show_basicbusiness_menu()
@@ -50,6 +51,7 @@ void show_basicbusiness_menu()
     printf("|            0.结束业务办理                      |\n");
     printf("|                                                |\n");
     printf(" ------------------------------------------------\n");
+    printf("请选择进行办理的业务：");
 }
 
 void show_exit_message()

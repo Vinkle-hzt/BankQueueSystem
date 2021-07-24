@@ -15,9 +15,9 @@
 #include <stdint.h>
 
 /**
- * @brief free pointer p and set p to NULL
+ * @brief 释放指针P并将p设为NULL
  * 
- * @param p free pointer
+ * @param p 需要释放的指针
  */
 void safe_free(void* p);
 

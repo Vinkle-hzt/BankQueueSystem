@@ -12,31 +12,56 @@ enum Trade_type
     BeTransferred
 };
 
-typedef struct
-{
-    int user_ID;
-    int card_ID;
-    double money;
-} card;
-
 /**
  * @brief 交易主函数入口
  * 
  */
 void start_trade();
 
+/**
+ * @brief 展示客户卡的信息
+ * 
+ * @param ID 
+ * @return int 卡的数量
+ */
 int show_cards(int ID);
 
-card choose_card(int ID);
-
+/**
+ * @brief 查询卡内余额
+ * 
+ * @param card_ID 银行卡号
+ */
 void check_balance(int card_ID);
 
+/**
+ * @brief 存钱业务
+ * 
+ * @param ct 柜台号码
+ * @param card_ID 银行卡号
+ */
 void deposit_money(counter *ct, int card_ID);
 
+/**
+ * @brief 取钱业务
+ * 
+ * @param ct 柜台指针
+ * @param card_ID 银行卡号
+ */
 void withdraw_money(counter *ct, int card_ID);
 
+/**
+ * @brief 转账业务
+ * 
+ * @param ct 柜台指针
+ * @param card_ID 银行卡号
+ */
 void transfer_accounts(counter *ct, int card_ID);
 
+/**
+ * @brief 查看交易记录
+ * 
+ * @param card_ID 银行卡号
+ */
 void view_transactions(int card_ID);
 
 /**
@@ -69,7 +94,22 @@ int check_card(int card_ID, int user_ID);
  */
 void call_next(counter *ct);
 
+/**
+ * @brief 返回银行卡余额
+ * 
+ * @param card_ID 银行卡号
+ * @return double 卡内余额
+ */
 double get_balance(int card_ID);
 
+/**
+ * @brief 获取交易记录
+ * 
+ * @param card_ID 银行卡号
+ * @param ty 交易类型
+ * @param pre_money 交易前金额
+ * @param cur_money 交易后金额
+ * @param trade_ID 交易对象卡号
+ */
 void upload_trade(int card_ID, enum Trade_type ty,
                double pre_money, double cur_money, int trade_ID);

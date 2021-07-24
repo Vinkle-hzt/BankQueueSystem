@@ -18,7 +18,7 @@ typedef struct
 } priority_queue;
 
 /**
- * @brief 
+ * @brief 创建一个优先队列
  * 
  * @param CompFunc 
  * @return priority_queue* 

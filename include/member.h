@@ -24,11 +24,11 @@ extern int member_error_2;
  */
 typedef struct
 {
-    int ID;               ///< 客户 ID
+    int ID;                    ///< 客户 ID
     int common_pick_num;       ///< 普通号码
-    int vip_pick_num;         ///< 客户取的号码
-    int vip;               ///< vip 等级
-    char name[NAME_SIZE]; ///< 客户姓名
+    int vip_pick_num;          ///< 客户取的号码
+    int vip;                   ///< vip 等级
+    char name[NAME_SIZE];      ///< 客户姓名
 } member;
 
 /**
@@ -47,6 +47,20 @@ member *member_come(int ID, char *name);
  */
 void member_leave(member *m);
 
+/**
+ * @brief 
+ * 
+ * @param lhs 
+ * @param rhs 
+ * @return int 
+ */
 int member_compare(const void* lhs, const void* rhs);
 
+/**
+ * @brief 获取vip等级
+ * 
+ * @param ID 客户 ID
+ * @param name 客户姓名
+ * @return int 客户vip等级
+ */
 int get_vip_level(int* ID, char *name);

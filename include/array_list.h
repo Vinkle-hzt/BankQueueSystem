@@ -24,9 +24,9 @@ typedef struct
 } array_list;
 
 /**
- * @brief create array list
+ * @brief 创建一个线性表
  * 
- * @return array_list* array_list pointer
+ * @return array_list* 线性表指针
  */
 array_list *al_create();
 

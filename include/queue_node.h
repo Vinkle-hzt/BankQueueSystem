@@ -12,7 +12,7 @@
 #include "helpful_func.h"
 
 /**
- * @brief queue node type
+ * @brief 队列节点类
  * 
  */
 typedef struct node
