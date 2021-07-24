@@ -138,7 +138,7 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251">to_bytes</a>(initial_len &gt;&gt; 29, msg + new_len + 4);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Process the message in successive 512-bit chunks:</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//for each 512-bit chunk of message:</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// for each 512-bit chunk of message:</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">for</span> (offset = 0; offset &lt; new_len; offset += (512 / 8))</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
@@ -194,7 +194,7 @@ $(function() {
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// cleanup</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    free(msg);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">//var char digest[16] := h0 append h1 append h2 append h3 //(Output is in little-endian)</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// var char digest[16] := h0 append h1 append h2 append h3 //(Output is in little-endian)</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251">to_bytes</a>(h0, digest);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251">to_bytes</a>(h1, digest + 4);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251">to_bytes</a>(h2, digest + 8);</div>
