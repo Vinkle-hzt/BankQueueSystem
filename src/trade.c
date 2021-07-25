@@ -160,7 +160,6 @@ void deposit_money(counter *ct, int card_ID)
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_deposit, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
 
-    //生成日志
     upload_trade(card_ID, Deposit, now_money, now_money + card_deposit, card_ID);
 
     check_balance(card_ID);
@@ -170,6 +169,12 @@ void deposit_money(counter *ct, int card_ID)
     all_trade.total_deposits += card_deposit;
     ct->kpi.total_deposits += card_deposit;
     ct->kpi.flowing_water += card_deposit;
+
+    //生成 log
+    show_date(log_file, get_cur_date());
+    fprintf(log_file, "(ID：%d, name: %s)于卡（卡号：%d）存款 %lf",
+            ct->customer->ID, ct->customer->name,
+            card_ID, card_deposit);
 }
 
 void withdraw_money(counter *ct, int card_ID)
