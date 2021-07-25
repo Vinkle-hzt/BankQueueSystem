@@ -10,7 +10,6 @@
 #include <stdlib.h>
 #include "array_list.h"
 #include "display.h"
-#include "queue.h"
 #include "member.h"
 #include "helpful_func.h"
 #include "date.h"
