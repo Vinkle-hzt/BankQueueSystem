@@ -1,3 +1,12 @@
+/**
+ * @file trade.c
+ * @brief 实现交易业务
+ * @date 2021-07-25
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "trade.h"
 
 void start_trade()

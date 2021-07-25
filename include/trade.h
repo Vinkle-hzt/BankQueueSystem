@@ -1,15 +1,27 @@
+/**
+ * @file trade.h
+ * @brief 实现交易业务
+ * @date 2021-07-25
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #pragma once
 
 #include "display.h"
 #include "common.h"
 #include "counter.h"
 
+/**
+ * @brief 交易类型
+ * 
+ */
 enum Trade_type
 {
-    Deposit,
-    Withdraw,
-    Transfer,
-    BeTransferred
+    Deposit,      ///<存款
+    Withdraw,     ///<取款
+    Transfer,     ///<转账
+    BeTransferred ///< 被转账
 };
 
 /**
@@ -112,4 +124,4 @@ double get_balance(int card_ID);
  * @param trade_ID 交易对象卡号
  */
 void upload_trade(int card_ID, enum Trade_type ty,
-               double pre_money, double cur_money, int trade_ID);
+                  double pre_money, double cur_money, int trade_ID);

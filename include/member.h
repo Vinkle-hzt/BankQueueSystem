@@ -8,7 +8,7 @@
 
 #pragma once
 
-#define NAME_SIZE 20
+#define NAME_SIZE 20 ///< 客户姓名长度
 
 #include "helpful_func.h"
 #include "common.h"
@@ -48,11 +48,11 @@ member *member_come(int ID, char *name);
 void member_leave(member *m);
 
 /**
- * @brief 
+ * @brief 客户比较函数
  * 
- * @param lhs 
- * @param rhs 
- * @return int 
+ * @param lhs 客户指针1
+ * @param rhs 客户指针2
+ * @return int 比较结果
  */
 int member_compare(const void* lhs, const void* rhs);
 

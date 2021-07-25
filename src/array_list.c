@@ -58,8 +58,3 @@ void al_clean(array_list* al)
 {
     al->curSize = 0;
 }
-
-void** al_get_pointer(array_list *al, int idx)
-{
-    return &al->data[idx];
-}

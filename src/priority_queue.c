@@ -1,3 +1,11 @@
+/**
+ * @file priority_queue.c
+ * @brief 优先队列类
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "priority_queue.h"
 
 priority_queue *pq_create(int (*CompFunc)(const void *, const void *))

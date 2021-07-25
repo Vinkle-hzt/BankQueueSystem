@@ -7,7 +7,7 @@
  */
 
 #pragma once
-#define AL_DEFAULT_SIZE 10
+#define AL_DEFAULT_SIZE 10 ///< 可增长数组初始容量
 
 #include "helpful_func.h"
 #include <string.h>
@@ -76,5 +76,3 @@ void *al_pop(array_list *al, int idx);
  * @param al array list
  */
 void al_clean(array_list *al);
-
-void** al_get_pointer(array_list *al, int idx);
