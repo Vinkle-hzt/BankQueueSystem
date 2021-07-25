@@ -242,7 +242,7 @@ void update_VIP()
         vip_level = 2;
     else if (sum_money >= 100000)
         vip_level = 1;
-
+    
     if (cur_customer->vip < vip_level)
     {
         sprintf(mysql_buffer, "update user set vip = %d where user_ID = %d", vip_level, cur_customer->ID);
