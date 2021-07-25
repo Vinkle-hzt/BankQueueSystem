@@ -1,8 +1,7 @@
 <map id="get_vip_level" name="get_vip_level">
-<area shape="rect" id="node1" title="获取vip等级" alt="" coords="571,31,669,57"/>
-<area shape="rect" id="node2" href="$member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="415,31,523,57"/>
+<area shape="rect" id="node1" title="获取vip等级" alt="" coords="571,5,669,32"/>
+<area shape="rect" id="node2" href="$member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="415,5,523,32"/>
 <area shape="rect" id="node3" href="$bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="249,5,367,32"/>
-<area shape="rect" id="node6" href="$bank__queue__system_8h.html#ad551911c63210975999952b77bec3cf7" title="升级VIP" alt="" coords="263,56,353,83"/>
-<area shape="rect" id="node4" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,31,201,57"/>
-<area shape="rect" id="node5" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node4" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+<area shape="rect" id="node5" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>

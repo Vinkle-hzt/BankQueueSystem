@@ -10,10 +10,10 @@
 <area shape="rect" id="node12" href="$member_8h.html" title="客户类及相关操作" alt="" coords="706,304,785,331"/>
 <area shape="rect" id="node13" href="$common_8h.html" title="存储全局变量" alt="" coords="603,379,685,405"/>
 <area shape="rect" id="node15" href="$trade__conclude_8h.html" title="交易统计类及相关操作" alt="" coords="811,453,931,480"/>
-<area shape="rect" id="node16" href="$priority__queue_8h.html" title=" " alt="" coords="323,453,435,480"/>
+<area shape="rect" id="node16" href="$priority__queue_8h.html" title="优先队列类" alt="" coords="323,453,435,480"/>
 <area shape="rect" id="node17" href="$date_8h.html" title="日期类及相关操作" alt="" coords="934,379,991,405"/>
 <area shape="rect" id="node19" href="$counter_8h.html" title="柜台类及相关操作" alt="" coords="759,229,833,256"/>
-<area shape="rect" id="node20" href="$trade_8h.html" title=" " alt="" coords="776,155,837,181"/>
+<area shape="rect" id="node20" href="$trade_8h.html" title="实现交易业务" alt="" coords="776,155,837,181"/>
 <area shape="rect" id="node21" href="$init__sql_8h.html" title=" " alt="" coords="454,304,527,331"/>
 <area shape="rect" id="node7" title=" " alt="" coords="560,603,624,629"/>
 <area shape="rect" id="node8" title=" " alt="" coords="347,603,411,629"/>

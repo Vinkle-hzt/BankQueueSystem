@@ -1,11 +1,11 @@
 <map id="pq_heapify" name="pq_heapify">
-<area shape="rect" id="node1" title=" " alt="" coords="741,31,825,57"/>
-<area shape="rect" id="node2" href="$priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="629,31,693,57"/>
+<area shape="rect" id="node1" title="维护堆的性质" alt="" coords="741,31,825,57"/>
+<area shape="rect" id="node2" href="$priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title="将元素从优先队列中弹出" alt="" coords="629,31,693,57"/>
 <area shape="rect" id="node3" href="$trade_8h.html#a4e00091a11dbc131165293bc78c633ae" title="叫下一个客户" alt="" coords="508,5,581,32"/>
-<area shape="rect" id="node8" href="$priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title=" " alt="" coords="509,56,580,83"/>
+<area shape="rect" id="node8" href="$priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title="清空优先队列" alt="" coords="509,56,580,83"/>
 <area shape="rect" id="node4" href="$trade_8h.html#a5c3ec099cbeb6068634e97ed18977979" title="结束当前柜台业务" alt="" coords="381,5,460,32"/>
 <area shape="rect" id="node5" href="$trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" id="node6" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,31,201,57"/>
 <area shape="rect" id="node7" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
-<area shape="rect" id="node9" href="$priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title=" " alt="" coords="259,56,324,83"/>
+<area shape="rect" id="node9" href="$priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title="释放优先队列空间" alt="" coords="259,56,324,83"/>
 </map>

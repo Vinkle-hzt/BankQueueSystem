@@ -82,13 +82,13 @@ array_list.h 的引用(Include)关系图:</div>
 <area shape="rect" href="main_8c.html" title="系统主入口函数" alt="" coords="227,468,309,495"/>
 <area shape="rect" href="init__sql_8h.html" title=" " alt="" coords="133,155,251,181"/>
 <area shape="rect" href="member_8h.html" title="客户类及相关操作" alt="" coords="294,155,418,181"/>
-<area shape="rect" href="trade_8h.html" title=" " alt="" coords="488,304,595,331"/>
+<area shape="rect" href="trade_8h.html" title="实现交易业务" alt="" coords="488,304,595,331"/>
 <area shape="rect" href="common_8c.html" title="存储全局变量" alt="" coords="635,155,739,181"/>
 <area shape="rect" href="init__sql_8c.html" title=" " alt="" coords="145,229,239,256"/>
 <area shape="rect" href="counter_8h.html" title="柜台类及相关操作" alt="" coords="315,229,435,256"/>
 <area shape="rect" href="member_8c.html" title="客户类及相关操作" alt="" coords="459,229,560,256"/>
 <area shape="rect" href="counter_8c.html" title="柜台类及相关操作" alt="" coords="366,304,463,331"/>
-<area shape="rect" href="trade_8c.html" title=" " alt="" coords="500,386,583,413"/>
+<area shape="rect" href="trade_8c.html" title="实现交易业务" alt="" coords="500,386,583,413"/>
 </map>
 </div>
 </div>
@@ -103,6 +103,7 @@ array_list.h 的引用(Include)关系图:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 宏定义</h2></td></tr>
 <tr class="memitem:a003c39184374518feb6eecc5a0694b94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#a003c39184374518feb6eecc5a0694b94">AL_DEFAULT_SIZE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memdesc:a003c39184374518feb6eecc5a0694b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">可增长数组初始容量  <a href="array__list_8h.html#a003c39184374518feb6eecc5a0694b94">更多...</a><br /></td></tr>
 <tr class="separator:a003c39184374518feb6eecc5a0694b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -128,8 +129,6 @@ array_list.h 的引用(Include)关系图:</div>
 <tr class="memitem:ac7f247468ec6f149d77967af2281e386"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#ac7f247468ec6f149d77967af2281e386">al_clean</a> (<a class="el" href="structarray__list.html">array_list</a> *al)</td></tr>
 <tr class="memdesc:ac7f247468ec6f149d77967af2281e386"><td class="mdescLeft">&#160;</td><td class="mdescRight">clean the array list  <a href="array__list_8h.html#ac7f247468ec6f149d77967af2281e386">更多...</a><br /></td></tr>
 <tr class="separator:ac7f247468ec6f149d77967af2281e386"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbeba4f1d8f61f18a4c5f49b229d32ad"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__list_8h.html#adbeba4f1d8f61f18a4c5f49b229d32ad">al_get_pointer</a> (<a class="el" href="structarray__list.html">array_list</a> *al, int idx)</td></tr>
-<tr class="separator:adbeba4f1d8f61f18a4c5f49b229d32ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p><a class="el" href="structarray__list.html" title="用数组实现的线性表，该线性表会自动扩充容量">array_list</a> 类及相关操作 </p>
@@ -148,6 +147,8 @@ array_list.h 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>可增长数组初始容量 </p>
 
 <p class="definition">在文件 <a class="el" href="array__list_8h_source.html">array_list.h</a> 第 <a class="el" href="array__list_8h_source.html#l00010">10</a> 行定义.</p>
 
@@ -313,36 +314,6 @@ array_list.h 的引用(Include)关系图:</div>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="adbeba4f1d8f61f18a4c5f49b229d32ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbeba4f1d8f61f18a4c5f49b229d32ad">&#9670;&nbsp;</a></span>al_get_pointer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void** al_get_pointer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structarray__list.html">array_list</a> *&#160;</td>
-          <td class="paramname"><em>al</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="array__list_8c_source.html">array_list.c</a> 第 <a class="el" href="array__list_8c_source.html#l00062">62</a> 行定义.</p>
 
 </div>
 </div>

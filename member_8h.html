@@ -75,7 +75,7 @@ member.h 的引用(Include)关系图:</div>
 <area shape="rect" title=" " alt="" coords="403,155,470,181"/>
 <area shape="rect" href="trade__conclude_8h.html" title="交易统计类及相关操作" alt="" coords="401,229,521,256"/>
 <area shape="rect" href="array__list_8h.html" title="array_list 类及相关操作" alt="" coords="295,155,379,181"/>
-<area shape="rect" href="priority__queue_8h.html" title=" " alt="" coords="107,155,219,181"/>
+<area shape="rect" href="priority__queue_8h.html" title="优先队列类" alt="" coords="107,155,219,181"/>
 <area shape="rect" title=" " alt="" coords="596,155,653,181"/>
 </map>
 </div>
@@ -90,9 +90,9 @@ member.h 的引用(Include)关系图:</div>
 <area shape="rect" href="member_8c.html" title="客户类及相关操作" alt="" coords="343,80,444,107"/>
 <area shape="rect" href="bank__queue__system_8c.html" title="银行排队系统相关函数" alt="" coords="5,319,179,345"/>
 <area shape="rect" href="main_8c.html" title="系统主入口函数" alt="" coords="203,319,285,345"/>
-<area shape="rect" href="trade_8h.html" title=" " alt="" coords="228,155,335,181"/>
+<area shape="rect" href="trade_8h.html" title="实现交易业务" alt="" coords="228,155,335,181"/>
 <area shape="rect" href="counter_8c.html" title="柜台类及相关操作" alt="" coords="359,155,457,181"/>
-<area shape="rect" href="trade_8c.html" title=" " alt="" coords="261,237,344,263"/>
+<area shape="rect" href="trade_8c.html" title="实现交易业务" alt="" coords="261,237,344,263"/>
 </map>
 </div>
 </div>
@@ -107,6 +107,7 @@ member.h 的引用(Include)关系图:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 宏定义</h2></td></tr>
 <tr class="memitem:a834e9a379307f869a10f4da078be5786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="member_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:a834e9a379307f869a10f4da078be5786"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户姓名长度  <a href="member_8h.html#a834e9a379307f869a10f4da078be5786">更多...</a><br /></td></tr>
 <tr class="separator:a834e9a379307f869a10f4da078be5786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -118,6 +119,7 @@ member.h 的引用(Include)关系图:</div>
 <tr class="memdesc:a94c0f7a9bf09ae10f73a3d97465a804b"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户离开银行  <a href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b">更多...</a><br /></td></tr>
 <tr class="separator:a94c0f7a9bf09ae10f73a3d97465a804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54fa49af4b5640c8ca1a4577bc6aed9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="member_8h.html#a54fa49af4b5640c8ca1a4577bc6aed9e">member_compare</a> (const void *lhs, const void *rhs)</td></tr>
+<tr class="memdesc:a54fa49af4b5640c8ca1a4577bc6aed9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户比较函数  <a href="member_8h.html#a54fa49af4b5640c8ca1a4577bc6aed9e">更多...</a><br /></td></tr>
 <tr class="separator:a54fa49af4b5640c8ca1a4577bc6aed9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa4cea7100830e03c042944d884de59d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="member_8h.html#afa4cea7100830e03c042944d884de59d">get_vip_level</a> (int *ID, char *name)</td></tr>
 <tr class="memdesc:afa4cea7100830e03c042944d884de59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取vip等级  <a href="member_8h.html#afa4cea7100830e03c042944d884de59d">更多...</a><br /></td></tr>
@@ -147,6 +149,8 @@ member.h 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>客户姓名长度 </p>
 
 <p class="definition">在文件 <a class="el" href="member_8h_source.html">member.h</a> 第 <a class="el" href="member_8h_source.html#l00011">11</a> 行定义.</p>
 
@@ -195,12 +199,11 @@ member.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="member_8h_afa4cea7100830e03c042944d884de59d_icgraph.png" border="0" usemap="#amember_8h_afa4cea7100830e03c042944d884de59d_icgraph" alt=""/></div>
 <map name="amember_8h_afa4cea7100830e03c042944d884de59d_icgraph" id="amember_8h_afa4cea7100830e03c042944d884de59d_icgraph">
-<area shape="rect" title="获取vip等级" alt="" coords="571,31,669,57"/>
-<area shape="rect" href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="415,31,523,57"/>
+<area shape="rect" title="获取vip等级" alt="" coords="571,5,669,32"/>
+<area shape="rect" href="member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="415,5,523,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="249,5,367,32"/>
-<area shape="rect" href="bank__queue__system_8h.html#ad551911c63210975999952b77bec3cf7" title="升级VIP" alt="" coords="263,56,353,83"/>
-<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,31,201,57"/>
-<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
 
@@ -259,11 +262,10 @@ member.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="member_8h_a46c6ed15a09806c3fe1c3a39f97798c2_icgraph.png" border="0" usemap="#amember_8h_a46c6ed15a09806c3fe1c3a39f97798c2_icgraph" alt=""/></div>
 <map name="amember_8h_a46c6ed15a09806c3fe1c3a39f97798c2_icgraph" id="amember_8h_a46c6ed15a09806c3fe1c3a39f97798c2_icgraph">
-<area shape="rect" title="客户进入银行取号" alt="" coords="415,31,523,57"/>
+<area shape="rect" title="客户进入银行取号" alt="" coords="415,5,523,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="249,5,367,32"/>
-<area shape="rect" href="bank__queue__system_8h.html#ad551911c63210975999952b77bec3cf7" title="升级VIP" alt="" coords="263,56,353,83"/>
-<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,31,201,57"/>
-<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
 
@@ -294,14 +296,16 @@ member.h 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>客户比较函数 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lhs</td><td></td></tr>
-    <tr><td class="paramname">rhs</td><td></td></tr>
+    <tr><td class="paramname">lhs</td><td>客户指针1 </td></tr>
+    <tr><td class="paramname">rhs</td><td>客户指针2 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>int 比较结果 </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="member_8c_source.html">member.c</a> 第 <a class="el" href="member_8c_source.html#l00052">52</a> 行定义.</p>
 <div class="dynheader">
@@ -309,7 +313,7 @@ member.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="member_8h_a54fa49af4b5640c8ca1a4577bc6aed9e_icgraph.png" border="0" usemap="#amember_8h_a54fa49af4b5640c8ca1a4577bc6aed9e_icgraph" alt=""/></div>
 <map name="amember_8h_a54fa49af4b5640c8ca1a4577bc6aed9e_icgraph" id="amember_8h_a54fa49af4b5640c8ca1a4577bc6aed9e_icgraph">
-<area shape="rect" title=" " alt="" coords="249,5,376,32"/>
+<area shape="rect" title="客户比较函数" alt="" coords="249,5,376,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>

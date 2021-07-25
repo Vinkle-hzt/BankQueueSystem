@@ -49,14 +49,17 @@ $(function() {
 <div class="title">trade.c 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>实现交易业务  
+<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="trade_8h_source.html">trade.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 trade.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="trade_8c__incl.png" border="0" usemap="#asrc_2trade_8c" alt=""/></div>
 <map name="asrc_2trade_8c" id="asrc_2trade_8c">
-<area shape="rect" title=" " alt="" coords="205,5,288,32"/>
-<area shape="rect" href="trade_8h.html" title=" " alt="" coords="216,80,277,107"/>
+<area shape="rect" title="实现交易业务" alt="" coords="205,5,288,32"/>
+<area shape="rect" href="trade_8h.html" title="实现交易业务" alt="" coords="216,80,277,107"/>
 <area shape="rect" href="display_8h.html" title="功能面板的展示" alt="" coords="5,229,77,256"/>
 <area shape="rect" href="common_8h.html" title="存储全局变量" alt="" coords="333,304,416,331"/>
 <area shape="rect" href="counter_8h.html" title="柜台类及相关操作" alt="" coords="209,155,284,181"/>
@@ -64,7 +67,7 @@ trade.c 的引用(Include)关系图:</div>
 <area shape="rect" title=" " alt="" coords="443,379,509,405"/>
 <area shape="rect" href="trade__conclude_8h.html" title="交易统计类及相关操作" alt="" coords="160,453,280,480"/>
 <area shape="rect" href="array__list_8h.html" title="array_list 类及相关操作" alt="" coords="334,379,418,405"/>
-<area shape="rect" href="priority__queue_8h.html" title=" " alt="" coords="533,379,645,405"/>
+<area shape="rect" href="priority__queue_8h.html" title="优先队列类" alt="" coords="533,379,645,405"/>
 <area shape="rect" title=" " alt="" coords="336,528,400,555"/>
 <area shape="rect" href="helpful__func_8h.html" title="存储一些实用函数" alt="" coords="457,453,559,480"/>
 <area shape="rect" title=" " alt="" coords="565,528,627,555"/>
@@ -119,7 +122,13 @@ trade.c 的引用(Include)关系图:</div>
 <tr class="memdesc:a8cb09a78984d4b3d5236715c82e3a328"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取交易记录  <a href="trade_8c.html#a8cb09a78984d4b3d5236715c82e3a328">更多...</a><br /></td></tr>
 <tr class="separator:a8cb09a78984d4b3d5236715c82e3a328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">函数说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>实现交易业务 </p>
+<dl class="section date"><dt>日期</dt><dd>2021-07-25</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2021 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
 <a id="a4e00091a11dbc131165293bc78c633ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e00091a11dbc131165293bc78c633ae">&#9670;&nbsp;</a></span>call_next()</h2>
 
@@ -144,7 +153,7 @@ trade.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00293">293</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00302">302</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -152,11 +161,11 @@ trade.c 的引用(Include)关系图:</div>
 <map name="atrade_8c_a4e00091a11dbc131165293bc78c633ae_cgraph" id="atrade_8c_a4e00091a11dbc131165293bc78c633ae_cgraph">
 <area shape="rect" title="叫下一个客户" alt="" coords="5,119,79,145"/>
 <area shape="rect" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="127,56,297,83"/>
-<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="180,119,244,145"/>
-<area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="181,169,243,196"/>
+<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title="将元素从优先队列中弹出" alt="" coords="180,119,244,145"/>
+<area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title="获取在优先队列头元素的指针" alt="" coords="181,169,243,196"/>
 <area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="345,5,443,32"/>
 <area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="351,56,437,83"/>
-<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="352,131,436,157"/>
+<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title="维护堆的性质" alt="" coords="352,131,436,157"/>
 <area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="491,131,544,157"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="592,131,668,157"/>
 </map>
@@ -200,7 +209,7 @@ trade.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00129">129</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00138">138</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -263,7 +272,7 @@ trade.c 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>int 0 不匹配 1 匹配 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00282">282</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00291">291</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -302,7 +311,7 @@ trade.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00267">267</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00276">276</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -352,7 +361,7 @@ trade.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00134">134</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00143">143</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -403,7 +412,7 @@ trade.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00259">259</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00268">268</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -413,11 +422,11 @@ trade.c 的引用(Include)关系图:</div>
 <area shape="rect" href="trade_8c.html#a4e00091a11dbc131165293bc78c633ae" title="叫下一个客户" alt="" coords="132,132,205,159"/>
 <area shape="rect" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="285,56,392,83"/>
 <area shape="rect" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="253,107,424,133"/>
-<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="307,208,371,235"/>
-<area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="308,157,369,184"/>
+<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title="将元素从优先队列中弹出" alt="" coords="307,208,371,235"/>
+<area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title="获取在优先队列头元素的指针" alt="" coords="308,157,369,184"/>
 <area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="472,107,569,133"/>
 <area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="478,56,563,83"/>
-<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="479,208,563,235"/>
+<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title="维护堆的性质" alt="" coords="479,208,563,235"/>
 <area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="617,208,671,235"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="719,208,795,235"/>
 <area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="483,5,559,32"/>
@@ -462,7 +471,7 @@ trade.c 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>double 卡内余额 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00304">304</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00313">313</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -506,7 +515,7 @@ trade.c 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>int 卡的数量 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00111">111</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00120">120</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -538,7 +547,7 @@ trade.c 的引用(Include)关系图:</div>
 
 <p>交易主函数入口 </p>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00003">3</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00012">12</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -563,10 +572,10 @@ trade.c 的引用(Include)关系图:</div>
 <area shape="rect" href="trade_8c.html#a4e00091a11dbc131165293bc78c633ae" title="叫下一个客户" alt="" coords="386,379,459,406"/>
 <area shape="rect" href="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="557,278,664,305"/>
 <area shape="rect" href="counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="525,379,696,406"/>
-<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="579,430,643,457"/>
-<area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="580,329,641,355"/>
+<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title="将元素从优先队列中弹出" alt="" coords="579,430,643,457"/>
+<area shape="rect" href="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title="获取在优先队列头元素的指针" alt="" coords="580,329,641,355"/>
 <area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="750,342,835,369"/>
-<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="751,430,835,457"/>
+<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title="维护堆的性质" alt="" coords="751,430,835,457"/>
 <area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="889,430,943,457"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="991,430,1067,457"/>
 <area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="755,234,831,261"/>
@@ -620,7 +629,7 @@ trade.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00182">182</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00191">191</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -703,7 +712,7 @@ trade.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00313">313</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00322">322</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -754,7 +763,7 @@ trade.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00226">226</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00235">235</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -804,7 +813,7 @@ trade.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00155">155</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="trade_8c_source.html">trade.c</a> 第 <a class="el" href="trade_8c_source.html#l00164">164</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">

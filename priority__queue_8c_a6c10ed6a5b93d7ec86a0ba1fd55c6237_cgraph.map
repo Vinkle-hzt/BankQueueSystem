@@ -1,5 +1,5 @@
 <map id="pq_heapify" name="pq_heapify">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,89,56"/>
+<area shape="rect" id="node1" title="维护堆的性质" alt="" coords="5,29,89,56"/>
 <area shape="rect" id="node2" href="$helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="137,29,191,56"/>
 <area shape="rect" id="node3" href="$helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="239,29,315,56"/>
 </map>

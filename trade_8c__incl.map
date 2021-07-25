@@ -1,6 +1,6 @@
 <map id="src/trade.c" name="src/trade.c">
-<area shape="rect" id="node1" title=" " alt="" coords="205,5,288,32"/>
-<area shape="rect" id="node2" href="$trade_8h.html" title=" " alt="" coords="216,80,277,107"/>
+<area shape="rect" id="node1" title="实现交易业务" alt="" coords="205,5,288,32"/>
+<area shape="rect" id="node2" href="$trade_8h.html" title="实现交易业务" alt="" coords="216,80,277,107"/>
 <area shape="rect" id="node3" href="$display_8h.html" title="功能面板的展示" alt="" coords="5,229,77,256"/>
 <area shape="rect" id="node5" href="$common_8h.html" title="存储全局变量" alt="" coords="333,304,416,331"/>
 <area shape="rect" id="node14" href="$counter_8h.html" title="柜台类及相关操作" alt="" coords="209,155,284,181"/>
@@ -8,7 +8,7 @@
 <area shape="rect" id="node6" title=" " alt="" coords="443,379,509,405"/>
 <area shape="rect" id="node7" href="$trade__conclude_8h.html" title="交易统计类及相关操作" alt="" coords="160,453,280,480"/>
 <area shape="rect" id="node9" href="$array__list_8h.html" title="array_list 类及相关操作" alt="" coords="334,379,418,405"/>
-<area shape="rect" id="node13" href="$priority__queue_8h.html" title=" " alt="" coords="533,379,645,405"/>
+<area shape="rect" id="node13" href="$priority__queue_8h.html" title="优先队列类" alt="" coords="533,379,645,405"/>
 <area shape="rect" id="node8" title=" " alt="" coords="336,528,400,555"/>
 <area shape="rect" id="node10" href="$helpful__func_8h.html" title="存储一些实用函数" alt="" coords="457,453,559,480"/>
 <area shape="rect" id="node11" title=" " alt="" coords="565,528,627,555"/>

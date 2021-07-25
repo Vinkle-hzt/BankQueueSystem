@@ -49,14 +49,17 @@ $(function() {
 <div class="title">priority_queue.c 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>优先队列类  
+<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 priority_queue.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c__incl.png" border="0" usemap="#asrc_2priority__queue_8c" alt=""/></div>
 <map name="asrc_2priority__queue_8c" id="asrc_2priority__queue_8c">
-<area shape="rect" title=" " alt="" coords="45,5,180,32"/>
-<area shape="rect" href="priority__queue_8h.html" title=" " alt="" coords="57,80,169,107"/>
+<area shape="rect" title="优先队列类" alt="" coords="45,5,180,32"/>
+<area shape="rect" href="priority__queue_8h.html" title="优先队列类" alt="" coords="57,80,169,107"/>
 <area shape="rect" title=" " alt="" coords="5,229,68,256"/>
 <area shape="rect" title=" " alt="" coords="93,229,157,256"/>
 <area shape="rect" href="helpful__func_8h.html" title="存储一些实用函数" alt="" coords="151,155,253,181"/>
@@ -73,21 +76,33 @@ priority_queue.c 的引用(Include)关系图:</div>
 <tr class="memdesc:a5bbaa49901528ed8adc6f6d4e62db1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个优先队列  <a href="priority__queue_8c.html#a5bbaa49901528ed8adc6f6d4e62db1b8">更多...</a><br /></td></tr>
 <tr class="separator:a5bbaa49901528ed8adc6f6d4e62db1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f8080006ca1d286b6e32ee6e154ad87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority__queue_8c.html#a6f8080006ca1d286b6e32ee6e154ad87">pq_resize</a> (<a class="el" href="structpriority__queue.html">priority_queue</a> *pq)</td></tr>
+<tr class="memdesc:a6f8080006ca1d286b6e32ee6e154ad87"><td class="mdescLeft">&#160;</td><td class="mdescRight">当数组容量不足时扩充  <a href="priority__queue_8c.html#a6f8080006ca1d286b6e32ee6e154ad87">更多...</a><br /></td></tr>
 <tr class="separator:a6f8080006ca1d286b6e32ee6e154ad87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c10ed6a5b93d7ec86a0ba1fd55c6237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237">pq_heapify</a> (<a class="el" href="structpriority__queue.html">priority_queue</a> *pq, int i)</td></tr>
+<tr class="memdesc:a6c10ed6a5b93d7ec86a0ba1fd55c6237"><td class="mdescLeft">&#160;</td><td class="mdescRight">维护堆的性质  <a href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237">更多...</a><br /></td></tr>
 <tr class="separator:a6c10ed6a5b93d7ec86a0ba1fd55c6237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0374f7ed8ea317892fd30d02a5c24b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority__queue_8c.html#a8b0374f7ed8ea317892fd30d02a5c24b">pq_push</a> (<a class="el" href="structpriority__queue.html">priority_queue</a> *pq, void *elem)</td></tr>
+<tr class="memdesc:a8b0374f7ed8ea317892fd30d02a5c24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">将元素插入优先队列  <a href="priority__queue_8c.html#a8b0374f7ed8ea317892fd30d02a5c24b">更多...</a><br /></td></tr>
 <tr class="separator:a8b0374f7ed8ea317892fd30d02a5c24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a4ef00219bedfa0f34194364d689e9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority__queue_8c.html#a7a4ef00219bedfa0f34194364d689e9a">pq_pop</a> (<a class="el" href="structpriority__queue.html">priority_queue</a> *pq)</td></tr>
+<tr class="memdesc:a7a4ef00219bedfa0f34194364d689e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将元素从优先队列中弹出  <a href="priority__queue_8c.html#a7a4ef00219bedfa0f34194364d689e9a">更多...</a><br /></td></tr>
 <tr class="separator:a7a4ef00219bedfa0f34194364d689e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a8bec5238acb666d88f7c767ebd5ec"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority__queue_8c.html#a30a8bec5238acb666d88f7c767ebd5ec">pq_top</a> (<a class="el" href="structpriority__queue.html">priority_queue</a> *pq)</td></tr>
+<tr class="memdesc:a30a8bec5238acb666d88f7c767ebd5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取在优先队列头元素的指针  <a href="priority__queue_8c.html#a30a8bec5238acb666d88f7c767ebd5ec">更多...</a><br /></td></tr>
 <tr class="separator:a30a8bec5238acb666d88f7c767ebd5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38999bff5fd9c903022d9a46a451f043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority__queue_8c.html#a38999bff5fd9c903022d9a46a451f043">pq_free</a> (<a class="el" href="structpriority__queue.html">priority_queue</a> *pq)</td></tr>
+<tr class="memdesc:a38999bff5fd9c903022d9a46a451f043"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放优先队列空间  <a href="priority__queue_8c.html#a38999bff5fd9c903022d9a46a451f043">更多...</a><br /></td></tr>
 <tr class="separator:a38999bff5fd9c903022d9a46a451f043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3813d3c5901d1930a5438bbdd5c9955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority__queue_8c.html#ad3813d3c5901d1930a5438bbdd5c9955">pq_clear</a> (<a class="el" href="structpriority__queue.html">priority_queue</a> *pq)</td></tr>
+<tr class="memdesc:ad3813d3c5901d1930a5438bbdd5c9955"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空优先队列  <a href="priority__queue_8c.html#ad3813d3c5901d1930a5438bbdd5c9955">更多...</a><br /></td></tr>
 <tr class="separator:ad3813d3c5901d1930a5438bbdd5c9955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">函数说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>优先队列类 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2021 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
 <a id="ad3813d3c5901d1930a5438bbdd5c9955"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3813d3c5901d1930a5438bbdd5c9955">&#9670;&nbsp;</a></span>pq_clear()</h2>
 
@@ -103,24 +118,26 @@ priority_queue.c 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>清空优先队列 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pq</td><td></td></tr>
+    <tr><td class="paramname">pq</td><td>优先队列指针 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00078">78</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00086">86</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_ad3813d3c5901d1930a5438bbdd5c9955_cgraph.png" border="0" usemap="#apriority__queue_8c_ad3813d3c5901d1930a5438bbdd5c9955_cgraph" alt=""/></div>
 <map name="apriority__queue_8c_ad3813d3c5901d1930a5438bbdd5c9955_cgraph" id="apriority__queue_8c_ad3813d3c5901d1930a5438bbdd5c9955_cgraph">
-<area shape="rect" title=" " alt="" coords="5,80,76,107"/>
-<area shape="rect" href="priority__queue_8c.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="130,29,194,56"/>
-<area shape="rect" href="priority__queue_8c.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="131,80,193,107"/>
+<area shape="rect" title="清空优先队列" alt="" coords="5,80,76,107"/>
+<area shape="rect" href="priority__queue_8c.html#a7a4ef00219bedfa0f34194364d689e9a" title="将元素从优先队列中弹出" alt="" coords="130,29,194,56"/>
+<area shape="rect" href="priority__queue_8c.html#a30a8bec5238acb666d88f7c767ebd5ec" title="获取在优先队列头元素的指针" alt="" coords="131,80,193,107"/>
 <area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="124,131,200,157"/>
-<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="248,29,332,56"/>
+<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title="维护堆的性质" alt="" coords="248,29,332,56"/>
 <area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="380,29,433,56"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="481,29,557,56"/>
 </map>
@@ -130,8 +147,8 @@ priority_queue.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_ad3813d3c5901d1930a5438bbdd5c9955_icgraph.png" border="0" usemap="#apriority__queue_8c_ad3813d3c5901d1930a5438bbdd5c9955_icgraph" alt=""/></div>
 <map name="apriority__queue_8c_ad3813d3c5901d1930a5438bbdd5c9955_icgraph" id="apriority__queue_8c_ad3813d3c5901d1930a5438bbdd5c9955_icgraph">
-<area shape="rect" title=" " alt="" coords="363,5,433,32"/>
-<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title=" " alt="" coords="249,5,315,32"/>
+<area shape="rect" title="清空优先队列" alt="" coords="363,5,433,32"/>
+<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title="释放优先队列空间" alt="" coords="249,5,315,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -158,13 +175,13 @@ priority_queue.c 的引用(Include)关系图:</div>
 <p>创建一个优先队列 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">CompFunc</td><td></td></tr>
+    <tr><td class="paramname">CompFunc</td><td>比较函数 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>priority_queue* </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>priority_queue* 优先队列指针 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00003">3</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00011">11</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -193,25 +210,27 @@ priority_queue.c 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>释放优先队列空间 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pq</td><td></td></tr>
+    <tr><td class="paramname">pq</td><td>优先队列指针 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00071">71</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00079">79</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a38999bff5fd9c903022d9a46a451f043_cgraph.png" border="0" usemap="#apriority__queue_8c_a38999bff5fd9c903022d9a46a451f043_cgraph" alt=""/></div>
 <map name="apriority__queue_8c_a38999bff5fd9c903022d9a46a451f043_cgraph" id="apriority__queue_8c_a38999bff5fd9c903022d9a46a451f043_cgraph">
-<area shape="rect" title=" " alt="" coords="5,105,71,132"/>
-<area shape="rect" href="priority__queue_8c.html#ad3813d3c5901d1930a5438bbdd5c9955" title=" " alt="" coords="119,80,189,107"/>
+<area shape="rect" title="释放优先队列空间" alt="" coords="5,105,71,132"/>
+<area shape="rect" href="priority__queue_8c.html#ad3813d3c5901d1930a5438bbdd5c9955" title="清空优先队列" alt="" coords="119,80,189,107"/>
 <area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="237,131,313,157"/>
-<area shape="rect" href="priority__queue_8c.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="243,29,307,56"/>
-<area shape="rect" href="priority__queue_8c.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="245,80,306,107"/>
-<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="361,29,445,56"/>
+<area shape="rect" href="priority__queue_8c.html#a7a4ef00219bedfa0f34194364d689e9a" title="将元素从优先队列中弹出" alt="" coords="243,29,307,56"/>
+<area shape="rect" href="priority__queue_8c.html#a30a8bec5238acb666d88f7c767ebd5ec" title="获取在优先队列头元素的指针" alt="" coords="245,80,306,107"/>
+<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title="维护堆的性质" alt="" coords="361,29,445,56"/>
 <area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="493,29,547,56"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="595,29,671,56"/>
 </map>
@@ -221,7 +240,7 @@ priority_queue.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a38999bff5fd9c903022d9a46a451f043_icgraph.png" border="0" usemap="#apriority__queue_8c_a38999bff5fd9c903022d9a46a451f043_icgraph" alt=""/></div>
 <map name="apriority__queue_8c_a38999bff5fd9c903022d9a46a451f043_icgraph" id="apriority__queue_8c_a38999bff5fd9c903022d9a46a451f043_icgraph">
-<area shape="rect" title=" " alt="" coords="249,5,315,32"/>
+<area shape="rect" title="释放优先队列空间" alt="" coords="249,5,315,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -254,21 +273,23 @@ priority_queue.c 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>维护堆的性质 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pq</td><td></td></tr>
-    <tr><td class="paramname">i</td><td></td></tr>
+    <tr><td class="paramname">pq</td><td>优先队列指针 </td></tr>
+    <tr><td class="paramname">i</td><td>元素位置 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00022">22</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00030">30</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a6c10ed6a5b93d7ec86a0ba1fd55c6237_cgraph.png" border="0" usemap="#apriority__queue_8c_a6c10ed6a5b93d7ec86a0ba1fd55c6237_cgraph" alt=""/></div>
 <map name="apriority__queue_8c_a6c10ed6a5b93d7ec86a0ba1fd55c6237_cgraph" id="apriority__queue_8c_a6c10ed6a5b93d7ec86a0ba1fd55c6237_cgraph">
-<area shape="rect" title=" " alt="" coords="5,29,89,56"/>
+<area shape="rect" title="维护堆的性质" alt="" coords="5,29,89,56"/>
 <area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="137,29,191,56"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="239,29,315,56"/>
 </map>
@@ -278,16 +299,16 @@ priority_queue.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a6c10ed6a5b93d7ec86a0ba1fd55c6237_icgraph.png" border="0" usemap="#apriority__queue_8c_a6c10ed6a5b93d7ec86a0ba1fd55c6237_icgraph" alt=""/></div>
 <map name="apriority__queue_8c_a6c10ed6a5b93d7ec86a0ba1fd55c6237_icgraph" id="apriority__queue_8c_a6c10ed6a5b93d7ec86a0ba1fd55c6237_icgraph">
-<area shape="rect" title=" " alt="" coords="873,55,957,81"/>
-<area shape="rect" href="priority__queue_8h.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="741,29,825,56"/>
-<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="629,55,693,81"/>
+<area shape="rect" title="维护堆的性质" alt="" coords="873,55,957,81"/>
+<area shape="rect" href="priority__queue_8h.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title="维护堆的性质" alt="" coords="741,29,825,56"/>
+<area shape="rect" href="priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title="将元素从优先队列中弹出" alt="" coords="629,55,693,81"/>
 <area shape="rect" href="trade_8h.html#a4e00091a11dbc131165293bc78c633ae" title="叫下一个客户" alt="" coords="508,29,581,56"/>
-<area shape="rect" href="priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title=" " alt="" coords="509,80,580,107"/>
+<area shape="rect" href="priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title="清空优先队列" alt="" coords="509,80,580,107"/>
 <area shape="rect" href="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979" title="结束当前柜台业务" alt="" coords="381,29,460,56"/>
 <area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,29,333,56"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,55,201,81"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,56,81"/>
-<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title=" " alt="" coords="259,80,324,107"/>
+<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title="释放优先队列空间" alt="" coords="259,80,324,107"/>
 </map>
 </div>
 
@@ -308,21 +329,23 @@ priority_queue.c 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>将元素从优先队列中弹出 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pq</td><td></td></tr>
+    <tr><td class="paramname">pq</td><td>优先队列指针 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00059">59</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00067">67</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a7a4ef00219bedfa0f34194364d689e9a_cgraph.png" border="0" usemap="#apriority__queue_8c_a7a4ef00219bedfa0f34194364d689e9a_cgraph" alt=""/></div>
 <map name="apriority__queue_8c_a7a4ef00219bedfa0f34194364d689e9a_cgraph" id="apriority__queue_8c_a7a4ef00219bedfa0f34194364d689e9a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,29,69,56"/>
-<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="117,29,201,56"/>
+<area shape="rect" title="将元素从优先队列中弹出" alt="" coords="5,29,69,56"/>
+<area shape="rect" href="priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title="维护堆的性质" alt="" coords="117,29,201,56"/>
 <area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="249,29,303,56"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="351,29,427,56"/>
 </map>
@@ -332,14 +355,14 @@ priority_queue.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a7a4ef00219bedfa0f34194364d689e9a_icgraph.png" border="0" usemap="#apriority__queue_8c_a7a4ef00219bedfa0f34194364d689e9a_icgraph" alt=""/></div>
 <map name="apriority__queue_8c_a7a4ef00219bedfa0f34194364d689e9a_icgraph" id="apriority__queue_8c_a7a4ef00219bedfa0f34194364d689e9a_icgraph">
-<area shape="rect" title=" " alt="" coords="629,31,693,57"/>
+<area shape="rect" title="将元素从优先队列中弹出" alt="" coords="629,31,693,57"/>
 <area shape="rect" href="trade_8h.html#a4e00091a11dbc131165293bc78c633ae" title="叫下一个客户" alt="" coords="508,5,581,32"/>
-<area shape="rect" href="priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title=" " alt="" coords="509,56,580,83"/>
+<area shape="rect" href="priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title="清空优先队列" alt="" coords="509,56,580,83"/>
 <area shape="rect" href="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979" title="结束当前柜台业务" alt="" coords="381,5,460,32"/>
 <area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,31,201,57"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
-<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title=" " alt="" coords="259,56,324,83"/>
+<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title="释放优先队列空间" alt="" coords="259,56,324,83"/>
 </map>
 </div>
 
@@ -370,22 +393,24 @@ priority_queue.c 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>将元素插入优先队列 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pq</td><td></td></tr>
-    <tr><td class="paramname">elem</td><td></td></tr>
+    <tr><td class="paramname">pq</td><td>优先队列指针 </td></tr>
+    <tr><td class="paramname">elem</td><td>元素指针 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00038">38</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00046">46</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a8b0374f7ed8ea317892fd30d02a5c24b_cgraph.png" border="0" usemap="#apriority__queue_8c_a8b0374f7ed8ea317892fd30d02a5c24b_cgraph" alt=""/></div>
 <map name="apriority__queue_8c_a8b0374f7ed8ea317892fd30d02a5c24b_cgraph" id="apriority__queue_8c_a8b0374f7ed8ea317892fd30d02a5c24b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,76,57"/>
-<area shape="rect" href="priority__queue_8c.html#a6f8080006ca1d286b6e32ee6e154ad87" title=" " alt="" coords="124,5,201,32"/>
+<area shape="rect" title="将元素插入优先队列" alt="" coords="5,31,76,57"/>
+<area shape="rect" href="priority__queue_8c.html#a6f8080006ca1d286b6e32ee6e154ad87" title="当数组容量不足时扩充" alt="" coords="124,5,201,32"/>
 <area shape="rect" href="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="136,56,189,83"/>
 <area shape="rect" href="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="249,56,325,83"/>
 </map>
@@ -395,7 +420,7 @@ priority_queue.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a8b0374f7ed8ea317892fd30d02a5c24b_icgraph.png" border="0" usemap="#apriority__queue_8c_a8b0374f7ed8ea317892fd30d02a5c24b_icgraph" alt=""/></div>
 <map name="apriority__queue_8c_a8b0374f7ed8ea317892fd30d02a5c24b_icgraph" id="apriority__queue_8c_a8b0374f7ed8ea317892fd30d02a5c24b_icgraph">
-<area shape="rect" title=" " alt="" coords="415,5,485,32"/>
+<area shape="rect" title="将元素插入优先队列" alt="" coords="415,5,485,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="249,5,367,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
@@ -419,21 +444,23 @@ priority_queue.c 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>当数组容量不足时扩充 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pq</td><td></td></tr>
+    <tr><td class="paramname">pq</td><td>优先队列指针 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00013">13</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00021">21</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a6f8080006ca1d286b6e32ee6e154ad87_icgraph.png" border="0" usemap="#apriority__queue_8c_a6f8080006ca1d286b6e32ee6e154ad87_icgraph" alt=""/></div>
 <map name="apriority__queue_8c_a6f8080006ca1d286b6e32ee6e154ad87_icgraph" id="apriority__queue_8c_a6f8080006ca1d286b6e32ee6e154ad87_icgraph">
-<area shape="rect" title=" " alt="" coords="533,5,611,32"/>
-<area shape="rect" href="priority__queue_8h.html#a8b0374f7ed8ea317892fd30d02a5c24b" title=" " alt="" coords="415,5,485,32"/>
+<area shape="rect" title="当数组容量不足时扩充" alt="" coords="533,5,611,32"/>
+<area shape="rect" href="priority__queue_8h.html#a8b0374f7ed8ea317892fd30d02a5c24b" title="将元素插入优先队列" alt="" coords="415,5,485,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="249,5,367,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
@@ -457,28 +484,30 @@ priority_queue.c 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>获取在优先队列头元素的指针 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pq</td><td></td></tr>
+    <tr><td class="paramname">pq</td><td>优先队列指针 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>void* 元素指针 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00066">66</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="priority__queue_8c_source.html">priority_queue.c</a> 第 <a class="el" href="priority__queue_8c_source.html#l00074">74</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="priority__queue_8c_a30a8bec5238acb666d88f7c767ebd5ec_icgraph.png" border="0" usemap="#apriority__queue_8c_a30a8bec5238acb666d88f7c767ebd5ec_icgraph" alt=""/></div>
 <map name="apriority__queue_8c_a30a8bec5238acb666d88f7c767ebd5ec_icgraph" id="apriority__queue_8c_a30a8bec5238acb666d88f7c767ebd5ec_icgraph">
-<area shape="rect" title=" " alt="" coords="629,31,691,57"/>
+<area shape="rect" title="获取在优先队列头元素的指针" alt="" coords="629,31,691,57"/>
 <area shape="rect" href="trade_8h.html#a4e00091a11dbc131165293bc78c633ae" title="叫下一个客户" alt="" coords="508,5,581,32"/>
-<area shape="rect" href="priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title=" " alt="" coords="509,56,580,83"/>
+<area shape="rect" href="priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title="清空优先队列" alt="" coords="509,56,580,83"/>
 <area shape="rect" href="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979" title="结束当前柜台业务" alt="" coords="381,5,460,32"/>
 <area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,31,201,57"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
-<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title=" " alt="" coords="259,56,324,83"/>
+<area shape="rect" href="priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title="释放优先队列空间" alt="" coords="259,56,324,83"/>
 </map>
 </div>
 

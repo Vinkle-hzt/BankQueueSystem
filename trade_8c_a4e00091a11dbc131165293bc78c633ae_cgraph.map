@@ -1,11 +1,11 @@
 <map id="call_next" name="call_next">
 <area shape="rect" id="node1" title="叫下一个客户" alt="" coords="5,119,79,145"/>
 <area shape="rect" id="node2" href="$counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="127,56,297,83"/>
-<area shape="rect" id="node5" href="$priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title=" " alt="" coords="180,119,244,145"/>
-<area shape="rect" id="node9" href="$priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title=" " alt="" coords="181,169,243,196"/>
+<area shape="rect" id="node5" href="$priority__queue_8h.html#a7a4ef00219bedfa0f34194364d689e9a" title="将元素从优先队列中弹出" alt="" coords="180,119,244,145"/>
+<area shape="rect" id="node9" href="$priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec" title="获取在优先队列头元素的指针" alt="" coords="181,169,243,196"/>
 <area shape="rect" id="node3" href="$date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="345,5,443,32"/>
 <area shape="rect" id="node4" href="$date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="351,56,437,83"/>
-<area shape="rect" id="node6" href="$priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title=" " alt="" coords="352,131,436,157"/>
+<area shape="rect" id="node6" href="$priority__queue_8c.html#a6c10ed6a5b93d7ec86a0ba1fd55c6237" title="维护堆的性质" alt="" coords="352,131,436,157"/>
 <area shape="rect" id="node7" href="$helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="491,131,544,157"/>
 <area shape="rect" id="node8" href="$helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="592,131,668,157"/>
 </map>
