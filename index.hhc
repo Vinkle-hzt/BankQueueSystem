@@ -316,18 +316,6 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="pq_resize"><param name="Local" value="priority__queue_8c.html#a6f8080006ca1d286b6e32ee6e154ad87"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="pq_top"><param name="Local" value="priority__queue_8c.html#a30a8bec5238acb666d88f7c767ebd5ec"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="queue.c"><param name="Local" value="queue_8c.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_create"><param name="Local" value="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_free"><param name="Local" value="queue_8c.html#abf604398920042a8056f257d292fe8a3"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_pop"><param name="Local" value="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_push"><param name="Local" value="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_node.c"><param name="Local" value="queue__node_8c.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_node_create"><param name="Local" value="queue__node_8c.html#ae26345f83c8cb1efb4ce26e4e9102c72"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_node_free"><param name="Local" value="queue__node_8c.html#a5a5a41ee8e2e91eb3905dc7f939a3576"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="trade.c"><param name="Local" value="trade_8c.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="call_next"><param name="Local" value="trade_8c.html#a4e00091a11dbc131165293bc78c633ae"><param name="ImageNumber" value="11"></OBJECT>

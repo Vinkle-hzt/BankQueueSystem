@@ -954,36 +954,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structpriority__queue.html#a29ff2b09e8e184170f61316769b5404a"><param name="Name" value="maxSize"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html"><param name="Name" value="queue.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0"><param name="Name" value="queue_create"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html"><param name="Name" value="queue.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html#abf604398920042a8056f257d292fe8a3"><param name="Name" value="queue_free"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html"><param name="Name" value="queue.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7"><param name="Name" value="queue_pop"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html"><param name="Name" value="queue.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6"><param name="Name" value="queue_push"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0"><param name="Name" value="queue_create"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html#abf604398920042a8056f257d292fe8a3"><param name="Name" value="queue_free"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue__node_8c.html"><param name="Name" value="queue_node.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="queue__node_8c.html#ae26345f83c8cb1efb4ce26e4e9102c72"><param name="Name" value="queue_node_create"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue__node_8c.html"><param name="Name" value="queue_node.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="queue__node_8c.html#a5a5a41ee8e2e91eb3905dc7f939a3576"><param name="Name" value="queue_node_free"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue__node_8c.html#ae26345f83c8cb1efb4ce26e4e9102c72"><param name="Name" value="queue_node_create"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue__node_8c.html#a5a5a41ee8e2e91eb3905dc7f939a3576"><param name="Name" value="queue_node_free"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7"><param name="Name" value="queue_pop"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6"><param name="Name" value="queue_push"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900"><param name="Name" value="safe_free"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="helpful__func_8c.html#a55c355f047f95aba92b4f8c1415de900"><param name="Name" value="helpful_func.c"></OBJECT>
