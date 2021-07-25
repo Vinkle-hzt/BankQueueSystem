@@ -29,6 +29,8 @@
 *.so.*
 *.dylib
 !libmysql.dll
+!libssl-1_1-x64.dll
+!libcrypto-1_1-x64.dll
 
 # Executables
 *.exe
