@@ -12,9 +12,10 @@
 void start_trade()
 {
     // 选择柜台
+    printf("\n");
     show_counter_customer();
 
-    printf("请输入办理业务的柜台号：");
+    printf("\n请输入办理业务的柜台号：");
     int counter_num;
     scanf("%d", &counter_num);
     fflush(stdin);
@@ -29,7 +30,7 @@ void start_trade()
 
     if (!cur_counter->customer)
     {
-        printf("该柜台没有客户！！！\n");
+        printf("\n该柜台没有客户！！！\n");
         return;
     }
 
@@ -37,6 +38,10 @@ void start_trade()
 
     while (true)
     {
+#ifndef DEBUG
+    system("cls");
+#endif
+
         printf("\n尊敬的%s，", cur_counter->customer->name);
         int cards_num = show_cards(cur_counter->customer->ID);
 
@@ -73,8 +78,11 @@ void start_trade()
         }
     }
 
-    // 显示交易菜单
-    int exit_flag = 0;
+#ifndef DEBUG
+            system("cls");
+#endif
+
+    int exit_flag = 0; // 退出标志
 
     // 交易菜单选择
     while (!exit_flag)
@@ -83,37 +91,40 @@ void start_trade()
         show_basicbusiness_menu();
         char choice = getchar();
         fflush(stdin);
-        int flag = 1;
-        do
+        
+#ifndef DEBUG
+            system("cls");
+#endif
+        switch (choice)
         {
-            switch (choice)
-            {
-            case '1':
-                check_balance(choose_card);
-                break;
-            case '2':
-                deposit_money(cur_counter, choose_card);
-                break;
-            case '3':
-                withdraw_money(cur_counter, choose_card);
-                break;
-            case '4':
-                transfer_accounts(cur_counter, choose_card);
-                break;
-            case '5':
-                view_transactions(choose_card);
-                break;
-            case '0':
-                end_trade(cur_counter);
-                exit_flag = 1;
-                break;
-            default:
-                printf("非法字符，请重新输入！！！\n");
-                break;
-            }
-            if (!exit_flag)
-                system("pause");
-        } while (!flag);
+        case '1':
+            check_balance(choose_card);
+            break;
+        case '2':
+            deposit_money(cur_counter, choose_card);
+            break;
+        case '3':
+            withdraw_money(cur_counter, choose_card);
+            break;
+        case '4':
+            transfer_accounts(cur_counter, choose_card);
+            break;
+        case '5':
+            view_transactions(choose_card);
+            break;
+        case '0':
+            end_trade(cur_counter);
+            exit_flag = 1;
+            break;
+        default:
+            printf("非法字符，请重新输入！！！\n");
+            break;
+        }
+        if (!exit_flag)
+        {
+            system("pause");
+            system("cls");
+        }
     }
 }
 
@@ -137,14 +148,14 @@ int show_cards(int ID)
 
 void check_balance(int card_ID)
 {
-    printf("卡号：%d，余额：%lf\n\n", card_ID, get_balance(card_ID));
+    printf("\n卡号：%d，余额：%lf\n\n", card_ID, get_balance(card_ID));
 }
 
 void deposit_money(counter *ct, int card_ID)
 {
     double card_deposit = 0;
     double now_money = get_balance(card_ID);
-    printf("请输入您要存款的钱数：");
+    printf("\n请输入您要存款的钱数：");
     scanf("%lf", &card_deposit);
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", card_deposit, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
@@ -164,7 +175,7 @@ void deposit_money(counter *ct, int card_ID)
 void withdraw_money(counter *ct, int card_ID)
 {
     double card_withdraw = 0;
-    printf("请输入您要取款的钱数：");
+    printf("\n请输入您要取款的钱数：");
     scanf("%lf", &card_withdraw);
 
     double now_money = get_balance(card_ID);
@@ -192,7 +203,7 @@ void transfer_accounts(counter *ct, int card_ID)
 {
     double card_transfer = 0;
     int card_IDout = 0;
-    printf("请输入您要转账的 ID 与 钱数（以空格分隔）：\n");
+    printf("\n请输入您要转账的 ID 与 钱数（以空格分隔）：\n");
     scanf("%d %lf", &card_IDout, &card_transfer);
 
     double now_money = get_balance(card_ID);
@@ -283,7 +294,10 @@ void create_card(int ID)
     mysql_res = mysql_store_result(&mysql_connect);
     mysql_next_row = mysql_fetch_row(mysql_res);
 
-    printf("您的卡（卡号 %s）办理成功！！！\n", mysql_next_row[0]);
+#ifndef DEBUG
+    system("cls");
+#endif
+    printf("\n您的卡（卡号 %s）办理成功！！！\n\n", mysql_next_row[0]);
     fflush(stdin);
     system("pause");
 }

@@ -64,3 +64,5 @@ int member_compare(const void* lhs, const void* rhs);
  * @return int 客户vip等级
  */
 int get_vip_level(int* ID, char *name);
+
+void update_pick(member* m);

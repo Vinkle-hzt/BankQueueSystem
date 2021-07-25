@@ -29,14 +29,6 @@ member *member_come(int ID, char *name)
         return (member *)&member_error_2;
     }
 
-    cur_pick_num[m->vip]++;
-    cur_common_num++;
-    m->vip_pick_num = cur_pick_num[m->vip];
-    m->common_pick_num = cur_common_num;
-    // 日志信息
-    show_date(log_file, get_cur_date());
-    fprintf(log_file, " (ID: %d 姓名: %s, vip：%d) 取到号码为 %d \n", ID, name, m->vip, m->common_pick_num);
-
     return m;
 }
 
@@ -56,7 +48,7 @@ int member_compare(const void *lhs, const void *rhs)
     return ((rp->common_pick_num - rp->vip * 3) - (lp->common_pick_num - lp->vip * 3));
 }
 
-int get_vip_level(int* ID, char *name)
+int get_vip_level(int *ID, char *name)
 {
     if (*ID != 0)
     {
@@ -117,4 +109,16 @@ int get_vip_level(int* ID, char *name)
         return 0;
     }
     return 0;
+}
+
+void update_pick(member *m)
+{
+    cur_pick_num[m->vip]++;
+    cur_common_num++;
+    m->vip_pick_num = cur_pick_num[m->vip];
+    m->common_pick_num = cur_common_num;
+    // 日志信息
+    show_date(log_file, get_cur_date());
+    fprintf(log_file, " (ID: %d 姓名: %s, vip：%d) 取到号码为 %d \n",
+            m->ID, m->name, m->vip, m->common_pick_num);
 }
