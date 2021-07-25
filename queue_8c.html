@@ -52,20 +52,14 @@ $(function() {
 
 <p>队列类及相关操作  
 <a href="#details">更多...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="queue_8h_source.html">queue.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;queue.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 queue.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="queue_8c__incl.png" border="0" usemap="#asrc_2queue_8c" alt=""/></div>
 <map name="asrc_2queue_8c" id="asrc_2queue_8c">
-<area shape="rect" title="队列类及相关操作" alt="" coords="56,5,145,32"/>
-<area shape="rect" href="queue_8h.html" title="队列类及相关操作" alt="" coords="67,80,134,107"/>
-<area shape="rect" title=" " alt="" coords="5,304,68,331"/>
-<area shape="rect" href="queue__node_8h.html" title="队列节点类及相关操作" alt="" coords="49,155,152,181"/>
-<area shape="rect" href="helpful__func_8h.html" title="存储一些实用函数" alt="" coords="128,229,231,256"/>
-<area shape="rect" title=" " alt="" coords="92,304,152,331"/>
-<area shape="rect" title=" " alt="" coords="177,304,241,331"/>
-<area shape="rect" title=" " alt="" coords="265,304,329,331"/>
+<area shape="rect" title="队列类及相关操作" alt="" coords="5,5,95,32"/>
+<area shape="rect" title=" " alt="" coords="17,80,83,107"/>
 </map>
 </div>
 </div>
@@ -73,17 +67,13 @@ queue.c 的引用(Include)关系图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:a92701bd736280dc3fdb399deaca4b6d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqueue.html">queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0">queue_create</a> ()</td></tr>
-<tr class="memdesc:a92701bd736280dc3fdb399deaca4b6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个队列  <a href="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0">更多...</a><br /></td></tr>
+<tr class="memitem:a92701bd736280dc3fdb399deaca4b6d0"><td class="memItemLeft" align="right" valign="top">queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0">queue_create</a> ()</td></tr>
 <tr class="separator:a92701bd736280dc3fdb399deaca4b6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c3c337d5bbe22a7a33d4e46e250c8d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6">queue_push</a> (<a class="el" href="structqueue.html">queue</a> *q, void *val)</td></tr>
-<tr class="memdesc:a9c3c337d5bbe22a7a33d4e46e250c8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">将元素放入队列中  <a href="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6">更多...</a><br /></td></tr>
+<tr class="memitem:a9c3c337d5bbe22a7a33d4e46e250c8d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6">queue_push</a> (queue *q, void *val)</td></tr>
 <tr class="separator:a9c3c337d5bbe22a7a33d4e46e250c8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a485893d2333e46eca6bdd15cc6d18ad7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7">queue_pop</a> (<a class="el" href="structqueue.html">queue</a> *q)</td></tr>
-<tr class="memdesc:a485893d2333e46eca6bdd15cc6d18ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">将元素从队列中取出  <a href="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7">更多...</a><br /></td></tr>
+<tr class="memitem:a485893d2333e46eca6bdd15cc6d18ad7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7">queue_pop</a> (queue *q)</td></tr>
 <tr class="separator:a485893d2333e46eca6bdd15cc6d18ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf604398920042a8056f257d292fe8a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#abf604398920042a8056f257d292fe8a3">queue_free</a> (<a class="el" href="structqueue.html">queue</a> *q)</td></tr>
-<tr class="memdesc:abf604398920042a8056f257d292fe8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放队列空间  <a href="queue_8c.html#abf604398920042a8056f257d292fe8a3">更多...</a><br /></td></tr>
+<tr class="memitem:abf604398920042a8056f257d292fe8a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#abf604398920042a8056f257d292fe8a3">queue_free</a> (queue *q)</td></tr>
 <tr class="separator:abf604398920042a8056f257d292fe8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -99,16 +89,13 @@ queue.c 的引用(Include)关系图:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structqueue.html">queue</a>* queue_create </td>
+          <td class="memname">queue* queue_create </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>创建一个队列 </p>
-<dl class="section return"><dt>返回</dt><dd>queue* 队列指针 </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00011">11</a> 行定义.</p>
 
@@ -123,20 +110,12 @@ queue.c 的引用(Include)关系图:</div>
         <tr>
           <td class="memname">void queue_free </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structqueue.html">queue</a> *&#160;</td>
+          <td class="paramtype">queue *&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>释放队列空间 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">q</td><td>队列指针 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00043">43</a> 行定义.</p>
 <div class="dynheader">
@@ -144,8 +123,8 @@ queue.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="queue_8c_abf604398920042a8056f257d292fe8a3_cgraph.png" border="0" usemap="#aqueue_8c_abf604398920042a8056f257d292fe8a3_cgraph" alt=""/></div>
 <map name="aqueue_8c_abf604398920042a8056f257d292fe8a3_cgraph" id="aqueue_8c_abf604398920042a8056f257d292fe8a3_cgraph">
-<area shape="rect" title="释放队列空间" alt="" coords="5,31,92,57"/>
-<area shape="rect" href="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7" title="将元素从队列中取出" alt="" coords="140,5,225,32"/>
+<area shape="rect" title=" " alt="" coords="5,31,92,57"/>
+<area shape="rect" href="queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7" title=" " alt="" coords="140,5,225,32"/>
 <area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="145,56,221,83"/>
 </map>
 </div>
@@ -161,21 +140,12 @@ queue.c 的引用(Include)关系图:</div>
         <tr>
           <td class="memname">void* queue_pop </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structqueue.html">queue</a> *&#160;</td>
+          <td class="paramtype">queue *&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>将元素从队列中取出 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">q</td><td>队列指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>void* 元素指针 </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00029">29</a> 行定义.</p>
 <div class="dynheader">
@@ -183,8 +153,8 @@ queue.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="queue_8c_a485893d2333e46eca6bdd15cc6d18ad7_icgraph.png" border="0" usemap="#aqueue_8c_a485893d2333e46eca6bdd15cc6d18ad7_icgraph" alt=""/></div>
 <map name="aqueue_8c_a485893d2333e46eca6bdd15cc6d18ad7_icgraph" id="aqueue_8c_a485893d2333e46eca6bdd15cc6d18ad7_icgraph">
-<area shape="rect" title="将元素从队列中取出" alt="" coords="140,5,225,32"/>
-<area shape="rect" href="queue_8h.html#abf604398920042a8056f257d292fe8a3" title="释放队列空间" alt="" coords="5,5,92,32"/>
+<area shape="rect" title=" " alt="" coords="140,5,225,32"/>
+<area shape="rect" href="queue_8c.html#abf604398920042a8056f257d292fe8a3" title=" " alt="" coords="5,5,92,32"/>
 </map>
 </div>
 
@@ -199,7 +169,7 @@ queue.c 的引用(Include)关系图:</div>
         <tr>
           <td class="memname">void queue_push </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structqueue.html">queue</a> *&#160;</td>
+          <td class="paramtype">queue *&#160;</td>
           <td class="paramname"><em>q</em>, </td>
         </tr>
         <tr>
@@ -216,22 +186,13 @@ queue.c 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
-<p>将元素放入队列中 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">q</td><td>队列指针 </td></tr>
-    <tr><td class="paramname">val</td><td>元素指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-
 <p class="definition">在文件 <a class="el" href="queue_8c_source.html">queue.c</a> 第 <a class="el" href="queue_8c_source.html#l00021">21</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="queue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph.png" border="0" usemap="#aqueue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph" alt=""/></div>
 <map name="aqueue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph" id="aqueue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph">
-<area shape="rect" title="将元素放入队列中" alt="" coords="5,5,97,32"/>
+<area shape="rect" title=" " alt="" coords="5,5,97,32"/>
 <area shape="rect" href="queue__node_8h.html#ae26345f83c8cb1efb4ce26e4e9102c72" title="创建一个 queue node" alt="" coords="145,5,280,32"/>
 </map>
 </div>

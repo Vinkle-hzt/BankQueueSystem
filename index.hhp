@@ -76,8 +76,6 @@ priority__queue_8h.html
 priority__queue_8h_source.html
 queue_8c.html
 queue_8c_source.html
-queue_8h.html
-queue_8h_source.html
 queue__node_8c.html
 queue__node_8c_source.html
 queue__node_8h.html
@@ -88,7 +86,6 @@ structdate.html
 structmember.html
 structnode.html
 structpriority__queue.html
-structqueue.html
 structtrade__conclude.html
 trade_8c.html
 trade_8c_source.html
@@ -419,16 +416,6 @@ queue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph.pdf
 queue_8c_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph.png
 queue_8c_abf604398920042a8056f257d292fe8a3_cgraph.pdf
 queue_8c_abf604398920042a8056f257d292fe8a3_cgraph.png
-queue_8h__dep__incl.pdf
-queue_8h__dep__incl.png
-queue_8h__incl.pdf
-queue_8h__incl.png
-queue_8h_a485893d2333e46eca6bdd15cc6d18ad7_icgraph.pdf
-queue_8h_a485893d2333e46eca6bdd15cc6d18ad7_icgraph.png
-queue_8h_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph.pdf
-queue_8h_a9c3c337d5bbe22a7a33d4e46e250c8d6_cgraph.png
-queue_8h_abf604398920042a8056f257d292fe8a3_cgraph.pdf
-queue_8h_abf604398920042a8056f257d292fe8a3_cgraph.png
 queue__node_8c__incl.pdf
 queue__node_8c__incl.png
 queue__node_8c_a5a5a41ee8e2e91eb3905dc7f939a3576_cgraph.pdf
@@ -447,8 +434,6 @@ structcounter__coll__graph.pdf
 structcounter__coll__graph.png
 structnode__coll__graph.pdf
 structnode__coll__graph.png
-structqueue__coll__graph.pdf
-structqueue__coll__graph.png
 sync_off.png
 sync_on.png
 tab_a.png

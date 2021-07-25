@@ -53,11 +53,6 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="data"><param name="Local" value="structpriority__queue.html#af00cdd742d205932a8309628d39efd5e"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="maxSize"><param name="Local" value="structpriority__queue.html#a29ff2b09e8e184170f61316769b5404a"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="queue"><param name="Local" value="structqueue.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="head"><param name="Local" value="structqueue.html#a2e98999816a448537f8ef230d9bac0c2"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="size"><param name="Local" value="structqueue.html#a439227feff9d7f55384e8780cfc2eb82"><param name="ImageNumber" value="11"></OBJECT>
-      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="trade_conclude"><param name="Local" value="structtrade__conclude.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="customers_num"><param name="Local" value="structtrade__conclude.html#a87c6382bd30a860bebbb09e908ebfba3"><param name="ImageNumber" value="11"></OBJECT>
@@ -199,18 +194,6 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="pq_push"><param name="Local" value="priority__queue_8h.html#a8b0374f7ed8ea317892fd30d02a5c24b"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="pq_resize"><param name="Local" value="priority__queue_8h.html#a6f8080006ca1d286b6e32ee6e154ad87"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="pq_top"><param name="Local" value="priority__queue_8h.html#a30a8bec5238acb666d88f7c767ebd5ec"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="queue.h"><param name="Local" value="queue_8h.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue"><param name="Local" value="structqueue.html"><param name="ImageNumber" value="1"></OBJECT>
-          <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="head"><param name="Local" value="structqueue.html#a2e98999816a448537f8ef230d9bac0c2"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="size"><param name="Local" value="structqueue.html#a439227feff9d7f55384e8780cfc2eb82"><param name="ImageNumber" value="11"></OBJECT>
-          </UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_create"><param name="Local" value="queue_8h.html#a92701bd736280dc3fdb399deaca4b6d0"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_free"><param name="Local" value="queue_8h.html#abf604398920042a8056f257d292fe8a3"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_pop"><param name="Local" value="queue_8h.html#a485893d2333e46eca6bdd15cc6d18ad7"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_push"><param name="Local" value="queue_8h.html#a9c3c337d5bbe22a7a33d4e46e250c8d6"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="queue_node.h"><param name="Local" value="queue__node_8h.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>

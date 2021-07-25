@@ -1,5 +1,5 @@
 <map id="queue_free" name="queue_free">
-<area shape="rect" id="node1" title="释放队列空间" alt="" coords="5,31,92,57"/>
-<area shape="rect" id="node2" href="$queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7" title="将元素从队列中取出" alt="" coords="140,5,225,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,92,57"/>
+<area shape="rect" id="node2" href="$queue_8c.html#a485893d2333e46eca6bdd15cc6d18ad7" title=" " alt="" coords="140,5,225,32"/>
 <area shape="rect" id="node3" href="$helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="145,56,221,83"/>
 </map>

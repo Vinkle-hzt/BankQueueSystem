@@ -1,4 +1,0 @@
-<map id="queue_pop" name="queue_pop">
-<area shape="rect" id="node1" title="将元素从队列中取出" alt="" coords="140,5,225,32"/>
-<area shape="rect" id="node2" href="$queue_8h.html#abf604398920042a8056f257d292fe8a3" title="释放队列空间" alt="" coords="5,5,92,32"/>
-</map>
