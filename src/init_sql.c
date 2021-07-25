@@ -1,3 +1,10 @@
+/**
+ * @file init_sql.c
+ * @brief 初始化 mysql 连接
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "init_sql.h"
 
 void start_mysql()
