@@ -12,7 +12,7 @@
 <area shape="rect" id="node16" href="$date_8h.html" title="日期类及相关操作" alt="" coords="69,319,126,345"/>
 <area shape="rect" id="node18" href="$counter_8h.html" title="柜台类及相关操作" alt="" coords="247,169,321,196"/>
 <area shape="rect" id="node19" href="$trade_8h.html" title="实现交易业务" alt="" coords="297,95,359,121"/>
-<area shape="rect" id="node20" href="$init__sql_8h.html" title=" " alt="" coords="498,244,571,271"/>
+<area shape="rect" id="node20" href="$init__sql_8h.html" title="初始化 mysql 连接" alt="" coords="498,244,571,271"/>
 <area shape="rect" id="node6" title=" " alt="" coords="565,543,629,569"/>
 <area shape="rect" id="node5" title=" " alt="" coords="303,543,363,569"/>
 <area shape="rect" id="node7" title=" " alt="" coords="705,543,769,569"/>

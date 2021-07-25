@@ -1,6 +1,6 @@
 <map id="src/init_sql.c" name="src/init_sql.c">
-<area shape="rect" id="node1" title=" " alt="" coords="74,5,169,32"/>
-<area shape="rect" id="node2" href="$init__sql_8h.html" title=" " alt="" coords="85,80,158,107"/>
+<area shape="rect" id="node1" title="初始化 mysql 连接" alt="" coords="74,5,169,32"/>
+<area shape="rect" id="node2" href="$init__sql_8h.html" title="初始化 mysql 连接" alt="" coords="85,80,158,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,229,72,256"/>
 <area shape="rect" id="node4" href="$common_8h.html" title="存储全局变量" alt="" coords="143,155,225,181"/>
 <area shape="rect" id="node5" title=" " alt="" coords="177,379,237,405"/>

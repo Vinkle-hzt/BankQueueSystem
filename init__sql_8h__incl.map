@@ -1,5 +1,5 @@
 <map id="include/init_sql.h" name="include/init_sql.h">
-<area shape="rect" id="node1" title=" " alt="" coords="62,5,181,32"/>
+<area shape="rect" id="node1" title="初始化 mysql 连接" alt="" coords="62,5,181,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,155,72,181"/>
 <area shape="rect" id="node3" href="$common_8h.html" title="存储全局变量" alt="" coords="143,80,225,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="177,304,237,331"/>

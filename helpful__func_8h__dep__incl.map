@@ -11,10 +11,10 @@
 <area shape="rect" id="node16" href="$array__list_8c.html" title="array_list 类及相关操作" alt="" coords="404,155,511,181"/>
 <area shape="rect" id="node4" href="$bank__queue__system_8c.html" title="银行排队系统相关函数" alt="" coords="205,543,379,569"/>
 <area shape="rect" id="node5" href="$main_8c.html" title="系统主入口函数" alt="" coords="403,543,485,569"/>
-<area shape="rect" id="node7" href="$init__sql_8h.html" title=" " alt="" coords="185,229,303,256"/>
+<area shape="rect" id="node7" href="$init__sql_8h.html" title="初始化 mysql 连接" alt="" coords="185,229,303,256"/>
 <area shape="rect" id="node11" href="$trade_8h.html" title="实现交易业务" alt="" coords="629,379,736,405"/>
 <area shape="rect" id="node15" href="$common_8c.html" title="存储全局变量" alt="" coords="328,229,432,256"/>
-<area shape="rect" id="node8" href="$init__sql_8c.html" title=" " alt="" coords="235,304,330,331"/>
+<area shape="rect" id="node8" href="$init__sql_8c.html" title="初始化 mysql 连接" alt="" coords="235,304,330,331"/>
 <area shape="rect" id="node10" href="$counter_8h.html" title="柜台类及相关操作" alt="" coords="456,304,576,331"/>
 <area shape="rect" id="node14" href="$member_8c.html" title="客户类及相关操作" alt="" coords="600,304,701,331"/>
 <area shape="rect" id="node13" href="$counter_8c.html" title="柜台类及相关操作" alt="" coords="507,379,605,405"/>
