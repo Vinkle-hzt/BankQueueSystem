@@ -67,7 +67,6 @@ var menudata={children:[
 {text:"v",url:"globals_func.html#index_v"},
 {text:"w",url:"globals_func.html#index_w"}]},
 {text:"变量",url:"globals_vars.html"},
-{text:"类型定义",url:"globals_type.html"},
 {text:"枚举",url:"globals_enum.html"},
 {text:"枚举值",url:"globals_eval.html"},
 {text:"宏定义",url:"globals_defs.html"}]}]}]}

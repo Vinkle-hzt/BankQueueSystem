@@ -53,7 +53,7 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0">   11</a></span>&#160;queue* <a class="code" href="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0">queue_create</a>()</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    queue* q = malloc(<span class="keyword">sizeof</span>(queue));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    q-&gt;head = malloc(<span class="keyword">sizeof</span>(<a class="code" href="structnode.html">queue_node</a>));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    q-&gt;head = malloc(<span class="keyword">sizeof</span>(queue_node));</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    q-&gt;head-&gt;pre = q-&gt;head;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    q-&gt;head-&gt;next = q-&gt;head;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    q-&gt;size = 0;</div>
@@ -62,9 +62,9 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6">queue_push</a>(queue*q, <span class="keywordtype">void</span>* val)</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="structnode.html">queue_node</a>* cur = <a class="code" href="queue__node_8h.html#ae26345f83c8cb1efb4ce26e4e9102c72">queue_node_create</a>(val, q-&gt;head-&gt;pre, q-&gt;head);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    queue_node* cur = <a class="code" href="queue__node_8c.html#ae26345f83c8cb1efb4ce26e4e9102c72">queue_node_create</a>(val, q-&gt;head-&gt;pre, q-&gt;head);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    q-&gt;head-&gt;pre-&gt;next = cur;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    q-&gt;head-&gt;<a class="code" href="structnode.html#a171c5726e1e249a28b0f0f730b6bcfbf">pre</a> = cur;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    q-&gt;head-&gt;pre = cur;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    q-&gt;size++;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
@@ -73,9 +73,9 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (q-&gt;size == 0)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="structnode.html">queue_node</a>* cur = q-&gt;head-&gt;<a class="code" href="structnode.html#a0dc1b6470487aa86d9936e3cab8b95be">next</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    q-&gt;head-&gt;<a class="code" href="structnode.html#a0dc1b6470487aa86d9936e3cab8b95be">next</a> = cur-&gt;<a class="code" href="structnode.html#a0dc1b6470487aa86d9936e3cab8b95be">next</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    cur-&gt;<a class="code" href="structnode.html#a0dc1b6470487aa86d9936e3cab8b95be">next</a>-&gt;<a class="code" href="structnode.html#a171c5726e1e249a28b0f0f730b6bcfbf">pre</a> = q-&gt;head;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    queue_node* cur = q-&gt;head-&gt;next;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    q-&gt;head-&gt;next = cur-&gt;next;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    cur-&gt;next-&gt;pre = q-&gt;head;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    q-&gt;size--;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
@@ -97,10 +97,7 @@ $(function() {
 <div class="ttc" id="aqueue_8c_html_a92701bd736280dc3fdb399deaca4b6d0"><div class="ttname"><a href="queue_8c.html#a92701bd736280dc3fdb399deaca4b6d0">queue_create</a></div><div class="ttdeci">queue * queue_create()</div><div class="ttdef"><b>Definition:</b> <a href="queue_8c_source.html#l00011">queue.c:11</a></div></div>
 <div class="ttc" id="aqueue_8c_html_a9c3c337d5bbe22a7a33d4e46e250c8d6"><div class="ttname"><a href="queue_8c.html#a9c3c337d5bbe22a7a33d4e46e250c8d6">queue_push</a></div><div class="ttdeci">void queue_push(queue *q, void *val)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8c_source.html#l00021">queue.c:21</a></div></div>
 <div class="ttc" id="aqueue_8c_html_abf604398920042a8056f257d292fe8a3"><div class="ttname"><a href="queue_8c.html#abf604398920042a8056f257d292fe8a3">queue_free</a></div><div class="ttdeci">void queue_free(queue *q)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8c_source.html#l00043">queue.c:43</a></div></div>
-<div class="ttc" id="aqueue__node_8h_html_ae26345f83c8cb1efb4ce26e4e9102c72"><div class="ttname"><a href="queue__node_8h.html#ae26345f83c8cb1efb4ce26e4e9102c72">queue_node_create</a></div><div class="ttdeci">queue_node * queue_node_create(void *val, queue_node *pre, queue_node *next)</div><div class="ttdoc">创建一个 queue node</div><div class="ttdef"><b>Definition:</b> <a href="queue__node_8c_source.html#l00011">queue_node.c:11</a></div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdoc">队列节点类</div><div class="ttdef"><b>Definition:</b> <a href="queue__node_8h_source.html#l00018">queue_node.h:19</a></div></div>
-<div class="ttc" id="astructnode_html_a0dc1b6470487aa86d9936e3cab8b95be"><div class="ttname"><a href="structnode.html#a0dc1b6470487aa86d9936e3cab8b95be">node::next</a></div><div class="ttdeci">struct node * next</div><div class="ttdoc">next node</div><div class="ttdef"><b>Definition:</b> <a href="queue__node_8h_source.html#l00022">queue_node.h:22</a></div></div>
-<div class="ttc" id="astructnode_html_a171c5726e1e249a28b0f0f730b6bcfbf"><div class="ttname"><a href="structnode.html#a171c5726e1e249a28b0f0f730b6bcfbf">node::pre</a></div><div class="ttdeci">struct node * pre</div><div class="ttdoc">pre node</div><div class="ttdef"><b>Definition:</b> <a href="queue__node_8h_source.html#l00021">queue_node.h:21</a></div></div>
+<div class="ttc" id="aqueue__node_8c_html_ae26345f83c8cb1efb4ce26e4e9102c72"><div class="ttname"><a href="queue__node_8c.html#ae26345f83c8cb1efb4ce26e4e9102c72">queue_node_create</a></div><div class="ttdeci">queue_node * queue_node_create(void *val, queue_node *pre, queue_node *next)</div><div class="ttdef"><b>Definition:</b> <a href="queue__node_8c_source.html#l00011">queue_node.c:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
