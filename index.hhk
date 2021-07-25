@@ -670,6 +670,10 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html#a94c0f7a9bf09ae10f73a3d97465a804b"><param name="Name" value="member_leave"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html"><param name="Name" value="member.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html#ad0b94361ab29f8b53acdf02506a21265"><param name="Name" value="update_pick"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html"><param name="Name" value="member.h"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html#a834e9a379307f869a10f4da078be5786"><param name="Name" value="NAME_SIZE"></OBJECT>
@@ -697,6 +701,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html"><param name="Name" value="member.h"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b"><param name="Name" value="member_leave"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html"><param name="Name" value="member.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html#ad0b94361ab29f8b53acdf02506a21265"><param name="Name" value="update_pick"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html"><param name="Name" value="member"></OBJECT>
   <UL>
@@ -1356,6 +1364,14 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="bank__queue__system_8h.html#ad551911c63210975999952b77bec3cf7"><param name="Name" value="update_VIP"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="bank__queue__system_8h.html#ad551911c63210975999952b77bec3cf7"><param name="Name" value="bank_queue_system.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html#ad0b94361ab29f8b53acdf02506a21265"><param name="Name" value="update_pick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html#ad0b94361ab29f8b53acdf02506a21265"><param name="Name" value="member.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html#ad0b94361ab29f8b53acdf02506a21265"><param name="Name" value="update_pick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html#ad0b94361ab29f8b53acdf02506a21265"><param name="Name" value="member.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a8cb09a78984d4b3d5236715c82e3a328"><param name="Name" value="upload_trade"></OBJECT>
   <UL>
