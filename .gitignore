@@ -58,6 +58,3 @@ dkms.conf
 # vscode config
 .vscode/
 build/
-
-# sql file
-*.sql
