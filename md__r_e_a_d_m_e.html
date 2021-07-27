@@ -45,23 +45,32 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p>四川大学2020级软件工程2021年暑期实训项目。</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-如何编译运行此项目</h1>
+项目介绍</h1>
+<p>模拟银行排队取号、等待、叫号和办理业务等功能，并提供 VIP 服务和银行信息查看的功能。</p>
 <h2><a class="anchor" id="autotoc_md2"></a>
+项目框架</h2>
+<p><img src=".\doc\img\整体架构.svg" alt="整体架构" style="pointer-events: none;" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+项目ER图</h2>
+<p><img src=".\doc\img\数据库er图.svg" alt="数据库er图" style="pointer-events: none;" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+如何编译运行此项目</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
 编译运行环境</h2>
 <div class="fragment"><div class="line">Cmake 3.0.0+</div>
 <div class="line">gcc 10.1.0</div>
 <div class="line">mingw-w64-7.0.0-r3</div>
 <div class="line">MySQL Community Server 8.0.20 </div>
 </div><!-- fragment --><p>如果环境不同，不能保证编译一定通过。</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 编译运行步骤</h2>
 <ul>
 <li>在<code>MySQL</code>中创建 <code>bank_queue_system</code> 数据库，并运行 <code>bank_queue_system.sql</code> 文件中的 SQL 语句。</li>
 <li>更改 <code><a class="el" href="common_8c.html" title="存储全局变量">common.c</a></code> 中的相应全局变量</li>
 <li>运用 <code>Cmake</code> 编译运行</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md4"></a>
-文档</h1>
+<h1><a class="anchor" id="autotoc_md7"></a>
+项目文档</h1>
 <p><a href="https://vinkle.top/BankQueueSystem">https://vinkle.top/BankQueueSystem</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
