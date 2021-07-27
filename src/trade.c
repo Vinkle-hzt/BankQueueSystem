@@ -148,9 +148,9 @@ int show_cards(int ID)
 
 void check_balance(int card_ID)
 {
-    printf("\n卡号：%d，余额：%lf\n\n", card_ID, get_balance(card_ID));
+    printf("\n卡号：%d，余额：%.2lf\n\n", card_ID, get_balance(card_ID));
     show_date(log_file, get_cur_date());
-    fprintf(log_file, "（卡号：%d）查询到余额为 %lf\n", card_ID, get_balance(card_ID));
+    fprintf(log_file, "（卡号：%d）查询到余额为 %.2lf\n", card_ID, get_balance(card_ID));
 }
 
 void deposit_money(counter *ct, int card_ID)
@@ -182,7 +182,7 @@ void deposit_money(counter *ct, int card_ID)
 
     //生成 log
     show_date(log_file, get_cur_date());
-    fprintf(log_file, "(ID：%d, name: %s)于卡（卡号：%d）存款 %lf\n",
+    fprintf(log_file, "(ID：%d, name: %s)于卡（卡号：%d）存款 %.2lf\n",
             ct->customer->ID, ct->customer->name,
             card_ID, card_deposit);
 }
@@ -225,7 +225,7 @@ void withdraw_money(counter *ct, int card_ID)
 
     // 生成 log
     show_date(log_file, get_cur_date());
-    fprintf(log_file, "(ID：%d, name: %s)于卡（卡号：%d）取款 %lf\n",
+    fprintf(log_file, "(ID：%d, name: %s)于卡（卡号：%d）取款 %.2lf\n",
             ct->customer->ID, ct->customer->name,
             card_ID, card_withdraw);
     
@@ -288,6 +288,13 @@ void transfer_accounts(counter *ct, int card_ID)
     // 统计交易金额
     all_trade.flowing_water += card_transfer;
     ct->kpi.flowing_water += card_transfer;
+
+    // 生成 log
+    show_date(log_file, get_cur_date());
+    fprintf(log_file, "(ID：%d, name: %s)从（卡号：%d）转账 %.2lf至 (卡号：%d)\n",
+            ct->customer->ID, ct->customer->name,
+            card_ID, card_transfer, card_IDout);
+    
 }
 
 void view_transactions(int card_ID)
@@ -313,7 +320,7 @@ void view_transactions(int card_ID)
         if (t_type == BeTransferred)
             printf("  被转账  ");
 
-        printf("   %-12s    %-12s", mysql_next_row[4], mysql_next_row[5]);
+        printf("   %-12.2lf    %-12.2lf", atof(mysql_next_row[4]), atof(mysql_next_row[5]));
 
         if (t_type == Transfer)
             printf("    转入账户 %s", mysql_next_row[6]);

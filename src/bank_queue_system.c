@@ -226,7 +226,7 @@ void update_VIP()
 #endif
 
     printf("\nVIP升级规则为：\n0:现有存款大于0\n");
-    printf("1:现有存款大于100000\n2:现有存款大于500000\n\n");
+    printf("1:现有存款大于100000.00\n2:现有存款大于500000.00\n\n");
 
     sprintf(mysql_buffer, "SELECT SUM(money) FROM card WHERE user_ID = %d", ID);
     mysql_query(&mysql_connect, mysql_buffer);
@@ -234,7 +234,7 @@ void update_VIP()
     mysql_next_row = mysql_fetch_row(mysql_res);
     double sum_money = atof(mysql_next_row[0]);
     printf("您目前的VIP等级为：%d\n", cur_customer->vip);
-    printf("您目前的总存款为：%lf\n", sum_money);
+    printf("您目前的总存款为：%.2lf\n", sum_money);
     printf("正在为您查询. . .\n\n");
 
     int vip_level = 0;
