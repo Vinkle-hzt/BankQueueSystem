@@ -103,6 +103,7 @@ int get_vip_level(int *ID, char *name)
         *ID = atoi(mysql_next_row[0]);
 
         printf("尊敬的%s，已自动为您生成 ID，您的 ID 号为 %d\n", name, *ID);
+        system("pause");
         return 0;
     }
     return 0;
