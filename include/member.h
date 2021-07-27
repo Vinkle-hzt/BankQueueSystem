@@ -15,9 +15,6 @@
 #include "date.h"
 #include "string.h"
 
-extern int member_error_1; ///< 姓名不匹配错误
-extern int member_error_2; ///< 没有ID号码错误
-
 /**
  * @brief 客户
  * 

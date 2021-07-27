@@ -31,48 +31,47 @@ typedef struct
 array_list *al_create();
 
 /**
- * @brief get the idx_th element value (start from 0)
+ * @brief 获得线性表中相应位置元素的指针（从0开始）
  * 
- * @param al array list
- * @param idx index
- * @return void* element pointer
+ * @param al 线性表指针
+ * @param idx 元素位置
+ * @return void* 元素指针
  */
 void *al_at(array_list *al, int idx);
 
 /**
- * @brief insert element value val to the end of array list
+ * @brief 将元素插入线性表末尾
  * 
- * @param al array list
- * @param val element value
+ * @param al 线性表指针
+ * @param val 元素指针
  */
 void al_push(array_list *al, void *val);
 
 /**
- * @brief free the array list
- * 
- * @param al array list
+ * @brief  释放线性表分配空间
+ * @param al 线性表指针
  */
 void al_free(array_list *al);
 
 /**
- * @brief resize the array list size
+ * @brief 自动增长线性表
  * 
- * @param al array list
+ * @param al 线性表指针
  */
 void al_resize(array_list *al);
 
 /**
- * @brief delete the last value of array list
+ * @brief 删除线性表相应位置元素（从0开始）
  * 
- * @param al array list
- * @param idx index
- * @return void* 
+ * @param al 线性表指针
+ * @param idx 相应位置
+ * @return void* 元素指针
  */
 void *al_pop(array_list *al, int idx);
 
 /**
- * @brief clean the array list
+ * @brief 将线性表清空
  * 
- * @param al array list
+ * @param al 线性表指针
  */
 void al_clean(array_list *al);
