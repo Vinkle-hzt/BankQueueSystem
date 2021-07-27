@@ -39,7 +39,7 @@ void start_trade()
     while (true)
     {
 #ifndef DEBUG
-    system("cls");
+        system("cls");
 #endif
 
         printf("\n尊敬的%s，", cur_counter->customer->name);
@@ -79,7 +79,7 @@ void start_trade()
     }
 
 #ifndef DEBUG
-            system("cls");
+    system("cls");
 #endif
 
     int exit_flag = 0; // 退出标志
@@ -91,9 +91,9 @@ void start_trade()
         show_basicbusiness_menu();
         char choice = getchar();
         fflush(stdin);
-        
+
 #ifndef DEBUG
-            system("cls");
+        system("cls");
 #endif
         switch (choice)
         {
@@ -161,12 +161,12 @@ void deposit_money(counter *ct, int card_ID)
 
     //判断钱数是否为负
     scanf("%lf", &card_deposit);
-    if(card_deposit < 0)
+    if (card_deposit < 0)
     {
         printf("\n输入信息错误，请重新输入！\n");
         return;
     }
-    sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", 
+    sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d",
             card_deposit, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
 
@@ -193,7 +193,7 @@ void withdraw_money(counter *ct, int card_ID)
     printf("\n请输入您要取款的钱数：");
     scanf("%lf", &card_withdraw);
     // 判断钱数是否为负
-    if(card_withdraw < 0)
+    if (card_withdraw < 0)
     {
         printf("\n输入信息错误，请重新输入！\n");
         return;
@@ -211,7 +211,7 @@ void withdraw_money(counter *ct, int card_ID)
     }
 
     // 取款过程
-    sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d", 
+    sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d",
             card_withdraw, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
 
@@ -228,23 +228,29 @@ void withdraw_money(counter *ct, int card_ID)
     fprintf(log_file, "(ID：%d, name: %s)于卡（卡号：%d）取款 %.2lf\n",
             ct->customer->ID, ct->customer->name,
             card_ID, card_withdraw);
-    
 }
 
 void transfer_accounts(counter *ct, int card_ID)
 {
-    double card_transfer = 0;
-    int card_IDout = 0;
+    double transfer_money = 0; // 转账金额
+    int transfer_card = 0;     // 转账卡号
     printf("\n请输入您要转账的 ID 与 钱数（以空格分隔）：\n");
-    scanf("%d %lf", &card_IDout, &card_transfer);
-    if(card_transfer < 0)
+    scanf("%d %lf", &transfer_card, &transfer_money);
+
+    if (transfer_money < 0)
     {
         printf("\n输入信息错误，请重新输入！\n");
         return;
     }
 
-    double now_money = get_balance(card_ID);
-    if (now_money < card_transfer)
+    if (transfer_money == card_ID)
+    {
+        printf("\n不能转账给自己！\n");
+        return;
+    }
+
+    double now_money = get_balance(card_ID); // 当前余额
+    if (now_money < transfer_money)
     {
         printf("\n您的余额不足！！！\n");
 
@@ -256,7 +262,7 @@ void transfer_accounts(counter *ct, int card_ID)
     }
 
     // 查询对方账户是否存在
-    sprintf(mysql_buffer, "SELECT * FROM card WHERE card_ID = %d", card_IDout);
+    sprintf(mysql_buffer, "SELECT * FROM card WHERE card_ID = %d", transfer_card);
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
     int row = mysql_num_rows(mysql_res);
@@ -264,37 +270,36 @@ void transfer_accounts(counter *ct, int card_ID)
     {
         printf("没有此账户！！！\n");
         // 生成 log
-        show_date (log_file, get_cur_date());
-        fprintf(log_file, "(ID: %d, name: %s)无法转账到不存在的账户",ct->customer->ID, ct->customer->name);
+        show_date(log_file, get_cur_date());
+        fprintf(log_file, "(ID: %d, name: %s)无法转账到不存在的账户", ct->customer->ID, ct->customer->name);
         return;
     }
 
     // 转账过程
-    sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d", 
-        card_transfer, card_ID);
+    sprintf(mysql_buffer, "update card set money = money - %lf where card_ID = %d",
+            transfer_money, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
-    sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d", 
-        card_transfer, card_IDout);
+    sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d",
+            transfer_money, transfer_card);
     mysql_query(&mysql_connect, mysql_buffer);
 
     //生成日志
-    upload_trade(card_ID, Transfer, now_money, now_money - card_transfer, card_IDout);
+    upload_trade(card_ID, Transfer, now_money, now_money - transfer_money, transfer_card);
 
-    double tred_now_money = get_balance(card_IDout);
-    upload_trade(card_IDout, BeTransferred, tred_now_money, tred_now_money + card_transfer, card_ID);
+    double tred_now_money = get_balance(transfer_card);
+    upload_trade(transfer_card, BeTransferred, tred_now_money, tred_now_money + transfer_money, card_ID);
 
     check_balance(card_ID);
 
     // 统计交易金额
-    all_trade.flowing_water += card_transfer;
-    ct->kpi.flowing_water += card_transfer;
+    all_trade.flowing_water += transfer_money;
+    ct->kpi.flowing_water += transfer_money;
 
     // 生成 log
     show_date(log_file, get_cur_date());
     fprintf(log_file, "(ID：%d, name: %s)从（卡号：%d）转账 %.2lf至 (卡号：%d)\n",
             ct->customer->ID, ct->customer->name,
-            card_ID, card_transfer, card_IDout);
-    
+            card_ID, transfer_money, transfer_card);
 }
 
 void view_transactions(int card_ID)
