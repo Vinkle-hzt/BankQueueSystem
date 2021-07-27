@@ -1,7 +1,4 @@
 <map id="login_admin" name="login_admin">
-<area shape="rect" id="node1" title="登录管理员账号" alt="" coords="5,31,96,57"/>
-<area shape="rect" id="node2" href="$helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9" title="获取字符的 MD5 编码" alt="" coords="144,31,211,57"/>
-<area shape="rect" id="node3" href="$helpful__func_8c.html#a4242957b34973ded368980a85c4a5a25" title=" " alt="" coords="259,31,305,57"/>
-<area shape="rect" id="node4" href="$helpful__func_8c.html#a65bb2f6ebf7fbad09f5ff1899b819251" title=" " alt="" coords="353,5,424,32"/>
-<area shape="rect" id="node5" href="$helpful__func_8c.html#a8e5b16114900fd4e0b0a467519096299" title=" " alt="" coords="355,56,423,83"/>
+<area shape="rect" id="node1" title="登录管理员账号" alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node2" href="$helpful__func_8h.html#a904e521b6d2011ec6cb6b6897d590ae9" title="获取字符的 MD5 编码" alt="" coords="144,5,211,32"/>
 </map>

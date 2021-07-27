@@ -1,14 +1,14 @@
 <map id="safe_free" name="safe_free">
 <area shape="rect" id="node1" title="释放指针P并将p设为NULL" alt="" coords="1111,207,1187,233"/>
-<area shape="rect" id="node2" href="$array__list_8h.html#a7e85a97073f192ff04e94025cf233a69" title="free the array list" alt="" coords="261,5,322,32"/>
-<area shape="rect" id="node5" href="$array__list_8h.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="resize the array list size" alt="" coords="989,93,1063,120"/>
+<area shape="rect" id="node2" href="$array__list_8h.html#a7e85a97073f192ff04e94025cf233a69" title="释放线性表分配空间" alt="" coords="261,5,322,32"/>
+<area shape="rect" id="node5" href="$array__list_8h.html#ab35b3d2bdedfd3202ddab0f0dacd4592" title="自动增长线性表" alt="" coords="989,93,1063,120"/>
 <area shape="rect" id="node8" href="$member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b" title="客户离开银行" alt="" coords="547,232,653,259"/>
 <area shape="rect" id="node11" href="$priority__queue_8h.html#ad3813d3c5901d1930a5438bbdd5c9955" title="清空优先队列" alt="" coords="565,283,635,309"/>
 <area shape="rect" id="node12" href="$priority__queue_8h.html#a38999bff5fd9c903022d9a46a451f043" title="释放优先队列空间" alt="" coords="407,283,473,309"/>
 <area shape="rect" id="node13" href="$helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698" title="交换函数" alt="" coords="999,181,1053,208"/>
 <area shape="rect" id="node3" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,107,201,133"/>
 <area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,56,133"/>
-<area shape="rect" id="node6" href="$array__list_8h.html#a6b792272494e473122e892e232500d8d" title="insert element value val to the end of array list" alt="" coords="866,56,933,83"/>
+<area shape="rect" id="node6" href="$array__list_8h.html#a6b792272494e473122e892e232500d8d" title="将元素插入线性表末尾" alt="" coords="866,56,933,83"/>
 <area shape="rect" id="node7" href="$counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1" title="创建一个 array_list* 类型的柜台表" alt="" coords="701,56,809,83"/>
 <area shape="rect" id="node9" href="$trade_8h.html#a5c3ec099cbeb6068634e97ed18977979" title="结束当前柜台业务" alt="" coords="401,181,479,208"/>
 <area shape="rect" id="node10" href="$trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,169,333,196"/>

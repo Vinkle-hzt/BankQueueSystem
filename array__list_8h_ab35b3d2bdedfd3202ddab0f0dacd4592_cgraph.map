@@ -1,4 +1,4 @@
 <map id="al_resize" name="al_resize">
-<area shape="rect" id="node1" title="resize the array list size" alt="" coords="5,5,79,32"/>
+<area shape="rect" id="node1" title="自动增长线性表" alt="" coords="5,5,79,32"/>
 <area shape="rect" id="node2" href="$helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="127,5,203,32"/>
 </map>

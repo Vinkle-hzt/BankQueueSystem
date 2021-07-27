@@ -1,6 +1,6 @@
 <map id="do_pick_number" name="do_pick_number">
 <area shape="rect" id="node1" title="进行叫号" alt="" coords="5,107,123,133"/>
-<area shape="rect" id="node2" href="$array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247" title="get the idx_th element value (start from 0)" alt="" coords="231,5,281,32"/>
+<area shape="rect" id="node2" href="$array__list_8h.html#ab55c286c3b60fdbd269b9c1135885247" title="获得线性表中相应位置元素的指针（从0开始）" alt="" coords="231,5,281,32"/>
 <area shape="rect" id="node3" href="$counter_8h.html#a4236f521a1bd4c6fca6e6454d6888004" title="将客户分配到柜台" alt="" coords="171,107,341,133"/>
 <area shape="rect" id="node6" href="$member_8h.html#a46c6ed15a09806c3fe1c3a39f97798c2" title="客户进入银行取号" alt="" coords="202,157,310,184"/>
 <area shape="rect" id="node8" href="$priority__queue_8h.html#a8b0374f7ed8ea317892fd30d02a5c24b" title="将元素插入优先队列" alt="" coords="221,208,291,235"/>
