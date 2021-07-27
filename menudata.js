@@ -64,7 +64,12 @@ var menudata={children:[
 {text:"u",url:"globals_func.html#index_u"},
 {text:"v",url:"globals_func.html#index_v"},
 {text:"w",url:"globals_func.html#index_w"}]},
-{text:"变量",url:"globals_vars.html"},
+{text:"变量",url:"globals_vars.html",children:[
+{text:"a",url:"globals_vars.html#index_a"},
+{text:"c",url:"globals_vars.html#index_c"},
+{text:"l",url:"globals_vars.html#index_l"},
+{text:"m",url:"globals_vars.html#index_m"},
+{text:"w",url:"globals_vars.html#index_w"}]},
 {text:"枚举",url:"globals_enum.html"},
 {text:"枚举值",url:"globals_eval.html"},
 {text:"宏定义",url:"globals_defs.html"}]}]}]}
