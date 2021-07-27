@@ -77,7 +77,10 @@ void start_trade()
                 create_card(cur_counter->customer->ID);
         }
     }
-
+    show_date(log_file, get_cur_date());
+    fprintf(log_file, " (ID：%d, name: %s 卡号：%d) 在柜台 %d 开始业务办理\n",
+            cur_counter->customer->ID, cur_counter->customer->name,
+            choose_card, cur_counter->number);
 #ifndef DEBUG
     system("cls");
 #endif
@@ -150,7 +153,7 @@ void check_balance(int card_ID)
 {
     printf("\n卡号：%d，余额：%.2lf\n\n", card_ID, get_balance(card_ID));
     show_date(log_file, get_cur_date());
-    fprintf(log_file, "（卡号：%d）查询到余额为 %.2lf\n", card_ID, get_balance(card_ID));
+    fprintf(log_file, " (卡号：%d)  查询到余额为 %.2lf\n", card_ID, get_balance(card_ID));
 }
 
 void deposit_money(counter *ct, int card_ID)
@@ -172,6 +175,12 @@ void deposit_money(counter *ct, int card_ID)
 
     upload_trade(card_ID, Deposit, now_money, now_money + card_deposit, card_ID);
 
+    //生成 log
+    show_date(log_file, get_cur_date());
+    fprintf(log_file, " (ID：%d, name: %s 卡号：%d)  存款 %.2lf\n",
+            ct->customer->ID, ct->customer->name,
+            card_ID, card_deposit);
+
     check_balance(card_ID);
 
     // 统计交易金额
@@ -179,12 +188,6 @@ void deposit_money(counter *ct, int card_ID)
     all_trade.total_deposits += card_deposit;
     ct->kpi.total_deposits += card_deposit;
     ct->kpi.flowing_water += card_deposit;
-
-    //生成 log
-    show_date(log_file, get_cur_date());
-    fprintf(log_file, "(ID：%d, name: %s)于卡（卡号：%d）存款 %.2lf\n",
-            ct->customer->ID, ct->customer->name,
-            card_ID, card_deposit);
 }
 
 void withdraw_money(counter *ct, int card_ID)
@@ -205,7 +208,7 @@ void withdraw_money(counter *ct, int card_ID)
         printf("您的余额不足！！！\n");
         // 生成log
         show_date(log_file, get_cur_date());
-        fprintf(log_file, "(ID：%d, name: %s)的卡（卡号：%d）余额不足\n",
+        fprintf(log_file, " (ID：%d, name: %s 卡号：%d)  取款错误：余额不足\n",
                 ct->customer->ID, ct->customer->name, card_ID);
         return;
     }
@@ -217,17 +220,18 @@ void withdraw_money(counter *ct, int card_ID)
 
     upload_trade(card_ID, Withdraw, now_money, now_money - card_withdraw, card_ID);
 
+    // 生成 log
+    show_date(log_file, get_cur_date());
+    fprintf(log_file, " (ID：%d, name: %s 卡号：%d)  取款 %.2lf\n",
+            ct->customer->ID, ct->customer->name,
+            card_ID, card_withdraw);
+
+    // 查询存款后余额
     check_balance(card_ID);
 
     // 统计交易金额
     all_trade.flowing_water += card_withdraw;
     ct->kpi.flowing_water += card_withdraw;
-
-    // 生成 log
-    show_date(log_file, get_cur_date());
-    fprintf(log_file, "(ID：%d, name: %s)于卡（卡号：%d）取款 %.2lf\n",
-            ct->customer->ID, ct->customer->name,
-            card_ID, card_withdraw);
 }
 
 void transfer_accounts(counter *ct, int card_ID)
@@ -243,8 +247,11 @@ void transfer_accounts(counter *ct, int card_ID)
         return;
     }
 
-    if (transfer_money == card_ID)
+    if (transfer_card == card_ID)
     {
+        show_date(log_file, get_cur_date());
+        fprintf(log_file, " (ID：%d, name: %s 卡号：%d)  转账错误：无法转账给自己\n",
+                ct->customer->ID, ct->customer->name, card_ID);
         printf("\n不能转账给自己！\n");
         return;
     }
@@ -256,7 +263,7 @@ void transfer_accounts(counter *ct, int card_ID)
 
         // 生成log
         show_date(log_file, get_cur_date());
-        fprintf(log_file, "(ID：%d, name: %s)的卡（卡号：%d）余额不足.",
+        fprintf(log_file, " (ID：%d, name: %s 卡号：%d)  转账错误：余额不足.\n",
                 ct->customer->ID, ct->customer->name, card_ID);
         return;
     }
@@ -271,7 +278,8 @@ void transfer_accounts(counter *ct, int card_ID)
         printf("没有此账户！！！\n");
         // 生成 log
         show_date(log_file, get_cur_date());
-        fprintf(log_file, "(ID: %d, name: %s)无法转账到不存在的账户", ct->customer->ID, ct->customer->name);
+        fprintf(log_file, " (ID：%d, name: %s 卡号：%d)  转账错误：无法转账到不存在的账户\n",
+                ct->customer->ID, ct->customer->name, card_ID);
         return;
     }
 
@@ -297,7 +305,7 @@ void transfer_accounts(counter *ct, int card_ID)
 
     // 生成 log
     show_date(log_file, get_cur_date());
-    fprintf(log_file, "(ID：%d, name: %s)从（卡号：%d）转账 %.2lf至 (卡号：%d)\n",
+    fprintf(log_file, " (ID：%d, name: %s 卡号：%d)  转账 %.2lf 至 (卡号：%d)\n",
             ct->customer->ID, ct->customer->name,
             card_ID, transfer_money, transfer_card);
 }
