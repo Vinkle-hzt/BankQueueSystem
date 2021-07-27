@@ -8,11 +8,11 @@
 
 ### 项目框架
 
-![整体架构](doc\img\整体架构.svg)
+![整体架构](https://bank-queue-system-1302582473.cos.ap-chengdu.myqcloud.com/img/%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84.svg)
 
 ### 项目ER图
 
-![数据库er图](doc\img\数据库er图.svg)
+![数据库er图](https://bank-queue-system-1302582473.cos.ap-chengdu.myqcloud.com/img/%E6%95%B0%E6%8D%AE%E5%BA%93er%E5%9B%BE.svg)
 
 ## 如何编译运行此项目
 
