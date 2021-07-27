@@ -29,5 +29,10 @@ extern MYSQL_RES *mysql_res;         ///<查询结果集
 extern MYSQL_FIELD *mysql_field;     ///<包含字段信息的结构指针
 extern MYSQL_ROW mysql_next_row;     ///<存放查询sql语句字符串数组
 extern char mysql_buffer[2048];      ///< sql buffer
-extern int member_error_1; ///< 姓名不匹配错误
-extern int member_error_2; ///< 没有ID号码错误
+extern int member_error_1;           ///< 姓名不匹配错误
+extern int member_error_2;           ///< 没有ID号码错误
+extern const char *mysql_host;       ///< mysql host 地址
+extern const char *mysql_user;       ///< mysql 用户名
+extern const char *mysql_pwd;        ///< mysql 密码
+extern const char *mysql_db;         ///< mysql 数据库名称
+extern int mysql_connect_port;       ///< mysql 数据库端口号
