@@ -15,9 +15,6 @@
 #include "date.h"
 #include "string.h"
 
-extern int member_error_1;
-extern int member_error_2;
-
 /**
  * @brief 客户
  * 

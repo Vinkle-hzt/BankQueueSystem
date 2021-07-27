@@ -17,7 +17,10 @@ void safe_free(void *p)
     }
 }
 
-// Constants are the integer part of the sines of integers (in radians) * 2^32.
+/**
+ * @brief 正弦的整数部分（弧度）*2^32。
+ * 
+ */
 static const uint32_t k[64] = {
     0xd76aa478, 0xe8c7b756, 0x242070db, 0xc1bdceee,
     0xf57c0faf, 0x4787c62a, 0xa8304613, 0xfd469501,
@@ -36,16 +39,22 @@ static const uint32_t k[64] = {
     0x6fa87e4f, 0xfe2ce6e0, 0xa3014314, 0x4e0811a1,
     0xf7537e82, 0xbd3af235, 0x2ad7d2bb, 0xeb86d391};
 
-// r specifies the per-round shift amounts
+/**
+ * @brief 每轮转化次数
+ * 
+ */
 static const uint32_t r[] = {7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22,
                              5, 9, 14, 20, 5, 9, 14, 20, 5, 9, 14, 20, 5, 9, 14, 20,
                              4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23,
                              6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21};
 
-// leftrotate function definition
+/**
+ * @brief 左旋转函数
+ * 
+ */
 #define LEFTROTATE(x, c) (((x) << (c)) | ((x) >> (32 - (c))))
 
-void to_bytes(uint32_t val, uint8_t *bytes)
+static void to_bytes(uint32_t val, uint8_t *bytes)
 {
     bytes[0] = (uint8_t)val;
     bytes[1] = (uint8_t)(val >> 8);
@@ -53,12 +62,12 @@ void to_bytes(uint32_t val, uint8_t *bytes)
     bytes[3] = (uint8_t)(val >> 24);
 }
 
-uint32_t to_int32(const uint8_t *bytes)
+static uint32_t to_int32(const uint8_t *bytes)
 {
     return (uint32_t)bytes[0] | ((uint32_t)bytes[1] << 8) | ((uint32_t)bytes[2] << 16) | ((uint32_t)bytes[3] << 24);
 }
 
-void md5(const uint8_t *initial_msg, size_t initial_len, uint8_t *digest)
+static void md5(const uint8_t *initial_msg, size_t initial_len, uint8_t *digest)
 {
     // These vars will contain the hash
     uint32_t h0, h1, h2, h3;

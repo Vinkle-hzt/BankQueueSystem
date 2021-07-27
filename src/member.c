@@ -7,9 +7,6 @@
  */
 #include "member.h"
 
-int member_error_1 = -1;
-int member_error_2 = -2;
-
 member *member_come(int ID, char *name)
 {
     member *m = malloc(sizeof(member));
