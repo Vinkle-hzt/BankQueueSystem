@@ -50,8 +50,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="trade_conclude"><param name="Local" value="structtrade__conclude.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="customers_num"><param name="Local" value="structtrade__conclude.html#a87c6382bd30a860bebbb09e908ebfba3"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="flowing_water"><param name="Local" value="structtrade__conclude.html#ad39f25ec930157c3bef58c9208c237cd"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="total_deposits"><param name="Local" value="structtrade__conclude.html#af9cdc8bb476ec5042860ac4b472c9569"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="flowing_water"><param name="Local" value="structtrade__conclude.html#adcee170d91305738b11276e7686f71f1"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="total_deposits"><param name="Local" value="structtrade__conclude.html#a9073810bca60e7b374050b63f774e37a"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     </UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="结构体索引"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -217,8 +217,8 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="trade_conclude"><param name="Local" value="structtrade__conclude.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="customers_num"><param name="Local" value="structtrade__conclude.html#a87c6382bd30a860bebbb09e908ebfba3"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="flowing_water"><param name="Local" value="structtrade__conclude.html#ad39f25ec930157c3bef58c9208c237cd"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="total_deposits"><param name="Local" value="structtrade__conclude.html#af9cdc8bb476ec5042860ac4b472c9569"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="flowing_water"><param name="Local" value="structtrade__conclude.html#adcee170d91305738b11276e7686f71f1"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="total_deposits"><param name="Local" value="structtrade__conclude.html#a9073810bca60e7b374050b63f774e37a"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="show_trade_conclude"><param name="Local" value="trade__conclude_8h.html#a45190cffa731230e3b1510be09a94fa9"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="trade_conclude_create"><param name="Local" value="trade__conclude_8h.html#a7a16a0f7b2f2b9cb60adc938d83254df"><param name="ImageNumber" value="11"></OBJECT>

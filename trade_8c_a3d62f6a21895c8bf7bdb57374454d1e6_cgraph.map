@@ -1,4 +1,6 @@
 <map id="check_balance" name="check_balance">
-<area shape="rect" id="node1" title="查询卡内余额" alt="" coords="5,5,115,32"/>
-<area shape="rect" id="node2" href="$trade_8c.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf" title="返回银行卡余额" alt="" coords="163,5,255,32"/>
+<area shape="rect" id="node1" title="查询卡内余额" alt="" coords="5,56,115,83"/>
+<area shape="rect" id="node2" href="$trade_8c.html#a8f3e9e9ced0aa0736ec4df8e4f4cbfbf" title="返回银行卡余额" alt="" coords="165,5,257,32"/>
+<area shape="rect" id="node3" href="$date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="163,56,260,83"/>
+<area shape="rect" id="node4" href="$date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="169,107,254,133"/>
 </map>

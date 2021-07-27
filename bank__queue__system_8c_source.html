@@ -268,7 +268,7 @@ $(function() {
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    printf(<span class="stringliteral">&quot;\nVIP升级规则为：\n0:现有存款大于0\n&quot;</span>);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    printf(<span class="stringliteral">&quot;1:现有存款大于100000\n2:现有存款大于500000\n\n&quot;</span>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    printf(<span class="stringliteral">&quot;1:现有存款大于100000.00\n2:现有存款大于500000.00\n\n&quot;</span>);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    sprintf(<a class="code" href="common_8h.html#a18c453ae42ccc05708e5e01dfd3d501b">mysql_buffer</a>, <span class="stringliteral">&quot;SELECT SUM(money) FROM card WHERE user_ID = %d&quot;</span>, ID);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    mysql_query(&amp;<a class="code" href="common_8h.html#a759958e8439d1252745aa0a9793b4bc1">mysql_connect</a>, <a class="code" href="common_8h.html#a18c453ae42ccc05708e5e01dfd3d501b">mysql_buffer</a>);</div>
@@ -276,7 +276,7 @@ $(function() {
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="common_8h.html#a0d0a0cfbd83aeaa0d2dd189990e2345b">mysql_next_row</a> = mysql_fetch_row(<a class="code" href="common_8h.html#ace128b10bd112020e1a540e7e12cb0cf">mysql_res</a>);</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">double</span> sum_money = atof(<a class="code" href="common_8h.html#a0d0a0cfbd83aeaa0d2dd189990e2345b">mysql_next_row</a>[0]);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    printf(<span class="stringliteral">&quot;您目前的VIP等级为：%d\n&quot;</span>, cur_customer-&gt;<a class="code" href="structmember.html#aa064948b71641740f34371b6ade5c94a">vip</a>);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    printf(<span class="stringliteral">&quot;您目前的总存款为：%lf\n&quot;</span>, sum_money);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    printf(<span class="stringliteral">&quot;您目前的总存款为：%.2lf\n&quot;</span>, sum_money);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    printf(<span class="stringliteral">&quot;正在为您查询. . .\n\n&quot;</span>);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">int</span> vip_level = 0;</div>
@@ -284,7 +284,7 @@ $(function() {
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        vip_level = 2;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sum_money &gt;= 100000)</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        vip_level = 1;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span> (cur_customer-&gt;<a class="code" href="structmember.html#aa064948b71641740f34371b6ade5c94a">vip</a> &lt; vip_level)</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    {</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        sprintf(<a class="code" href="common_8h.html#a18c453ae42ccc05708e5e01dfd3d501b">mysql_buffer</a>, <span class="stringliteral">&quot;update user set vip = %d where user_ID = %d&quot;</span>, vip_level, cur_customer-&gt;<a class="code" href="structmember.html#af180e926633cde08a05ccbc3af397ee4">ID</a>);</div>
