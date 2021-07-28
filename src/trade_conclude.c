@@ -29,9 +29,8 @@ void show_trade_conclude(trade_conclude* tc)
 
 void show_time(int seconds)
 {
-    printf("ss: %d\n", seconds);
     int all_hours = seconds / 3600;
     int all_minutes = (seconds % 3600) / 60;
     int all_seconds = seconds % 60;
-    printf("%d 小时 %d 分钟 %d 秒\n");
+    printf("%d 小时 %d 分钟 %d 秒\n", all_hours, all_minutes, all_seconds);
 }

@@ -8,14 +8,6 @@
 
 #include "date.h"
 
-int get_cur_seconds()
-{
-    time_t timep;
-    struct tm *p;
-    time(&timep);
-    return localtime(&timep);
-}
-
 date get_cur_date()
 {
     date cur;

@@ -27,7 +27,7 @@ void counter_assign_customer(counter *ct, member *customer)
 {
     cur_call_num[customer->vip]++;
     ct->customer = customer;
-    ct->customer->come_time = get_cur_seconds();
+    ct->customer->come_time = time(0);
 
     // 分配柜台
     show_date(log_file, get_cur_date());
@@ -53,8 +53,7 @@ void member_leave_counter(counter *ct, member *m)
 {
     ct->kpi.customers_num++;
     all_trade.customers_num++;
-    m->leave_time = get_cur_seconds();
-    printf("come time: %d, leave time: %d", m->come_time, m->leave_time );
+    m->leave_time = time(0);
     ct->kpi.total_time +=  m->leave_time - m->come_time;
     all_trade.total_time += m->leave_time - m->come_time;
 

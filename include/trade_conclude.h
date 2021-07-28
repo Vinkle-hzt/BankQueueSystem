@@ -35,3 +35,10 @@ trade_conclude trade_conclude_create();
  * @param tc 交易统计类指针
  */
 void show_trade_conclude(trade_conclude* tc);
+
+/**
+ * @brief 根据时间戳展示时间
+ * 
+ * @param seconds 时间戳
+ */
+void show_time(int seconds);
