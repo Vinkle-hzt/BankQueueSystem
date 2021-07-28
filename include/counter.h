@@ -43,3 +43,11 @@ void counter_assign_customer(counter *ct, member *customer);
  * 
  */
 void show_counter_customer();
+
+/**
+ * @brief 客户离开银行
+ * 
+ * @param ct 柜台指针
+ * @param m 客户指针
+ */
+void member_leave_counter(counter *ct, member *m);

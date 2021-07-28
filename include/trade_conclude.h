@@ -19,6 +19,7 @@ typedef struct
     int customers_num;  ///< 接待客户总数
     double flowing_water;  ///< 总流水
     double total_deposits; ///< 总存款量
+    int total_time;       ///< 用户逗留时间
 } trade_conclude;
 
 /**
@@ -34,3 +35,10 @@ trade_conclude trade_conclude_create();
  * @param tc 交易统计类指针
  */
 void show_trade_conclude(trade_conclude* tc);
+
+/**
+ * @brief 根据时间戳展示时间
+ * 
+ * @param seconds 时间戳
+ */
+void show_time(int seconds);

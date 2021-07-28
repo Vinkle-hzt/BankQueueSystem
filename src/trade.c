@@ -346,7 +346,7 @@ void view_transactions(int card_ID)
 void end_trade(counter *ct)
 {
     printf("\n欢迎下次光临 :)\n");
-    member_leave(ct->customer);
+    member_leave_counter(ct, ct->customer);
     ct->customer = NULL;
     call_next(ct);
 }

@@ -27,9 +27,8 @@ void counter_assign_customer(counter *ct, member *customer)
 {
     cur_call_num[customer->vip]++;
     ct->customer = customer;
-    ct->kpi.customers_num++;
-    all_trade.customers_num++;
-    
+    ct->customer->come_time = time(0);
+
     // 分配柜台
     show_date(log_file, get_cur_date());
     fprintf(log_file, " (ID: %d 姓名: %s) 分配至柜台 %d\n",
@@ -48,4 +47,19 @@ void show_counter_customer()
         else
             printf("柜台 %d 空闲中\n", i + 1);
     }
+}
+
+void member_leave_counter(counter *ct, member *m)
+{
+    ct->kpi.customers_num++;
+    all_trade.customers_num++;
+    m->leave_time = time(0);
+    ct->kpi.total_time +=  m->leave_time - m->come_time;
+    all_trade.total_time += m->leave_time - m->come_time;
+
+    // 日志信息
+    show_date(log_file, get_cur_date());
+    fprintf(log_file, " (ID: %d 姓名: %s, vip：%d) 离开银行 \n", m->ID, m->name, m->vip);
+
+    safe_free(m);
 }
