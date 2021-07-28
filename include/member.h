@@ -26,6 +26,8 @@ typedef struct
     int vip_pick_num;          ///< 客户取的号码
     int vip;                   ///< vip 等级
     char name[NAME_SIZE];      ///< 客户姓名
+    int come_time;             ///< 客户到达时间
+    int leave_time;            ///< 客户离开时间
 } member;
 
 /**
@@ -37,12 +39,7 @@ typedef struct
  */
 member *member_come(int ID, char *name);
 
-/**
- * @brief 客户离开银行
- * 
- * @param m 客户指针
- */
-void member_leave(member *m);
+
 
 /**
  * @brief 客户比较函数
