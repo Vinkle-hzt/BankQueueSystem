@@ -59,4 +59,9 @@ int member_compare(const void* lhs, const void* rhs);
  */
 int get_vip_level(int* ID, char *name);
 
+/**
+ * @brief 更新取号号码
+ * 
+ * @param m 客户指针
+ */
 void update_pick(member* m);
