@@ -1,7 +1,7 @@
 <map id="al_at" name="al_at">
 <area shape="rect" id="node1" title="获得线性表中相应位置元素的指针（从0开始）" alt="" coords="623,81,673,108"/>
 <area shape="rect" id="node2" href="$bank__queue__system_8h.html#aa95930c09af101d16254f670034f7548" title="查看所有交易记录" alt="" coords="249,5,363,32"/>
-<area shape="rect" id="node5" href="$bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行叫号" alt="" coords="434,56,551,83"/>
+<area shape="rect" id="node5" href="$bank__queue__system_8h.html#a39c0c96389da80e6fad519bed74cd35b" title="进行取号" alt="" coords="434,56,551,83"/>
 <area shape="rect" id="node6" href="$counter_8h.html#aa8daf9e82a8ca950eac00c466c14fea6" title="展示所有柜台当前办理业务人员信息" alt="" coords="411,107,575,133"/>
 <area shape="rect" id="node7" href="$trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="264,107,348,133"/>
 <area shape="rect" id="node3" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,56,201,83"/>
