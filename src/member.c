@@ -10,6 +10,7 @@
 member *member_come(int ID, char *name)
 {
     member *m = malloc(sizeof(member));
+    memset(m, 0, sizeof(member));
     m->ID = ID;
     strncpy(m->name, name, NAME_SIZE);
     m->vip = get_vip_level(&m->ID, name);
