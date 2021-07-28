@@ -23,8 +23,10 @@ void show_trade_conclude(trade_conclude* tc)
     printf("逗留总时间：");
     show_time(tc->total_time);
     printf("逗留平均时间：");
-    show_time(tc->total_time/tc->customers_num);
-    
+    if (tc->customers_num != 0)
+        show_time(tc->total_time/tc->customers_num);
+    else
+        show_time(0);
 }
 
 void show_time(int seconds)
