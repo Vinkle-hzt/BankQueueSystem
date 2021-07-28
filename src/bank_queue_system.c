@@ -17,6 +17,12 @@ void start_system()
     log_file = fopen("BankQueueSystem.log", "a");
 #endif
     start_mysql();
+    system("pause");
+    
+#ifndef DEBUG
+    system("cls");
+#endif
+
     waiting_line = pq_create(member_compare);
     counters = create_counter(COUNTER_NUM);
     all_trade = trade_conclude_create();
