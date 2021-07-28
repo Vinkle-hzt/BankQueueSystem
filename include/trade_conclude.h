@@ -19,6 +19,7 @@ typedef struct
     int customers_num;  ///< 接待客户总数
     double flowing_water;  ///< 总流水
     double total_deposits; ///< 总存款量
+    int total_time;       ///< 用户逗留时间
 } trade_conclude;
 
 /**

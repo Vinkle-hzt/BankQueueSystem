@@ -37,3 +37,10 @@ date get_cur_date();
  * @param d 输出日期
  */
 void show_date(FILE *f, date d);
+
+/**
+ * @brief 获取当前时间戳
+ * 
+ * @return int 时间戳
+ */
+int get_cur_seconds();

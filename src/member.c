@@ -29,14 +29,6 @@ member *member_come(int ID, char *name)
     return m;
 }
 
-void member_leave(member *m)
-{
-    // 日志信息
-    show_date(log_file, get_cur_date());
-    fprintf(log_file, " (ID: %d 姓名: %s, vip：%d) 离开银行 \n", m->ID, m->name, m->vip);
-
-    safe_free(m);
-}
 
 int member_compare(const void *lhs, const void *rhs)
 {
