@@ -27,7 +27,7 @@
 void start_system();
 
 /**
- * @brief 进行叫号
+ * @brief 进行取号
  * 
  */
 void do_pick_number();
