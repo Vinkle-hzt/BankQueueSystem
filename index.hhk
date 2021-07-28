@@ -226,6 +226,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8h.html#ab72dab19fcb1cf7a64faadb6a2294af3"><param name="Name" value="trade.h"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html#ae921f4ca47e22a7a190419d4572e348a"><param name="Name" value="come_time"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="common_8c.html"><param name="Name" value="common.c"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="common_8c.html#ad867f9cc5a6cdef9ecf7a57f7a5579e1"><param name="Name" value="all_trade"></OBJECT>
@@ -394,6 +395,10 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8c.html"><param name="Name" value="counter.c"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8c.html#a079499e4c2418184c4aaf76bf5ce3ee1"><param name="Name" value="member_leave_counter"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8c.html"><param name="Name" value="counter.c"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8c.html#aa8daf9e82a8ca950eac00c466c14fea6"><param name="Name" value="show_counter_customer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8h.html"><param name="Name" value="counter.h"></OBJECT>
@@ -403,6 +408,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8h.html"><param name="Name" value="counter.h"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8h.html#abe5e067848d0e6d85ac6434adbdf27e1"><param name="Name" value="create_counter"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8h.html"><param name="Name" value="counter.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8h.html#a079499e4c2418184c4aaf76bf5ce3ee1"><param name="Name" value="member_leave_counter"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8h.html"><param name="Name" value="counter.h"></OBJECT>
   <UL>
@@ -661,6 +670,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="init__sql_8c.html#a6db4f3b38bcc0fb1f71104d9e8c94aef"><param name="Name" value="init_sql.c"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="init__sql_8h.html#a6db4f3b38bcc0fb1f71104d9e8c94aef"><param name="Name" value="init_sql.h"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structcounter.html#a9bbea130b399fb049ef2bd9ca6bdb79e"><param name="Name" value="kpi"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html#ad72aa3fb8cd069ba9406d4c3528befa3"><param name="Name" value="leave_time"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="common_8c.html#ab936051f5aaca44c6c3c41dee0d19c36"><param name="Name" value="log_file"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="common_8c.html#ab936051f5aaca44c6c3c41dee0d19c36"><param name="Name" value="common.c"></OBJECT>
@@ -702,10 +712,6 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html"><param name="Name" value="member.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html#a94c0f7a9bf09ae10f73a3d97465a804b"><param name="Name" value="member_leave"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html"><param name="Name" value="member.c"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html#ad0b94361ab29f8b53acdf02506a21265"><param name="Name" value="update_pick"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html"><param name="Name" value="member.h"></OBJECT>
@@ -726,10 +732,6 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html"><param name="Name" value="member.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b"><param name="Name" value="member_leave"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html"><param name="Name" value="member.h"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html#ad0b94361ab29f8b53acdf02506a21265"><param name="Name" value="update_pick"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html"><param name="Name" value="member"></OBJECT>
@@ -738,7 +740,15 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html"><param name="Name" value="member"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html#ae921f4ca47e22a7a190419d4572e348a"><param name="Name" value="come_time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html"><param name="Name" value="member"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html#a22a79a7c09aece1826234cfdf3b08e4a"><param name="Name" value="common_pick_num"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html"><param name="Name" value="member"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html#ad72aa3fb8cd069ba9406d4c3528befa3"><param name="Name" value="leave_time"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structmember.html"><param name="Name" value="member"></OBJECT>
   <UL>
@@ -784,13 +794,13 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="common_8h.html#a425c32ca68447dd6d1f956ebfddd61ba"><param name="Name" value="common.h"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html#a94c0f7a9bf09ae10f73a3d97465a804b"><param name="Name" value="member_leave"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8c.html#a079499e4c2418184c4aaf76bf5ce3ee1"><param name="Name" value="member_leave_counter"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8c.html#a94c0f7a9bf09ae10f73a3d97465a804b"><param name="Name" value="member.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8c.html#a079499e4c2418184c4aaf76bf5ce3ee1"><param name="Name" value="counter.c"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b"><param name="Name" value="member_leave"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8h.html#a079499e4c2418184c4aaf76bf5ce3ee1"><param name="Name" value="member_leave_counter"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="member_8h.html#a94c0f7a9bf09ae10f73a3d97465a804b"><param name="Name" value="member.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="counter_8h.html#a079499e4c2418184c4aaf76bf5ce3ee1"><param name="Name" value="counter.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structdate.html#a5edffad982a0566ad01d95005474eae3"><param name="Name" value="minute"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structdate.html#aedb06abe5aff12fa3e7e0e71a374edfb"><param name="Name" value="month"></OBJECT>
@@ -1082,6 +1092,14 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="display_8h.html#ac2d6095a7e78918587bb24be0b6aa1fb"><param name="Name" value="display.h"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html#a4b8491fc2346403de4d7fc0ede924b3a"><param name="Name" value="show_time"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html#a4b8491fc2346403de4d7fc0ede924b3a"><param name="Name" value="trade_conclude.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8h.html#a4b8491fc2346403de4d7fc0ede924b3a"><param name="Name" value="show_time"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8h.html#a4b8491fc2346403de4d7fc0ede924b3a"><param name="Name" value="trade_conclude.h"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html#a45190cffa731230e3b1510be09a94fa9"><param name="Name" value="show_trade_conclude"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html#a45190cffa731230e3b1510be09a94fa9"><param name="Name" value="trade_conclude.c"></OBJECT>
@@ -1131,6 +1149,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="helpful__func_8h.html#ad0f80a4ca48cdb90177e90949de50698"><param name="Name" value="helpful_func.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html#a9073810bca60e7b374050b63f774e37a"><param name="Name" value="total_deposits"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html#a6754e1cc6922f32fb9afe8b9badcbe6f"><param name="Name" value="total_time"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html"><param name="Name" value="trade.c"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="trade_8c.html#a4e00091a11dbc131165293bc78c633ae"><param name="Name" value="call_next"></OBJECT>
@@ -1254,11 +1273,19 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html"><param name="Name" value="trade_conclude"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html"><param name="Name" value="trade_conclude.c"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html#a4b8491fc2346403de4d7fc0ede924b3a"><param name="Name" value="show_time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html"><param name="Name" value="trade_conclude.c"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html#a45190cffa731230e3b1510be09a94fa9"><param name="Name" value="show_trade_conclude"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html"><param name="Name" value="trade_conclude.c"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html#a7a16a0f7b2f2b9cb60adc938d83254df"><param name="Name" value="trade_conclude_create"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8h.html"><param name="Name" value="trade_conclude.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8h.html#a4b8491fc2346403de4d7fc0ede924b3a"><param name="Name" value="show_time"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8h.html"><param name="Name" value="trade_conclude.h"></OBJECT>
   <UL>
@@ -1279,6 +1306,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html"><param name="Name" value="trade_conclude"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html#a9073810bca60e7b374050b63f774e37a"><param name="Name" value="total_deposits"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html"><param name="Name" value="trade_conclude"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structtrade__conclude.html#a6754e1cc6922f32fb9afe8b9badcbe6f"><param name="Name" value="total_time"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="trade__conclude_8c.html#a7a16a0f7b2f2b9cb60adc938d83254df"><param name="Name" value="trade_conclude_create"></OBJECT>
   <UL>

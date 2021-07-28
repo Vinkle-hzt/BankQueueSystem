@@ -1,0 +1,4 @@
+<map id="show_trade_conclude" name="show_trade_conclude">
+<area shape="rect" id="node1" title="展示交易统计" alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node2" href="$trade__conclude_8c.html#a4b8491fc2346403de4d7fc0ede924b3a" title="根据时间戳展示时间" alt="" coords="201,5,287,32"/>
+</map>

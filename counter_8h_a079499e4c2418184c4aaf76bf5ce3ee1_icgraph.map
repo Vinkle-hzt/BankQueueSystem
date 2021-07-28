@@ -1,5 +1,5 @@
-<map id="member_leave" name="member_leave">
-<area shape="rect" id="node1" title="客户离开银行" alt="" coords="508,5,615,32"/>
+<map id="member_leave_counter" name="member_leave_counter">
+<area shape="rect" id="node1" title="客户离开银行" alt="" coords="508,5,665,32"/>
 <area shape="rect" id="node2" href="$trade_8h.html#a5c3ec099cbeb6068634e97ed18977979" title="结束当前柜台业务" alt="" coords="381,5,460,32"/>
 <area shape="rect" id="node3" href="$trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
 <area shape="rect" id="node4" href="$bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>

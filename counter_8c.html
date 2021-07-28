@@ -89,6 +89,9 @@ counter.c 的引用(Include)关系图:</div>
 <tr class="memitem:aa8daf9e82a8ca950eac00c466c14fea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counter_8c.html#aa8daf9e82a8ca950eac00c466c14fea6">show_counter_customer</a> ()</td></tr>
 <tr class="memdesc:aa8daf9e82a8ca950eac00c466c14fea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">展示所有柜台当前办理业务人员信息  <a href="counter_8c.html#aa8daf9e82a8ca950eac00c466c14fea6">更多...</a><br /></td></tr>
 <tr class="separator:aa8daf9e82a8ca950eac00c466c14fea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079499e4c2418184c4aaf76bf5ce3ee1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counter_8c.html#a079499e4c2418184c4aaf76bf5ce3ee1">member_leave_counter</a> (<a class="el" href="structcounter.html">counter</a> *ct, <a class="el" href="structmember.html">member</a> *m)</td></tr>
+<tr class="memdesc:a079499e4c2418184c4aaf76bf5ce3ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户离开银行  <a href="counter_8c.html#a079499e4c2418184c4aaf76bf5ce3ee1">更多...</a><br /></td></tr>
+<tr class="separator:a079499e4c2418184c4aaf76bf5ce3ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>柜台类及相关操作 </p>
@@ -211,6 +214,68 @@ counter.c 的引用(Include)关系图:</div>
 
 </div>
 </div>
+<a id="a079499e4c2418184c4aaf76bf5ce3ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079499e4c2418184c4aaf76bf5ce3ee1">&#9670;&nbsp;</a></span>member_leave_counter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void member_leave_counter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcounter.html">counter</a> *&#160;</td>
+          <td class="paramname"><em>ct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmember.html">member</a> *&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>客户离开银行 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ct</td><td>柜台指针 </td></tr>
+    <tr><td class="paramname">m</td><td>客户指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="counter_8c_source.html">counter.c</a> 第 <a class="el" href="counter_8c_source.html#l00052">52</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="counter_8c_a079499e4c2418184c4aaf76bf5ce3ee1_cgraph.png" border="0" usemap="#acounter_8c_a079499e4c2418184c4aaf76bf5ce3ee1_cgraph" alt=""/></div>
+<map name="acounter_8c_a079499e4c2418184c4aaf76bf5ce3ee1_cgraph" id="acounter_8c_a079499e4c2418184c4aaf76bf5ce3ee1_cgraph">
+<area shape="rect" title="客户离开银行" alt="" coords="5,56,163,83"/>
+<area shape="rect" href="date_8h.html#addcaa639be6e33164d15478d1be0a6a6" title="获取当前时间" alt="" coords="211,5,308,32"/>
+<area shape="rect" href="helpful__func_8h.html#a55c355f047f95aba92b4f8c1415de900" title="释放指针P并将p设为NULL" alt="" coords="221,56,297,83"/>
+<area shape="rect" href="date_8h.html#af88a8cddc92e962f436a4333aff0874e" title="在文件 f 中显示日期 d" alt="" coords="217,107,302,133"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="counter_8c_a079499e4c2418184c4aaf76bf5ce3ee1_icgraph.png" border="0" usemap="#acounter_8c_a079499e4c2418184c4aaf76bf5ce3ee1_icgraph" alt=""/></div>
+<map name="acounter_8c_a079499e4c2418184c4aaf76bf5ce3ee1_icgraph" id="acounter_8c_a079499e4c2418184c4aaf76bf5ce3ee1_icgraph">
+<area shape="rect" title="客户离开银行" alt="" coords="508,5,665,32"/>
+<area shape="rect" href="trade_8h.html#a5c3ec099cbeb6068634e97ed18977979" title="结束当前柜台业务" alt="" coords="381,5,460,32"/>
+<area shape="rect" href="trade_8h.html#ac55e1399ed4641e788ac06fe604374d5" title="交易主函数入口" alt="" coords="249,5,333,32"/>
+<area shape="rect" href="bank__queue__system_8h.html#a6cb6cd3963cb32d63055dacfa689ed27" title="启动银行排队系统" alt="" coords="104,5,201,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aa8daf9e82a8ca950eac00c466c14fea6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8daf9e82a8ca950eac00c466c14fea6">&#9670;&nbsp;</a></span>show_counter_customer()</h2>
 
@@ -228,7 +293,7 @@ counter.c 的引用(Include)关系图:</div>
 
 <p>展示所有柜台当前办理业务人员信息 </p>
 
-<p class="definition">在文件 <a class="el" href="counter_8c_source.html">counter.c</a> 第 <a class="el" href="counter_8c_source.html#l00039">39</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="counter_8c_source.html">counter.c</a> 第 <a class="el" href="counter_8c_source.html#l00038">38</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
