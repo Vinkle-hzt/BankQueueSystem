@@ -386,7 +386,8 @@ void call_next(counter *ct)
     {
         member *customer = (member *)pq_top(waiting_line);
         counter_assign_customer(ct, customer);
-        printf("请 v%d-%d 到柜台 %d 办理业务！\n", ct->customer->vip, ct->customer->vip_pick_num, ct->number);
+        printf("请 v%d-%d 到柜台 %d 办理业务！\n",
+               ct->customer->vip, ct->customer->vip_pick_num, ct->number);
         pq_pop(waiting_line);
     }
 }
