@@ -30,7 +30,6 @@ member *member_come(int ID, char *name)
     return m;
 }
 
-
 int member_compare(const void *lhs, const void *rhs)
 {
     member *lp = (member *)lhs;
@@ -42,6 +41,8 @@ int get_vip_level(int *ID, char *name)
 {
     if (*ID != 0)
     {
+        // 如果不是注册账户
+        // 判断账户和姓名是否匹配
         sprintf(mysql_buffer, "SELECT * FROM `user` WHERE user_ID = %d", *ID);
 
         int ret = mysql_query(&mysql_connect, mysql_buffer);

@@ -158,21 +158,25 @@ void check_balance(int card_ID)
 
 void deposit_money(counter *ct, int card_ID)
 {
-    double card_deposit = 0;
+    double card_deposit = 0; // 存款金额
     double now_money = get_balance(card_ID);
+
     printf("\n请输入您要存款的钱数：");
+    scanf("%lf", &card_deposit);
 
     //判断钱数是否为负
-    scanf("%lf", &card_deposit);
     if (card_deposit < 0)
     {
         printf("\n输入信息错误，请重新输入！\n");
         return;
     }
+    
+    // 更新数据库
     sprintf(mysql_buffer, "update card set money = money + %lf where card_ID = %d",
             card_deposit, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
 
+    // 更新交易记录
     upload_trade(card_ID, Deposit, now_money, now_money + card_deposit, card_ID);
 
     //生成 log
@@ -180,7 +184,8 @@ void deposit_money(counter *ct, int card_ID)
     fprintf(log_file, " (ID：%d, name: %s 卡号：%d)  存款 %.2lf\n",
             ct->customer->ID, ct->customer->name,
             card_ID, card_deposit);
-
+    
+    // 查看余额
     check_balance(card_ID);
 
     // 统计交易金额
@@ -218,6 +223,7 @@ void withdraw_money(counter *ct, int card_ID)
             card_withdraw, card_ID);
     mysql_query(&mysql_connect, mysql_buffer);
 
+    // 生成交易记录
     upload_trade(card_ID, Withdraw, now_money, now_money - card_withdraw, card_ID);
 
     // 生成 log
@@ -291,10 +297,12 @@ void transfer_accounts(counter *ct, int card_ID)
             transfer_money, transfer_card);
     mysql_query(&mysql_connect, mysql_buffer);
 
-    //生成日志
+    //生成交易记录
     upload_trade(card_ID, Transfer, now_money, now_money - transfer_money, transfer_card);
 
     double tred_now_money = get_balance(transfer_card);
+    
+    //生成交易记录
     upload_trade(transfer_card, BeTransferred, tred_now_money, tred_now_money + transfer_money, card_ID);
 
     check_balance(card_ID);

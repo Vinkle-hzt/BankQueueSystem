@@ -169,8 +169,10 @@ int login_admin()
 
 void check_all_trade()
 {
-    int admin_enter = 0;
-    int login_flag = 0;
+    int admin_enter = 0; // 登录次数
+    int login_flag = 0; // 是否登录成功
+
+    // 登录次数是否超过 3 次
     while (admin_enter < 3)
     {
         if (login_admin())
@@ -185,6 +187,8 @@ void check_all_trade()
         system("cls");
 #endif
     }
+
+    // 没有登录成功
     if (!login_flag)
         printf("登录失败次数太多，请稍后再试\n");
     else
@@ -192,10 +196,12 @@ void check_all_trade()
 #ifndef DEBUG
         system("cls");
 #endif
+        // 展示整个银行的交易信息
         printf("\n登录成功 :) 尊敬的管理员\n\n");
         printf("此为银行总交易信息：\n");
         show_trade_conclude(&all_trade);
 
+        // 展示各个柜台的交易信息
         for (int i = 0; i < counters->curSize; i++)
         {
             printf("\n此为柜台 %d 的交易信息：\n", i + 1);
@@ -234,11 +240,13 @@ void update_VIP()
     printf("\nVIP升级规则为：\n0:现有存款大于0\n");
     printf("1:现有存款大于100000.00\n2:现有存款大于500000.00\n\n");
 
+    // 获取该用户总金额
     sprintf(mysql_buffer, "SELECT SUM(money) FROM card WHERE user_ID = %d", ID);
     mysql_query(&mysql_connect, mysql_buffer);
     mysql_res = mysql_store_result(&mysql_connect);
     mysql_next_row = mysql_fetch_row(mysql_res);
     double sum_money = atof(mysql_next_row[0]);
+
     printf("您目前的VIP等级为：%d\n", cur_customer->vip);
     printf("您目前的总存款为：%.2lf\n", sum_money);
     printf("正在为您查询. . .\n\n");
